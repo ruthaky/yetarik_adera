@@ -1,0 +1,97 @@
+{
+  "heroSection": {
+    "hero": "Amharic",
+    "subheading": "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
+    "button": "Connect with our Team"
+  },
+  "aboutSection": {
+    "heading": "Who We Are",
+    "subheading": "Surge Crops Trading, headquartered in Dubai, UAE, connects Africa's agricultural richness with global demand. We specialize in sourcing high-quality crops and coffee from Ethiopia, Kenya, Tanzania, Rwanda, and Uganda. With a commitment to sustainability, traceability, and excellence, we've built trusted partnerships across markets in China, Europe, North America, Southeast Asia, and beyond.",
+    "subheading2": "Our mission is simple: to create value for farmers and customers by ensuring the smooth, ethical, and efficient trade of nature's finest yields.",
+    "button": "Read More"
+  },
+  "productSection": {
+    "heading": "Our Products",
+    "coffeetitle": "Coffee",
+    "coffeedesc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our beans capture the unique terroir of Africa, offering unparalleled flavor profiles that range from fruity and floral to bold and earthy.",
+    "sesametitle": "Sesame Seeds",
+    "sesamedesc": "Our sesame seeds are sourced from Ethiopia, Tanzania, and Uganda—regions renowned for producing premium quality seeds with high oil content. Known for their nutty flavor and rich nutritional profile, our sesame seeds are ideal for culinary, industrial, and cosmetic applications.",
+    "soybeanstitle": "Soybean",
+    "soybeansdesc": "Sourced from Uganda and Tanzania, our soybeans are a versatile crop with applications in food, feed, and industrial sectors. Non-GMO and nutrient-rich, they serve as a key ingredient in plant-based proteins, animal feed, and edible oils.",
+    "kidneybeanstitle": "Kidney Beans",
+    "kidneybeansdesc": "Our red and white kidney beans are sourced from Uganda and Tanzania, regions celebrated for producing nutrient-rich, flavorful legumes. A staple in diets worldwide, they are perfect for soups, stews, and salads.",
+    "button": "See More"
+  },
+  "serviceSection": {
+    "heading": "Why Choose Us",
+    "subheading": "At Surge Crops Trading, we pride ourselves on delivering more than just crops; we offer complete solutions for global agricultural trade",
+    "button": "Request a quote",
+    "qualitytitle": "Quality",
+    "qualitydesc": "Every product undergoes rigorous quality control, ensuring premium standards from sourcing to delivery.",
+    "trusttitle": "Trust",
+    "trustdesc": "Built on transparency and reliability, we create lasting partnerships with clients and farmers alike.",
+    "affordtitle": "Affordability",
+    "afforddesc": "Competitive pricing without compromising on quality, delivering value for money in every shipment.",
+    "diversetitle": "Diverse Products",
+    "diversedesc": "Our extensive portfolio includes sesame, coffee, beans, castor seeds, and soybeans to meet diverse market needs."
+  },
+  "contactSection": {
+    "contactdetail": "Contact Detail",
+    "location": "78CQ+V75 Dubai - United Arab Emirates",
+    "getintouch": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "phonenumber": "Phone Number",
+    "message": "Message",
+    "button": "submit"
+  },
+  "aboutpage": {
+    "introheading": "Connecting Africa's Harvest to the World",
+    "introsubheading": "Surge Crops Trading is your trusted gateway to the finest agricultural treasures from Africa, delivered to markets worldwide. Headquartered in the UAE, we take pride in fostering sustainable partnerships, ensuring quality, and creating opportunities that span continents. Join us on a journey of growth, innovation, and excellence.",
+    "storyheading": "Our Story",
+    "storysubheading1": "Surge Crops Trading was established with a clear vision: to bridge the gap between supply and demand in the global agricultural trade. Based in the UAE, our company connects premium crops and coffee from Africa and other regions to international markets, ensuring quality, reliability, and trust every step of the way.",
+    "storysubheading2": "Our journey is built on years of expertise in business and marketing, combined with a deep commitment to excellence. We specialize in sourcing high-quality agricultural products, including coffee, sesame seeds, beans, and soybeans, from Africa's fertile lands and delivering them to clients worldwide.",
+    "storysubheading3": "At Surge Crops Trading, we pride ourselves on fostering strong, transparent relationships with our partners, leveraging advanced technologies and modern communication tools to ensure seamless transactions. Our story is one of growth, innovation, and dedication to building lasting connections across continents.",
+    "missionheading": "Our Mission",
+    "missionsubheading": "Our mission at Surge Crops Trading is to be a leading global partner in the import and export of premium agricultural products. We are committed to connecting markets worldwide by providing authentic, high-quality crops and fostering sustainable trade practices.",
+    "missioncommitments": "Our core commitments include:",
+    "commitment1": "Upholding strict quality standards and meeting timelines with precision.",
+    "commitment2": "Ensuring secure, transparent, and reliable transactions for our clients and partners.",
+    "commitment3": "Utilizing advanced technology to enhance communication and operational efficiency.",
+    "commitment4": "Delivering unparalleled professionalism and customer satisfaction in every interaction.",
+    "missionstatement": "Through our unwavering dedication, we aim to redefine excellence in global trade, creating lasting partnerships and contributing to the success of our clients across the world.",
+    "gallerytitle": "Gallery"
+  },
+  "productpage": {
+    "heading": "Premium Agricultural Products Tailored for Your Needs",
+    "subheading": "Explore our diverse range of high-quality agricultural products, meticulously sourced to meet global standards. From aromatic coffee and versatile sesame seeds to nutrient-rich beans and soybeans, our offerings are designed to cater to the demands of international markets. At Surge Crops Trading, we prioritize quality, reliability, and sustainability, ensuring that every product delivers exceptional value to our partners worldwide.",
+    "product1title": "Coffee",
+    "product1desc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our selection includes high-altitude grown Arabica beans, known for their complex acidity and rich aromas, as well as robust, full-bodied Robusta beans with higher caffeine content, sourced from low-altitude regions. For premium roasters, we offer specialty-grade, single-origin beans that showcase Africa's unique terroir, with flavor profiles ranging from fruity and floral to bold and earthy. All our coffee is ethically sourced and traceable, meeting the needs of specialty coffee markets, cafes, and global roasters. Available in both green and roasted forms, our coffee represents Africa's excellence in every cup.",
+    "product2title": "Sesame Seeds",
+    "product2desc": "Our sesame seeds, sourced from Ethiopia, Tanzania, and Uganda, are renowned for their premium quality, high oil content, and nutty flavor. These seeds are perfect for culinary, industrial, and cosmetic applications, offering a rich nutritional profile. We provide hulled sesame seeds with a smooth texture and mild flavor for food-grade uses, unhulled sesame seeds that retain natural fiber and nutty taste for industrial processing, and black sesame seeds, a gourmet choice for bakeries, sauces, and traditional medicine. Sourced sustainably from smallholder farms, our sesame seeds boast oil content of up to 50% and are available in bulk packaging for export markets.",
+    "product3title": "Soybeans",
+    "product3desc": "Our soybeans, sourced from Uganda and Tanzania, are a versatile and nutrient-rich crop with wide-ranging applications in food, feed, and industrial sectors. Non-GMO soybeans are perfect for food-grade uses like tofu, soy milk, and soy protein, while feed-grade soybeans are processed into soybean meal for livestock and poultry. With a high protein content of 35–40%, our soybeans are carefully graded for uniformity and freshness and are available in bulk shipments for global distribution.",
+    "product4title": "Kidney Beans",
+    "product4desc": "Sourced from Uganda and Tanzania, our red and white kidney beans are celebrated for their nutrient-rich composition and rich flavors. Red kidney beans, known for their hearty texture and slightly sweet taste, are a staple in soups and stews, while white kidney beans, or Cannellini, feature a delicate flavor and creamy texture, ideal for Mediterranean dishes. High in protein, fiber, and essential minerals, these beans are carefully cleaned and graded to meet export-quality standards. Available in bulk shipments, they are perfect for wholesale and retail markets worldwide.",
+    "product5title": "Castor Seeds",
+    "product5desc": "Our castor seeds, cultivated in Ethiopia and Kenya, are renowned for their superior oil yield and purity. The castor oil extracted from these seeds is a vital ingredient in industries ranging from pharmaceuticals and cosmetics to biofuels. We offer industrial-grade castor seeds, ideal for high-yield oil extraction in industrial applications, as well as organic castor seeds, grown without chemical inputs and perfect for premium markets. Rich in ricinoleic acid, our seeds are harvested under stringent quality control to ensure optimal oil production and are available in raw or processed forms.",
+    "contactbutton": "Contact Now"
+  },
+  "contactPage": {
+    "heading": "Connect with Surge Crops Trading",
+    "subheading": "Whether you're looking to source premium agricultural products or have inquiries about our services, we're here to help. Reach out to us today and let's grow together.s",
+    "contactdetail": "Contact Detail",
+    "location": "78CQ+V75 Dubai - United Arab Emirates",
+    "getintouch": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "phonenumber": "Phone Number",
+    "message": "Message",
+    "button": "submit"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}
