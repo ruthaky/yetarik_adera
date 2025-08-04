@@ -1,29 +1,50 @@
 "use client";
-
+import {Martyrs, Martyrs2, Martyrs3 } from "@/app/[lang]/martyrs/data/martyrs";
 import { useState } from "react";
 import Image from "next/image";
 import img1 from "@/public/asset/mart1.webp"; // Replace with correct image
 import { Button } from "@/components/ui/button";
-import img2 from "@/public/asset/imgabout2.png";
+import img2 from "@/public/asset/martyrsstatue.jpeg";
+import { motion } from "framer-motion";
 
-interface Martyr {
+interface Martyrs {
   name: string;
   title: string;
-  image: string;
+  image: any;
+  description: string;
+}
+interface Martyrs2 {
+  name: string;
+  title: string;
+  image: any;
+  description: string;
+}
+interface Martyrs3 {
+  name: string;
+  title: string;
+  image: any;
   description: string;
 }
 
 export default function MartyrsPage() {
   const [showMartyrs, setShowMartyrs] = useState(false);
-  const [selectedMartyr, setSelectedMartyr] = useState<Martyr | null>(null);
+  const [selectedMartyr, setSelectedMartyr] = useState<Martyrs | null>(null);
 
-  const martyrs: Martyr[] = Array.from({ length: 8 }, (_, i) => ({
-    name: "Akililu Habtewold",
-    title: "Public Servant",
-    image: "/images/member1.jpg", // Update per martyr
-    description:
-      "The story of Emperor Haile Selassie and the public servants who shaped Ethiopia during his reign is one we can't afford to forget. Their legacy is part of who we are, and it deserves to be remembered with truth and dignity. We're here to preserve that history, support those who want to learn from it, and share it with future generations. Everything we do is rooted in honoring the past and making sure it’s never erased.",
-  }));
+  // const martyrs: Martyr[] = Array.from({ length: 8 }, (_, i) => ({
+  //   name: "Akililu Habtewold",
+  //   title: "Public Servant",
+  //   image: "/images/member1.jpg", // Update per martyr
+  //   description:
+  //     "The story of Emperor Haile Selassie and the public servants who shaped Ethiopia during his reign is one we can't afford to forget. Their legacy is part of who we are, and it deserves to be remembered with truth and dignity. We're here to preserve that history, support those who want to learn from it, and share it with future generations. Everything we do is rooted in honoring the past and making sure it’s never erased.",
+  // }));
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const allMartyrs = [...Martyrs, ...Martyrs2, ...Martyrs3];
+
+  const filteredMartyrs = allMartyrs.filter((martyr) =>
+    martyr.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <main className="min-h-screen bg-[#f5f0e8] text-gray-800 font-sans">
@@ -37,29 +58,52 @@ export default function MartyrsPage() {
           priority
         /> */}
 
-        <div className="flex flex-col items-center justify-center text-center  pt-[200px] text-black px-4">
-          <h1 className=" text-5xl font-bold mb-4">68 Martyrs</h1>
+        <div className="flex flex-col items-center justify-center text-center pt-[150px] text-black px-4">
+         <div className="text-centern mb-16 flex justify-center items-center">
+        <section className="px-6 text-start w-auto">
+  <h1 className="text-[45px] font-light leading-snug inline-block">
+    {/* Line 1 */}
+    <div className="inline-block">
+      <span className="font-serif">68</span>
+     <motion.div
+                     initial={{ width: 0 }}
+                     animate={{ width: "100%" }}
+                     transition={{ duration: 1, delay:0 }}
+                     className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+                   />
+    </div>
+    <br />
+
+    {/* Line 2 */}
+    <div className="inline-block pl-[80px]">
+      <div className="inline-block">
+        <span className="font-serif">Martyrs</span>
+       <motion.div
+                       initial={{ width: 0 }}
+                       animate={{ width: "100%" }}
+                       transition={{ duration: 1, delay:0 }}
+                       className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+                     />
+      </div>
+    </div>
+  </h1>
+</section>
+      </div>
           {/* <p className="text-lg max-w-2xl">
             Honoring the legacy of faith, courage, and sacrifice.
           </p> */}
-          <div className="space-y-6 text-lg leading-relaxed w-[70%] mt-5">
+          <div className="space-y-6 text-lg leading-relaxed w-[70%]">
             <p className="text-left">
-              The Seventy Martyrs were devout Christians who lived during a time
-              of persecution. They gathered on Mount Abay, where they continued
-              to worship and spread the gospel, despite growing threats against
-              their lives. Refusing to renounce their faith, they stood strong
-              in the face of trials and tribulations. Many of them were leaders
-              and teachers who guided others in the Christian faith, bringing
-              light to their communities even as darkness grew around them.
-              Today, we remember them not only for their martyrdom but for their
-              unwavering commitment to truth, justice, and love. Their sacrifice
-              continues to inspire believers around the world.
+              In 1974, during the transitional period following the end of Emperor Haile Selassie's administration, 68 senior government officials and public servants were executed by the Derg regime without trial. These individuals, who held high office and played key roles in Ethiopia’s development, were taken from prison and summarily killed in one of the most tragic and unjust acts in the country’s modern history.
+<br></br>
+<br></br>
+The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
             </p>
           </div>
         </div>
       </section>
-      <section className="px-6 pb-12 flex flex-col items-center justify-center">
-        <Image src={img2} alt="Building" className="w-[600px] mb-4" />
+      <section className="px-6 py-12 flex flex-col items-center justify-center">
+        <Image src={img2} alt="Building" className="w-[700px] mb-4 h-[400px]" />
         <p className="text-sm"></p>
       </section>
 
@@ -68,23 +112,15 @@ export default function MartyrsPage() {
         {/* <h2 className="text-3xl font-bold mb-6 text-gray-900">
           The Story of the 70 Martyrs
         </h2> */}
-        <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+        <div className="space-y-6 text-lg leading-relaxed text-black">
           <p>
-            The Seventy Martyrs were devout Christians who lived during a time
-            of persecution. They gathered on Mount Abay, where they continued to
-            worship and spread the gospel, despite growing threats against their
-            lives.
+           The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
           </p>
           <p>
-            Refusing to renounce their faith, they stood strong in the face of
-            trials and tribulations. Many of them were leaders and teachers who
-            guided others in the Christian faith, bringing light to their
-            communities even as darkness grew around them.
+       The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
           </p>
           <p>
-            Today, we remember them not only for their martyrdom but for their
-            unwavering commitment to truth, justice, and love. Their sacrifice
-            continues to inspire believers around the world.
+          The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
           </p>
           <Button onClick={() => setShowMartyrs(!showMartyrs)}>
             {showMartyrs ? "Hide Martyrs" : "View Martyrs"}
@@ -95,27 +131,131 @@ export default function MartyrsPage() {
       {/* Martyrs Section */}
       {showMartyrs && (
         <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 py-20">
+
+ <div className="max-w-6xl mx-auto">
+  <div className="w-full flex justify-end">
+      <input
+        type="text"
+        placeholder="Search by name..."
+        className="w-[350px] p-3 rounded-md border border-gray-300 bg-none mb-6 text-black"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+</div>
+     {searchTerm.trim() !== "" ? (
+  filteredMartyrs.length > 0 ? (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {filteredMartyrs.map((martyr, index) => (
+        <div
+          key={index}
+                         className="flex flex-col items-center gap-4 py-[20px] cursor-pointer w-[300px]"
+                          onClick={() => setSelectedMartyr(martyr)}
+        >
+       <Image
+            src={martyr.image.src}
+            alt={martyr.name}
+              unoptimized
+                  width={200}
+                  height={200}
+            className="w-[190px] h-[190px] object-center rounded-full border border-gray-400 shadow-md "
+          />
+             <div className="flex flex-col items-center">
+                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                    {martyr.name}
+                  </h3>
+                  <p className="text-sm text-gray-600">{martyr.description}</p>
+                </div>
+         
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p className="text-center text-gray-500">No martyrs found.</p>
+  )
+) : null}
+
+    </div>
+
           <div className="text-center mb-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-[40px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
-            {martyrs.map((member, index) => (
+          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+            {Martyrs.map((member, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-4 cursor-pointer"
+                className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
                 onClick={() => setSelectedMartyr(member)}
               >
                 <Image
-                  src={img1}
+                  src={member.image}
                   alt={member.name}
+                  unoptimized
                   width={200}
                   height={200}
-                  className="w-[230px] h-[230px] object-cover rounded-full border border-gray-400 shadow-md"
+                  className="w-[190px] h-[190px] object-center rounded-full border border-gray-400 shadow-md "
                 />
                 <div className="flex flex-col items-center">
-                  <h3 className="text-lg font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-gray-600">{member.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+           <div className="text-center my-16 w-full max-w-6xl mx-auto">
+            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
+              Civilian Officials Executed, Saturday, November 23, 1974
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+            {Martyrs2.map((member, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
+                onClick={() => setSelectedMartyr(member)}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  unoptimized
+                  width={200}
+                  height={200}
+                  className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400 shadow-md"
+                />
+                <div className="flex flex-col items-center">
+                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-gray-600">{member.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+           <div className="text-center my-16 w-full max-w-6xl mx-auto">
+            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
+              Civilian Officials Executed, Saturday, November 23, 1974
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+            {Martyrs3.map((member, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
+                onClick={() => setSelectedMartyr(member)}
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  unoptimized
+                  width={200}
+                  height={200}
+                  className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400 shadow-md"
+                />
+                <div className="flex flex-col items-center">
+                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
                     {member.name}
                   </h3>
                   <p className="text-sm text-gray-600">{member.title}</p>
@@ -128,7 +268,7 @@ export default function MartyrsPage() {
 
       {/* Modal */}
       {selectedMartyr && (
-        <div className="fixed inset-0 bg-[#4C3519]/75 z-50 flex items-center justify-center p-6">
+        <div className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-6">
           <div className=" rounded-lg w-full max-w-6xl p-6 md:p-12 relative flex flex-col md:flex-row items-center gap-8">
             <button
               className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-200"
@@ -140,7 +280,7 @@ export default function MartyrsPage() {
             {/* Martyr Image */}
             <div className="flex-shrink-0">
               <Image
-                src={img1}
+                src={selectedMartyr.image}
                 alt={selectedMartyr.name}
                 className="w-[250px] h-[300px] object-cover rounded-md shadow-lg"
               />

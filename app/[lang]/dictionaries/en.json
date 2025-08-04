@@ -1,66 +1,33 @@
 {
   "heroSection": {
-    "hero": "From Africa's Richest Soils to the World's Finest Markets",
-    "subheading": "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
-    "button": "Connect with our Team"
+    "hero": "Yetarik Adera",
+    "subheading1": "Honoring The Past",
+     "subheading2": "Inspiring The Future",
+    "link1":"About Us",
+  "link2":"Members",
+    "link3":" Get Involved"
   },
-  "aboutSection": {
-    "heading": "Who We Are",
-    "subheading": "Surge Crops Trading, headquartered in Dubai, UAE, connects Africa's agricultural richness with global demand. We specialize in sourcing high-quality crops and coffee from Ethiopia, Kenya, Tanzania, Rwanda, and Uganda. With a commitment to sustainability, traceability, and excellence, we've built trusted partnerships across markets in China, Europe, North America, Southeast Asia, and beyond.",
-    "subheading2": "Our mission is simple: to create value for farmers and customers by ensuring the smooth, ethical, and efficient trade of nature's finest yields.",
-    "button": "Read More"
-  },
-  "productSection": {
-    "heading": "Our Products",
-    "coffeetitle": "Coffee",
-    "coffeedesc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our beans capture the unique terroir of Africa, offering unparalleled flavor profiles that range from fruity and floral to bold and earthy.",
-    "sesametitle": "Sesame Seeds",
-    "sesamedesc": "Our sesame seeds are sourced from Ethiopia, Tanzania, and Uganda—regions renowned for producing premium quality seeds with high oil content. Known for their nutty flavor and rich nutritional profile, our sesame seeds are ideal for culinary, industrial, and cosmetic applications.",
-    "soybeanstitle": "Soybean",
-    "soybeansdesc": "Sourced from Uganda and Tanzania, our soybeans are a versatile crop with applications in food, feed, and industrial sectors. Non-GMO and nutrient-rich, they serve as a key ingredient in plant-based proteins, animal feed, and edible oils.",
-    "kidneybeanstitle": "Kidney Beans",
-    "kidneybeansdesc": "Our red and white kidney beans are sourced from Uganda and Tanzania, regions celebrated for producing nutrient-rich, flavorful legumes. A staple in diets worldwide, they are perfect for soups, stews, and salads.",
-    "button": "See More"
-  },
-  "serviceSection": {
-    "heading": "Why Choose Us",
-    "subheading": "At Surge Crops Trading, we pride ourselves on delivering more than just crops; we offer complete solutions for global agricultural trade",
-    "button": "Request a quote",
-    "qualitytitle": "Quality",
-    "qualitydesc": "Every product undergoes rigorous quality control, ensuring premium standards from sourcing to delivery.",
-    "trusttitle": "Trust",
-    "trustdesc": "Built on transparency and reliability, we create lasting partnerships with clients and farmers alike.",
-    "affordtitle": "Affordability",
-    "afforddesc": "Competitive pricing without compromising on quality, delivering value for money in every shipment.",
-    "diversetitle": "Diverse Products",
-    "diversedesc": "Our extensive portfolio includes sesame, coffee, beans, castor seeds, and soybeans to meet diverse market needs."
-  },
-  "contactSection": {
-    "contactdetail": "Contact Detail",
-    "location": "78CQ+V75 Dubai - United Arab Emirates",
-    "getintouch": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
-    "phonenumber": "Phone Number",
-    "message": "Message",
-    "button": "submit"
-  },
+
   "aboutpage": {
-    "introheading": "Connecting Africa's Harvest to the World",
-    "introsubheading": "Surge Crops Trading is your trusted gateway to the finest agricultural treasures from Africa, delivered to markets worldwide. Headquartered in the UAE, we take pride in fostering sustainable partnerships, ensuring quality, and creating opportunities that span continents. Join us on a journey of growth, innovation, and excellence.",
-    "storyheading": "Our Story",
-    "storysubheading1": "Surge Crops Trading was established with a clear vision: to bridge the gap between supply and demand in the global agricultural trade. Based in the UAE, our company connects premium crops and coffee from Africa and other regions to international markets, ensuring quality, reliability, and trust every step of the way.",
-    "storysubheading2": "Our journey is built on years of expertise in business and marketing, combined with a deep commitment to excellence. We specialize in sourcing high-quality agricultural products, including coffee, sesame seeds, beans, and soybeans, from Africa's fertile lands and delivering them to clients worldwide.",
-    "storysubheading3": "At Surge Crops Trading, we pride ourselves on fostering strong, transparent relationships with our partners, leveraging advanced technologies and modern communication tools to ensure seamless transactions. Our story is one of growth, innovation, and dedication to building lasting connections across continents.",
-    "missionheading": "Our Mission",
-    "missionsubheading": "Our mission at Surge Crops Trading is to be a leading global partner in the import and export of premium agricultural products. We are committed to connecting markets worldwide by providing authentic, high-quality crops and fostering sustainable trade practices.",
-    "missioncommitments": "Our core commitments include:",
-    "commitment1": "Upholding strict quality standards and meeting timelines with precision.",
-    "commitment2": "Ensuring secure, transparent, and reliable transactions for our clients and partners.",
-    "commitment3": "Utilizing advanced technology to enhance communication and operational efficiency.",
-    "commitment4": "Delivering unparalleled professionalism and customer satisfaction in every interaction.",
-    "missionstatement": "Through our unwavering dedication, we aim to redefine excellence in global trade, creating lasting partnerships and contributing to the success of our clients across the world.",
-    "gallerytitle": "Gallery"
+    "introheading1": "Our Purpose,",
+    "introheading2": "Rooted in Legacy",
+    "storyp1": "Yetarik Adera, a local aid organization, was established in December 2014 E.C. in Addis Ababa, Ethiopia. The organization was founded by 12 board members, and it has now been two years since it began its work.",
+    "storyp2": "The main purpose of this aid organization is to ensure that the history of individuals who served their country during the time of Emperor Haile Selassie—in various fields with knowledge and responsibility—is truthfully documented. It was created with the intention of making sure these individuals are not forgotten by history.",
+    "storyp3": "Yetarik Adera is actively collecting historical photographs, memoirs, and documents belonging to these individuals and is working to organize and share this history in an educational and museum-quality manner. In addition, it supports individuals and organizations that wish to write about these histories by providing documentation and access to personal archives in a collaborative and supportive way.",
+    "storyp4": "It is widely known and accepted that Emperor Haile Selassie’s era played a foundational role in shaping modern Ethiopia. Through the expansion of education, the development of banking services, air transport, roads, and railway lines, that period significantly contributed to the building of Ethiopia through knowledge and labor. Therefore, this organization was founded to preserve and pass on that historic era to future generations.",
+    "missionheading": "Mission",
+    "missionStory": "To honor the legacy and sacrifice of the Imperial Ethiopian government officials who perished at the hands of the Derg, and their colleagues who served in the administration of Emperor Haile Selassie I.",
+    "Visionheading": "Vision",
+    "vision1": "Establish",
+    "vision1note": "Establish and maintain an historical archive and repository to become an important source of materials for this period.",
+   "vision2": "Preserve",
+    "vision2note": "Preserve, maintain and improve the Memorial at Kidist Selassie Holy Trinity Cathedral and the commemorative events that take place in this sacred site.",
+    "vision3": "Advocate",
+    "vision3note": "Advocate for accuracy in the record and history of the Imperial Era and in the contributions of these public servants.",
+   "vision4": "Support",
+    "vision4note": "Support relevant scholarly and creative works pertaining to this period by providing funding for scholarships, research, books and films.",
+    "storyp5": "To realize this goal truthfully, Yetarik Adera is committed to documenting their stories both orally and in writing, encouraging a deeper understanding of history, and integrating it into educational institutions. It works with the government to ensure that history becomes a part of the curriculum in schools and at the university level, helping future generations learn about the tragic and unjust mass executions—carried out in a single day and night without trial—of our fathers, relatives, and fellow citizens. The aim is to prevent such atrocities from ever happening again.",
+    "storyp6": "As we remember those who were killed 50 years ago—some of whom were our fathers, brothers, and relatives—we do so not only with grief, but with pride in the sacrifice and service they gave to their country. As their children and descendants, we recognize the bravery and struggle they undertook to prepare our nation for the 21st century. We rise to honor their names and ensure their memory is never erased. In doing so, we fulfill our historical responsibility through Yetarik Adera."
   },
   "productpage": {
     "heading": "Premium Agricultural Products Tailored for Your Needs",

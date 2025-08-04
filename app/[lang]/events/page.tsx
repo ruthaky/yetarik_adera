@@ -1,6 +1,9 @@
+"use client"
 import React from "react";
-import img1 from "@/public/asset/event1.jpg";
+import img1 from "@/public/asset/517747556_1140462981461790_5752099992240461032_n.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 interface Event {
   date: string;
@@ -47,16 +50,50 @@ const events: Event[] = [
 
 const UpcomingEvents: React.FC = () => {
   return (
-    <section className="bg-[#F3EFE6] px-4 md:px-20 py-16 text-[#4A2C13]">
-      <div className="text-center mb-16 mt-7">
-        <h2 className="text-4xl md:text-5xl font-serif">
-          <span className="border-b-2 border-[#B1864F] pb-2">Upcoming</span> Events
-        </h2>
+    <section className="bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start">
+
+<div className="h-[450px] w-full bg-[#B1864F] relative overflow-hidden">
+  {/* Background Image */}
+  <Image
+    src={img1}
+    alt="img1"
+    className="w-full h-full object-cover rounded-md shadow-md"
+    width={0}
+    height={0}
+  />
+
+  {/* Gradient + Backdrop Blur Overlay */}
+  <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black/70 via-black/40 to-transparent backdrop-blur-sm z-10" />
+        
+
+  {/* Content on top of the blurred gradient */}
+  <div className="absolute bottom-0 left-0 w-full h-[200px] p-20 flex gap-5 items-center z-20">
+    <div className="flex flex-col justify-center text-white text-xl font-bold">
+      <p className="text-sm border-b border-[#B1864F] pb-1">April</p>
+      <p className="text-3xl">23</p>
+    </div>
+    <p className="text-white text-[30px] font-semibold">Annual Event</p>
+     
+  </div>
+</div>
+
+
+      <div className="text-center mb-[30px] mt-[50px] px-20">
+        <h2 className="text-3xl md:text-4xl font-serif">
+          <span className=" pb-2">Upcoming</span> Events
+          
+        </h2><motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0 }}
+              className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+            />
+          
       </div>
 
-      <div className="space-y-16">
+      <div className="space-y-16 px-20">
         {events.map((event, index) => (
-          <div key={index} className="border-b border-[#B1864F] pb-10">
+          <div key={index} className="border-b border-[#B1864F] py-12">
             <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
               {/* Date */}
               <div className="text-center text-xl font-bold">
@@ -91,7 +128,7 @@ const UpcomingEvents: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 px-20">
         <a
           href="#"
           className="inline-flex items-center gap-2 text-lg font-medium text-black hover:underline"

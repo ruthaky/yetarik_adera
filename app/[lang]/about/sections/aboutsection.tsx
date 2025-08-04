@@ -1,163 +1,212 @@
+"use client";
+
 import React from "react";
-import img1 from "@/public/asset/imgabout1'.png";
+import Image from "next/image";
+import img1 from "@/public/asset/imgabout1.png";
 import img2 from "@/public/asset/imgabout2.png";
 import img3 from "@/public/asset/imgabout3.png";
 import img4 from "@/public/asset/imgabout4.png";
-import Image from "next/image";
+import img5 from "@/public/asset/telekibeb.jpg";
+import img6 from "@/public/asset/telecom.jpg";
+import img7 from "@/public/asset/bank2.jpg";
+import img8 from "@/public/asset/library.jpg";
+import img9 from "@/public/asset/cinema.jpg";
+import img10 from "@/public/asset/bibble.jpg";
+import img11 from "@/public/asset/Assab.jpeg";
+import img12 from "@/public/asset/aviation.jpg";
+import img13 from "@/public/asset/batamariam.jpg";
+import img14 from "@/public/asset/line.jpg";
+import img15 from "@/public/asset/unradio.jpg";
+import img16 from "@/public/asset/motor.jpg";
+import { motion } from "framer-motion";
 
-const AboutPage = () => {
+
+import logo from "/logo.svg";
+import { Carousel } from "@mantine/carousel";
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { MantineProvider } from "@mantine/core";
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
+
+const AboutPage = ({
+  aboutpageTexts,
+}: {
+  aboutpageTexts: any;
+}) => {
   return (
-    <div className="bg-[#f8f5ef] text-[#2b2a28] font-serif">
+        <MantineProvider>
+    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif">
       {/* Header */}
       <header className="bg-[#2b2a28] text-white flex justify-between items-center px-6 py-3">
         <span className="text-sm">Eng/Amh</span>
         <div className="flex items-center gap-2">
-          <img src="/logo.svg" alt="Logo" className="h-6" />
+          <Image src="/logo.svg" alt="Logo" width={100} height={40} className="h-6 w-auto" />
         </div>
         <button className="text-xl">&#9776;</button>
       </header>
 
       {/* Hero Section */}
-      <section className="px-6 py-12 text-center">
-        <h1 className="text-4xl font-light leading-snug">
-          <span className="border-b-2 border-orange-400">Our Purpose,</span>
-          <br />
-          <span className="border-b-2 border-orange-400">Rooted in Legacy</span>
-        </h1>
-      </section>
+    
+        <section className="h-screen w-full flex flex-col items-center justify-center">
+   <section className="px-6 text-start w-[600px] mb-12">
+  <h1 className="text-[45px] font-light leading-snug inline-block">
+    {/* Line 1 */}
+    <div className="inline-block">
+      <span className="font-serif">{aboutpageTexts.introheading1}</span>
+    <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay:0 }}
+                className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+    </div>
+    <br />
 
-      {/* Image and Text Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center gap-[100px] px-6 pb-12">
-        <Image
-          src={img1}
-          alt="Emperor Haile Selassie"
-          className="w-[400px] h-[400px] object-cover"
-        />
-        <p className="text-sm max-w-md leading-relaxed">
-          Simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard...Simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard...Simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard...
-        </p>
+    {/* Line 2 */}
+    <div className="inline-block pl-[200px]">
+      <div className="inline-block">
+        <span className="font-serif">{aboutpageTexts.introheading2}</span>
+       <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+      </div>
+    </div>
+  </h1>
+</section>
+
+        {/* Image and Text Section */}
+        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px]">
+          <Image
+            src={img9}
+            alt="Emperor Haile Selassie"
+            width={450}
+            height={450}
+            className="object-cover"
+          />
+          <p className="text-[18px] w-[550px] leading-relaxed">
+           {aboutpageTexts.storyp1}
+          </p>
+        </section>
       </section>
 
       {/* Legacy Section */}
-      <section className="pb-12 w-[70%] mx-auto text-sm leading-relaxed">
+      <section className="pb-12 w-[70%] mx-auto text-[18px] leading-relaxed flex flex-col gap-3">
         <p>
-          The story of Emperor Haile Selassie and the public servants who shaped
-          Ethiopia during his reign is one we can’t afford to forget...The story
-          of Emperor Haile Selassie and the public servants who shaped Ethiopia
-          during his reign is one we can’t afford to forget...The story of
-          Emperor Haile Selassie and the public servants who shaped Ethiopia
-          during his reign is one we can’t afford to forget...
+          {aboutpageTexts.storyp2}
         </p>
-      </section>
-
-      {/* Featured Section */}
-      <div className="flex items-center justify-center">
-        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center w-[70%] font-serif py-8">
-          <h2 className="text-xl font-semibold border-l-4 border-[#b07936] pl-2 mb-2">
-            Featured
-          </h2>
-          <div className="border-t border-[#b07936]">
-            {/* First Row */}
-            <div className="grid grid-cols-2 gap-8 py-4 border-b border-[#b07936]">
-              <div>
-                <p className="font-medium">Simply</p>
-                <p className="">Dummy Text Of The Printing</p>
-              </div>
-              <div>
-                <p className="font-medium">Simply</p>
-                <p className="">Dummy Text Of The Printing</p>
-              </div>
-            </div>
-
-            {/* Second Row */}
-            <div className="grid grid-cols-2 gap-8 py-4 border-b border-[#b07936]">
-              <div>
-                <p className="font-medium">Simply Dummy</p>
-                <p className="">Text Of The Printing  And Drawing</p>
-              </div>
-              <div>
-                <p className="font-medium">Simply Dummy</p>
-                <p className="">Text Of The Printing  And Drawing</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Image Section */}
-      <section className="px-6 pb-12 flex flex-col items-center justify-center">
-        <Image src={img2} alt="Building" className="w-[500px] mb-4" />
-        <p className="text-sm">
-          The story of Emperor Haile Selassie and the public servants who shaped
-          Ethiopia during his reign...
+        <p>
+              {aboutpageTexts.storyp3}
         </p>
       </section>
 
       {/* Reflection Section */}
-      <div className="flex justify-center">
-        <section className="flex items-center pb-12 w-[70%]">
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
-            {Array(3)
-              .fill(0)
-              .map((_, idx) => (
-                <div key={idx}>
-                  <h3 className="text-lg font-semibold border-b border-orange-400 mb-2">
-                    Reflection
-                  </h3>
-                  <p>
-                    Simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry’s standard...
-                  </p>
-                </div>
-              ))}
+      <div className="flex justify-between w-[70%]">
+        <section className="flex items-center pb-12 w-1/2">
+          <div className="text-sm">
+            <div className="inline-block mb-3">
+              <h3 className="text-[22px] font-semibold">{aboutpageTexts.missionheading}</h3>
+            <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+            </div>
+            <p className="text-[18px] leading-relaxed">
+              {aboutpageTexts.missionStory}
+            </p>
           </div>
+        </section>
+        <section className="px-6 pb-12 flex flex-col items-center justify-center w-1/2">
+          <Image src={img14} alt="Building" width={500} height={350} className="mb-4" />
         </section>
       </div>
 
-      {/* Image Section */}
-      <section className="px-6 pb-12">
-        <Image src={img3} alt="Building" className="w-full h-[450px] mb-4" />
-        <p className="text-sm">
-          The story of Emperor Haile Selassie and the public servants who shaped
-          Ethiopia during his reign... The story of Emperor Haile Selassie and
-          the public servants who shaped Ethiopia during his reign... The story
-          of Emperor Haile Selassie and the public servants who shaped Ethiopia
-          during his reign... The story of Emperor Haile Selassie and the public
-          servants who shaped Ethiopia during his reign...
+      {/* Featured Section */}
+      <div className="flex items-center justify-center  w-full">
+        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center w-[70%] font-serif py-8">
+          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-4 mx-10 pb-2 h-[50px]">{aboutpageTexts.Visionheading}</h2>
+          <div className="border-t border-[#b07936]">
+            {/* First Row */}
+            <div className="grid grid-cols-2 gap-8 border-b border-[#b07936] px-10 h-full">
+              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
+                <p className="font-medium">{aboutpageTexts.vision1}</p>
+                <p>
+                 {aboutpageTexts.vision1note}
+                </p>
+              </div>
+              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
+                <p className="font-medium">{aboutpageTexts.vision2}</p>
+                <p>
+                 {aboutpageTexts.vision2note}
+                </p>
+              </div>
+            </div>
+            {/* Second Row */}
+            <div className="grid grid-cols-2 gap-8 border-b border-[#b07936] px-10 h-full flex items-center">
+              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
+                <p className="font-medium">{aboutpageTexts.vision3}</p>
+                <p>
+                  {aboutpageTexts.vision3note}
+                </p>
+              </div>
+              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
+                <p className="font-medium">{aboutpageTexts.vision4}</p>
+                <p>
+            {aboutpageTexts.vision4note}
+                </p>
+              </div>
+            </div>
+          </div>
+           <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 mx-10 pb-2 h-[50px] "></h2>
+        </div>
+      </div>
+
+      {/* Commitment Section */}
+      <section className="px-6 py-[60px] w-[75%] flex flex-col gap-[20px] items-center">
+        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full" />
+        <p className="text-[18px]">
+     {aboutpageTexts.storyp5}
         </p>
       </section>
 
-      {/* Image Grid */}
-      <section className="px-6 pb-12 grid grid-cols-2 md:grid-cols-5 gap-2">
-        {Array(5)
-          .fill(0)
-          .map((_, idx) => (
-            <Image
-              key={idx}
-              src={img4}
-              alt="Thumbnail"
-              className="w-full h-32 object-cover"
-            />
-          ))}
-      </section>
+      {/* Image Carousel */}
+      <section className="w-[75%] flex items-center justify-center pb-12">
+  <Carousel
+    withIndicators
+    height={250}
+    slideSize="33.3%"
+    slideGap="sm"
+    emblaOptions={{ loop: true, align: 'center', slidesToScroll: 3 }}
+    className="pl-6 w-full"
+  >
+    {[img10, img13, img11, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
+      <Carousel.Slide key={index}>
+        <div className="relative w-full h-full">
+          <Image
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            fill
+            className="object-cover object-center rounded-lg"
+          />
+        </div>
+      </Carousel.Slide>
+    ))}
+  </Carousel>
+</section>
 
-      {/* Final Text Section */}
-      <section className="px-6 pb-12 text-sm">
+
+      {/* Final Section */}
+      <section className="px-6 pb-12 text-[18px] w-[75%]">
         <p>
-          The story of Emperor Haile Selassie and the public servants who shaped
-          Ethiopia during his reign is one we can’t afford to forget... The
-          story of Emperor Haile Selassie and the public servants who shaped
-          Ethiopia during his reign... The story of Emperor Haile Selassie and
-          the public servants who shaped Ethiopia during his reign... The story
-          of Emperor Haile Selassie and the public servants who shaped Ethiopia
-          during his reign...
+         {aboutpageTexts.storyp6}
         </p>
       </section>
     </div>
+    </MantineProvider>
   );
 };
 

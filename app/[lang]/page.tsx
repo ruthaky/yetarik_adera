@@ -15,10 +15,7 @@ export default async function Page({
     <>
       <Home
         heroTexts={dictionary.heroSection}
-        aboutTexts={dictionary.aboutSection}
-        serviceTexts={dictionary.serviceSection}
-        productTexts={dictionary.productSection}
-        contactTexts={dictionary.contactSection}
+
       />
     </>
   );

@@ -1,66 +1,33 @@
 {
+  
   "heroSection": {
-    "hero": "Amharic",
-    "subheading": "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
-    "button": "Connect with our Team"
-  },
-  "aboutSection": {
-    "heading": "Who We Are",
-    "subheading": "Surge Crops Trading, headquartered in Dubai, UAE, connects Africa's agricultural richness with global demand. We specialize in sourcing high-quality crops and coffee from Ethiopia, Kenya, Tanzania, Rwanda, and Uganda. With a commitment to sustainability, traceability, and excellence, we've built trusted partnerships across markets in China, Europe, North America, Southeast Asia, and beyond.",
-    "subheading2": "Our mission is simple: to create value for farmers and customers by ensuring the smooth, ethical, and efficient trade of nature's finest yields.",
-    "button": "Read More"
-  },
-  "productSection": {
-    "heading": "Our Products",
-    "coffeetitle": "Coffee",
-    "coffeedesc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our beans capture the unique terroir of Africa, offering unparalleled flavor profiles that range from fruity and floral to bold and earthy.",
-    "sesametitle": "Sesame Seeds",
-    "sesamedesc": "Our sesame seeds are sourced from Ethiopia, Tanzania, and Uganda—regions renowned for producing premium quality seeds with high oil content. Known for their nutty flavor and rich nutritional profile, our sesame seeds are ideal for culinary, industrial, and cosmetic applications.",
-    "soybeanstitle": "Soybean",
-    "soybeansdesc": "Sourced from Uganda and Tanzania, our soybeans are a versatile crop with applications in food, feed, and industrial sectors. Non-GMO and nutrient-rich, they serve as a key ingredient in plant-based proteins, animal feed, and edible oils.",
-    "kidneybeanstitle": "Kidney Beans",
-    "kidneybeansdesc": "Our red and white kidney beans are sourced from Uganda and Tanzania, regions celebrated for producing nutrient-rich, flavorful legumes. A staple in diets worldwide, they are perfect for soups, stews, and salads.",
-    "button": "See More"
-  },
-  "serviceSection": {
-    "heading": "Why Choose Us",
-    "subheading": "At Surge Crops Trading, we pride ourselves on delivering more than just crops; we offer complete solutions for global agricultural trade",
-    "button": "Request a quote",
-    "qualitytitle": "Quality",
-    "qualitydesc": "Every product undergoes rigorous quality control, ensuring premium standards from sourcing to delivery.",
-    "trusttitle": "Trust",
-    "trustdesc": "Built on transparency and reliability, we create lasting partnerships with clients and farmers alike.",
-    "affordtitle": "Affordability",
-    "afforddesc": "Competitive pricing without compromising on quality, delivering value for money in every shipment.",
-    "diversetitle": "Diverse Products",
-    "diversedesc": "Our extensive portfolio includes sesame, coffee, beans, castor seeds, and soybeans to meet diverse market needs."
-  },
-  "contactSection": {
-    "contactdetail": "Contact Detail",
-    "location": "78CQ+V75 Dubai - United Arab Emirates",
-    "getintouch": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
-    "phonenumber": "Phone Number",
-    "message": "Message",
-    "button": "submit"
+    "hero": "የታሪክ አደራ",
+    "subheading1": "ያለፈውን መከበር",
+    "subheading2": "የወደፊቱን ማነሳሳት",
+    "link1": "ስለ እኛ",
+    "link2": "አባላት",
+    "link3": "ተሳትፎ ይውሰዱ"
   },
   "aboutpage": {
-    "introheading": "Connecting Africa's Harvest to the World",
-    "introsubheading": "Surge Crops Trading is your trusted gateway to the finest agricultural treasures from Africa, delivered to markets worldwide. Headquartered in the UAE, we take pride in fostering sustainable partnerships, ensuring quality, and creating opportunities that span continents. Join us on a journey of growth, innovation, and excellence.",
-    "storyheading": "Our Story",
-    "storysubheading1": "Surge Crops Trading was established with a clear vision: to bridge the gap between supply and demand in the global agricultural trade. Based in the UAE, our company connects premium crops and coffee from Africa and other regions to international markets, ensuring quality, reliability, and trust every step of the way.",
-    "storysubheading2": "Our journey is built on years of expertise in business and marketing, combined with a deep commitment to excellence. We specialize in sourcing high-quality agricultural products, including coffee, sesame seeds, beans, and soybeans, from Africa's fertile lands and delivering them to clients worldwide.",
-    "storysubheading3": "At Surge Crops Trading, we pride ourselves on fostering strong, transparent relationships with our partners, leveraging advanced technologies and modern communication tools to ensure seamless transactions. Our story is one of growth, innovation, and dedication to building lasting connections across continents.",
-    "missionheading": "Our Mission",
-    "missionsubheading": "Our mission at Surge Crops Trading is to be a leading global partner in the import and export of premium agricultural products. We are committed to connecting markets worldwide by providing authentic, high-quality crops and fostering sustainable trade practices.",
-    "missioncommitments": "Our core commitments include:",
-    "commitment1": "Upholding strict quality standards and meeting timelines with precision.",
-    "commitment2": "Ensuring secure, transparent, and reliable transactions for our clients and partners.",
-    "commitment3": "Utilizing advanced technology to enhance communication and operational efficiency.",
-    "commitment4": "Delivering unparalleled professionalism and customer satisfaction in every interaction.",
-    "missionstatement": "Through our unwavering dedication, we aim to redefine excellence in global trade, creating lasting partnerships and contributing to the success of our clients across the world.",
-    "gallerytitle": "Gallery"
+    "introheading1": "ዓላማችን፣",
+    "introheading2": "በታሪክ ሥር የተተከለ",
+    "storyp1": "የታሪክ አደራ በአዲስ አበባ ኢትዮጵያ በ2014 ዓ.ም በከተማዊ ደረጃ የተመሰረተ የአገልግሎት እርዳታ አካውንት ነው። በ12 አስተዳደር አባላት የተመሰረተው አካውንት አሁን ሁለት ዓመት መሆኑን ከመጀመሩ በኋላ በትክክል ስራውን ቀጥሏል።",
+    "storyp2": "የዚህ አካውንት ዋና ዓላማ በንድፍና ኃላፊነት በንደ ዘመኑ አብረው ለሀገራቸው በተለያዩ መስኮች የተገኙ ግለሰቦች ታሪክ በእውነት እንዲታመን ማረጋገጥ ነው። እነዚህን ግለሰቦች ታሪኩ እንዳይረሳ ለማድረግ ተቋቁመ ነው።",
+    "storyp3": "የታሪክ አደራ የታሪክ ፎቶዎች፣ የህይወት ታሪኮችና ሰነዶችን እየሰበሰበና እያዘጋጀ በትምህርታዊነት እና የሙዚየም ጥራት በሚመሰሉ መንገዶች እየተሰጠ ነው። በተጨማሪም፣ ይህን ታሪክ ለማጽደቅ የሚፈልጉ ግለሰቦችና ድርጅቶችን በስተጀርባ ማድገፍና የግለሰቦችን አካባቢ ማስገናኘት እየተሰራ ነው።",
+    "storyp4": "የንደ ንጉስ ኃይለ ሥላሴ ዘመን ዘመናዊ ኢትዮጵያን በመመርከት ያሳደገ ዘመን ነበር በማንኛውም እውነታ የተቀበለ ነው። በትምህርት አስፋፋት፣ በባንክና አየር መጓጓዣ፣ መንገዶችና ባቡር መስመሮች እየተበረታተነ ሀገሩን በእውቀትና በትልቅ ስራ ላይ እያቆረቆረ ነበር። ስለዚህ፣ ይህ ድርጅት ያ ዘመን ታሪክ እንዳይጠፋ ለወጣቶች ትውልድ እንዲደርስ ተቋቁመ ነው።",
+    "missionheading": "ተልእኮ",
+    "missionStory": "በንደ ዘመን ስር የገደሉትን የኢምፔሪያል መንግስት ኃላፊዎች መታሰቢያ በክብር ማከብር እና እነሱ ከንጉሥ ኃይለ ሥላሴ ጋር በመስራት የነበሩትን ባልደረቦቻቸውን ማከብር ነው።",
+    "Visionheading": "ራዕይ",
+    "vision1": "መመስረት",
+    "vision1note": "የታሪክ ውሂብ ቤት እና መዝገብ በመመስረት ለዚህ ዘመን አስፈላጊ የታሪክ መረጃዎች እንዲያገኙ ማድረግ።",
+    "vision2": "መጠበቅ",
+    "vision2note": "በቅድስት ሥላሴ ቤተክርስቲያን ውስጥ ያለውን መታሰቢያ መቀመጫና የመታሰቢያ ዝግጅቶችን መጠበቅና ማሻሻል።",
+    "vision3": "መምራት",
+    "vision3note": "የኢምፔሪያል ዘመን ታሪክና የአገልግሎት ሰራተኞች የተሳተፉበትን ታሪክ በትክክል እንዲታመን መምራት።",
+    "vision4": "መደገፍ",
+    "vision4note": "በዚህ ዘመን ላይ ተመስርተው የሚወጡ የምርምር፣ የፅኑ ጽሁፍ፣ የአርቲስትና ፊልም ስራዎችን በተወሰነ ፈሰስ ማግኘት በመስጠት መደገፍ።",
+    "storyp5": "ይህን እውነተኛ ታሪክ ለማቅረብ፣ የታሪክ አደራ በአፍና በጽሁፍ ታሪኮቻቸውን በመረጋገጥ ወደ ትምህርት ቤቶች በመግባት የታሪክን ግንዛቤ በጥልቅ እንዲረዳ እና እንዲበልጥ ትምህርታዊ መሆኑን በመደገፍ ነው። በመንግስት ጋር በመስራት ታሪኩ በትምህርት ቤቶችና ዩኒቨርሲቲዎች እንዲገባ እና በአንድ ቀንና ሌሊት ያለ ፍርድ የተፈፀመውን የአባቶቻችን፣ ዘመዶቻችንና የአገር ነዋሪዎች አደጋ እንዲያውቁ እና እንደገና እንዳይደገም የታሪክ ትምህርት ነው።",
+    "storyp6": "አሁንም ከ50 ዓመት በፊት የተገደሉትን አባቶቻችንን፣ ወንድሞቻችንንና ዘመዶቻችንን ስንያስብ ብቻ አይደለም፤ በሀገራቸው ላይ እንደ አገልግሎት እና በመቅረት ያደረጉትን ታላቅ መስራት በኩል በኩል በኩል ከፍ እንደ ሰጡ እንደ ታሪክ እንዲቀር እና እንዳይጠፋ ለማድረግ እንነሳለን። ይህንንም በታሪካዊ ኃላፊነታችን በመረዳት በየትውልዱ እንድናስተላለፍ በየታሪክ አደራ እናቀርባለን።"
   },
   "productpage": {
     "heading": "Premium Agricultural Products Tailored for Your Needs",

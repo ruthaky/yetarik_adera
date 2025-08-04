@@ -10,5 +10,5 @@ export default async function About({
 }) {
   const lang = (await params).lang;
   const dictionary = await getDictionary(lang);
-  return <AboutPage  />;
+  return <AboutPage aboutpageTexts={dictionary.aboutpage} />;
 }

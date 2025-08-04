@@ -13,6 +13,8 @@ import {
   DropdownMenuTrigger,
 } from "./dropdown-menu";
 
+
+
 export const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
@@ -27,12 +29,12 @@ export const Navbar = () => {
   const handleLanguageChange = (locale: string) => {
     const segments = pathname.split("/");
     segments[1] = locale;
-    router.push(segments.join("/"));
+    const newPath = segments.join("/");
+    router.push(newPath);
   };
-
   const handleLinkClick = (path: string) => {
-    close();
-    router.push(path);
+    close(); // Close the menu
+    router.push(path); // Navigate to the specified path
   };
 
   return (
@@ -40,25 +42,35 @@ export const Navbar = () => {
       <div className="hidden md:flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-10 z-50 text-white">
         {/* Left - Burger Menu + Collapse */}
 
+<div className="w-[100px]">
         <DropdownMenu>
           <DropdownMenuTrigger className="flex items-center gap-2">
             <Globe className="h-4 w-4" />
-            <span className="font-semibold">
-              {languageFlags[currentLanguage]}
-            </span>
+            <span className="font-semibold">Language</span>
             <ChevronDown className="h-4 w-4" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-[#333333] text-white">
-            <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
-              🇺🇸 English
+          <DropdownMenuContent className="bg-white">
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("en")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇺🇸</span>
+              English
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => handleLanguageChange("am")}>
-              AM Amharic
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange("am")}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <span>🇨🇳</span>
+              Amharic
             </DropdownMenuItem>
+           
           </DropdownMenuContent>
         </DropdownMenu>
+        </div>
 
         {/* Center - Logo */}
+        
         <Link
           href={`/${pathname.split("/")[1]}/`}
           onClick={() => handleLinkClick("/")}
@@ -68,7 +80,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Right - Language Switch */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 w-[100px] justify-end">
           <Burger
             opened={opened}
             onClick={toggle}
@@ -80,27 +92,32 @@ export const Navbar = () => {
       </div>
 
       {/* Collapsible Menu */}
+      <div className="w-[100px]">
       <Collapse in={opened}>
-        <div className="hidden md:block fixed top-[60px] w-full bg-[#333333] z-40">
+        <div className="hidden md:block fixed  w-full h-screen bg-[#333333] z-40">
           <Flex
             direction="column"
             align="center"
-            className="gap-4 py-4 border-t text-[#E4D18F]"
+            className=" py-[100px] border-t text-[#E4D18F] text-[30px] h-screen flex flex-row justify-between"
           >
-            {["", "about", "members", "events", "contact us", "martyrs","get involved"].map((page) => (
-              <Link
-                key={page}
-                href={`/${pathname.split("/")[1]}/${page}`}
-                onClick={() => handleLinkClick(`/${page}`)}
-              >
-                {page === ""
-                  ? "Home"
-                  : page.charAt(0).toUpperCase() + page.slice(1)}
-              </Link>
-            ))}
+            {["", "about", "members", "events", "contact us", "martyrs", "get involved"].map((page) => {
+  const slug = page === "" ? "" : page.toLowerCase().replace(/\s+/g, "-");
+  const displayText = page === "" ? "Home" : page.charAt(0).toUpperCase() + page.slice(1);
+
+  return (
+    <Link
+      key={page}
+      href={`/${pathname.split("/")[1]}/${slug}`}
+      onClick={() => handleLinkClick(`/${slug}`)}
+    >
+      {displayText}
+    </Link>
+  );
+})}
           </Flex>
         </div>
       </Collapse>
+      </div>
     </>
   );
 };
