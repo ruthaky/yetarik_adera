@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.9",
-    "@mantine/carousel": "^8.2.1",
+    "@mantine/carousel": "^7.17.8",
     "@mantine/core": "^7.15.1",
     "@mantine/hooks": "^7.15.1",
     "@radix-ui/react-dialog": "^1.1.2",
@@ -46,5 +46,22 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruthaky/yetarik_adera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ruthaky/yetarik_adera/issues"
+  },
+  "homepage": "https://github.com/ruthaky/yetarik_adera#readme"
 }

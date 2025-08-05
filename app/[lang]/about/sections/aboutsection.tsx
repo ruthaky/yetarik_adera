@@ -176,13 +176,15 @@ const AboutPage = ({
       {/* Image Carousel */}
       <section className="w-[75%] flex items-center justify-center pb-12">
   <Carousel
-    withIndicators
-    height={250}
-    slideSize="33.3%"
-    slideGap="sm"
-    emblaOptions={{ loop: true, align: 'center', slidesToScroll: 3 }}
-    className="pl-6 w-full"
-  >
+  withIndicators
+  height={250}
+  slideSize="33.3%"
+  slideGap="sm"
+  loop
+  align="center"
+  slidesToScroll={3}
+  className="pl-6 w-full"
+>
     {[img10, img13, img11, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
       <Carousel.Slide key={index}>
         <div className="relative w-full h-full">
