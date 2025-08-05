@@ -8,12 +8,13 @@ import img3 from "@/public/asset/wetader.jpg";
 import img4 from "@/public/asset/award2.jpg";
 import img5 from "@/public/asset/library.jpg"
 import { motion } from "framer-motion";
+import { useRouter, usePathname } from "next/navigation";
 
 import Link from "next/link";
 
 export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   const images = [img1, img2, img1, img2, img1];
-
+  const pathname = usePathname();
   return (
   <section className="text-center py-[130px] px-4 bg-[#F7F4E9]">
     <div className="inline-block">
@@ -123,22 +124,18 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   </div>
 </div>
 
-
-
-
-
   <div className="flex gap-8 items-center justify-center pt-12 animate-slideIn delay-300">
-    <Link href="/about">
+    <Link href={`/${pathname.split("/")[1]}/about`}>
       <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
         {heroTexts.link1}
       </div>
     </Link>
-    <Link href="/members">
+    <Link href={`/${pathname.split("/")[1]}/members`}>
       <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
         {heroTexts.link2}
       </div>
     </Link>
-    <Link href="/getinvolved">
+    <Link href={`/${pathname.split("/")[1]}/get-involved`}>
       <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
        {heroTexts.link3}
       </div>

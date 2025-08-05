@@ -5,34 +5,37 @@ import React, { useState } from 'react'
 import img1 from "@/public/asset/Kiddie.webp";
 import img2 from "@/public/asset/Laly.jpg";
 import img3 from "@/public/asset/Tegi.svg";
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // Example avatar images (replace with your own)
 const team = [
   {
     name: 'Tony Fred, CEO',
     title: 'Chief Executive Officer',
-    image: {img1},
+    image: img1,
   },
   {
     name: 'Mich Stark, COO',
     title: 'Chief Operational Officer',
-    image: {img2},
+    image: img2,
   },
   {
     name: 'Aline Turner, CTO',
     title: 'Chief Technical Officer',
-    image: {img3},
+    image: img3,
   },
   {
     name: 'Iris Joe, CFO',
     title: 'Chief Financial Officer',
-    image: {img1},
+    image: img1,
   },
 ]
 
 export default function GetInvolvedPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
-
+  const pathname = usePathname();
   return (
     <main className="font-serif">
       {/* Header Section */}
@@ -98,6 +101,10 @@ export default function GetInvolvedPage() {
         >
           &#8594;
         </button>
+       <Button>
+         <Link href={`/${pathname.split("/")[1]}/donate`}> Donate</Link>
+           
+          </Button>
       </section>
 
       {/* Executive Team Section */}

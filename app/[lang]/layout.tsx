@@ -107,6 +107,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
+          <Footerr />
         </MantineProvider>
       </body>
     </html>

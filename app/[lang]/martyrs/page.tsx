@@ -145,7 +145,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
      {searchTerm.trim() !== "" ? (
   filteredMartyrs.length > 0 ? (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {filteredMartyrs.map((martyr, index) => (
+      {filteredMartyrs.map((martyr : any, index) => (
         <div
           key={index}
                          className="flex flex-col items-center gap-4 py-[20px] cursor-pointer w-[300px]"
@@ -182,7 +182,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
-            {Martyrs.map((member, index) => (
+            {Martyrs.map((member : any, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
@@ -211,7 +211,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
-            {Martyrs2.map((member, index) => (
+            {Martyrs2.map((member : any, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
@@ -240,7 +240,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
-            {Martyrs3.map((member, index) => (
+            {Martyrs3.map((member : any, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"

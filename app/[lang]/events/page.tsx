@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 interface Event {
   date: string;
   month: string;
-  image: string;
+  image: any;
   title: string;
   location: string;
   time: string;
