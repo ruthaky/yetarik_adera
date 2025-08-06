@@ -16,8 +16,8 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   const images = [img1, img2, img1, img2, img1];
   const pathname = usePathname();
   return (
-  <section className="text-center py-[130px] px-4 bg-[#F7F4E9]">
-    <div className="inline-block">
+  <section className="text-center py-[130px] px-4 bg-[#F7F4E9] ">
+    <div className="inline-block ">
   <h1 className="text-5xl md:text-6xl font-medium mb-4 animate-slideIn">
     <span className="font-serif ">
     {heroTexts.hero}
@@ -37,7 +37,7 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
    {heroTexts.subheading2}
   </p>
 
- <div className="mt-6 flex justify-center gap-5 flex-wrap animate-slideIn delay-200">
+ <div className="mt-6  flex justify-center gap-5 flex-wrap animate-slideIn delay-200">
   {/* Image 1 */}
   <div
     className="w-40 md:w-[200px] h-[310px] mr-[-20px] relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"

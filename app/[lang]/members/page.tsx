@@ -5,15 +5,18 @@ import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 // Import member images
 import img1 from "@/public/asset/Kiddie.webp";
-import img2 from "@/public/asset/Laly.jpg";
-import img3 from "@/public/asset/Tegi.svg";
-import img4 from "@/public/asset/Atsede.webp";
-import img5 from "@/public/asset/monique.svg";
-import img6 from "@/public/asset/Gash Amde.webp";
+import img6 from "@/public/asset/Laly.jpg";
+import img5 from "@/public/asset/Tegi.svg";
+import img2 from "@/public/asset/Atsede.webp";
+import img3 from "@/public/asset/monique.jpeg";
+import img4 from "@/public/asset/Gash Amde.webp";
 import img7 from "@/public/asset/Askadetch.svg";
-import img8 from "@/public/asset/Hirut.webp";
+import img8 from "@/public/asset/hirut.jpeg";
 import img9 from "@/public/asset/Rahel.svg";
 import img10 from "@/public/asset/Yodit.webp";
+import img11 from "@/public/asset/sirgut.jpeg";
+import placeholder from "@/public/asset/placeholoder.jpg"
+
 
 // Define member type
 interface BoardMember {
@@ -32,45 +35,69 @@ const members: BoardMember[] = [
     description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
   {
-    name: "Laly",
+    name: "Atsede Mariam Assefa",
     title: "Vice Chair",
     image: img2,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
   {
-    name: "Tegi",
+    name: "Monique",
     title: "Secretary",
     image: img3,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
   {
-    name: "Atsede",
-    title: "Treasurer",
+    name: "Amde Akalework",
+    title: "Board Member",
     image: img4,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
   {
-    name: "Monique",
-    title: "Member",
-    image: img5,
+    name: "Askadetch Debebe",
+    title: "Board Member",
+    image: img7,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
-  },
-  {
-    name: "Gash Amde",
-    title: "Member",
+  },{
+    name: "Laly Kassa",
+    title: "Board Member",
     image: img6,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
   {
-    name: "Askadetch",
-    title: "Member",
-    image: img7,
+    name: "Hirut Tafesse",
+    title: "Board Member",
+    image: img8,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
-  {
-    name: "Hirut",
-    title: "Member",
-    image: img8,
+  
+    {
+    name: "Rahel Kifle",
+    title: "Board Member",
+    image: img9,
+     description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+   {
+    name: "Sirgut Tafesse",
+    title: "Board Member",
+    image: img11,
+     description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+    {
+    name: "Tegist Worku",
+    title: "Board Member",
+    image: img5,
+     description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+    {
+    name: "Yemane Demisse",
+    title: "Board Member",
+    image: placeholder,
+     description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+    {
+    name: "Yodit Amaha",
+    title: "Board Member",
+    image: img10,
      description:"Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
   },
 ];
@@ -112,12 +139,12 @@ const BoardMembers: React.FC = () => {
       <div className="flex w-full gap-20 flex-wrap">
         {/* Column 1 */}
         <div className="flex flex-col gap-8 w-auto mt-[-200px] animate-infinite-scroll ">
-          {members.slice(0, 5).map((member, index) => (
+          {members.slice(0, 6).map((member, index) => (
             <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
               <Image
                 src={member.image}
                 alt={member.name}
-                className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400"
+                className="w-[170px] h-[170px] object-cover rounded-full border border-gray-400"
               />
               <div className="flex flex-col">
                 <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
@@ -139,12 +166,12 @@ const BoardMembers: React.FC = () => {
 
         {/* Column 2 */}
         <div className="flex flex-col gap-8 w-auto mt-[-50px] animate-infinite-scroll ">
-          {members.slice(5, 10).map((member, index) => (
+          {members.slice(6, 12).map((member, index) => (
             <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
               <Image
                 src={member.image}
                 alt={member.name}
-                className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400"
+                className="w-[170px] h-[170px] object-cover rounded-full border border-gray-400"
               />
               <div className="flex flex-col">
                 <h3 className="text-lg font-serif text-[#4A2C13] inline-block">

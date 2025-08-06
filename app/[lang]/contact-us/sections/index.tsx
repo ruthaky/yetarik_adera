@@ -14,12 +14,12 @@ export default function ContactSection({ contactText }: { contactText: any }) {
       </div>
 
       {/* Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white rounded-xl w-[80%] shadow-md overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white  w-[80%] shadow-md overflow-hidden">
         {/* Contact Info */}
         <div className="bg-[#2C2C2C] text-white p-8 flex flex-col justify-between">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-            <p className="text-sm mb-8">Say something to start a live chat!</p>
+            <h3 className="text-3xl font-semibold mb-4">Contact Information</h3>
+            
 
             <ul className="space-y-5 text-sm">
               <li className="flex items-center gap-2">

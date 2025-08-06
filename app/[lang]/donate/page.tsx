@@ -3,18 +3,24 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import donationImage from '@/public/asset/asset12.jpeg' // Adjust path if needed
+import { Button } from '@/components/ui/button'
 
 const DonationSection = () => {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null)
   const [frequency, setFrequency] = useState<'One time' | 'Monthly'>('One time')
+ const [searchTerm, setSearchTerm] = useState("");
 
   const donationOptions = [
     {
-      amount: 20,
+      amount: 10,
       label: 'The story of Emperor Haile Selassie',
     },
     {
-      amount: 20,
+      amount: 25,
+      label: 'The story of Emperor Haile Selassie',
+    },
+      {
+      amount: 50,
       label: 'The story of Emperor Haile Selassie',
     },
   ]
@@ -23,7 +29,7 @@ const DonationSection = () => {
     <section className="bg-[#f4f1e8] text-black px-6 py-20 h-screen flex items-center">
       <div className="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Background Image */}
-        <div className="w-full md:w-[700px] h-[500px] flex items-center">
+        <div className="w-full md:w-[700px] h-[650px] flex items-center">
           <Image
             src={donationImage}
             alt="Martyrs"
@@ -33,7 +39,7 @@ const DonationSection = () => {
         </div>
 
         {/* Donation Options */}
-        <div className="bg-[#d9d9d9] p-8 rounded-md w-full md:w-1/2 ml-[-200px] space-y-6 border border-[#B27C3A]">
+        <div className="bg-white p-8 rounded-md w-full md:w-1/2 ml-[-200px] space-y-6 border border-[#B27C3A]">
           {/* Amount Section */}
           <div>
             <h2 className="text-xl font-serif mb-4 border-b-2 border-[#B27C3A] pb-1">
@@ -58,6 +64,13 @@ const DonationSection = () => {
                   </span>
                 </label>
               ))}
+               <input
+        type="text"
+        placeholder="Enter Amount"
+        className="w-[350px] h-[35px] p-3 rounded-md border border-gray-300 bg-none mb-6 text-black"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
             </div>
           </div>
 
@@ -86,7 +99,10 @@ const DonationSection = () => {
                   </span>
                 </label>
               ))}
-            </div>
+             
+            </div>  <Button className='mt-10' >
+        Donate
+          </Button>
           </div>
         </div>
       </div>
