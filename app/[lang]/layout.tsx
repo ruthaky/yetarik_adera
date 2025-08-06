@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
 import "../globals.css";
 import { Navbar } from "@/components/ui/navbar";
-import { Footer } from "@/components/ui/footer";
-import Footerr from "../shared/footer/footer";
 import { Open_Sans } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -29,7 +27,7 @@ export const metadata: Metadata = {
   description: "Yetarik Adera",
   openGraph: {
     title: "Yetarik Adera",
-    description: "Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.",
+    description: "yetarik adera description",
     url: "https://surgecrops.com",
     siteName: "Yetarik Adera",
     images: [
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
         url: '/asset/surge-thumbnail.png', // Replace this with your image name
         width: 1200,
         height: 630,
-        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
+        alt: "yetarik adera description", // Optional alt text
       },
     ],
     locale: "en_US",
@@ -50,7 +48,7 @@ export const metadata: Metadata = {
         url: '/asset/surge-thumbnail.png', // Replace this with your image name
         width: 1200,
         height: 630,
-        alt: "Surge - Delivering premium crops and coffee from Africa to global destinations, with quality and trust at the heart of every shipment.", // Optional alt text
+        alt: "yetarik adera description", // Optional alt text
       },
     ],
     creator: "@surgecrops",
@@ -107,7 +105,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
-          <Footerr />
+         
         </MantineProvider>
       </body>
     </html>

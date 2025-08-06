@@ -2,6 +2,7 @@ export const dynamic = "force-static";
 import React from "react";
 import ContactSection from "./sections";
 import { getDictionary } from "../dictionaries";
+import Footer from "@/app/shared/footer/footer";
 
 export default async function ContactPage({
   params,
@@ -10,5 +11,6 @@ export default async function ContactPage({
 }) {
   const lang = (await params).lang;
   const dictionary = await getDictionary(lang);
-  return <ContactSection contactText={dictionary.contactPage} />;
+  return (<><ContactSection contactText={dictionary.contactPage} />
+   <Footer /></>);
 }

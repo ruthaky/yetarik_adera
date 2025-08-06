@@ -16,6 +16,7 @@ import img9 from "@/public/asset/Rahel.svg";
 import img10 from "@/public/asset/Yodit.webp";
 import img11 from "@/public/asset/sirgut.jpeg";
 import placeholder from "@/public/asset/placeholoder.jpg"
+import Footer from "@/app/shared/footer/footer";
 
 
 // Define member type
@@ -105,6 +106,7 @@ const members: BoardMember[] = [
 const BoardMembers: React.FC = () => {
     const [selectedMartyr, setSelectedMartyr] = useState<BoardMember | null>(null);
   return (
+    <>
     <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20">
       {/* Header */}
       <div className="text-center mb-16 flex justify-center items-center">
@@ -238,6 +240,8 @@ const BoardMembers: React.FC = () => {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 };
 

@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import donationImage from '@/public/asset/asset12.jpeg' // Adjust path if needed
 import { Button } from '@/components/ui/button'
+import { Navbar } from '@/components/ui/navbar'
+import Footer from '@/app/shared/footer/footer'
 
 const DonationSection = () => {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null)
@@ -26,6 +28,8 @@ const DonationSection = () => {
   ]
 
   return (
+    <>
+    <Navbar />
     <section className="bg-[#f4f1e8] text-black px-6 py-20 h-screen flex items-center">
       <div className="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Background Image */}
@@ -107,6 +111,8 @@ const DonationSection = () => {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   )
 }
 

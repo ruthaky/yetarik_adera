@@ -16,7 +16,7 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   const images = [img1, img2, img1, img2, img1];
   const pathname = usePathname();
   return (
-  <section className="text-center py-[130px] px-4 bg-[#F7F4E9] ">
+  <section className="text-center py-[130px] px-4 bg-[#F7F4E9] h-screen">
     <div className="inline-block ">
   <h1 className="text-5xl md:text-6xl font-medium mb-4 animate-slideIn">
     <span className="font-serif ">

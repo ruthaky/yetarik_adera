@@ -6,6 +6,7 @@ import img1 from "@/public/asset/mart1.webp"; // Replace with correct image
 import { Button } from "@/components/ui/button";
 import img2 from "@/public/asset/martyrsstatue.jpeg";
 import { motion } from "framer-motion";
+import Footer from "@/app/shared/footer/footer";
 
 interface Martyrs {
   name: string;
@@ -47,6 +48,7 @@ export default function MartyrsPage() {
   );
 
   return (
+    <>
     <main className="min-h-screen bg-[#f5f0e8] text-gray-800 font-sans">
       {/* Hero */}
       <section className="relative w-full h-[75vh]">
@@ -299,5 +301,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
         </div>
       )}
     </main>
+    <Footer />
+    </>
   );
 }

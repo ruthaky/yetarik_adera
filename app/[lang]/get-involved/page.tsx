@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Footer from '@/app/shared/footer/footer';
 
 // Example avatar images (replace with your own)
 const team = [
@@ -37,6 +38,7 @@ export default function GetInvolvedPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const pathname = usePathname();
   return (
+    <>
     <main className="font-serif bg-[#F7F4E9]">
       {/* Header Section */}
       <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
@@ -151,5 +153,7 @@ export default function GetInvolvedPage() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   )
 }

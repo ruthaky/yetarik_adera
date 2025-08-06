@@ -8,6 +8,7 @@ import img3 from "@/public/asset/Tegi.svg";
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Footer from '@/app/shared/footer/footer';
 
 // Example avatar images (replace with your own)
 const team = [
@@ -37,6 +38,7 @@ export default function Objectives() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const pathname = usePathname();
   return (
+    <>
     <main className="font-serif">
       {/* Header Section */}
       <section className="bg-white py-16 px-6 text-center max-w-4xl mx-auto">
@@ -127,5 +129,7 @@ export default function Objectives() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   )
 }

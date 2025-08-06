@@ -3,6 +3,7 @@ import React from "react";
 import img1 from "@/public/asset/517747556_1140462981461790_5752099992240461032_n.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Footer from "@/app/shared/footer/footer";
 
 
 interface Event {
@@ -50,6 +51,7 @@ const events: Event[] = [
 
 const UpcomingEvents: React.FC = () => {
   return (
+    <>
     <section className="bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start">
 
 <div className="h-[450px] w-full bg-[#B1864F] relative overflow-hidden">
@@ -137,6 +139,8 @@ const UpcomingEvents: React.FC = () => {
         </a>
       </div>
     </section>
+    <Footer />
+    </>
   );
 };
 
