@@ -110,7 +110,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
       </section>
 
       {/* Description */}
-      <section className="w-[70%] mx-auto px-6 pb-20 text-center md:text-left">
+      <section className="w-[70%] mx-auto px-6 pb-10 text-center md:text-left">
         {/* <h2 className="text-3xl font-bold mb-6 text-gray-900">
           The Story of the 70 Martyrs
         </h2> */}
@@ -132,14 +132,14 @@ The 68 martyrs represented a generation of leaders who contributed significantly
 
       {/* Martyrs Section */}
       {showMartyrs && (
-        <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 py-20">
+        <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 py-0">
 
  <div className="max-w-6xl mx-auto">
   <div className="w-full flex justify-end">
       <input
         type="text"
         placeholder="Search by name..."
-        className="w-[350px] p-3 rounded-md border border-gray-300 bg-none mb-6 text-black"
+        className="w-[350px] p-3 rounded-md border border-gray-300 bg-none mb-10 text-black"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
@@ -241,7 +241,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 w-full pb-16 max-w-6xl mx-auto">
             {Martyrs3.map((member : any, index) => (
               <div
                 key={index}
@@ -268,38 +268,46 @@ The 68 martyrs represented a generation of leaders who contributed significantly
         </section>
       )}
 
-      {/* Modal */}
-      {selectedMartyr && (
-        <div className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-6">
-          <div className=" rounded-lg w-full max-w-6xl p-6 md:p-12 relative flex flex-col md:flex-row items-center gap-8">
-            <button
-              className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-200"
-              onClick={() => setSelectedMartyr(null)}
-            >
-              &times;
-            </button>
+ {/* Modal */}
+{selectedMartyr && (
+  <div
+    className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-6"
+    onClick={() => setSelectedMartyr(null)} // close on outside click
+  >
+    <div
+      className="rounded-lg w-full max-w-6xl p-6 md:p-12 relative flex flex-col md:flex-row items-center gap-8"
+      onClick={(e) => e.stopPropagation()} // prevent close on inside click
+    >
+      {/* Close Button */}
+      <button
+        className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-200"
+        onClick={() => setSelectedMartyr(null)}
+      >
+        &times;
+      </button>
 
-            {/* Martyr Image */}
-            <div className="flex-shrink-0">
-              <Image
-                src={selectedMartyr.image}
-                alt={selectedMartyr.name}
-                className="w-[250px] h-[300px] object-cover rounded-md shadow-lg"
-              />
-            </div>
+      {/* Martyr Image */}
+      <div className="flex-shrink-0">
+        <Image
+          src={selectedMartyr.image}
+          alt={selectedMartyr.name}
+          className="w-[250px] h-[300px] object-cover rounded-md shadow-lg"
+        />
+      </div>
 
-            {/* Martyr Details */}
-            <div className="text-white md:text-left text-center border-2 border-[#4C3519]/0 border-l-[#db9744] pl-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 border-2 border-[#4C3519]/0 border-b-[#db9744] pb-2">
-                {selectedMartyr.name}
-              </h2>
-              <p className="text-base md:text-lg leading-relaxed text-justify max-w-xl">
-                {selectedMartyr.description}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Martyr Details */}
+      <div className="text-white md:text-left text-center border-2 border-[#4C3519]/0 border-l-[#db9744] pl-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 border-2 border-[#4C3519]/0 border-b-[#db9744] pb-2">
+          {selectedMartyr.name}
+        </h2>
+        <p className="text-base md:text-lg leading-relaxed text-justify max-w-xl">
+          {selectedMartyr.description}
+        </p>
+      </div>
+    </div>
+  </div>
+)}
+
     </main>
     <Footer />
     </>

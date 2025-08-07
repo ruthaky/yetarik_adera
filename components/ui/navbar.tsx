@@ -44,11 +44,11 @@ export const Navbar = () => {
         <div className="w-[100px]">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-2">
-              <Globe className="h-4 w-4" />
-              <span className="font-semibold">Lang</span>
+              {/* <Globe className="h-4 w-4" /> */}
+    <span className="text-xl">{languageFlags[currentLang]}</span>
               <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-white text-black">
+            <DropdownMenuContent className="bg-white text-black z-[10000]">
               <DropdownMenuItem
                 onClick={() => handleLanguageChange("en")}
                 className="cursor-pointer flex gap-2"
@@ -101,7 +101,7 @@ export const Navbar = () => {
               align="center"
               className="py-20 space-y-10 text-2xl"
             >
-              {["", "about", "members", "events", "contact us", "martyrs", "get involved"].map((page) => {
+              {["", "about", "martyrs", "members", "events", "contact us",  "get involved"].map((page) => {
                 const slug = page === "" ? "" : page.toLowerCase().replace(/\s+/g, "-");
                 const displayText = page === "" ? "Home" : page.charAt(0).toUpperCase() + page.slice(1);
                 return (
