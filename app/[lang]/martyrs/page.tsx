@@ -49,90 +49,106 @@ export default function MartyrsPage() {
 
   return (
     <>
-    <main className="min-h-screen bg-[#f5f0e8] text-gray-800 font-sans">
+    <main className="min-h-screen text-gray-800 font-sans">
       {/* Hero */}
-      <section className="relative w-full h-[75vh]">
-        {/* <Image
-          src={img1}
-          alt="70 Martyrs of Mount Abay"
-          fill
-          className="object-cover object-top"
-          priority
-        /> */}
-
-        <div className="flex flex-col items-center justify-center text-center pt-[150px] text-black px-4">
-         <div className="text-centern mb-16 flex justify-center items-center">
-        <section className="px-6 text-start w-auto">
-  <h1 className="text-[45px] font-light leading-snug inline-block">
-    {/* Line 1 */}
-    <div className="inline-block">
-      <span className="font-serif">68</span>
-     <motion.div
-                     initial={{ width: 0 }}
-                     animate={{ width: "100%" }}
-                     transition={{ duration: 1, delay:0 }}
-                     className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
-                   />
-    </div>
-    <br />
-
-    {/* Line 2 */}
-    <div className="inline-block pl-[80px]">
-      <div className="inline-block">
-        <span className="font-serif">Martyrs</span>
-       <motion.div
-                       initial={{ width: 0 }}
-                       animate={{ width: "100%" }}
-                       transition={{ duration: 1, delay:0 }}
-                       className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
-                     />
-      </div>
-    </div>
-  </h1>
-</section>
-      </div>
-          {/* <p className="text-lg max-w-2xl">
-            Honoring the legacy of faith, courage, and sacrifice.
-          </p> */}
-          <div className="space-y-6 text-lg leading-relaxed w-[70%]">
-            <p className="text-left">
-              In 1974, during the transitional period following the end of Emperor Haile Selassie's administration, 68 senior government officials and public servants were executed by the Derg regime without trial. These individuals, who held high office and played key roles in Ethiopia’s development, were taken from prison and summarily killed in one of the most tragic and unjust acts in the country’s modern history.
-<br></br>
-<br></br>
-The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
-            </p>
+    <section className="relative w-full min-h-[75vh] bg-white">
+  {/* Title Section */}
+  <div className="flex flex-col items-center justify-center text-center pt-24 sm:pt-32 lg:pt-[150px] text-black px-4">
+    <div className="mb-10 sm:mb-16 flex justify-center items-center">
+      <section className="px-4 sm:px-6 text-start w-auto">
+        <h1 className="text-3xl sm:text-4xl lg:text-[45px] font-light leading-snug inline-block">
+          {/* Line 1 */}
+          <div className="inline-block">
+            <span className="font-serif">68</span>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0 }}
+              className="h-[2px] w-[150px] sm:w-[300px] lg:w-[900px] bg-primary mt-1"
+            />
           </div>
-        </div>
+          <br />
+          {/* Line 2 */}
+          <div className="inline-block pl-12 sm:pl-20 lg:pl-[80px]">
+            <span className="font-serif">Martyrs</span>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0 }}
+              className="h-[2px] w-[150px] sm:w-[300px] lg:w-[900px] bg-primary mt-1"
+            />
+          </div>
+        </h1>
       </section>
-      <section className="px-6 py-12 flex flex-col items-center justify-center">
-        <Image src={img2} alt="Building" className="w-[700px] mb-4 h-[400px]" />
-        <p className="text-sm"></p>
-      </section>
+    </div>
 
-      {/* Description */}
-      <section className="w-[70%] mx-auto px-6 pb-10 text-center md:text-left">
-        {/* <h2 className="text-3xl font-bold mb-6 text-gray-900">
-          The Story of the 70 Martyrs
-        </h2> */}
-        <div className="space-y-6 text-lg leading-relaxed text-black">
-          <p>
-           The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
-          </p>
-          <p>
-       The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
-          </p>
-          <p>
-          The 68 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.
-          </p>
-          <Button onClick={() => setShowMartyrs(!showMartyrs)}>
-            {showMartyrs ? "Hide Martyrs" : "View Martyrs"}
-          </Button>
-        </div>
-      </section>
+    {/* Intro Text */}
+    <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg leading-relaxed w-full max-w-[95%] md:max-w-[70%] text-left">
+      <p>
+        In 1974, during the transitional period following the end of Emperor
+        Haile Selassie's administration, 68 senior government officials and
+        public servants were executed by the Derg regime without trial. These
+        individuals, who held high office and played key roles in Ethiopia’s
+        development, were taken from prison and summarily killed in one of the
+        most tragic and unjust acts in the country’s modern history.
+        <br />
+        <br />
+        The 68 martyrs represented a generation of leaders who contributed
+        significantly to national progress through their service,
+        professionalism, and dedication. Their loss marked a turning point in
+        Ethiopian history and serves as a powerful reminder of the dangers of
+        political violence and the erosion of rule of law.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Image Section */}
+<section className="px-4 sm:px-6 py-8 sm:py-12 flex flex-col items-center justify-center">
+  <Image
+    src={img2}
+    alt="Building"
+    className="w-full max-w-[700px] h-auto mb-4 object-cover rounded-lg"
+  />
+</section>
+
+{/* Description Section */}
+<section className="w-full max-w-[95%] md:max-w-[70%] mx-auto px-4 sm:px-6 pb-10 text-center  md:text-left">
+  <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg leading-relaxed text-black j">
+    <p className="text-left">
+      The 68 martyrs represented a generation of leaders who contributed
+      significantly to national progress through their service,
+      professionalism, and dedication. Their loss marked a turning point in
+      Ethiopian history and serves as a powerful reminder of the dangers of
+      political violence and the erosion of rule of law.
+    </p>
+    <p className="text-left">
+      The 68 martyrs represented a generation of leaders who contributed
+      significantly to national progress through their service,
+      professionalism, and dedication. Their loss marked a turning point in
+      Ethiopian history and serves as a powerful reminder of the dangers of
+      political violence and the erosion of rule of law.
+    </p>
+    <p className="text-left">
+      The 68 martyrs represented a generation of leaders who contributed
+      significantly to national progress through their service,
+      professionalism, and dedication. Their loss marked a turning point in
+      Ethiopian history and serves as a powerful reminder of the dangers of
+      political violence and the erosion of rule of law.
+    </p>
+   
+  </div> <Button
+      className="mt-4 sm:mt-6"
+      onClick={() => setShowMartyrs(!showMartyrs)}
+    >
+      {showMartyrs ? "Hide Martyrs" : "View Martyrs"}
+    </Button>
+</section>
+
 
       {/* Martyrs Section */}
       {showMartyrs && (
-        <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 py-0">
+        <section className=" text-gray-800 px-6 md:px-20 py-0">
 
  <div className="max-w-6xl mx-auto">
   <div className="w-full flex justify-end">
@@ -146,7 +162,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
 </div>
      {searchTerm.trim() !== "" ? (
   filteredMartyrs.length > 0 ? (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-2  md:grid-cols-3 gap-6">
       {filteredMartyrs.map((martyr : any, index) => (
         <div
           key={index}
@@ -159,7 +175,7 @@ The 68 martyrs represented a generation of leaders who contributed significantly
               unoptimized
                   width={200}
                   height={200}
-            className="w-[190px] h-[190px] object-center rounded-full border border-gray-400 shadow-md "
+            className="w-[100px] h-[100px] md:w-[190px] md:h-[190px] object-center rounded-full border border-gray-400 shadow-md "
           />
              <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -179,11 +195,11 @@ The 68 martyrs represented a generation of leaders who contributed significantly
     </div>
 
           <div className="text-center mb-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px]  text-left font-serif text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
             {Martyrs.map((member : any, index) => (
               <div
                 key={index}
@@ -208,11 +224,11 @@ The 68 martyrs represented a generation of leaders who contributed significantly
             ))}
           </div>
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px] text-left font-serif text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
             {Martyrs2.map((member : any, index) => (
               <div
                 key={index}
@@ -237,11 +253,11 @@ The 68 martyrs represented a generation of leaders who contributed significantly
             ))}
           </div>
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-[36px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px] text-left font-serif text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6 w-full pb-16 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full pb-16 max-w-6xl mx-auto">
             {Martyrs3.map((member : any, index) => (
               <div
                 key={index}

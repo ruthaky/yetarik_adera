@@ -112,12 +112,12 @@ const BoardMembers: React.FC = () => {
     const [selectedMartyr, setSelectedMartyr] = useState<BoardMember | null>(null);
   return (
     <>
-    <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 h-screen overflow-y-hidden">
+    <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 md:h-screen overflow-y-hidden">
       {/* Header */}
       <div className="text-center mb-16 flex justify-center items-center">
         <section className="px-6 text-center w-auto">
-          <h1 className="text-[45px] font-light leading-snug inline-block">
-            <div className="inline-block">
+          <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
+            <div className="inline-block pr-14 md:pr-0">
               <span className="font-serif">Board</span>
 <motion.div
                 initial={{ width: 0 }}
@@ -127,7 +127,7 @@ const BoardMembers: React.FC = () => {
               />
             </div>
             <br />
-            <div className="inline-block pl-[300px]">
+            <div className="inline-block pl-[70px] md:pl-[300px]">
               <div className="inline-block">
                 <span className="font-serif">Members</span>
       <motion.div
@@ -145,7 +145,7 @@ const BoardMembers: React.FC = () => {
       {/* Members and Text */}
       <div className="flex w-full gap-20 flex-wrap">
         {/* Column 1 */}
-        <div className="flex flex-col gap-8 w-auto mt-[-200px] animate-infinite-scroll pb-[100px]">
+        <div className="hidden md:flex flex-col gap-8 w-auto mt-[-200px] animate-infinite-scroll pb-[100px]">
           {members.slice(0, 6).map((member, index) => (
             <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
               <Image
@@ -172,7 +172,7 @@ const BoardMembers: React.FC = () => {
         </div>
 
         {/* Column 2 */}
-        <div className="flex flex-col gap-8 w-auto mt-[-100px] animate-infinite-scroll pb-[100px]">
+        <div className="hidden md:flex flex-col gap-8 w-auto mt-[-100px] animate-infinite-scroll pb-[100px]">
           {members.slice(6, 13).map((member, index) => (
             <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
               <Image
@@ -198,43 +198,7 @@ const BoardMembers: React.FC = () => {
           ))}
         </div>
 
-         {/* Modal */}
-              {selectedMartyr && (
-                <div className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-6"
-                onClick={() => setSelectedMartyr(null)} >
-                  <div className=" rounded-lg w-full max-w-6xl p-6 md:p-12 relative flex flex-col md:flex-row items-center gap-8"
-                   onClick={(e) => e.stopPropagation()} >
-                    <button
-                      className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-200"
-                      onClick={() => setSelectedMartyr(null)}
-                    >
-                      &times;
-                    </button>
-        
-                    {/* Martyr Image */}
-                    <div className="flex-shrink-0">
-                      <Image
-                        src={selectedMartyr.image}
-                        alt={selectedMartyr.name}
-                        className="w-[250px] h-[300px] object-cover shadow-lg"
-                      />
-                    </div>
-        
-                    {/* Martyr Details */}
-                    <div className="text-white md:text-left text-center border-2 border-[#4C3519]/0 border-l-[#db9744] pl-4">
-                      <h2 className="text-3xl md:text-4xl font-bold mb-4 border-2 border-[#4C3519]/0 border-b-[#db9744] pb-2">
-                        {selectedMartyr.name}
-                      </h2>
-                     {selectedMartyr.description.map((para : any, i: any) => (
-  <p key={i} className="mb-4">{para}</p>
-))}
-                    </div>
-                  </div>
-                </div>
-              )}
-
-        {/* Description Column */}
-        <div className="flex flex-col gap-4 w-full md:w-1/2">
+<div className="flex flex-col gap-4 w-full md:w-1/2">
           <div>
             Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
           </div>
@@ -245,6 +209,83 @@ const BoardMembers: React.FC = () => {
             Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
           </div>
         </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+                    {members.map((member:any, index) => (
+                      <div key={index} className="flex flex-col items-center gap-4"  onClick={() => setSelectedMartyr(member)}>
+              <Image
+                src={member.image}
+                alt={member.name}
+                className="w-[170px] h-[170px] object-cover rounded-full"
+              />
+              <div className="flex flex-col">
+                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                  {member.name}
+                </h3>
+                  <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                  {member.title}
+                </h3>
+              </div>
+            </div>
+                    ))}
+                  </div>
+{/* Modal */}
+{selectedMartyr && (
+  <div
+    className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-4 sm:p-6"
+    onClick={() => setSelectedMartyr(null)}
+  >
+    <div
+      className="bg-[#4C3519]/0 rounded-lg w-full max-w-6xl p-4 sm:p-6 md:p-12 relative flex flex-col md:flex-row items-center gap-6 md:gap-8 overflow-y-auto max-h-[90vh]"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close Button */}
+      <button
+        className="absolute top-2 right-3 sm:top-4 sm:right-4 text-white text-2xl sm:text-3xl font-bold hover:text-gray-200"
+        onClick={() => setSelectedMartyr(null)}
+      >
+        &times;
+      </button>
+
+      {/* Martyr Image */}
+      <div className="flex-shrink-0">
+        <Image
+          src={selectedMartyr.image}
+          alt={selectedMartyr.name}
+          width={250}
+          height={300}
+          className="w-[180px] h-[220px] sm:w-[220px] sm:h-[270px] md:w-[250px] md:h-[300px] object-cover shadow-lg rounded"
+        />
+      </div>
+
+      {/* Martyr Details */}
+      <div className="text-white md:text-left text-center border-0 md:border-l-2 border-[#db9744] md:pl-4 max-w-full">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 border-b-0 md:border-b-2 border-[#db9744] pb-2">
+          {selectedMartyr.name}
+        </h2>
+        <div className="text-sm sm:text-base md:text-lg space-y-3">
+          {selectedMartyr.description.map((para: any, i: any) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+
+        {/* Description Column */}
+        
+      </div>
+      <div>
+
+
+
       </div>
     </section>
     <Footer />

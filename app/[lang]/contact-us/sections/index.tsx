@@ -1,6 +1,61 @@
+"use client";
+import { Button } from "@/components/ui/button";
 import React from "react";
+import { useState } from "react";
+
 
 export default function ContactSection({ contactText }: { contactText: any }) {
+
+const initialFormData = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phonenumber: "",
+    subject:"",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [status, setStatus] = useState("");
+  const [subject, setSubject] = useState("");
+
+  // const handleChange = (event: any) => {
+  //   setFormData({ ...formData, [event.target.name]: event.target.value });
+  // };
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Submitting...");
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData }),
+      });
+
+      // Parse the JSON response
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus("Form submitted successfully!");
+        setFormData({ firstName: "", lastName: "", email: "", phonenumber: "", subject:"", message: "" });
+        console.log("Form data:", formData);
+      } else {
+        setStatus(`Error: ${result.error || "Failed to submit the form."}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("An error occurred. Please try again later.");
+    }
+  };
+
   return (
     <section className="bg-[#FDF9EE] text-[#4A2C13] py-32 px-6 md:px-20 flex flex-col justify-center items-center">
       {/* Header */}
@@ -50,39 +105,57 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         </div>
 
         {/* Form */}
-        <form className="p-8 space-y-6">
+        <form 
+        onSubmit={handleSubmit}
+        className="p-8 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm mb-1">First Name</label>
+              <label                 htmlFor="firstName"
+ className="block text-sm mb-1">First Name</label>
               <input
                 type="text"
+                id="firstName"
+                value={formData.firstName}
+                onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
                 placeholder="John"
+                //required
               />
             </div>
             <div>
-              <label className="block text-sm mb-1">Last Name</label>
+              <label htmlFor="lastName" className="block text-sm mb-1">Last Name</label>
               <input
                 type="text"
+                id="lastName"
+                value={formData.lastName}
+                onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
                 placeholder="Doe"
+                required
               />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm mb-1">Email</label>
               <input
                 type="email"
+                id="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
                 placeholder="your@email.com"
+                required
               />
             </div>
             <div>
-              <label className="block text-sm mb-1">Phone Number</label>
+              <label htmlFor="phonenumber" className="block text-sm mb-1">Phone Number</label>
               <input
                 type="text"
+                id="phonenumber"
+                value={formData.phonenumber}
+                onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
                 placeholder="+1 012 345 6789"
               />
@@ -90,35 +163,59 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           </div>
 
           <div>
-            <label className="block text-sm mb-2">Select Subject?</label>
+            <label htmlFor="subject" className="block text-sm mb-2">Select Subject?</label>
             <div className="flex flex-wrap gap-4 text-sm">
-              <label className="inline-flex items-center">
+              <label  className="inline-flex items-center">
                 <input
                   type="radio"
                   name="subject"
+                  value="generalInquiry"
                   className="mr-2"
                   defaultChecked
+                   onChange={(e) => setSubject(e.target.value)}
+                    required
                 />{" "}
                 General Inquiry
               </label>
               <label className="inline-flex items-center">
-                <input type="radio" name="subject" className="mr-2" /> General
+                <input  type="radio"
+                  name="subject"
+                  value="generalInquiry2"
+                  className="mr-2"
+                  defaultChecked
+                   onChange={(e) => setSubject(e.target.value)}
+                    required /> General
                 Inquiry
               </label>
               <label className="inline-flex items-center">
-                <input type="radio" name="subject" className="mr-2" /> General
+                <input  type="radio"
+                  name="subject"
+                  value="generalInquiry3"
+                  className="mr-2"
+                  defaultChecked
+                   onChange={(e) => setSubject(e.target.value)}
+                    required /> General
                 Inquiry
               </label>
               <label className="inline-flex items-center">
-                <input type="radio" name="subject" className="mr-2" /> General
+                <input  type="radio"
+                  name="subject"
+                  value="generalInquiry4"
+                  className="mr-2"
+                  defaultChecked
+                   onChange={(e) => setSubject(e.target.value)}
+                    required /> General
                 Inquiry
               </label>
             </div>
           </div>
 
           <div>
-            <label className="block text-sm mb-1">Message</label>
+            <label htmlFor="message" className="block text-sm mb-1">Message</label>
             <textarea
+                id="message"
+                value={formData.message}
+                onChange={handleInputChange}
               className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
               rows={4}
               placeholder="Write your message..."
@@ -132,6 +229,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
             Send Message
           </button>
         </form>
+         {status && <p className="text-white mt-4">{status}</p>}
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 "use client"
 export const dynamic = "force-static";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import img1 from "@/public/asset/circus.jpg";
 import img2 from "@/public/asset/train.jpg";
 import img3 from "@/public/asset/wetader.jpg";
@@ -9,13 +9,30 @@ import img4 from "@/public/asset/award2.jpg";
 import img5 from "@/public/asset/library.jpg"
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
+import { MantineProvider } from "@mantine/core";
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 import Link from "next/link";
+import { Carousel } from "@mantine/carousel";
 
 export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   const images = [img1, img2, img1, img2, img1];
   const pathname = usePathname();
+  const [isFlipped, setIsFlipped] = useState(false)
+const [isAnimating, setIsAnimating] = useState(false)
+
+function handleFlip () {
+  if(isAnimating) {
+    setIsFlipped(isFlipped)
+    setIsAnimating(true)
+  }
+}
+
+
+
   return (
+    <MantineProvider>
   <section className="text-center py-[130px] px-4 bg-[#F7F4E9] h-screen">
     <div className="inline-block ">
   <h1 className="text-5xl md:text-6xl font-medium mb-4 animate-slideIn">
@@ -38,42 +55,57 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
   </p>
 
  <div className="mt-6  flex justify-center gap-5 flex-wrap animate-slideIn delay-200">
-  {/* Image 1 */}
-  <div
+
+<div
+      style={{
+        resize: 'horizontal',
+        overflow: 'hidden',
+        maxWidth: '100%',
+        minWidth: 250,
+        padding: 10,
+      }}
+    >
+      <Carousel
+      withIndicators
+  height={310}
+  slideSize="20%" // 5 cards per view
+  slideGap="md"
+  align="start"
+  dragFree
+  className="w-full"
+      >
+       <div
     className="w-40 md:w-[200px] h-[310px] mr-[-20px] relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"
     style={{
       transform: "perspective(1000px) rotateY(35deg) scale(1)",
       transformStyle: "preserve-3d",
     }}
   >
-    <Image
+     <Carousel.Slide ><Image
       src={img3}
       alt="Historic Image 1"
       fill
       className="object-cover rounded-[8px] "
       sizes="(max-width: 768px) 160px, 192px"
-    />
+    /></Carousel.Slide>
+    
   </div>
-
-  {/* Image 2 */}
-  <div
+       <div
     className="w-40 md:w-52 relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"
     style={{
       transform: "perspective(1000px) rotateY(25deg) scale(1)",
       transformStyle: "preserve-3d",
     }}
-  >
+  > <Carousel.Slide>
     <Image
       src={img4}
       alt="Historic Image 2"
       fill
       className="object-cover rounded-[8px]"
       sizes="(max-width: 768px) 160px, 192px"
-    />
+    /></Carousel.Slide>
   </div>
-
-  {/* Image 3 (center) */}
-  <div
+        <Carousel.Slide> <div
     className="w-[350px] h-[300px] mt-8 relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"
     style={{
       transform: "perspective(1000px) rotateY(0deg) scale(1.1)",
@@ -87,10 +119,8 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
       className="rounded-[8px] "
       sizes="(max-width: 768px) 160px, 192px"
     />
-  </div>
-
-  {/* Image 4 */}
-  <div
+  </div></Carousel.Slide>
+  <Carousel.Slide> <div
     className="w-40 md:w-52 relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"
     style={{
       transform: "perspective(1000px) rotateY(-25deg) scale(1)",
@@ -104,10 +134,8 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
       className="object-cover rounded-[8px]"
       sizes="(max-width: 768px) 160px, 192px"
     />
-  </div>
-
-  {/* Image 5 */}
-  <div
+  </div></Carousel.Slide>
+   <Carousel.Slide> <div
     className="w-40 md:w-[200px] h-[310px] ml-[-20px] relative shadow-lg overflow-hidden transition-transform duration-500 hover:scale-105"
     style={{
       transform: "perspective(1000px) rotateY(-35deg) scale(1)",
@@ -121,7 +149,24 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
       className="object-cover rounded-[8px]"
       sizes="(max-width: 768px) 160px, 192px"
     />
-  </div>
+  </div></Carousel.Slide>  
+      </Carousel>
+    </div>
+
+  {/* Image 1 */}
+  
+
+  {/* Image 2 */}
+  
+
+  {/* Image 3 (center) */}
+ 
+
+  {/* Image 4 */}
+ 
+
+  {/* Image 5 */}
+ 
 </div>
 
   <div className="flex gap-8 items-center justify-center pt-12 animate-slideIn delay-300">
@@ -142,6 +187,6 @@ export default function HeroSection({heroTexts}:{heroTexts: any;}) {
     </Link>
   </div>
 </section>
-
+</MantineProvider>
   );
 }

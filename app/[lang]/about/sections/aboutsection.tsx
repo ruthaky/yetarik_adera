@@ -36,23 +36,16 @@ const AboutPage = ({
   return (
         <MantineProvider>
     <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif">
-      {/* Header */}
-      <header className="bg-[#2b2a28] text-white flex justify-between items-center px-6 py-3">
-        <span className="text-sm">Eng/Amh</span>
-        <div className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Logo" width={100} height={40} className="h-6 w-auto" />
-        </div>
-        <button className="text-xl">&#9776;</button>
-      </header>
+      
 
       {/* Hero Section */}
     
-        <section className="h-screen w-full flex flex-col items-center justify-center">
-   <section className="px-6 text-start w-[600px] mb-12">
-  <h1 className="text-[45px] font-light leading-snug inline-block">
+        <section className="h-screen w-full flex flex-col items-center justify-center mt-24">
+   <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
+  <h1 className="font-light leading-snug inline-block">
     {/* Line 1 */}
     <div className="inline-block">
-      <span className="font-serif">{aboutpageTexts.introheading1}</span>
+      <span className="font-serif text-4xl md:text-[45px]">{aboutpageTexts.introheading1}</span>
     <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -63,9 +56,9 @@ const AboutPage = ({
     <br />
 
     {/* Line 2 */}
-    <div className="inline-block pl-[200px]">
+    <div className="inline-block  md:pl-[200px]">
       <div className="inline-block">
-        <span className="font-serif">{aboutpageTexts.introheading2}</span>
+        <span className="font-serif text-4xl md:text-[45px]">{aboutpageTexts.introheading2}</span>
        <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -86,14 +79,14 @@ const AboutPage = ({
             height={450}
             className="object-cover"
           />
-          <p className="text-[18px] w-[550px] leading-relaxed">
+          <p className="text-[18px] md:w-[550px] px-6 md:px-0 leading-relaxed">
            {aboutpageTexts.storyp1}
           </p>
         </section>
       </section>
 
       {/* Legacy Section */}
-      <section className="pb-12 w-[70%] mx-auto text-[18px] leading-relaxed flex flex-col gap-3">
+      <section className="pb-12 w-full px-6 md:px-0 md:w-[70%] mx-auto text-[18px] leading-relaxed flex flex-col gap-3">
         <p>
           {aboutpageTexts.storyp2}
         </p>
@@ -103,7 +96,7 @@ const AboutPage = ({
       </section>
 
       {/* Reflection Section */}
-      <div className="flex justify-between w-[70%]">
+      <div className="flex justify-between px-6 md:px-0 md:w-[70%]">
         <section className="flex items-center pb-12 w-1/2">
           <div className="text-sm">
             <div className="inline-block mb-3">
@@ -127,34 +120,34 @@ const AboutPage = ({
 
       {/* Featured Section */}
       <div className="flex items-center justify-center  w-full">
-        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center w-[70%] font-serif py-8">
-          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-4 mx-10 pb-2 h-[50px]">{aboutpageTexts.Visionheading}</h2>
+        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center  md:w-[70%] font-serif py-8">
+          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-2 h-[50px]">{aboutpageTexts.Visionheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
-            <div className="grid grid-cols-2 gap-8 border-b border-[#b07936] px-10 h-full">
-              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
-                <p className="font-medium">{aboutpageTexts.vision1}</p>
+            <div className="grid grid-cols-2 md-2 md:gap-8 border-b border-[#b07936] px-10 h-full">
+              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
+                <p className="font-bold">{aboutpageTexts.vision1}</p>
                 <p>
                  {aboutpageTexts.vision1note}
                 </p>
               </div>
-              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
-                <p className="font-medium">{aboutpageTexts.vision2}</p>
+              <div className="h-full w-full p-2 md:p-4 ">
+                <p className="font-bold">{aboutpageTexts.vision2}</p>
                 <p>
                  {aboutpageTexts.vision2note}
                 </p>
               </div>
             </div>
             {/* Second Row */}
-            <div className="grid grid-cols-2 gap-8 border-b border-[#b07936] px-10 h-full flex items-center">
-              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
-                <p className="font-medium">{aboutpageTexts.vision3}</p>
+            <div className="grid grid-cols-2  md-2 md:gap-8  border-b border-[#b07936] px-10 h-full flex items-center">
+              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
+                <p className="font-bold">{aboutpageTexts.vision3}</p>
                 <p>
                   {aboutpageTexts.vision3note}
                 </p>
               </div>
-              <div className="h-full w-full p-4  border-l-2 border-[#b07936] ">
-                <p className="font-medium">{aboutpageTexts.vision4}</p>
+              <div className="h-full w-full p-2 md:p-4  ">
+                <p className="font-bold">{aboutpageTexts.vision4}</p>
                 <p>
             {aboutpageTexts.vision4note}
                 </p>
@@ -166,7 +159,7 @@ const AboutPage = ({
       </div>
 
       {/* Commitment Section */}
-      <section className="px-6 py-[60px] w-[75%] flex flex-col gap-[20px] items-center">
+      <section className="px-6 py-[60px] md:w-[75%] flex flex-col gap-[20px] items-center">
         <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full" />
         <p className="text-[18px]">
      {aboutpageTexts.storyp5}
@@ -174,7 +167,7 @@ const AboutPage = ({
       </section>
 
       {/* Image Carousel */}
-      <section className="w-[75%] flex items-center justify-center pb-12">
+      <section className=" w-full md:w-[75%] flex items-center justify-center pb-12">
   <Carousel
   withIndicators
   height={250}
@@ -183,7 +176,7 @@ const AboutPage = ({
   loop
   align="center"
   slidesToScroll={3}
-  className="pl-6 w-full"
+  className="p-6 w-full"
 >
     {[img10, img13, img11, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
       <Carousel.Slide key={index}>
@@ -202,7 +195,7 @@ const AboutPage = ({
 
 
       {/* Final Section */}
-      <section className="px-6 pb-12 text-[18px] w-[75%]">
+      <section className="px-6 pb-12 text-[18px] md:w-[75%]">
         <p>
          {aboutpageTexts.storyp6}
         </p>

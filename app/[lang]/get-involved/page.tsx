@@ -42,10 +42,10 @@ export default function GetInvolvedPage() {
     <main className="font-serif bg-[#F7F4E9]">
       {/* Header Section */}
       <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
-          <section className="px-6 text-start w-[400px] mb-12">
-  <h1 className="text-[45px] font-light leading-snug inline-block">
+          <section className="px-6 md:text-start w-[400px] mb-12">
+  <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
     {/* Line 1 */}
-    <div className="inline-block">
+    <div className="inline-block pr-[70px] md:pr-0">
       <span className="font-serif">Get</span>
     <motion.div
                 initial={{ width: 0 }}
@@ -57,7 +57,7 @@ export default function GetInvolvedPage() {
     <br />
 
     {/* Line 2 */}
-    <div className="inline-block pl-[80px]">
+    <div className="inline-block pl-[30px] md:pl-[80px]">
       <div className="inline-block">
         <span className="font-serif">Involved</span>
        <motion.div
@@ -70,7 +70,7 @@ export default function GetInvolvedPage() {
     </div>
   </h1>
 </section>
-        <div className="space-y-3 text-lg text-gray-700">
+        <div className="space-y-3 text-lg text-left text-gray-700">
           <p>
             The military dictatorship did everything in its power to erase the contributions of Emperor Haile Selassie’s government to modern Ethiopia.
           
@@ -134,24 +134,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Executive Team Section */}
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-2xl font-bold mb-8">Discover our executive team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
-          {team.map((member, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2">
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={100}
-                height={100}
-                className="rounded-full object-cover  w-[100px] h-[100px]"
-              />
-              <p className="font-semibold">{member.name}</p>
-              <p className="text-sm text-gray-500">{member.title}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+     
     </main>
     <Footer />
     </>
