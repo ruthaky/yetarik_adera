@@ -42,7 +42,7 @@ const AboutPage = ({
     
         <section className="h-screen w-full flex flex-col items-center justify-center mt-24">
    <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
-  <h1 className="font-light leading-snug inline-block">
+  <h1 className="font-light leading-snug inline-block mb-10 md:mb-0">
     {/* Line 1 */}
     <div className="inline-block">
       <span className="font-serif text-4xl md:text-[45px]">{aboutpageTexts.introheading1}</span>
