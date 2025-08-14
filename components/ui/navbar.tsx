@@ -94,7 +94,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[70px] left-0 w-full h-screen bg-[#333333] text-[#E4D18F] z-[9998]"
+            className="fixed top-[70px] left-0 w-full h-screen bg-[#4C3519]/90 z-50 text-white z-[9998]"
           >
             <Flex
               direction="column"

@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Merriweather } from "next/font/google";
+
 import "../globals.css";
 import { Navbar } from "@/components/ui/navbar";
-import { Open_Sans } from "next/font/google";
+import { Noto_Serif_Ethiopic } from "next/font/google";
+import { Arapey } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import Script from "next/script";
 // import "@mantine/carousel/styles.css";
 
-const merriweather = Merriweather({
-  weight: ["400", "700"],
+const arapey = Arapey({
+  weight: ["400"],
   subsets: ["latin"],
-  variable: "--font-merriweather",
+  variable: "--font-arapey",
 });
 
-const openSans = Open_Sans({
+const openSans = Noto_Serif_Ethiopic({
   subsets: ["latin"],
   variable: "--font-open-sans",
 });
@@ -97,7 +98,7 @@ export default function RootLayout({
       </Script>
 
       <body
-        className={`${openSans.variable} font-openSans antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
+        className={`${arapey.variable} font-arapey antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
       >
         {" "}
         <MantineProvider>

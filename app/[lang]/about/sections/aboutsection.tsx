@@ -2,8 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import img1 from "@/public/asset/imgabout1.png";
-import img2 from "@/public/asset/imgabout2.png";
+
+import img1 from "@/public/asset/lineofjudah.svg";
+import img2 from "@/public/asset/haileselasie.svg";
 import img3 from "@/public/asset/imgabout3.png";
 import img4 from "@/public/asset/imgabout4.png";
 import img5 from "@/public/asset/telekibeb.jpg";
@@ -73,10 +74,10 @@ const AboutPage = ({
         {/* Image and Text Section */}
         <section className="flex flex-col md:flex-row items-center justify-center gap-[50px]">
           <Image
-            src={img9}
+            src={img2}
             alt="Emperor Haile Selassie"
-            width={450}
-            height={450}
+            width={350}
+            height={350}
             className="object-cover"
           />
           <p className="text-[18px] md:w-[550px] px-6 md:px-0 leading-relaxed">
@@ -114,7 +115,7 @@ const AboutPage = ({
           </div>
         </section>
         <section className="px-6 pb-12 flex flex-col items-center justify-center w-1/2">
-          <Image src={img14} alt="Building" width={500} height={350} className="mb-4" />
+          <Image src={img1} alt="Building" width={500} height={350} className="mb-4" />
         </section>
       </div>
 

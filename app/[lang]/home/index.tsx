@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Noto_Serif_Ethiopic } from "next/font/google";
+import { Arapey } from "next/font/google";
 
 const images = [
   { src: img3, alt: "Historic Image 1" },

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import img2 from "@/public/asset/martyrsstatue.jpeg";
 import { motion } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
+import { IconSearch } from "@tabler/icons-react"
 
 interface Martyrs {
   name: string;
@@ -49,9 +50,9 @@ export default function MartyrsPage() {
 
   return (
     <>
-    <main className="min-h-screen text-gray-800 font-sans">
+    <main className="min-h-screen text-gray-800 font-sans bg-[#f8f5ef] ">
       {/* Hero */}
-    <section className="relative w-full min-h-[75vh] bg-white">
+    <section className="relative w-full min-h-[75vh]">
   {/* Title Section */}
   <div className="flex flex-col items-center justify-center text-center pt-24 sm:pt-32 lg:pt-[150px] text-black px-4">
     <div className="mb-10 sm:mb-16 flex justify-center items-center">
@@ -152,13 +153,14 @@ export default function MartyrsPage() {
 
  <div className="max-w-6xl mx-auto">
   <div className="w-full flex justify-end">
-      <input
-        type="text"
-        placeholder="Search by name..."
-        className="w-[350px] p-3 rounded-md border border-gray-300 bg-none mb-10 text-black"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+   
+  <input
+    type="text"
+    placeholder="Search by name..."
+    className="w-[350px] p-3 border-b-2 border-[#B1864F] bg-transparent mb-10 text-black focus:outline-none"
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+  />
 </div>
      {searchTerm.trim() !== "" ? (
   filteredMartyrs.length > 0 ? (
