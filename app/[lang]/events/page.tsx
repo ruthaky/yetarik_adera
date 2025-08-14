@@ -69,7 +69,7 @@ const UpcomingEvents: React.FC = () => {
         
 
   {/* Content on top of the blurred gradient */}
-  <div className="absolute bottom-0 left-0 w-full h-[200px] p-20 flex gap-5 items-center z-20">
+  <div className="absolute bottom-0 left-0 w-full h-[200px] p-6 md:p-20 flex gap-5 items-center z-20">
     <div className="flex flex-col justify-center text-white text-xl font-bold">
       <p className="text-sm border-b border-[#B1864F] pb-1">April</p>
       <p className="text-3xl">23</p>
@@ -80,7 +80,7 @@ const UpcomingEvents: React.FC = () => {
 </div>
 
 
-      <div className="text-center mb-[30px] mt-[50px] px-20">
+      <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-serif">
           <span className=" pb-2">Upcoming</span> Events
           
@@ -93,12 +93,12 @@ const UpcomingEvents: React.FC = () => {
           
       </div>
 
-      <div className="space-y-16 px-20">
+      <div className="md:space-y-16 px-6 md:px-20">
         {events.map((event, index) => (
           <div key={index} className="border-b border-[#B1864F] py-12">
             <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
               {/* Date */}
-              <div className="text-center text-xl font-bold">
+              <div className="text-center text-xl font-bol w-16 md:w-auto">
                 <p className="text-sm border-b border-[#B1864F] pb-1">{event.month}</p>
                 <p className="text-3xl text-black">{event.date}</p>
               </div>
@@ -130,7 +130,7 @@ const UpcomingEvents: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-12 px-20">
+      <div className="mt-12 px-6 md:px-20">
         <a
           href="#"
           className="inline-flex items-center gap-2 text-lg font-medium text-black hover:underline"
