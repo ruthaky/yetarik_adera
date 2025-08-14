@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { useState } from "react";
+import { FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
 
 
 export default function ContactSection({ contactText }: { contactText: any }) {
@@ -60,7 +61,7 @@ const initialFormData = {
     <section className="bg-[#FDF9EE] text-[#4A2C13] py-32 px-6 md:px-20 flex flex-col justify-center items-center">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-serif">
+        <h2 className="text-3xl md:text-5xl font-serif">
           <span className="border-b-2 border-[#B1864F] pb-2">Contact</span> Us
         </h2>
         <p className="mt-4 text-lg text-gray-700">
@@ -69,9 +70,9 @@ const initialFormData = {
       </div>
 
       {/* Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white  w-[80%] shadow-md overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white w-full md:w-[80%] shadow-md overflow-hidden">
         {/* Contact Info */}
-        <div className="bg-[#2C2C2C] text-white p-8 flex flex-col justify-between">
+        <div className="bg-[#2C2C2C] text-white p-6 md:p-8 flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-semibold mb-4">Contact Information</h3>
             
@@ -93,13 +94,13 @@ const initialFormData = {
           <div className="mt-10 flex space-x-4">
             {/* Replace these with icons */}
             <a href="#">
-              <span>🐦</span>
+              <span><FaTwitter></FaTwitter></span>
             </a>
             <a href="#">
-              <span>📸</span>
+              <span><FaInstagram></FaInstagram></span>
             </a>
             <a href="#">
-              <span>💬</span>
+              <span><FaTiktok></FaTiktok></span>
             </a>
           </div>
         </div>

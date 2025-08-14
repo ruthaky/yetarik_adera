@@ -114,7 +114,7 @@ const BoardMembers: React.FC = () => {
     <>
     <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 md:h-screen overflow-y-hidden">
       {/* Header */}
-      <div className="text-center mb-16 flex justify-center items-center">
+      <div className="text-center mb-10 md:mb-16 flex justify-center items-center">
         <section className="px-6 text-center w-auto">
           <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
             <div className="inline-block pr-14 md:pr-0">
@@ -198,7 +198,7 @@ const BoardMembers: React.FC = () => {
           ))}
         </div>
 
-<div className="flex flex-col gap-4 w-full md:w-1/2">
+<div className="flex flex-col gap-4 w-full md:w-1/2 text-[18px]">
           <div>
             Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
           </div>

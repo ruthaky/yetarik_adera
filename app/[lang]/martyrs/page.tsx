@@ -50,14 +50,14 @@ export default function MartyrsPage() {
 
   return (
     <>
-    <main className="min-h-screen text-gray-800 font-sans bg-[#f8f5ef] ">
+    <main className="min-h-screen text-gray-800 font-sans bg-[#f8f5ef] pt-32 ">
       {/* Hero */}
-    <section className="relative w-full min-h-[75vh]">
+    <section className="relative w-full min-h-[75vh]  ">
   {/* Title Section */}
-  <div className="flex flex-col items-center justify-center text-center pt-24 sm:pt-32 lg:pt-[150px] text-black px-4">
-    <div className="mb-10 sm:mb-16 flex justify-center items-center">
+  <div className="flex flex-col items-center justify-center text-center text-black px-4">
+    <div className="mb-10 sm:mb-10 flex justify-center items-center">
       <section className="px-4 sm:px-6 text-start w-auto">
-        <h1 className="text-3xl sm:text-4xl lg:text-[45px] font-light leading-snug inline-block">
+        <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
           {/* Line 1 */}
           <div className="inline-block">
             <span className="font-serif">68</span>
@@ -84,7 +84,7 @@ export default function MartyrsPage() {
     </div>
 
     {/* Intro Text */}
-    <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg leading-relaxed w-full max-w-[95%] md:max-w-[70%] text-left">
+    <div className="space-y-4 sm:space-y-6 text-[18px] leading-relaxed w-full max-w-[95%] md:max-w-[70%] text-left">
       <p>
         In 1974, during the transitional period following the end of Emperor
         Haile Selassie's administration, 68 senior government officials and

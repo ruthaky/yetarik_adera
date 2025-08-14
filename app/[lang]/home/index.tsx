@@ -21,13 +21,16 @@ const images = [
 ];
 
 // Desktop/Tablet 3D styles
+// Desktop/Tablet 3D styles
 const slotStyles = [
   { className: "hidden sm:block w-28 md:w-[200px] h-[200px] md:h-[310px] mr-[-10px] md:mr-[-20px]", style: { transform: "perspective(1000px) rotateY(35deg)" } },
   { className: "hidden sm:block w-28 md:w-52 h-[200px] md:h-[310px]", style: { transform: "perspective(1000px) rotateY(25deg)" } },
-  { className: "w-44 sm:w-[300px] md:w-[350px] h-[220px] sm:h-[250px] md:h-[300px] mt-2 sm:mt-8", style: { transform: "perspective(1000px) rotateY(0deg) scale(1.05)" } },
+  // Center image — mobile wider
+  { className: "w-[250px] sm:w-[300px] md:w-[350px] h-[180px] sm:h-[250px] md:h-[300px] mt-2 sm:mt-8", style: { transform: "perspective(1000px) rotateY(0deg) scale(1.05)" } },
   { className: "hidden sm:block w-28 md:w-52 h-[200px] md:h-[310px]", style: { transform: "perspective(1000px) rotateY(-25deg)" } },
   { className: "hidden sm:block w-28 md:w-[200px] h-[200px] md:h-[310px] ml-[-10px] md:ml-[-20px]", style: { transform: "perspective(1000px) rotateY(-35deg)" } },
 ];
+
 
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
   const pathname = usePathname();
@@ -47,25 +50,25 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
     <section className="text-center py-16 sm:py-[130px] px-4 bg-[#F7F4E9] h-screen flex flex-col items-center justify-center md:mt-12">
       {/* Heading */}
       <div className="inline-block">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-medium mb-4 animate-slideIn">
+        <h1 className="text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn">
           <span className="font-serif">{heroTexts.hero}</span>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-[200px] sm:w-[300px] lg:w-[900px] bg-primary mt-1 mx-auto"
+            className="h-[2px] w-[200px] sm:w-[300px] lg:w-[900px] bg-primary mt-0 mx-auto"
           />
         </h1>
       </div>
 
       {/* Subheading */}
-      <p className="text-base sm:text-lg md:text-xl mt-4 animate-slideIn delay-100">
+      <p className="text-base sm:text-lg md:text-xl my-4 animate-slideIn delay-100">
         {heroTexts.subheading1} <br />
         {heroTexts.subheading2}
       </p>
 
       {/* Carousel */}
-      <div className="relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
+      <div className="hidden md:relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
         {/* Prev Button (hidden on mobile if swipe enabled) */}
         <button
           onClick={prev}
@@ -87,12 +90,11 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
                 style={{ ...pos.style, transformStyle: "preserve-3d" }}
               >
                 <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover rounded-[8px]"
-                  sizes="(max-width: 640px) 176px, (max-width: 1024px) 208px, 350px"
-                />
+  src={img.src}
+  alt={img.alt}
+  className="object-cover rounded-[8px] w-[300px] h-[220px] sm:w-[208px] sm:h-[260px] md:w-[350px] md:h-[300px]"
+/>
+
               </div>
             );
           })}
@@ -106,6 +108,15 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
           <FaChevronRight />
         </button>
       </div>
+
+      {/* moble image */}
+   <Image
+            src={img4}
+            alt="Emperor Haile Selassie"
+            width={330}
+            height={330}
+            className="object-cover w-[330px] h-[330px]"
+          />
 
       {/* Links */}
       <div className="flex flex-wrap gap-4 sm:gap-8 items-center justify-center pt-10 sm:pt-[60px] animate-slideIn delay-300">

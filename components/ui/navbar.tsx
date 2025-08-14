@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-10 z-[9999] text-white shadow-lg">
+      <div className="flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-4 md:px-10 z-[9999] text-white shadow-lg">
         {/* Language Dropdown */}
         <div className="w-[100px]">
           <DropdownMenu>
