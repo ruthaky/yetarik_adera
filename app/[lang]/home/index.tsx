@@ -22,44 +22,34 @@ const images = [
 
 // Slot positions with perspective rotation
 const slotStyles = [
-  {
-    className: "w-40 md:w-[200px] h-[310px] mr-[-20px]",
-    style: { transform: "perspective(1000px) rotateY(35deg) scale(1)" },
-  },
-  {
-    className: "w-40 md:w-52",
-    style: { transform: "perspective(1000px) rotateY(25deg) scale(1)" },
-  },
-  {
-    className: "w-[350px] h-[300px] mt-8",
-    style: { transform: "perspective(1000px) rotateY(0deg) scale(1.1)" },
-  },
-  {
-    className: "w-40 md:w-52",
-    style: { transform: "perspective(1000px) rotateY(-25deg) scale(1)" },
-  },
-  {
-    className: "w-40 md:w-[200px] h-[310px] ml-[-20px]",
-    style: { transform: "perspective(1000px) rotateY(-35deg) scale(1)" },
-  },
+  { className: "w-40 md:w-[200px] h-[310px] mr-[-20px]", style: { transform: "perspective(1000px) rotateY(35deg) scale(1)" } },
+  { className: "w-40 md:w-52", style: { transform: "perspective(1000px) rotateY(25deg) scale(1)" } },
+  { className: "w-[350px] h-[300px] mt-8", style: { transform: "perspective(1000px) rotateY(0deg) scale(1.1)" } },
+  { className: "w-40 md:w-52", style: { transform: "perspective(1000px) rotateY(-25deg) scale(1)" } },
+  { className: "w-40 md:w-[200px] h-[310px] ml-[-20px]", style: { transform: "perspective(1000px) rotateY(-35deg) scale(1)" } },
 ];
 
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
   const pathname = usePathname();
   const [centerIndex, setCenterIndex] = useState(2); // start with 3rd image in center
 
- const prev = () => {
-  setCenterIndex((prev) => (prev - 1 + images.length) % images.length);
-};
+  const prev = () => {
+    setCenterIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
 
- const next = () => { 
-  setCenterIndex((prev) => (prev + 1) % images.length); 
-};
+  const next = () => {
+    setCenterIndex((prev) => (prev + 1) % images.length);
+  };
 
   // Get image index for a slot based on centerIndex
   const getImageIndexForSlot = (slot: number) => {
     const offset = slot - 2; // slot 2 is center
     return (centerIndex + offset + images.length) % images.length;
+  };
+
+  // When an image is clicked, make it the center
+  const handleImageClick = (imgIndex: number) => {
+    setCenterIndex(imgIndex);
   };
 
   return (
@@ -101,11 +91,9 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
             return (
               <div
                 key={imgIndex}
-                className={`${pos.className} relative shadow-lg overflow-hidden transition-transform duration-700`}
-                style={{
-                  ...pos.style,
-                  transformStyle: "preserve-3d",
-                }}
+                onClick={() => handleImageClick(imgIndex)}
+                className={`${pos.className} relative shadow-lg overflow-hidden transition-transform duration-700 cursor-pointer`}
+                style={{ ...pos.style, transformStyle: "preserve-3d" }}
               >
                 <Image
                   src={img.src}
@@ -149,5 +137,3 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
     </section>
   );
 }
-
-
