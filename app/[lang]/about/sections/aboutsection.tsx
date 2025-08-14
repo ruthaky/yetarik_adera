@@ -36,7 +36,7 @@ const AboutPage = ({
 }) => {
   return (
         <MantineProvider>
-    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif">
+    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif ">
       
 
       {/* Hero Section */}

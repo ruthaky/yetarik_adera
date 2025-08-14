@@ -20,8 +20,8 @@ export default function Footer() {
   };
   return (
     <div>
-      <footer className="bg-[#333333] text-white px-14 py-16 text-sm">
-        <div className="flex flex-col md:flex-row justify-between">
+      <footer className="bg-[#333333] text-white p-6 md:px-14 md:py-16 text-sm overflow-x-hidden">
+        <div className="flex md:flex-row flex-col justify-between">
           <div>
             <h4 className="font-bold text-[25px] mb-1">YETARIK ADERA</h4>
             <p className="py-2">Contact us: info@yetarikadera.org</p>
@@ -47,8 +47,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="h-[1px] w-full bg-[#71777D] my-8"></div>
-        <div className="text-xs mt-4 flex justify-between text-[#92989F]">
-          <div className="flex gap-4 "><div>Terms & Conditions</div><div>|</div><div>Privacy Policy</div><div>|</div><div>Accessibility</div><div>|</div><div>Legal</div></div>
+        <div className="text-xs mt-4 flex gap-2 flex-col md:flex-row justify-between text-[#92989F]">
+          <div className="flex gap-1 md:gap-4 "><div>Terms & Conditions</div><div>|</div><div>Privacy Policy</div><div>|</div><div>Accessibility</div><div>|</div><div>Legal</div></div>
           
           <p>Design with love © yetarikadera 2024. All rights reserved</p>
         </div>
