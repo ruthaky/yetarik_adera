@@ -178,7 +178,7 @@ const BoardMembers: React.FC = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                className="w-[170px] h-[170px] object-cover rounded-full"
+                className="w-[170px] h-[170px] object-fit rounded-full"
               />
               <div className="flex flex-col">
                 <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
@@ -215,7 +215,7 @@ const BoardMembers: React.FC = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                className="w-[170px] h-[170px] object-cover rounded-full"
+                className="w-[170px] h-[170px] object-fit rounded-full"
               />
               <div className="flex flex-col">
                 <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
@@ -259,7 +259,7 @@ const BoardMembers: React.FC = () => {
           alt={selectedMartyr.name}
           width={250}
           height={300}
-          className="w-[180px] h-[220px] sm:w-[220px] sm:h-[270px] md:w-[250px] md:h-[300px] object-cover shadow-lg rounded"
+          className="w-[180px] h-[220px] sm:w-[220px] sm:h-[220px] md:w-[270px] md:h-[270px] object-fit rounded-full"
         />
       </div>
 

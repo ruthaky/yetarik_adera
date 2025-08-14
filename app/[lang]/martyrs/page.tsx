@@ -201,7 +201,7 @@ export default function MartyrsPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
             {Martyrs.map((member : any, index) => (
-              <div
+             <div
                 key={index}
                 className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
                 onClick={() => setSelectedMartyr(member)}
@@ -212,7 +212,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-center rounded-full border border-gray-400 shadow-md "
+                  className="w-[190px] h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -241,7 +241,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400 shadow-md"
+                  className="w-[190px] h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -270,7 +270,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-cover rounded-full border border-gray-400 shadow-md"
+                  className="w-[190px] h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -304,11 +304,12 @@ export default function MartyrsPage() {
 
       {/* Martyr Image */}
       <div className="flex-shrink-0">
-        <Image
-          src={selectedMartyr.image}
-          alt={selectedMartyr.name}
-          className="w-[250px] h-[300px] object-cover rounded-md shadow-lg"
-        />
+       <Image
+  src={selectedMartyr.image}
+  alt={selectedMartyr.name}
+  className="w-[270px] h-[270px] object-fit rounded-full block mx-auto"
+/>
+
       </div>
 
       {/* Martyr Details */}

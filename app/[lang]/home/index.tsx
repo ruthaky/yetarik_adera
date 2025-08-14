@@ -74,7 +74,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Carousel */}
-      <div className="relative mt-6 flex justify-center items-center gap-5 animate-slideIn delay-200">
+      <div className="relative mt-12 flex justify-center items-center gap-5 animate-slideIn delay-200">
         {/* Prev Button */}
         <button
           onClick={prev}
@@ -117,17 +117,22 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* Links */}
-      <div className="flex gap-8 items-center justify-center pt-12 animate-slideIn delay-300">
+      <div className="flex gap-8 items-center justify-center pt-[60px] animate-slideIn delay-300">
         <Link href={`/${pathname.split("/")[1]}/about`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link1}
           </div>
         </Link>
-        <Link href={`/${pathname.split("/")[1]}/members`}>
+        <Link href={`/${pathname.split("/")[1]}/martyrs`}>
+          <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
+            {heroTexts.link4}
+          </div>
+        </Link>
+        {/* <Link href={`/${pathname.split("/")[1]}/members`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link2}
           </div>
-        </Link>
+        </Link> */}
         <Link href={`/${pathname.split("/")[1]}/get-involved`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link3}
