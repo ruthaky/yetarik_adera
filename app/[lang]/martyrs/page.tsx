@@ -1,6 +1,6 @@
 "use client";
 import {Martyrs, Martyrs2, Martyrs3 } from "@/app/[lang]/martyrs/data/martyrs";
-import { useState } from "react";
+import { useState } from "react"; 
 import Image from "next/image";
 import img1 from "@/public/asset/mart1.webp"; // Replace with correct image
 import { Button } from "@/components/ui/button";
@@ -52,7 +52,7 @@ export default function MartyrsPage() {
     <>
     <main className="min-h-screen text-gray-800 font-sans bg-[#f8f5ef] pt-32 ">
       {/* Hero */}
-    <section className="relative w-full min-h-[75vh]  ">
+    <section className="relative w-full">
   {/* Title Section */}
   <div className="flex flex-col items-center justify-center text-center text-black px-4">
     <div className="mb-10 sm:mb-10 flex justify-center items-center">
@@ -114,8 +114,8 @@ export default function MartyrsPage() {
 </section>
 
 {/* Description Section */}
-<section className="w-full max-w-[95%] md:max-w-[70%] mx-auto px-4 sm:px-6 pb-10 text-center  md:text-left">
-  <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg leading-relaxed text-black j">
+<section className="w-full max-w-[95%] md:max-w-[70%] mx-auto px-4 sm:px-6 pb-10 text-left">
+  <div className="space-y-4 sm:space-y-6 text-[18px] sm:text-base md:text-lg leading-relaxed text-black ">
     <p className="text-left">
       The 68 martyrs represented a generation of leaders who contributed
       significantly to national progress through their service,
@@ -177,7 +177,7 @@ export default function MartyrsPage() {
               unoptimized
                   width={200}
                   height={200}
-            className="w-[100px] h-[100px] md:w-[190px] md:h-[190px] object-center rounded-full border border-gray-400 shadow-md "
+            className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-center rounded-full border border-gray-400 shadow-md "
           />
              <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -214,7 +214,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-fit rounded-full"
+                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -243,7 +243,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-fit rounded-full "
+                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -272,7 +272,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[190px] h-[190px] object-fit rounded-full"
+                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
@@ -309,7 +309,7 @@ export default function MartyrsPage() {
        <Image
   src={selectedMartyr.image}
   alt={selectedMartyr.name}
-  className="w-[270px] h-[270px] object-fit rounded-full block mx-auto"
+  className="w-[150px] h-[150px] md:w-[270px] md:h-[270px] object-fit rounded-full block mx-auto"
 />
 
       </div>

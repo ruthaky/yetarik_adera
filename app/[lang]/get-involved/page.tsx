@@ -39,7 +39,7 @@ export default function GetInvolvedPage() {
   const pathname = usePathname();
   return (
     <>
-    <main className="font-serif bg-[#F7F4E9]">
+    <main className="font-serif bg-[#F7F4E9] pt-16 md:pt-0">
       {/* Header Section */}
       <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
           <section className="px-6 md:text-start w-[400px] mb-12">
@@ -70,7 +70,7 @@ export default function GetInvolvedPage() {
     </div>
   </h1>
 </section>
-        <div className="space-y-3 text-lg text-left text-gray-700">
+        <div className="space-y-3 text-[18px] text-left text-gray-700">
           <p>
             The military dictatorship did everything in its power to erase the contributions of Emperor Haile Selassie’s government to modern Ethiopia.
           

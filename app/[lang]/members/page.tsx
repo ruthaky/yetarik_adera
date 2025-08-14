@@ -215,7 +215,7 @@ const BoardMembers: React.FC = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                className="w-[170px] h-[170px] object-fit rounded-full"
+                className="w-[120px] h-[120px] object-fit rounded-full"
               />
               <div className="flex flex-col">
                 <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
@@ -237,7 +237,7 @@ const BoardMembers: React.FC = () => {
 {/* Modal */}
 {selectedMartyr && (
   <div
-    className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-4 sm:p-6"
+    className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-4 sm:p-8"
     onClick={() => setSelectedMartyr(null)}
   >
     <div
@@ -259,7 +259,7 @@ const BoardMembers: React.FC = () => {
           alt={selectedMartyr.name}
           width={250}
           height={300}
-          className="w-[180px] h-[220px] sm:w-[220px] sm:h-[220px] md:w-[270px] md:h-[270px] object-fit rounded-full"
+          className="w-[150px] h-[150px] md:w-[270px] md:h-[270px] object-fit rounded-full block mx-auto"
         />
       </div>
 

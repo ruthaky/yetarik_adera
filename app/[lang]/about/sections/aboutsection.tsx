@@ -36,12 +36,12 @@ const AboutPage = ({
 }) => {
   return (
         <MantineProvider>
-    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif pt-16 ">
+    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif ">
       
 
       {/* Hero Section */}
     
-        <section className="h-screen w-full flex flex-col items-center justify-center">
+        <section className="w-full flex flex-col items-center justify-center mb-4 pt-32 md:pb-16">
    <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
   <h1 className="font-light leading-snug inline-block mb-10 md:mb-0">
     {/* Line 1 */}
@@ -87,7 +87,7 @@ const AboutPage = ({
       </section>
 
       {/* Legacy Section */}
-      <section className="pb-12 w-full px-6 md:px-0 md:w-[70%] mx-auto text-[18px] leading-relaxed flex flex-col gap-3">
+      <section className="pb-12 w-full px-6 md:px-0 md:w-[70%] mx-auto text-[18px] leading-relaxed flex flex-col gap-4">
         <p>
           {aboutpageTexts.storyp2}
         </p>
@@ -97,8 +97,8 @@ const AboutPage = ({
       </section>
 
       {/* Reflection Section */}
-      <div className="flex justify-between px-6 md:px-0 md:w-[70%]">
-        <section className="flex items-center pb-12 w-1/2">
+      <div className="flex flex-col md:flex-row justify-between px-6 md:px-0 md:w-[70%]">
+        <section className="flex items-center pb-12 w-full md:w-1/2">
           <div className="text-sm">
             <div className="inline-block mb-3">
               <h3 className="text-[22px] font-semibold">{aboutpageTexts.missionheading}</h3>
@@ -114,7 +114,7 @@ const AboutPage = ({
             </p>
           </div>
         </section>
-        <section className="px-6 pb-12 flex flex-col items-center justify-center w-1/2">
+        <section className="px-6 pb-12 flex flex-col items-center justify-center w-full md:w-1/2">
           <Image src={img1} alt="Building" width={500} height={350} className="mb-4" />
         </section>
       </div>
@@ -125,14 +125,14 @@ const AboutPage = ({
           <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-2 h-[50px]">{aboutpageTexts.Visionheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
-            <div className="grid grid-cols-2 md-2 md:gap-8 border-b border-[#b07936] px-10 h-full">
+            <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936]   px-10 h-full">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
                 <p className="font-bold">{aboutpageTexts.vision1}</p>
                 <p>
                  {aboutpageTexts.vision1note}
                 </p>
               </div>
-              <div className="h-full w-full p-2 md:p-4 ">
+              <div className="h-full w-full p-2 md:p-4 border-l-2 border-[#b07936] md:border-none">
                 <p className="font-bold">{aboutpageTexts.vision2}</p>
                 <p>
                  {aboutpageTexts.vision2note}
@@ -140,14 +140,14 @@ const AboutPage = ({
               </div>
             </div>
             {/* Second Row */}
-            <div className="grid grid-cols-2  md-2 md:gap-8  border-b border-[#b07936] px-10 h-full flex items-center">
+            <div className="grid md:grid-cols-2  md-2 md:gap-8  border-b border-[#b07936] px-10 h-full flex items-center">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
                 <p className="font-bold">{aboutpageTexts.vision3}</p>
                 <p>
                   {aboutpageTexts.vision3note}
                 </p>
               </div>
-              <div className="h-full w-full p-2 md:p-4  ">
+              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] md:border-none">
                 <p className="font-bold">{aboutpageTexts.vision4}</p>
                 <p>
             {aboutpageTexts.vision4note}

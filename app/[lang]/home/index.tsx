@@ -68,7 +68,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Carousel */}
-      <div className="hidden md:relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
+      <div className="hidden md:flex relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
         {/* Prev Button (hidden on mobile if swipe enabled) */}
         <button
           onClick={prev}
@@ -86,7 +86,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
               <div
                 key={imgIndex}
                 onClick={() => handleImageClick(imgIndex)}
-                className={`${pos.className} relative flex-shrink-0 shadow-lg overflow-hidden transition-transform duration-700 cursor-pointer`}
+                className={`${pos.className} relative flex-shrink-0  overflow-hidden transition-transform duration-700 cursor-pointer`}
                 style={{ ...pos.style, transformStyle: "preserve-3d" }}
               >
                 <Image
@@ -115,7 +115,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
             alt="Emperor Haile Selassie"
             width={330}
             height={330}
-            className="object-cover w-[330px] h-[330px]"
+            className="object-cover w-[330px] h-[330px] md:hidden"
           />
 
       {/* Links */}
