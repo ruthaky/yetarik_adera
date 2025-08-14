@@ -54,8 +54,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        merriweather: ["var(--font-merriweather)"],
-        openSans: ["var(--font-open-sans)"],
+ header: ["var(--font-arapey)"],
+        body: ["var(--font-noto-ethiopic)", "serif"],
       },
     },
   },

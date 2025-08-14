@@ -10,8 +10,8 @@ export async function POST(request: Request) {
     // const { name, email, phonenumber, message } = body;
  const body = await request.json();
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Verified sender email
-      to: ['asmamawruth@gmail.com'], // Replace with your receiving email
+      from: "Website Contact form <onboarding@resend.dev>", // Verified sender email
+      to: ["yetarikadera@gmail.com"], // Replace with your receiving email
       subject: "New Contact Form Submission",
       react: EmailTemplate({
         firstName: body.firstName,

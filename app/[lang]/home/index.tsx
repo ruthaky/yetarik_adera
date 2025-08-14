@@ -51,7 +51,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       {/* Heading */}
       <div className="inline-block">
         <h1 className="text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn">
-          <span className="font-serif">{heroTexts.hero}</span>
+          <span className="font-header">{heroTexts.hero}</span>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
@@ -62,7 +62,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* Subheading */}
-      <p className="text-base sm:text-lg md:text-xl my-4 animate-slideIn delay-100">
+      <p className="sm:text-lg md:text-xl my-4 animate-slideIn delay-100">
         {heroTexts.subheading1} <br />
         {heroTexts.subheading2}
       </p>

@@ -9,15 +9,20 @@ import "@mantine/core/styles.css";
 import Script from "next/script";
 // import "@mantine/carousel/styles.css";
 
+// Arapey for headers
 const arapey = Arapey({
-  weight: ["400"],
+  weight: ["400"], // regular
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-arapey",
 });
 
-const openSans = Noto_Serif_Ethiopic({
-  subsets: ["latin"],
-  variable: "--font-open-sans",
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
 });
 
 export const metadata: Metadata = {
@@ -98,17 +103,16 @@ export default function RootLayout({
       </Script>
 
       <body
-        className={`${arapey.variable} font-arapey antialiased bg-white  min-h-screen flex flex-col overflow-x-hidden`}
-      >
-        {" "}
-        <MantineProvider>
-          <div>
-            <Navbar />
-          </div>
-          {children}
-         
-        </MantineProvider>
-      </body>
+  className={`${arapey.variable} ${notoSerifEthiopic.variable} font-header antialiased bg-white min-h-screen flex flex-col overflow-x-hidden`}
+>
+  <MantineProvider>
+    <div>
+      <Navbar />
+    </div>
+    {children}
+  </MantineProvider>
+</body>
+
     </html>
   );
 }
