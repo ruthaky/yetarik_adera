@@ -53,9 +53,9 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      fontFamily: {
- header: ["var(--font-arapey)"],
-        body: ["var(--font-noto-ethiopic)", "serif"],
+        fontFamily: {
+        arapey: ["var(--font-arapey)"],
+        notoSerifEthiopic: ["var(--font-noto-ethiopic)"],
       },
     },
   },

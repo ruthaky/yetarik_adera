@@ -8,6 +8,23 @@ import img2 from "@/public/asset/martyrsstatue.jpeg";
 import { motion } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
 import { IconSearch } from "@tabler/icons-react"
+import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
+
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 interface Martyrs {
   name: string;
@@ -50,17 +67,17 @@ export default function MartyrsPage() {
 
   return (
     <>
-    <main className="min-h-screen text-gray-800 font-sans bg-[#f8f5ef] pt-32 ">
+    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic min-h-screen text-gray-800 font-sans bg-[#f8f5ef] pt-32 `}>
       {/* Hero */}
     <section className="relative w-full">
   {/* Title Section */}
   <div className="flex flex-col items-center justify-center text-center text-black px-4">
     <div className="mb-10 sm:mb-10 flex justify-center items-center">
       <section className="px-4 sm:px-6 text-start w-auto">
-        <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
+        <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] leading-snug inline-block`}>
           {/* Line 1 */}
           <div className="inline-block">
-            <span className="font-serif">68</span>
+            <span className="">68</span>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
@@ -70,8 +87,8 @@ export default function MartyrsPage() {
           </div>
           <br />
           {/* Line 2 */}
-          <div className="inline-block pl-12 sm:pl-20 lg:pl-[80px]">
-            <span className="font-serif">Martyrs</span>
+          <div className="inline-block pl-12 sm:pl-10 lg:pl-[80px]">
+            <span className="">Martyrs</span>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}

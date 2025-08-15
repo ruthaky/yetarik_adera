@@ -3,19 +3,19 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { Navbar } from "@/components/ui/navbar";
 import { Noto_Serif_Ethiopic } from "next/font/google";
-import { Arapey } from "next/font/google";
+// import { Arapey } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import Script from "next/script";
 // import "@mantine/carousel/styles.css";
 
-// Arapey for headers
-const arapey = Arapey({
-  weight: ["400"], // regular
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-arapey",
-});
+// // Arapey for headers
+// const arapey = Arapey({
+//   weight: ["400"], // regular
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-arapey",
+// });
 
 // Noto Serif Ethiopic for body text
 const notoSerifEthiopic = Noto_Serif_Ethiopic({
@@ -103,7 +103,7 @@ export default function RootLayout({
       </Script>
 
       <body
-  className={`${arapey.variable} ${notoSerifEthiopic.variable} font-header antialiased bg-white min-h-screen flex flex-col overflow-x-hidden`}
+  className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic antialiased bg-white min-h-screen flex flex-col overflow-x-hidden`}
 >
   <MantineProvider>
     <div>

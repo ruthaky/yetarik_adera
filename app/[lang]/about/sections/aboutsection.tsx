@@ -28,6 +28,26 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { MantineProvider } from "@mantine/core";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
+import { Noto_Serif_Ethiopic } from "next/font/google";
+import { Arapey } from "next/font/google";
+
+
+
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 const AboutPage = ({
   aboutpageTexts,
@@ -36,17 +56,17 @@ const AboutPage = ({
 }) => {
   return (
         <MantineProvider>
-    <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center font-serif ">
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center `}>
       
 
       {/* Hero Section */}
     
         <section className="w-full flex flex-col items-center justify-center mb-4 pt-32 md:pb-16">
    <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
-  <h1 className="font-light leading-snug inline-block mb-10 md:mb-0">
+  <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-10 md:mb-0 `}>
     {/* Line 1 */}
     <div className="inline-block">
-      <span className="font-serif text-3xl md:text-[45px]">{aboutpageTexts.introheading1}</span>
+      <span className="text-3xl md:text-5xl">{aboutpageTexts.introheading1}</span>
     <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -59,7 +79,7 @@ const AboutPage = ({
     {/* Line 2 */}
     <div className="inline-block  md:pl-[200px] mt-4">
       <div className="inline-block">
-        <span className="font-serif text-3xl md:text-[45px]">{aboutpageTexts.introheading2}</span>
+        <span className=" text-3xl md:text-[45px]">{aboutpageTexts.introheading2}</span>
        <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

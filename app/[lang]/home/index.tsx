@@ -11,6 +11,26 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Noto_Serif_Ethiopic } from "next/font/google";
+import { Arapey } from "next/font/google";
+
+
+
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 const images = [
   { src: img3, alt: "Historic Image 1" },
@@ -47,10 +67,11 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
   const handleImageClick = (imgIndex: number) => setCenterIndex(imgIndex);
 
   return (
-    <section className="text-center py-16 sm:py-[130px] px-4 bg-[#F7F4E9] h-screen flex flex-col items-center justify-center md:mt-12">
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic
+ text-center py-16 sm:py-[130px] px-4 bg-[#F7F4E9] h-screen flex flex-col items-center justify-center md:mt-12`}>
       {/* Heading */}
       <div className="inline-block">
-        <h1 className="text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn">
+        <h1 className={`${arapey.variable} font-arapey text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn`}>
           <span className="font-header">{heroTexts.hero}</span>
           <motion.div
             initial={{ width: 0 }}

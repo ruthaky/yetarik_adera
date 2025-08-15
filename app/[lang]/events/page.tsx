@@ -4,7 +4,22 @@ import img1 from "@/public/asset/517747556_1140462981461790_5752099992240461032_
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
+import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
 
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 interface Event {
   date: string;
@@ -52,7 +67,7 @@ const events: Event[] = [
 const UpcomingEvents: React.FC = () => {
   return (
     <>
-    <section className="bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start">
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}>
 
 <div className="h-[450px] w-full bg-[#B1864F] relative overflow-hidden">
   {/* Background Image */}
@@ -74,14 +89,14 @@ const UpcomingEvents: React.FC = () => {
       <p className="text-sm border-b border-[#B1864F] pb-1">April</p>
       <p className="text-3xl">23</p>
     </div>
-    <p className="text-white text-[30px] font-semibold">Annual Event</p>
+    <p className={` ${arapey.variable} font-arapey text-white text-[30px] `}>Annual Event</p>
      
   </div>
 </div>
 
 
       <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
-        <h2 className="text-3xl md:text-4xl font-serif">
+        <h2 className={` ${arapey.variable} font-arapey text-3xl md:text-4xl `}>
           <span className=" pb-2">Upcoming</span> Events
           
         </h2><motion.div

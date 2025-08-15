@@ -14,6 +14,14 @@ import {
   DropdownMenuTrigger,
 } from "./dropdown-menu";
 import { motion, AnimatePresence } from "framer-motion";
+import { Noto_Serif_Ethiopic } from "next/font/google";
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 export const Navbar = () => {
   const router = useRouter();
@@ -39,7 +47,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-4 md:px-10 z-[9999] text-white shadow-lg">
+      <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-4 md:px-10 z-[9999] text-white shadow-lg`}>
         {/* Language Dropdown */}
         <div className="w-[100px]">
           <DropdownMenu>
@@ -94,7 +102,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[70px] left-0 w-full h-screen bg-[#4C3519]/90 z-50 text-white z-[9998]"
+            className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic fixed top-[70px] left-0 w-full h-screen bg-[#4C3519]/90 z-50 text-white z-[9998]`}
           >
             <Flex
               direction="column"

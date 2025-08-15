@@ -17,6 +17,23 @@ import img10 from "@/public/asset/Yodit.webp";
 import img11 from "@/public/asset/sirgut.jpeg";
 import placeholder from "@/public/asset/placeholoder.jpg"
 import Footer from "@/app/shared/footer/footer";
+import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
+
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 
 // Define member type
@@ -112,13 +129,13 @@ const BoardMembers: React.FC = () => {
     const [selectedMartyr, setSelectedMartyr] = useState<BoardMember | null>(null);
   return (
     <>
-    <section className="bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 md:h-screen overflow-y-hidden">
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 md:h-screen overflow-y-hidden`}>
       {/* Header */}
       <div className="text-center mb-10 md:mb-16 flex justify-center items-center">
         <section className="px-6 text-center w-auto">
-          <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
+          <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
             <div className="inline-block pr-14 md:pr-0">
-              <span className="font-serif">Board</span>
+              <span className="">Board</span>
 <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -129,7 +146,7 @@ const BoardMembers: React.FC = () => {
             <br />
             <div className="inline-block pl-[70px] md:pl-[300px]">
               <div className="inline-block">
-                <span className="font-serif">Members</span>
+                <span className="">Members</span>
       <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

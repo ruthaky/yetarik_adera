@@ -9,7 +9,22 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Footer from '@/app/shared/footer/footer';
+import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
 
+// Arapey for headers
+const arapey = Arapey({
+  weight: ["400"], // regular
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-arapey",
+});
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 // Example avatar images (replace with your own)
 const team = [
   {
@@ -39,14 +54,14 @@ export default function GetInvolvedPage() {
   const pathname = usePathname();
   return (
     <>
-    <main className="font-serif bg-[#F7F4E9] pt-16 md:pt-0">
+    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F7F4E9] pt-16 md:pt-0`}>
       {/* Header Section */}
       <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
           <section className="px-6 md:text-start w-[400px] mb-12">
-  <h1 className="text-3xl md:text-[45px] font-light leading-snug inline-block">
+  <h1 className={` ${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
     {/* Line 1 */}
     <div className="inline-block pr-[70px] md:pr-0">
-      <span className="font-serif">Get</span>
+      <span className="">Get</span>
     <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -59,7 +74,7 @@ export default function GetInvolvedPage() {
     {/* Line 2 */}
     <div className="inline-block pl-[30px] md:pl-[80px]">
       <div className="inline-block">
-        <span className="font-serif">Involved</span>
+        <span className="">Involved</span>
        <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

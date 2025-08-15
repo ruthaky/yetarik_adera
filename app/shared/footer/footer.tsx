@@ -10,6 +10,14 @@ import Link from "next/link";
 //   FaLinkedin,
 // } from "react-icons/fa6";
 import { useRouter, usePathname } from "next/navigation";
+import { Noto_Serif_Ethiopic } from "next/font/google";
+// Noto Serif Ethiopic for body text
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
+  weight: ["400"], // normal
+  subsets: ["ethiopic"], // supports Amharic, Tigrinya, etc.
+  display: "swap",
+  variable: "--font-noto-ethiopic",
+});
 
 export default function Footer() {
   const router = useRouter();
@@ -20,7 +28,7 @@ export default function Footer() {
   };
   return (
     <div>
-      <footer className="bg-[#333333] text-white p-6 md:px-14 md:py-16 text-sm overflow-x-hidden">
+      <footer className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#333333] text-white p-6 md:px-14 md:py-16 text-sm overflow-x-hidden`}>
         <div className="flex md:flex-row flex-col justify-between">
           <div>
             <h4 className="font-bold text-[25px] mb-1">YETARIK ADERA</h4>
