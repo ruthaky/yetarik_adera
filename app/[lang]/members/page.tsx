@@ -171,7 +171,7 @@ const BoardMembers: React.FC = () => {
                 className="w-[170px] h-[170px] object-cover rounded-full"
               />
               <div className="flex flex-col">
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.name}
                 </h3>
                 <motion.div
@@ -180,7 +180,7 @@ const BoardMembers: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
                 className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
               />
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.title}
                 </h3>
               </div>
@@ -198,7 +198,7 @@ const BoardMembers: React.FC = () => {
                 className="w-[170px] h-[170px] object-fit rounded-full"
               />
               <div className="flex flex-col">
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.name}
                 </h3>
                   <motion.div
@@ -207,7 +207,7 @@ const BoardMembers: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
                 className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
               />
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.title}
                 </h3>
               </div>
@@ -235,7 +235,7 @@ const BoardMembers: React.FC = () => {
                 className="w-[120px] h-[120px] object-fit rounded-full"
               />
               <div className="flex flex-col">
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.name}
                 </h3>
                   <motion.div
@@ -244,7 +244,7 @@ const BoardMembers: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
                 className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
               />
-                <h3 className="text-lg font-serif text-[#4A2C13] inline-block">
+                <h3 className="text-lg  text-[#4A2C13] inline-block">
                   {member.title}
                 </h3>
               </div>

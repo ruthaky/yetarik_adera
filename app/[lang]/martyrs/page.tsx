@@ -101,7 +101,7 @@ export default function MartyrsPage() {
     </div>
 
     {/* Intro Text */}
-    <div className="space-y-4 sm:space-y-6 text-[18px] leading-relaxed w-full max-w-[95%] md:max-w-[70%] text-left">
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[18px] leading-relaxed w-full max-w-[95%] md:max-w-[70%] text-left`}>
       <p>
         In 1974, during the transitional period following the end of Emperor
         Haile Selassie's administration, 68 senior government officials and
@@ -132,7 +132,7 @@ export default function MartyrsPage() {
 
 {/* Description Section */}
 <section className="w-full max-w-[95%] md:max-w-[70%] mx-auto px-4 sm:px-6 pb-10 text-left">
-  <div className="space-y-4 sm:space-y-6 text-[18px] sm:text-base md:text-lg leading-relaxed text-black ">
+  <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[18px] sm:text-base md:text-lg leading-relaxed text-black `}>
     <p className="text-left">
       The 68 martyrs represented a generation of leaders who contributed
       significantly to national progress through their service,
@@ -166,7 +166,7 @@ export default function MartyrsPage() {
 
       {/* Martyrs Section */}
       {showMartyrs && (
-        <section className=" text-gray-800 px-6 md:px-20 py-0">
+        <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-gray-800 px-6 md:px-20 py-0`}>
 
  <div className="max-w-6xl mx-auto">
   <div className="w-full flex justify-end">
@@ -197,7 +197,7 @@ export default function MartyrsPage() {
             className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-center rounded-full border border-gray-400 shadow-md "
           />
              <div className="flex flex-col items-center">
-                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                  <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
                     {martyr.name}
                   </h3>
                   <p className="text-sm text-gray-600">{martyr.description}</p>
@@ -214,7 +214,7 @@ export default function MartyrsPage() {
     </div>
 
           <div className="text-center mb-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-[36px]  text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px]  text-left text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
@@ -234,7 +234,7 @@ export default function MartyrsPage() {
                   className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
-                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                  <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
                     {member.name}
                   </h3>
                   <p className="text-sm text-gray-600">{member.title}</p>
@@ -243,7 +243,7 @@ export default function MartyrsPage() {
             ))}
           </div>
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-[36px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px] text-left  text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
@@ -263,7 +263,7 @@ export default function MartyrsPage() {
                   className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
-                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                  <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
                     {member.name}
                   </h3>
                   <p className="text-sm text-gray-600">{member.title}</p>
@@ -272,7 +272,7 @@ export default function MartyrsPage() {
             ))}
           </div>
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-[36px] text-left font-serif text-[#4A2C13]">
+            <h2 className="text-2xl md:text-[36px] text-left  text-[#4A2C13]">
               Civilian Officials Executed, Saturday, November 23, 1974
             </h2>
           </div>
@@ -292,7 +292,7 @@ export default function MartyrsPage() {
                   className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
-                  <h3 className="text-[15px] font-serif text-[#4A2C13] border-b border-[#B1864F]">
+                  <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
                     {member.name}
                   </h3>
                   <p className="text-sm text-gray-600">{member.title}</p>

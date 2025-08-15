@@ -63,7 +63,7 @@ const DonationSection = () => {
         <div className="bg-white p-8 rounded-md w-full md:w-1/2 ml-[-200px] space-y-6 border border-[#B27C3A]">
           {/* Amount Section */}
           <div>
-            <h2 className="text-xl font-serif mb-4 border-b-2 border-[#B27C3A] pb-1">
+            <h2 className="text-xl  mb-4 border-b-2 border-[#B27C3A] pb-1">
               Choose a donation amount
             </h2>
             <div className="space-y-4">
@@ -80,7 +80,7 @@ const DonationSection = () => {
                     onChange={() => setSelectedAmount(option.amount)}
                     className="form-radio h-5 w-5 border-black focus:ring-[#B27C3A] text-[#B27C3A]"
                   />
-                  <span className="text-lg font-serif">
+                  <span className="text-lg ">
                     ${option.amount} {option.label}
                   </span>
                 </label>
@@ -97,7 +97,7 @@ const DonationSection = () => {
 
           {/* Frequency Section */}
           <div>
-            <h2 className="text-xl font-serif mb-4 border-b-2 border-[#B27C3A] pb-1">
+            <h2 className="text-xl  mb-4 border-b-2 border-[#B27C3A] pb-1">
               Choose a donation frequency
             </h2>
             <div className="flex gap-6 items-center">
@@ -112,7 +112,7 @@ const DonationSection = () => {
                     className="form-radio h-5 w-5 border-black focus:ring-[#B27C3A] text-[#B27C3A]"
                   />
                   <span
-                    className={`text-lg font-serif ${
+                    className={`text-lg  ${
                       frequency === f ? 'text-[#B27C3A]' : 'text-black'
                     }`}
                   >

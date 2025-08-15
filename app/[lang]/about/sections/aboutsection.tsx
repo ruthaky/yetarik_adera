@@ -141,7 +141,7 @@ const AboutPage = ({
 
       {/* Featured Section */}
       <div className="flex items-center justify-center  w-full">
-        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center  md:w-[70%] font-serif py-8">
+        <div className="bg-[#f8f5ef] text-[#2b2a28] flex flex-col justify-center  md:w-[70%]  py-8">
           <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-2 h-[50px]">{aboutpageTexts.Visionheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
