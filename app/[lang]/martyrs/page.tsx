@@ -183,27 +183,26 @@ export default function MartyrsPage() {
   filteredMartyrs.length > 0 ? (
     <div className="grid grid-cols-2  md:grid-cols-3 gap-6">
       {filteredMartyrs.map((martyr : any, index) => (
-        <div
-          key={index}
-                         className="flex flex-col items-center gap-4 py-[20px] cursor-pointer w-[300px]"
-                          onClick={() => setSelectedMartyr(martyr)}
-        >
-       <Image
-            src={martyr.image.src}
-            alt={martyr.name}
-              unoptimized
+         <div
+                key={index}
+                className="flex flex-col items-center gap-4 py-[20px] cursor-pointer"
+                onClick={() => setSelectedMartyr(martyr)}
+              >
+                <Image
+                  src={martyr.image}
+                  alt={martyr.name}
+                  unoptimized
                   width={200}
                   height={200}
-            className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-center rounded-full border border-gray-400 shadow-md "
-          />
-             <div className="flex flex-col items-center">
+                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
+                />
+                <div className="flex flex-col items-center">
                   <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
                     {martyr.name}
                   </h3>
-                  <p className="text-sm text-gray-600">{martyr.description}</p>
+                  <p className="text-sm text-gray-600">{martyr.title}</p>
                 </div>
-         
-        </div>
+              </div>
       ))}
     </div>
   ) : (
