@@ -131,7 +131,7 @@ const BoardMembers: React.FC = () => {
     <>
     <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-[70px] md:h-screen overflow-y-hidden`}>
       {/* Header */}
-      <div className="text-center mb-10 md:mb-16 flex justify-center  items-center">
+      <div className="text-center mb-10 mt-16 flex justify-center items-center">
         <section className="px-6 text-center w-auto">
           <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
             <div className="inline-block pr-14 md:pr-0">
@@ -163,7 +163,7 @@ const BoardMembers: React.FC = () => {
       <div className="flex w-full gap-20 flex-wrap">
        
  {/* Column 1 */}
-<div className="hidden md:flex flex-col gap-8 w-auto mt-[-200px] overflow-hidden h-full">
+<div className="hidden md:flex flex-col gap-8 w-auto mt-[-250px] overflow-hidden h-full">
   <div className="animate-infinite-scroll">
     <div className="">
     {members.slice(0, 6).map((member, index) => (
