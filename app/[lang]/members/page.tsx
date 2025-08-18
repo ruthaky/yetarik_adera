@@ -129,9 +129,9 @@ const BoardMembers: React.FC = () => {
     const [selectedMartyr, setSelectedMartyr] = useState<BoardMember | null>(null);
   return (
     <>
-    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-32 py-20 md:h-screen overflow-y-hidden`}>
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-[70px] md:h-screen overflow-y-hidden`}>
       {/* Header */}
-      <div className="text-center mb-10 md:mb-16 flex justify-center items-center">
+      <div className="text-center mb-10 md:mb-16 flex justify-center  items-center">
         <section className="px-6 text-center w-auto">
           <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
             <div className="inline-block pr-14 md:pr-0">
@@ -161,59 +161,85 @@ const BoardMembers: React.FC = () => {
 
       {/* Members and Text */}
       <div className="flex w-full gap-20 flex-wrap">
-        {/* Column 1 */}
-        <div className="hidden md:flex flex-col gap-8 w-auto mt-[-200px] animate-infinite-scroll pb-[100px]">
-          {members.slice(0, 6).map((member, index) => (
-            <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
-              <Image
-                src={member.image}
-                alt={member.name}
-                className="w-[170px] h-[170px] object-cover rounded-full"
-              />
-              <div className="flex flex-col">
-                <h3 className="text-lg  text-[#4A2C13] inline-block">
-                  {member.name}
-                </h3>
-                <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
-              />
-                <h3 className="text-lg  text-[#4A2C13] inline-block">
-                  {member.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+       
+ {/* Column 1 */}
+<div className="hidden md:flex flex-col gap-8 w-auto mt-[-200px] overflow-hidden h-full">
+  <div className="animate-infinite-scroll">
+    <div className="">
+    {members.slice(0, 6).map((member, index) => (
+      <div key={`col1-${index}`} className="flex flex-col items-start gap-4 py-4 " onClick={() => setSelectedMartyr(member)}>
+        <Image
+          src={member.image}
+          alt={member.name}
+          className="w-[170px] h-[170px] object-fit rounded-full"
+        />
+        <div className="flex flex-col">
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.name}</h3>
+          <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1, delay: 0 }} className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1" />
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.title}</h3>
         </div>
+      </div>
+     
+    ))}
+ </div>
+    {/* duplicate list for seamless looping */}
+        <div className="">
+    {members.slice(0, 6).map((member, index) => (
+      <div key={`col1-dup-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMartyr(member)}>
+        <Image
+          src={member.image}
+          alt={member.name}
+          className="w-[170px] h-[170px] object-fit rounded-full"
+        />
+        <div className="flex flex-col">
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.name}</h3>
+          <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1, delay: 0 }} className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1" />
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.title}</h3>
+        </div>
+      </div>
+    ))}
+    </div>
+  </div>
+</div>
+
 
         {/* Column 2 */}
-        <div className="hidden md:flex flex-col gap-8 w-auto mt-[-100px] animate-infinite-scroll pb-[100px]">
-          {members.slice(6, 13).map((member, index) => (
-            <div key={index} className="flex flex-col items-start gap-4"  onClick={() => setSelectedMartyr(member)}>
-              <Image
-                src={member.image}
-                alt={member.name}
-                className="w-[170px] h-[170px] object-fit rounded-full"
-              />
-              <div className="flex flex-col">
-                <h3 className="text-lg  text-[#4A2C13] inline-block">
-                  {member.name}
-                </h3>
-                  <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
-              />
-                <h3 className="text-lg  text-[#4A2C13] inline-block">
-                  {member.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+    
+<div className="hidden md:flex flex-col gap-8 w-auto mt-[-250px] pt-[150px] overflow-hidden h-full">
+  <div className="animate-infinite-scroll">
+    {members.slice(6, 13).map((member, index) => (
+      <div key={`col1-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMartyr(member)}>
+        <Image
+          src={member.image}
+          alt={member.name}
+          className="w-[170px] h-[170px] object-fit rounded-full"
+        />
+        <div className="flex flex-col">
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.name}</h3>
+           <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1, delay: 0 }} className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1" />
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.title}</h3>
         </div>
+      </div>
+    ))}
+
+    {/* duplicate list for seamless looping */}
+    {members.slice(6, 13).map((member, index) => (
+      <div key={`col1-dup-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMartyr(member)}>
+        <Image
+          src={member.image}
+          alt={member.name}
+          className="w-[170px] h-[170px] object-fit rounded-full"
+        />
+        <div className="flex flex-col">
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.name}</h3>
+           <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1, delay: 0 }} className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1" />
+          <h3 className="text-lg text-[#4A2C13] inline-block">{member.title}</h3>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
 <div className="flex flex-col gap-4 w-full md:w-1/2 text-[18px]">
           <div>
@@ -226,7 +252,7 @@ const BoardMembers: React.FC = () => {
             Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+        <div className="md:hidden grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
                     {members.map((member:any, index) => (
                       <div key={index} className="flex flex-col items-center gap-4"  onClick={() => setSelectedMartyr(member)}>
               <Image

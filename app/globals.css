@@ -70,6 +70,22 @@ transform:rotateY(180deg)
 }
 
 
+@keyframes infinite-scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%); /* moves up by half since we duplicate content */
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  flex-direction: column;
+  animation: infinite-scroll 50s linear infinite;
+}
+
+
 /* For Firefox */
 * {
   scrollbar-width: thick;
