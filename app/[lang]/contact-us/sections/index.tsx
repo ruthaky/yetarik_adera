@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { Arapey, Noto_Serif_Ethiopic } from "next/font/google";
 import React, { useState } from "react";
 import { FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
@@ -69,16 +70,34 @@ export default function ContactSection({ contactText }: { contactText: any }) {
   };
   return (
     <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#FDF9EE] text-[#4A2C13] py-32 px-6 md:px-20 flex flex-col justify-center items-center`}>
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className={`${arapey.variable} font-arapey text-3xl md:text-5xl`}>
-          <span className="border-b-2 border-[#B1864F] pb-2">Contact</span> Us
-        </h2>
-        <p className="mt-4 text-lg text-gray-700">
-          Any question or remarks? Just write us a message!
-        </p>
+     {/* Header */}
+      <div className="text-center mb-10 flex justify-center ">
+        <section className="px-6 w-auto">
+          <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
+            <div className="inline-block md:pr-0">
+              <span className="">Contact</span>
+<motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[2px] w-[300px] bg-primary mt-1"
+              />
+            </div>
+            <br />
+            <div className="inline-block pl-[70px] md:pl-[200px]">
+              <div className="inline-block">
+                <span className="">Us</span>
+      <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+              </div>
+            </div>
+          </h1>
+        </section>
       </div>
-
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white w-full md:w-[80%] shadow-md overflow-hidden">
         {/* Contact Info */}
@@ -88,14 +107,14 @@ export default function ContactSection({ contactText }: { contactText: any }) {
 
             <ul className="space-y-5 text-sm">
               <li className="flex items-center gap-2">
-                <span>📞</span> +1012 3456 789
+                <span>📞</span> 0123456789
               </li>
               <li className="flex items-center gap-2">
-                <span>✉️</span> demo@gmail.com
+                <span>✉️</span> yetarikadera@gmail.com
               </li>
               <li className="flex items-start gap-2">
                 <span>📍</span>
-                132 Dartmouth Street Boston, Massachusetts 02156 United States
+                Addis Ababa, Ethiopis
               </li>
             </ul>
           </div>

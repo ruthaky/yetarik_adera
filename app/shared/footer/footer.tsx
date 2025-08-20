@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex md:flex-row flex-col justify-between">
           <div>
             <h4 className="font-bold text-[25px] mb-1">YETARIK ADERA</h4>
-            <p className="py-2">Contact us: info@yetarikadera.org</p>
+            <p className="py-2">Contact us: yetarikadera@gmail.com</p>
             <div className="flex space-x-6 mt-2">
               <a href="#">Instagram</a>
               <a href="#">YouTube</a>
