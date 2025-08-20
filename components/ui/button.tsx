@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-secondary text-white text-[20px] font-normal shadow hover:bg-primary/90",
+          "bg-secondary text-white text-md font-normal shadow hover:bg-primary/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
         // Add a new variant for the contact form
@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-primary text-white text-lg font-light px-6 py-3 shadow-lg hover:bg-primary/80",
       },
       size: {
-        default: "h-9 px-6 py-6",
+        default: "h-8 px-5 py-5",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",

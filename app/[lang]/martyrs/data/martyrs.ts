@@ -86,7 +86,16 @@ import m69 from "@/public/martyrs/Kifle Enquselassie.webp";
 import m70 from "@/public/martyrs/Abebe Kebede.webp";
 
 export const Martyrs = [
-  { name: "H.E. Tsehafe Tizaz Aklilu Habtewold", image: m1, description: "Served the country with honor and dedication." },
+{
+  name: "H.E. Tsehafe Tizaz Aklilu Habtewold",
+    am: "ሐ.አ. ብ/ጀኔራል ሙሉጌታ ወልደ ዮሐንስ",
+  
+  image: m1,
+  description: {
+    en: "Served the country with honor and dedication.",
+    am: "ሀገሩን በክብርና በትጋት አገለገለ።",
+  },
+},
   { name: "H.E. Lt. General Abiy Abebe", image: m2, description: "Served the country with honor and dedication." },
   { name: "His Highness Leul Ras Asrate Kassa", image: m3, description: "Served the country with honor and dedication." },
   { name: "H.E. Ras Mesfin Sileshi", image: m4, description: "Served the country with honor and dedication." },

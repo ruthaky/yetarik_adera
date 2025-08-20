@@ -68,8 +68,20 @@ const UpcomingEvents: React.FC = () => {
   return (
     <>
     <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}>
+      <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
+        <h2 className={` ${arapey.variable} font-arapey text-3xl md:text-5xl `}>
+          <span className=" pb-2">Annual</span> Event
+          
+        </h2><motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0 }}
+              className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+            />
+          
+      </div>
 
-<div className="h-[450px] w-full bg-[#B1864F] relative overflow-hidden">
+<div className="hidden h-[450px] w-full bg-[#B1864F] relative overflow-hidden">
   {/* Background Image */}
   <Image
     src={img1}
@@ -93,7 +105,42 @@ const UpcomingEvents: React.FC = () => {
      
   </div>
 </div>
+ <div className="md:space-y-16 px-6 md:px-20">
+       
+          <div className="border-b border-[#B1864F] py-12">
+            <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
+              {/* Date */}
+              <div className="text-center text-xl font-bol w-16 md:w-auto">
+                <p className="text-sm border-b border-[#B1864F] pb-1">JUNE</p>
+                <p className="text-3xl text-black">15</p>
+              </div>
 
+              {/* Image */}
+              <Image
+                src={img1}
+                alt="Event Name"
+                className="w-[400px] h-auto object-cover rounded-md shadow-md"
+                width={0}
+                height={0}
+              />
+
+              {/* Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-1">Event Name</h3>
+                <p className="text-sm text-gray-800 mb-1">1015 California Ave, Los Angeles CA</p>
+                <p className="text-sm text-gray-700 mb-3">7:00 pm - 8:00 pm</p>
+                <p className="text-sm text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a
+                  href="#"
+                  className="text-sm font-semibold text-black border-b border-[#B1864F] inline-flex items-center gap-1"
+                >
+                  View Event Details <span className="ml-1">&gt;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+     
+      </div>
 
       <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
         <h2 className={` ${arapey.variable} font-arapey text-3xl md:text-4xl `}>

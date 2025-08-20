@@ -2,15 +2,15 @@
 export const dynamic = "force-static";
 import Image from "next/image";
 import React, { useState } from "react";
-import img1 from "@/public/asset/circus.jpg";
+import img1 from "@/public/asset/circus 2.jpg";
 import img2 from "@/public/asset/train.jpg";
-import img3 from "@/public/asset/wetader.jpg";
-import img4 from "@/public/asset/award2.jpg";
-import img5 from "@/public/asset/library.jpg";
+import img3 from "@/public/asset/hostess.webp";
+import img4 from "@/public/asset/award2 2.jpg";
+import img5 from "@/public/asset/school 2.jpg";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Noto_Serif_Ethiopic } from "next/font/google";
 import { Arapey } from "next/font/google";
 
@@ -91,12 +91,12 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       {/* Carousel */}
       <div className="hidden md:flex relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
         {/* Prev Button (hidden on mobile if swipe enabled) */}
-        <button
+        {/* <button
           onClick={prev}
           className="hidden sm:flex absolute left-0 sm:-left-10 z-10 p-2 sm:p-3 bg-white rounded-full shadow hover:bg-gray-200 transition-transform hover:scale-110"
         >
-          <FaChevronLeft />
-        </button>
+         <FaChevronLeft /> 
+        </button> */}
 
         {/* Images */}
         <div className="flex gap-3 sm:gap-5 overflow-x-auto sm:overflow-visible sm:perspective-[1000px] px-2 sm:px-0 scrollbar-hide">
@@ -122,12 +122,12 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
         </div>
 
         {/* Next Button */}
-        <button
+        {/* <button
           onClick={next}
           className="hidden sm:flex absolute right-0 sm:-right-10 z-10 p-2 sm:p-3 bg-white rounded-full shadow hover:bg-gray-200 transition-transform hover:scale-110"
         >
           <FaChevronRight />
-        </button>
+        </button> */}
       </div>
 
       {/* moble image */}
