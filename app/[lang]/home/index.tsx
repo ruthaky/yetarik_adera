@@ -68,7 +68,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
   return (
     <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic
- text-center py-16 sm:py-[130px] px-4 bg-[#F7F4E9] h-screen flex flex-col items-center justify-center md:mt-12`}>
+ text-center px-4 h-[calc(100vh-70px)] flex flex-col items-center justify-end mt-[70px] pb-6`}>
       {/* Heading */}
       <div className="inline-block">
         <h1 className={`${arapey.variable} font-arapey text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn`}>
@@ -89,7 +89,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Carousel */}
-      <div className="hidden md:flex relative mt-8 sm:mt-12 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
+      <div className="hidden md:flex relative mt-6 sm:mt-6 flex justify-center items-center gap-3 sm:gap-5 animate-slideIn delay-200">
         {/* Prev Button (hidden on mobile if swipe enabled) */}
         {/* <button
           onClick={prev}

@@ -103,7 +103,7 @@ export default function RootLayout({
       </Script>
 
       <body
-  className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic antialiased bg-white min-h-screen flex flex-col overflow-x-hidden`}
+  className={` antialiased  min-h-screen flex flex-col overflow-x-hidden`}
 >
   <MantineProvider>
     <div>

@@ -69,7 +69,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
     }
   };
   return (
-    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#FDF9EE] text-[#4A2C13] py-32 px-6 md:px-20 flex flex-col justify-center items-center`}>
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-[#4A2C13] py-32 px-6 md:px-20 flex flex-col justify-center items-center`}>
      {/* Header */}
       <div className="text-center mb-10 flex justify-center ">
         <section className="px-6 w-auto">

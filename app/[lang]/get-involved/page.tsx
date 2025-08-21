@@ -54,7 +54,7 @@ export default function GetInvolvedPage() {
   const pathname = usePathname();
   return (
     <>
-    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F7F4E9] pt-16 md:pt-0`}>
+    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic pt-16 md:pt-0`}>
       {/* Header Section */}
       <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
           <section className="px-6 md:text-start w-[400px] mb-12">

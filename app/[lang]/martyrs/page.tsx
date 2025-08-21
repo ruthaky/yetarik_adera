@@ -67,7 +67,7 @@ export default function MartyrsPage() {
 
   return (
     <>
-    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic min-h-screen text-gray-800 font-sans bg-[#f8f5ef] pt-32 `}>
+    <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic min-h-screen text-gray-800 font-sans pt-32 `}>
       {/* Hero */}
     <section className="relative w-full">
   {/* Title Section */}

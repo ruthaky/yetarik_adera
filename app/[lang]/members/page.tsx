@@ -129,7 +129,7 @@ const BoardMembers: React.FC = () => {
     const [selectedMartyr, setSelectedMartyr] = useState<BoardMember | null>(null);
   return (
     <>
-    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] text-gray-800 px-6 md:px-20 pt-[70px] md:h-screen overflow-y-hidden`}>
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-gray-800 px-6 md:px-20 pt-[70px] md:h-screen overflow-y-hidden`}>
       {/* Header */}
       <div className="text-center mb-10 mt-16 flex justify-center items-center">
         <section className="px-6 text-center w-auto">

@@ -6,16 +6,15 @@ import Image from "next/image";
 import img1 from "@/public/asset/lineofjudah.svg";
 import img2 from "@/public/asset/haileselasie.svg";
 import img3 from "@/public/asset/imgabout3.png";
-import img4 from "@/public/asset/imgabout4.png";
 import img5 from "@/public/asset/telekibeb.jpg";
 import img6 from "@/public/asset/telecom.jpg";
 import img7 from "@/public/asset/bank2.jpg";
-import img8 from "@/public/asset/library.jpg";
+import img8 from "@/public/asset/school 2.jpg";
 import img9 from "@/public/asset/cinema.jpg";
 import img10 from "@/public/asset/bibble.jpg";
-import img11 from "@/public/asset/Assab.jpeg";
+// import img11 from "@/public/asset/Assab.jpeg";
 import img12 from "@/public/asset/aviation.jpg";
-import img13 from "@/public/asset/batamariam.jpg";
+// import img13 from "@/public/asset/batamariam.jpg";
 import img14 from "@/public/asset/line.jpg";
 import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
@@ -56,7 +55,7 @@ const AboutPage = ({
 }) => {
   return (
         <MantineProvider>
-    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#f8f5ef] text-[#2b2a28] flex flex-col items-center `}>
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-[#2b2a28] flex flex-col items-center `}>
       
 
       {/* Hero Section */}
@@ -199,14 +198,14 @@ const AboutPage = ({
   slidesToScroll={3}
   className="p-6 w-full"
 >
-    {[img10, img13, img11, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
+    {[img10, img12, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
       <Carousel.Slide key={index}>
         <div className="relative w-full h-full">
           <Image
             src={imgSrc}
             alt={`Slide ${index + 1}`}
             fill
-            className="object-cover object-center rounded-lg"
+            className="object-fit object-center rounded-lg"
           />
         </div>
       </Carousel.Slide>

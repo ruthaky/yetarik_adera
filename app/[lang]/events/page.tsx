@@ -67,7 +67,7 @@ const events: Event[] = [
 const UpcomingEvents: React.FC = () => {
   return (
     <>
-    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#F3EFE6] py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}>
+    <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}>
       <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
         <h2 className={` ${arapey.variable} font-arapey text-3xl md:text-5xl `}>
           <span className=" pb-2">Annual</span> Event

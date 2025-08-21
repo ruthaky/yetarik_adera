@@ -37,7 +37,7 @@ const DonationSection = () => {
   return (
     <>
       <Navbar />
-      <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#f4f1e8] text-black px-4 sm:px-6 py-12 md:pt-32 flex items-center`}>
+      <section className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-black px-4 sm:px-6 py-12 md:pt-32 flex items-center`}>
         <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Image Section */}
           <div className="w-full md:w-1/2 flex justify-center">
