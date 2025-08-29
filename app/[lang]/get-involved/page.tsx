@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-import img1 from "@/public/asset/placeholoder.jpg";
-import img2 from "@/public/asset/placeholoder.jpg";
+import img1 from "@/public/asset/Testimonial1.jpg";
+import img2 from "@/public/asset/testimonial2.jpg";
 import img3 from "@/public/asset/placeholoder.jpg";
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -29,24 +29,17 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
 const testimonials = [
   {
     quote:
-      "Honestly, the military took everything we had. One thing they couldn’t take was my father’s scholarly work during his final days under arrest. I am happy to have an organization that will make his work available to many others.",
+      "Honestly, the military took everything we had.  One thing they couldn't take was my father's scholarly work during his final days under arrest.  I am happy to have an organization that will make his work available to many others",
     name: "Kokeb Kassa",
-    title: "Daughter of H.E Dejazmatch Kassa Wolde Mariam",
+    title: "Daughter of H.E. Dejazmatch Kassa Wolde Mariam",
     image: img1,
   },
   {
     quote:
-      "This organization helps preserve the legacy of our ancestors and provides access to knowledge for future generations.",
-    name: "Abebe Bekele",
-    title: "Grandson of Ras Desta Damtew",
+      "As the grandchild of one of the 70, I only know about them through family stories.  Being involved with Yetarik Adera helps me get to know my grandfather and the work her did.  It's also a great chance to connect with others who, like me, treasure this part of their history.",
+    name: "Anna Amha",
+    title: "Grandchild of Dejazmatch Kassa Wolde Mariam",
     image: img2,
-  },
-  {
-    quote:
-      "It is vital that Ethiopia’s history is documented and accessible. I am proud to support this mission.",
-    name: "Sara Mekonnen",
-    title: "Historian & Researcher",
-    image: img3,
   },
 ];
 

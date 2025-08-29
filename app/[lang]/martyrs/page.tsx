@@ -184,7 +184,7 @@ export default function MartyrsPage() {
                   alt={`marquee-${index}`}
                   width={320}
                   height={220}
-                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] "
+                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] rounded-[15px]"
                 />
               </div>
             ))}

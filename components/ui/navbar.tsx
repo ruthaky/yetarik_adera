@@ -79,7 +79,7 @@ export const Navbar = () => {
           onClick={() => handleLinkClick("/")}
           className="flex items-center justify-center"
         >
-          <Image src={logo} alt="logo" width={220} height={220} />
+          <Image src={logo} alt="logo" width={200} height={200} />
         </Link>
 
         {/* Burger */}

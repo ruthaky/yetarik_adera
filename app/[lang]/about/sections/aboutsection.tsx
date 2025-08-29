@@ -7,18 +7,17 @@ import img1 from "@/public/asset/lineofjudah.svg";
 import img2 from "@/public/asset/haileselasie.svg";
 import img3 from "@/public/asset/imgabout3.png";
 import img5 from "@/public/asset/telekibeb.jpg";
-import img6 from "@/public/asset/telecom.jpg";
-import img7 from "@/public/asset/bank2.jpg";
+import img6 from "@/public/asset/stationguy.jpg";
+import img7 from "@/public/asset/bankbw.jpg";
 import img8 from "@/public/asset/school 2.jpg";
-import img9 from "@/public/asset/cinema.jpg";
+import img9 from "@/public/asset/cinemabw.jpg";
 import img10 from "@/public/asset/bibble.jpg";
-// import img11 from "@/public/asset/Assab.jpeg";
 import img12 from "@/public/asset/aviation.jpg";
-// import img13 from "@/public/asset/batamariam.jpg";
 import img14 from "@/public/asset/line.jpg";
 import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
 import { motion } from "framer-motion";
+
 import logo from "/logo.svg";
 import { Carousel } from "@mantine/carousel";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
@@ -99,7 +98,7 @@ const AboutPage = ({
             alt="Emperor Haile Selassie"
             width={350}
             height={350}
-            className="object-fit h-[300px] w-[400px]"
+            className="object-fit h-[300px] w-[400px] "
           />
           <p className="text-[18px] md:w-[750px] px-6 md:px-0 leading-relaxed">
            {aboutpageTexts.storyp1}
@@ -141,7 +140,7 @@ const AboutPage = ({
           </div>
         </section>
         <section className="flex flex-col justify-end items-end w-full md:w-1/2">
-          <Image src={img5} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px]" />
+          <Image src={img5} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] rounded-[15px]" />
         </section>
       </div>
 
@@ -187,7 +186,7 @@ const AboutPage = ({
 
       {/* Commitment Section */}
       <section className="py-[60px] md:w-[75%] flex flex-col gap-[20px] items-center">
-        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full" />
+        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full rounded-[15px]" />
         <p className="text-[18px]">
      {aboutpageTexts.storyp5}
         </p>
@@ -204,7 +203,7 @@ const AboutPage = ({
                   alt={`marquee-${index}`}
                   width={320}
                   height={220}
-                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px]"
+                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] rounded-[15px]"
                 />
               </div>
             ))}

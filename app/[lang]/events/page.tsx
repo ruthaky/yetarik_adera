@@ -130,12 +130,12 @@ const UpcomingEvents: React.FC = () => {
                 <p className="text-sm text-gray-800 mb-1">1015 California Ave, Los Angeles CA</p>
                 <p className="text-sm text-gray-700 mb-3">7:00 pm - 8:00 pm</p>
                 <p className="text-sm text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a
+                {/* <a
                   href="#"
                   className="text-sm font-semibold text-black border-b border-[#B1864F] inline-flex items-center gap-1"
                 >
                   View Event Details <span className="ml-1">&gt;</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -180,12 +180,12 @@ const UpcomingEvents: React.FC = () => {
                 <p className="text-sm text-gray-800 mb-1">{event.location}</p>
                 <p className="text-sm text-gray-700 mb-3">{event.time}</p>
                 <p className="text-sm text-gray-700 mb-4">{event.description}</p>
-                <a
+                {/* <a
                   href="#"
                   className="text-sm font-semibold text-black border-b border-[#B1864F] inline-flex items-center gap-1"
                 >
                   View Event Details <span className="ml-1">&gt;</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
