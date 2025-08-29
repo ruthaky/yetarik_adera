@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 import img1 from "@/public/asset/Kiddie.webp";
 import img6 from "@/public/asset/Laly.jpg";
 import img5 from "@/public/asset/Tegi.svg";
-import img2 from "@/public/asset/Atsede.webp";
+import img2 from "@/public/asset/atsedebw.jpg";
 import img3 from "@/public/asset/monique.jpeg";
-import img4 from "@/public/asset/Gash Amde.webp";
-import img7 from "@/public/asset/Askadetch.svg";
+import img4 from "@/public/asset/gashamdebw.jpg";
+import img7 from "@/public/asset/askadetchbw.jpg";
 import img8 from "@/public/asset/hirut.jpeg";
-import img9 from "@/public/asset/Rahel.svg";
-import img10 from "@/public/asset/Yodit.webp";
+import img9 from "@/public/asset/rahelbw.jpg";
+import img10 from "@/public/asset/yoditbw.jpg";
 import img11 from "@/public/asset/sirgut.jpeg";
 import placeholder from "@/public/asset/placeholoder.jpg"
 import Footer from "@/app/shared/footer/footer";
@@ -280,7 +280,7 @@ const BoardMembers: React.FC = () => {
 {/* Modal */}
 {selectedMartyr && (
   <div
-    className="fixed inset-0 bg-[#4C3519]/90 z-50 flex items-center justify-center p-4 sm:p-8"
+    className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-4 sm:p-8"
     onClick={() => setSelectedMartyr(null)}
   >
     <div

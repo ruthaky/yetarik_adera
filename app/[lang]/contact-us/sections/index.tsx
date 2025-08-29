@@ -33,6 +33,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState("");
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null); // null = no message, true = success, false = failure
+  const [showForm, setShowForm] = useState(false);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -126,7 +127,17 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           </div>
         </div>
 
-        {/* Form */}
+        {/* Right Column: Reveal button or Form */}
+        {!showForm ? (
+          <div className="p-8 flex items-center justify-center">
+            <button
+              onClick={() => setShowForm(true)}
+              className="bg-[#B77B36] text-white px-6 py-3 rounded shadow hover:bg-[#a86e2f] transition"
+            >
+              Send Message
+            </button>
+          </div>
+        ) : (
         <form onSubmit={handleSubmit} className="p-8 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -235,10 +246,12 @@ export default function ContactSection({ contactText }: { contactText: any }) {
             <p className={`mt-4 font-semibold ${isSuccess ? "text-green-600" : "text-red-600"}`}>
               {status}</p> )}
         </form>
-    
+        )}
+       
             
          
       </div>
+      
     </section>
   );
 }

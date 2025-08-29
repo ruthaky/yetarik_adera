@@ -68,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <>
       <meta property="og:image" content="https://i.postimg.cc/xjHtX95b/surge-thumbnail.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
@@ -102,17 +102,12 @@ export default function RootLayout({
         }
       </Script>
 
-      <body
-  className={` antialiased  min-h-screen flex flex-col overflow-x-hidden`}
->
-  <MantineProvider>
-    <div>
-      <Navbar />
-    </div>
-    {children}
-  </MantineProvider>
-</body>
-
-    </html>
+      <MantineProvider>
+        <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic`}>
+          <Navbar />
+          {children}
+        </div>
+      </MantineProvider>
+    </>
   );
 }

@@ -13,9 +13,14 @@ const config: Config = {
           '0%': { transform: 'translateY(0%)' },
           '100%': { transform: 'translateY(-50%)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'infinite-scroll': 'scrollUp 30s linear infinite',
+        'marquee': 'marquee 30s linear infinite',
       },
       colors: {
         background: "hsl(var(--background))",

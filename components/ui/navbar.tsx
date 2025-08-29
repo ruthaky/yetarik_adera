@@ -79,7 +79,7 @@ export const Navbar = () => {
           onClick={() => handleLinkClick("/")}
           className="flex items-center justify-center"
         >
-          <Image src={logo} alt="logo" width={160} height={160} />
+          <Image src={logo} alt="logo" width={220} height={220} />
         </Link>
 
         {/* Burger */}
@@ -102,7 +102,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic fixed top-[70px] left-0 w-full h-screen bg-[#4C3519]/90 z-50 text-white z-[9998]`}
+            className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic fixed top-[70px] left-0 w-full h-screen bg-[#774E1D]/80 z-50 text-white z-[9998]`}
           >
             <Flex
               direction="column"

@@ -85,6 +85,10 @@ transform:rotateY(180deg)
   animation: infinite-scroll 50s linear infinite;
 }
 
+.animate-marquee {
+  animation: marquee 70s linear infinite;
+}
+
 
 /* For Firefox */
 * {

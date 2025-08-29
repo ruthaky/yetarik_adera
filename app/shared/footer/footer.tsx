@@ -41,20 +41,20 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-4 md:mt-0">
-            <p className="mb-1 py-2">Get the freshest news from us:</p>
+            {/* <p className="mb-1 py-2">Get the freshest news from us:</p> */}
             <div className="flex gap-2">
-              <input
+              {/* <input
                 type="email"
                 placeholder="Your email address"
                 className="px-2 py-1 text-black rounded-[4px] w-[250px]"
-              />
-              <button className="bg-[#B8B0BD] text-white px-4 py-2 rounded-[4px]">
-                Subscribe
+              /> */}
+              <button className="bg-primary text-white px-4 py-2 rounded-[4px]">
+                Donate
               </button>
             </div>
           </div>
         </div>
-        <div className="h-[1px] w-full bg-[#71777D] my-8"></div>
+        <div className="h-[1px] w-full bg-primary my-8"></div>
         <div className="text-xs mt-4 flex gap-2 flex-col md:flex-row justify-between text-[#92989F]">
           <div className="flex gap-1 md:gap-4 "><div>Terms & Conditions</div><div>|</div><div>Privacy Policy</div><div>|</div><div>Accessibility</div><div>|</div><div>Legal</div></div>
           
