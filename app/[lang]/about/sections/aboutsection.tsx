@@ -195,7 +195,7 @@ const AboutPage = ({
       {/* Image Carousel */}
       <section className="w-full md:w-[75%] pb-12">
         <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-4 px-6">
+          <div className="flex w-max animate-marquee gap-4 px-6 border border-primary py-2">
             {[img10, img12, img5, img6, img7, img8, img9, img14, img15, img16, img10, img12, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
               <div key={`marq-${index}`} className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
                 <Image

@@ -112,9 +112,43 @@ const DonationSection = () => {
                 ))}
               </div>
 
-              <Button className="mt-6 sm:mt-10 w-full sm:w-auto">
-                Donate
-              </Button>
+<Button
+  onClick={async () => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/chapa/initialize`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ amount: 100 }), // Example payload, add all the forms needed
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to initialize donation");
+      }
+
+      const data = await response.json();
+
+      if (data?.status === "success" && data?.data?.checkout_url) {
+        // Redirect to Chapa checkout page
+        window.location.href = data.data.checkout_url;
+        
+      } else {
+        console.error("Unexpected response:", data);
+      }
+    } catch (error) {
+      console.error("Error initializing donation:", error);
+    }
+  }}
+  className="mt-6 sm:mt-10 w-full sm:w-auto"
+>
+  Donate
+</Button>
+
+
             </div>
           </div>
         </div>

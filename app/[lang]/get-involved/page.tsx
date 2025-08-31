@@ -95,11 +95,15 @@ export default function GetInvolvedPage() {
               We want future generations to understand their history, debate its successes and shortcomings and chart a path forward that is armed with knowledge.
             </p>
           </div>
+           {/* Donate Button */}
+           <Button className="mt-10">
+            <Link href={`/${pathname.split("/")[1]}/donate`}>Donate</Link>
+          </Button>
         </section>
 
         {/* Testimonial Slider */}
         <section
-          className="bg-primary py-20 relative flex flex-col items-center"
+          className="hidden bg-primary py-20 relative flex flex-col items-center"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -159,10 +163,7 @@ export default function GetInvolvedPage() {
             &#8594;
           </button>
 
-          {/* Donate Button */}
-          <Button className="mt-10">
-            <Link href={`/${pathname.split("/")[1]}/donate`}>Donate</Link>
-          </Button>
+         
         </section>
       </main>
       <Footer />

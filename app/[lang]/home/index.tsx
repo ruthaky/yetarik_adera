@@ -8,6 +8,12 @@ import img2 from "@/public/asset/train.jpg";
 import img3 from "@/public/asset/hostess.webp";
 import img4 from "@/public/asset/award2 2.jpg";
 import img5 from "@/public/asset/school 2.jpg";
+import img6 from "@/public/asset/newimg5.jpeg"
+import img7 from "@/public/asset/newimg17.jpeg";
+import img8 from "@/public/asset/newimg9.jpeg";
+import img9 from "@/public/asset/newimg18.jpeg";
+import img10 from "@/public/asset/newimg7.jpeg";
+import img11 from "@/public/asset/newimg1.jpeg";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -36,11 +42,11 @@ const images = [
   { src: img5, alt: "Historic Image 3" },
   { src: img2, alt: "Historic Image 4" },
   { src: img1, alt: "Historic Image 5" },
-  { src: img3, alt: "Historic Image 1" },
-  { src: img4, alt: "Historic Image 2" },
-  { src: img5, alt: "Historic Image 3" },
-  { src: img2, alt: "Historic Image 4" },
-  { src: img1, alt: "Historic Image 5" },
+  { src: img11, alt: "Historic Image 1" },
+  { src: img7, alt: "Historic Image 2" },
+  { src: img8, alt: "Historic Image 3" },
+  { src: img9, alt: "Historic Image 4" },
+  { src: img10, alt: "Historic Image 5" },
 ];
 
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
@@ -49,7 +55,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
   return (
     <section
-      className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg text-center px-4 h-[calc(100vh-70px)] flex flex-col items-center justify-end mt-[50px] pt-16 sm:pt-[130px]`}
+      className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg text-center px-4 h-[calc(100vh-70px)] flex flex-col items-center justify-end mt-[50px] pt-16 sm:pt-[100px]`}
     >
       {/* Heading */}
       <div className="inline-block">
@@ -75,7 +81,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
       {/* Scrolling Images */}
       <div className="hidden md:flex relative sm:mt-6 w-full overflow-hidden pb-10 ">
-        <div className="flex w-max animate-marquee space-x-6 ">
+        <div className="flex w-max animate-marquee space-x-6 border border-primary py-2 ">
           {[...images, ...images].map((img, i) => (
             <div
               key={i}

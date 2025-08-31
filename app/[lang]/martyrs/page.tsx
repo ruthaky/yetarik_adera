@@ -176,7 +176,7 @@ export default function MartyrsPage() {
 {/* Image Section */}
 <div className="w-full flex items-center justify-center mt-10"><section className="w-full md:w-[74%] pb-12">
         <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-4 px-6">
+          <div className="flex w-max animate-marquee gap-4 px-6 border border-primary py-2">
             {[img2, img12, img5,  img8, img14].map((imgSrc, index) => (
               <div key={`marq-${index}`} className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
                 <Image
@@ -268,7 +268,7 @@ export default function MartyrsPage() {
   </div>
      {searchTerm.trim() !== "" ? (
   filteredMartyrs.length > 0 ? (
-    <div className="grid grid-cols-2  md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
       {filteredMartyrs.map((martyr : any, index) => (
          <div
                 key={index}
@@ -281,7 +281,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
+                  className="w-[140px] h-[140px] md:w-[170px] md:h-[170px] xl:w-[190px] xl:h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
@@ -309,7 +309,7 @@ export default function MartyrsPage() {
               }
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
             {Martyrs.map((member : any, index) => (
              <div
                 key={index}
@@ -322,7 +322,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
+                  className="w-[140px] h-[140px] md:w-[170px] md:h-[170px] xl:w-[190px] xl:h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
@@ -341,7 +341,7 @@ export default function MartyrsPage() {
               }
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-6xl mx-auto">
             {Martyrs2.map((member : any, index) => (
               <div
                 key={index}
@@ -354,7 +354,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full "
+                  className="w-[140px] h-[140px] md:w-[170px] md:h-[170px] xl:w-[190px] xl:h-[190px] object-fit rounded-full "
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
@@ -373,7 +373,7 @@ export default function MartyrsPage() {
               }
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full pb-16 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-16 max-w-6xl mx-auto">
             {Martyrs3.map((member : any, index) => (
               <div
                 key={index}
@@ -386,7 +386,7 @@ export default function MartyrsPage() {
                   unoptimized
                   width={200}
                   height={200}
-                  className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-fit rounded-full"
+                  className="w-[140px] h-[140px] md:w-[170px] md:h-[170px] xl:w-[190px] xl:h-[190px] object-fit rounded-full"
                 />
                 <div className="flex flex-col items-center">
                   <h3 className="text-[15px]  text-[#4A2C13] border-b border-[#B1864F]">
