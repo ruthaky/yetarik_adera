@@ -76,7 +76,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         <section className="px-6 w-auto">
           <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
             <div className="inline-block md:pr-0">
-              <span className="">Contact</span>
+              <span className="">{contactText.heading1}</span>
 <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -87,7 +87,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
             <br />
             <div className="inline-block pl-[70px] md:pl-[200px]">
               <div className="inline-block">
-                <span className="">Us</span>
+                <span className="">{contactText.heading2}</span>
       <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -104,18 +104,20 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         {/* Contact Info */}
         <div className="bg-[#2C2C2C] text-white p-6 md:p-8 flex flex-col justify-between">
           <div>
-            <h3 className="text-3xl font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-3xl font-semibold mb-4">{contactText.contactdetail}</h3>
 
             <ul className="space-y-5 text-sm">
               <li className="flex items-center gap-2">
-                <span>📞</span> 0123456789
+                <span>📞</span> 0928291967
               </li>
               <li className="flex items-center gap-2">
                 <span>✉️</span> yetarikadera@gmail.com
               </li>
               <li className="flex items-start gap-2">
                 <span>📍</span>
-                Addis Ababa, Ethiopis
+                {contactText.location1}
+                <br></br>
+                {contactText.location2}
               </li>
             </ul>
           </div>
@@ -134,7 +136,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
               onClick={() => setShowForm(true)}
               className="bg-[#B77B36] text-white px-6 py-3 rounded shadow hover:bg-[#a86e2f] transition"
             >
-              Send Message
+              {contactText.button}
             </button>
           </div>
         ) : (
@@ -142,7 +144,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="firstName" className="block text-sm mb-1">
-                First Name
+              {contactText.Fname}
               </label>
               <input
                 type="text"
@@ -150,12 +152,12 @@ export default function ContactSection({ contactText }: { contactText: any }) {
                 value={formData.firstName}
                 onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
-                placeholder="John"
+             
               />
             </div>
             <div>
               <label htmlFor="lastName" className="block text-sm mb-1">
-                Last Name
+              {contactText.Lname}
               </label>
               <input
                 type="text"
@@ -163,7 +165,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
                 value={formData.lastName}
                 onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
-                placeholder="Doe"
+             
                 required
               />
             </div>
@@ -172,7 +174,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="email" className="block text-sm mb-1">
-                Email
+              {contactText.email}
               </label>
               <input
                 type="email"
@@ -180,13 +182,13 @@ export default function ContactSection({ contactText }: { contactText: any }) {
                 value={formData.email}
                 onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
-                placeholder="your@email.com"
+           
                 required
               />
             </div>
             <div>
               <label htmlFor="phonenumber" className="block text-sm mb-1">
-                Phone Number
+              {contactText.phonenumber}
               </label>
               <input
                 type="text"
@@ -194,17 +196,17 @@ export default function ContactSection({ contactText }: { contactText: any }) {
                 value={formData.phonenumber}
                 onChange={handleInputChange}
                 className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
-                placeholder="+1 012 345 6789"
+               
               />
             </div>
           </div>
 
           <div>
             <label htmlFor="subject" className="block text-sm mb-2">
-              Select Subject?
+            {contactText.subject}
             </label>
             <div className="flex flex-wrap gap-4 text-sm">
-              {["General Inquiry", "Support", "Feedback", "Other"].map((option) => (
+              {[ contactText.opt1 , contactText.opt2, contactText.opt3 ,contactText.opt4 ].map((option) => (
                 <label key={option} className="inline-flex items-center">
                   <input
                     type="radio"
@@ -225,7 +227,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
 
           <div>
             <label htmlFor="message" className="block text-sm mb-1">
-              Message
+            {contactText.message}
             </label>
             <textarea
               id="message"
@@ -233,7 +235,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
               onChange={handleInputChange}
               className="w-full border-b border-gray-400 bg-transparent outline-none py-1"
               rows={4}
-              placeholder="Write your message..."
+          
             />
           </div>
 
@@ -241,7 +243,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
             type="submit"
             className="mt-4 bg-[#B77B36] text-white px-6 py-2 rounded shadow hover:bg-[#a86e2f] transition"
           >
-            Send Message
+         {contactText.button}
           </button>{status && (
             <p className={`mt-4 font-semibold ${isSuccess ? "text-green-600" : "text-red-600"}`}>
               {status}</p> )}

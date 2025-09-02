@@ -3,17 +3,20 @@ export const dynamic = "force-static";
 
 import Image from "next/image";
 import React, { useState } from "react";
-import img1 from "@/public/asset/circus 2.jpg";
+import img1 from "@/public/asset/asset1.jpeg";
 import img2 from "@/public/asset/train.jpg";
 import img3 from "@/public/asset/hostess.webp";
 import img4 from "@/public/asset/award2 2.jpg";
 import img5 from "@/public/asset/school 2.jpg";
-import img6 from "@/public/asset/newimg5.jpeg"
 import img7 from "@/public/asset/newimg17.jpeg";
 import img8 from "@/public/asset/newimg9.jpeg";
 import img9 from "@/public/asset/newimg18.jpeg";
 import img10 from "@/public/asset/newimg7.jpeg";
 import img11 from "@/public/asset/newimg1.jpeg";
+import img12 from "@/public/asset/asset13.jpeg";
+import img13 from "@/public/asset/newimg16.jpeg";
+import img14 from "@/public/asset/newimg13.jpeg";
+
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -40,6 +43,9 @@ const images = [
   { src: img3, alt: "Historic Image 1" },
   { src: img4, alt: "Historic Image 2" },
   { src: img5, alt: "Historic Image 3" },
+  { src: img12, alt: "Historic Image 3" },
+  { src: img13, alt: "Historic Image 4" },
+  { src: img14, alt: "Historic Image 5" },
   { src: img2, alt: "Historic Image 4" },
   { src: img1, alt: "Historic Image 5" },
   { src: img11, alt: "Historic Image 1" },
@@ -74,14 +80,13 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
       {/* Subheading */}
       <p className="sm:text-lg md:text-[16px] my-4 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
-        To honor the legacy and sacrifice of the Imperial Ethiopian government
-        officials who perished at the hands of the Derg, and their colleagues
-        who served in the administration of Emperor Haile Selassie I.
+     {heroTexts.subheading1}
+      
       </p>
 
       {/* Scrolling Images */}
       <div className="hidden md:flex relative sm:mt-6 w-full overflow-hidden pb-10 ">
-        <div className="flex w-max animate-marquee space-x-6 border border-primary py-2 ">
+        <div className="flex w-max animate-marquee space-x-6 py-4 ">
           {[...images, ...images].map((img, i) => (
             <div
               key={i}
@@ -92,7 +97,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
                 src={img.src}
                 alt={`scroll-img-${i}`}
                 fill
-                className="object-cover"
+                className="object-fit border border-primary border-2 rounded-2xl"
                 sizes="(max-width: 768px) 200px, (max-width: 1024px) 300px, 340px"
               />
             </div>

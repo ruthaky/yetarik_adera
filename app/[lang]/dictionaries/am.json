@@ -2,8 +2,7 @@
   
   "heroSection": {
     "hero": "የታሪክ አደራ",
-    "subheading1": "ያለፈውን መከበር",
-    "subheading2": "የወደፊቱን ማነሳሳት",
+    "subheading1": "የኢምፔሪያል ኢትዮጵያ መንግስት ባለሥልጣናት በደርግ እጅ ሲገድሉ የጠፉትን መታሰቢያ እና በንጉሥ ኃይለ ሳላሴ አስተዳደር የነበሩትን ባለሞያ መሪዎች ለማክበር።",
     "link1": "ስለ እኛ",
     "link2": "አባላት",
     "link3": "ተሳትፎ ይውሰዱ",
@@ -28,38 +27,67 @@
     "vision4": "መደገፍ",
     "vision4note": "በዚህ ዘመን ላይ ተመስርተው የሚወጡ የምርምር፣ የፅኑ ጽሁፍ፣ የአርቲስትና ፊልም ስራዎችን በተወሰነ ፈሰስ ማግኘት በመስጠት መደገፍ።",
     "storyp5": "ይህን እውነተኛ ታሪክ ለማቅረብ፣ የታሪክ አደራ በአፍና በጽሁፍ ታሪኮቻቸውን በመረጋገጥ ወደ ትምህርት ቤቶች በመግባት የታሪክን ግንዛቤ በጥልቅ እንዲረዳ እና እንዲበልጥ ትምህርታዊ መሆኑን በመደገፍ ነው። በመንግስት ጋር በመስራት ታሪኩ በትምህርት ቤቶችና ዩኒቨርሲቲዎች እንዲገባ እና በአንድ ቀንና ሌሊት ያለ ፍርድ የተፈፀመውን የአባቶቻችን፣ ዘመዶቻችንና የአገር ነዋሪዎች አደጋ እንዲያውቁ እና እንደገና እንዳይደገም የታሪክ ትምህርት ነው።",
-    "storyp6": "አሁንም ከ50 ዓመት በፊት የተገደሉትን አባቶቻችንን፣ ወንድሞቻችንንና ዘመዶቻችንን ስንያስብ ብቻ አይደለም፤ በሀገራቸው ላይ እንደ አገልግሎት እና በመቅረት ያደረጉትን ታላቅ መስራት በኩል በኩል በኩል ከፍ እንደ ሰጡ እንደ ታሪክ እንዲቀር እና እንዳይጠፋ ለማድረግ እንነሳለን። ይህንንም በታሪካዊ ኃላፊነታችን በመረዳት በየትውልዱ እንድናስተላለፍ በየታሪክ አደራ እናቀርባለን።"
+    "storyp6": "አሁንም ከ50 ዓመት በፊት የተገደሉትን አባቶቻችንን፣ ወንድሞቻችንንና ዘመዶቻችንን ስንያስብ ብቻ አይደለም፤ በሀገራቸው ላይ እንደ አገልግሎት እና በመቅረት ያደረጉትን ታላቅ መስራት በኩል በኩል በኩል ከፍ እንደ ሰጡ እንደ ታሪክ እንዲቀር እና እንዳይጠፋ ለማድረግ እንነሳለን። ይህንንም በታሪካዊ ኃላፊነታችን በመረዳት በየትውልዱ እንድናስተላለፍ በየታሪክ አደራ እናቀርባለን።",
+     "button2": "ተጨማሪ ያንብቡ",
+    "button1": "ያነሰ አንብብ"
   },
-  "productpage": {
-    "heading": "Premium Agricultural Products Tailored for Your Needs",
-    "subheading": "Explore our diverse range of high-quality agricultural products, meticulously sourced to meet global standards. From aromatic coffee and versatile sesame seeds to nutrient-rich beans and soybeans, our offerings are designed to cater to the demands of international markets. At Surge Crops Trading, we prioritize quality, reliability, and sustainability, ensuring that every product delivers exceptional value to our partners worldwide.",
-    "product1title": "Coffee",
-    "product1desc": "We bring you the finest coffee beans from Ethiopia, Kenya, Rwanda, and Uganda—countries celebrated as the birthplace of coffee. Our selection includes high-altitude grown Arabica beans, known for their complex acidity and rich aromas, as well as robust, full-bodied Robusta beans with higher caffeine content, sourced from low-altitude regions. For premium roasters, we offer specialty-grade, single-origin beans that showcase Africa's unique terroir, with flavor profiles ranging from fruity and floral to bold and earthy. All our coffee is ethically sourced and traceable, meeting the needs of specialty coffee markets, cafes, and global roasters. Available in both green and roasted forms, our coffee represents Africa's excellence in every cup.",
-    "product2title": "Sesame Seeds",
-    "product2desc": "Our sesame seeds, sourced from Ethiopia, Tanzania, and Uganda, are renowned for their premium quality, high oil content, and nutty flavor. These seeds are perfect for culinary, industrial, and cosmetic applications, offering a rich nutritional profile. We provide hulled sesame seeds with a smooth texture and mild flavor for food-grade uses, unhulled sesame seeds that retain natural fiber and nutty taste for industrial processing, and black sesame seeds, a gourmet choice for bakeries, sauces, and traditional medicine. Sourced sustainably from smallholder farms, our sesame seeds boast oil content of up to 50% and are available in bulk packaging for export markets.",
-    "product3title": "Soybeans",
-    "product3desc": "Our soybeans, sourced from Uganda and Tanzania, are a versatile and nutrient-rich crop with wide-ranging applications in food, feed, and industrial sectors. Non-GMO soybeans are perfect for food-grade uses like tofu, soy milk, and soy protein, while feed-grade soybeans are processed into soybean meal for livestock and poultry. With a high protein content of 35–40%, our soybeans are carefully graded for uniformity and freshness and are available in bulk shipments for global distribution.",
-    "product4title": "Kidney Beans",
-    "product4desc": "Sourced from Uganda and Tanzania, our red and white kidney beans are celebrated for their nutrient-rich composition and rich flavors. Red kidney beans, known for their hearty texture and slightly sweet taste, are a staple in soups and stews, while white kidney beans, or Cannellini, feature a delicate flavor and creamy texture, ideal for Mediterranean dishes. High in protein, fiber, and essential minerals, these beans are carefully cleaned and graded to meet export-quality standards. Available in bulk shipments, they are perfect for wholesale and retail markets worldwide.",
-    "product5title": "Castor Seeds",
-    "product5desc": "Our castor seeds, cultivated in Ethiopia and Kenya, are renowned for their superior oil yield and purity. The castor oil extracted from these seeds is a vital ingredient in industries ranging from pharmaceuticals and cosmetics to biofuels. We offer industrial-grade castor seeds, ideal for high-yield oil extraction in industrial applications, as well as organic castor seeds, grown without chemical inputs and perfect for premium markets. Rich in ricinoleic acid, our seeds are harvested under stringent quality control to ensure optimal oil production and are available in raw or processed forms.",
-    "contactbutton": "Contact Now"
+  "martyrspage": {
+    "introheading1": "68",
+    "introheading2": "ሰማዕታት",
+    "paragraph1": "በ1974 ዓ.ም ከንጉሠ ነገሥት ሃይለ ሥላሴ አስተዳደር መውረድ በኋላ በተከተለው የትራንዚሽን ጊዜ፣ 68 የመንግሥት ከፍተኛ ኃላፊዎችና የህዝብ አገልጋዮች በደርግ አስተዳደር ያለ ፍርድ ተገደሉ። እነዚህ ከፍተኛ ኃላፊነት ያላቸውና በኢትዮጵያ ልማት ውስጥ ትልቅ ሚና ያገለገሉ ግለሰቦች ከእስር ቤት ተወስደው በድንገት ተገደሉ፣ ይህም በአገራችን ዘመናዊ ታሪክ ውስጥ ከበጣም የሚያሳዝንና የማይጸድቅ ክስተት ነበር።",
+    "paragraph2": "68ቱ ሰማዕታት በአገር እድገት ላይ በአገልግሎታቸው፣ በባለሙያነታቸው እና በትጋታቸው ትልቅ ድርሻ ያበረከቱ ትውልድ መሪዎችን ይወክላሉ። እነርሱን መጥፋት በኢትዮጵያ ታሪክ ውስጥ የአስፈላጊ መዞር ነጥብ ሆኖ ቆመ፣ ይህም የፖለቲካ ጭፍጨፋን እና የህግ ትዕዛዝ መውደቅን የሚያስታውስና በጣም ኃይለኛ ትምህርት ሆኖ ይገኛል።",
+    "button2": "ሰማዕታት እዩ",
+    "button1": "ሰማዕታትን ደብቅ"
   },
-  "contactPage": {
-    "heading": "Connect with Surge Crops Trading",
-    "subheading": "Whether you're looking to source premium agricultural products or have inquiries about our services, we're here to help. Reach out to us today and let's grow together.s",
-    "contactdetail": "Contact Detail",
-    "location": "78CQ+V75 Dubai - United Arab Emirates",
-    "getintouch": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
-    "phonenumber": "Phone Number",
-    "message": "Message",
-    "button": "submit"
+  "getInvolved": {
+    "heading1": "ተሳተፍ",
+    "heading2": "",
+    "description": "ወታደራዊው አምባገነን መንግስት የአፄ ኃይለ ሥላሴ መንግስት ለዘመናዊቷ ኢትዮጵያ ያበረከተውን አስተዋፅኦ ለማጥፋት የተቻለውን ሁሉ አድርጓል። ከቀደመው አገዛዝ ጋር ያለውን ማንኛውንም አዎንታዊ ግንኙነት ለማጥፋት መርሃ ግብር ጀመሩ. ከሃምሳ አመታት በኋላ ይህንን ታሪክ ወደ ትክክለኛው ቦታው ለመመለስ ቆርጠን ተነስተናል። መጪው ትውልድ ታሪኩን ተረድቶ ስኬቶቹንና ጉድለቶቹን እንዲከራከር እና በእውቀት የታጠቀውን የቀጣይ መንገድ እንዲቀርጽ እንፈልጋለን።",
+    "button": "ለገሱ"
   },
+"memberspage": {
+  "introheading1": "የቦርድ",
+  "introheading2": "አባላት",
+  "paragraph2": "የድርጅቱ ዋና አላማ በንጉሥ ኃይለ ሳላሴ ዘመን ሀገራቸውን የአገሩን አገልግሎት በሙሉ አግባብ እንዲሆን ለማረጋገጥ ነው። ከባድ ሁኔታዎች እና በተለያዩ የሥራ መስኮች የነበሩ ግለሰቦች በትክክል የተመዘገቡ እና የተዘረዘሩ መሆን አለበት። ይህ ድርጅት የእነዚህ ግለሰቦችን እውነተኛ ታሪክ ለማስቀመጥ እንዲሁም እንዳይረሳ ይሰራል።",
+  "paragraph1": "የተራሪክ አደራ በታህሳስ 2014 ዓ.ም. በአዲስ አበባ ኢትዮጵያ ተመሰረተ። ይህ ድርጅት ከ12 አባላት በሚቀጥለው ቦርድ ተመስርቶ ከመተመር ጀምሮ ሁለት ዓመት እየሠራ ነው።",
+  "paragraph3": "ድርጅቱ ታሪካዊ ፎቶዎች፣ መነሻ መረጃዎች እና ሰነዶች ይሰበስባል፣ ታሪክን በትምህርታዊ መልኩ ለመስጠት እና እንደ ታሪካዊ ሙዚየም ለመጠቀም ይሠራል። በተጨማሪም ይህን ሰዎች ለመጻፍ ወይም ለመግለጽ የሚፈልጉ ግለሰቦችን ወይም ድርጅቶችን በትክክል ሰነዶች ለማዘጋጀት እና የግለሰብ ማህደር ለማግኘት መመሪያ ይሰጣል።",
+  "paragraph4": "በዚያ ዘመን በትምህርት፣ ባንክ አገልግሎቶች፣ አየር መንገዶች፣ መንገድ እና ባቡር አውቶሎጂ መስመሮች በማቋቋም ዘመናዊ ኢትዮጵያ ለመገንባት ጥረት ተደረገ። የእነዚህ ግለሰቦች አስተዋፅኦ ሀገሩን ለማሻሻል ዋና መንገድ አቀረ፣ ድርጅቱም የኃይለ ሳላሴ ዘመንን አሳየ።",
+  "paragraph5": "በእውነተኛ እንደ ታሪክ መረጃዎች ማስቀመጥ፣ በመስራት፣ በትምህርት ቤቶች፣ ዩኒቨርሲቲዎች እና ከፍተኛ ተቋማት ማስተማር የታሪክ ትክክለኛነትን እንዲጠብቅና እንዲዘምት ይደረጋል። እነዚህ ግለሰቦች በጭንቀትና በሥዕል የተጎዱ ነበርም ሆኖ ሀገራቸውን የገነባ እና የአባቶች፣ ወንድሞች እና ቅዱሳን የታሪክ መታሰቢያን ይከበራል፣ እንዲሁም እንደዚሁ ክስተቶች እንዳይቀጥሉ ይሞክራል።",
+  "paragraph6": "በእነዚህ እንቅስቃሴዎች ተካትተው የየተራሪክ አደራ ሥራን እና ታሪክን ለወደፊት ትውልድ እንዲሰጥ እንዲሁም እንዲከበር ይቀጥላል።",
+  "thankyou": "አመሰግናለሁ!",
+  "seble": "ሰብለ ነቢየሉል"
+},
+ "contactPage": {
+  "heading1": "አድራሻ",
+  "heading2": "ያግኙን",
+  "contactdetail": "የመገናኛ መረጃ",
+  "location1": "አዲስ አበባ, ኢትዮጵያ",
+  "location2": "ልደታ ክፍለ ከተማ, ወረዳ 7",
+  "getintouch": "ከእኛ ጋር ያግኙ",
+  "Fname": "የመጀመሪያ ስም",
+  "Lname": "የአባት ስም",
+  "email": "ኢሜይል",
+  "phonenumber": "ስልክ ቁጥር",
+  "message": "መልእክት",
+  "subject": "ርዕስ ይምረጡ?",
+  "opt1": "አጠቃላይ ጥያቄ",
+  "opt2": "ድጋፍ",
+  "opt3": "አስተያየት",
+  "opt4": "ሌላ",
+  "button": "መልእክት ላክ"
+},
   "notFound": {
     "title": "Page Not Found",
     "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "navbar": {
+    "Home": "መነሻ ገጽ",
+    "About": "ስለ",
+    "Martyrs": "ሰማዕታት",
+    "Memebers": "አባላት",
+       "Events": "Events",
+          "Contact us": "ያግኙን", 
+          "Get involved": "ተሳተፍ"
   }
 }

@@ -4,23 +4,25 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import img1 from "@/public/asset/lineofjudah.svg";
-import img2 from "@/public/asset/haileselasie.svg";
+import img2 from "@/public/asset/newimg10.jpeg";
 import img3 from "@/public/asset/imgabout3.png";
-import img5 from "@/public/asset/telekibeb.jpg";
-import img6 from "@/public/asset/stationguy.jpg";
+import img4 from "@/public/asset/asset3.jpeg";
+import img5 from "@/public/asset/asset10.jpeg";
 import img7 from "@/public/asset/bankbw.jpg";
 import img8 from "@/public/asset/school 2.jpg";
 import img9 from "@/public/asset/cinemabw.jpg";
-import img10 from "@/public/asset/bibble.jpg";
+import img10 from "@/public/asset/asset11.jpeg";
+import img11 from "@/public/asset/newimg9.jpeg";
 import img12 from "@/public/asset/aviation.jpg";
+import img13 from "@/public/asset/newimg8.jpeg";
 import img14 from "@/public/asset/line.jpg";
 import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
-import { motion } from "framer-motion";
+import img17 from "@/public/asset/asset9.jpeg";
+import img18 from "@/public/asset/4kilo.jpeg";
+import img19 from "@/public/asset/asset12.jpeg";
 
-import logo from "/logo.svg";
-import { Carousel } from "@mantine/carousel";
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 import { MantineProvider } from "@mantine/core";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
@@ -92,13 +94,13 @@ const AboutPage = ({
 </section>
 
         {/* Image and Text Section */}
-        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px] w-[75%]">
+        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px] w-[80%]">
           <Image
             src={img1}
             alt="Emperor Haile Selassie"
             width={350}
             height={350}
-            className="object-fit h-[300px] w-[400px] "
+            className="object-fit h-[300px] w-[400px] border border-primary border-2 rounded-2xl"
           />
           <p className="text-[18px] md:w-[750px] px-6 md:px-0 leading-relaxed">
            {aboutpageTexts.storyp1}
@@ -108,13 +110,14 @@ const AboutPage = ({
           </p>
           
         </section>
-<div className="w-[75%] flex items-start "> <Button
+<div className="w-[80%] flex items-start "> <Button
       className="mt-4 sm:mt-10"
       onClick={() => setExpanded((prev) => !prev)}
       aria-expanded={expanded}
     >
-    {expanded ? 'Read Less' : 'Read More'}
+    {expanded ? aboutpageTexts.button1 : aboutpageTexts.button2}
     </Button></div>
+
        
       </section>
 
@@ -122,7 +125,7 @@ const AboutPage = ({
       {expanded && (
       <>
       {/* Reflection Section */}
-      <div className="flex flex-col md:flex-row justify-between px-6 md:px-0 md:w-[75%]">
+      <div className="flex flex-col md:flex-row justify-between px-6 md:px-0 md:w-[80%]">
         <section className="flex pb-12 w-full md:w-1/2">
           <div className="text-sm">
             <div className="inline-block mb-4">
@@ -140,13 +143,13 @@ const AboutPage = ({
           </div>
         </section>
         <section className="flex flex-col justify-end items-end w-full md:w-1/2">
-          <Image src={img5} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] rounded-[15px]" />
+          <Image src={img19} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" />
         </section>
       </div>
 
       {/* Featured Section */}
       <div className="flex items-center justify-center  w-full">
-        <div className="text-[#2b2a28] flex flex-col justify-center  md:w-[75%]  py-8">
+        <div className="text-[#2b2a28] flex flex-col justify-center  md:w-[80%]  py-8">
           <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px]">{aboutpageTexts.Visionheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
@@ -185,37 +188,37 @@ const AboutPage = ({
       </div>
 
       {/* Commitment Section */}
-      <section className="py-[60px] md:w-[75%] flex flex-col gap-[20px] items-center">
-        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full rounded-[15px]" />
+      <section className="py-[60px] md:w-[80%] flex flex-col gap-[20px] items-center">
+        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full border border-primary border-2 rounded-2xl" />
         <p className="text-[18px]">
      {aboutpageTexts.storyp5}
         </p>
       </section>
 
       {/* Image Carousel */}
-      <section className="w-full md:w-[75%] pb-12">
+      <section className="w-full md:w-[80%] pb-12">
         <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-4 px-6 border border-primary py-2">
-            {[img10, img12, img5, img6, img7, img8, img9, img14, img15, img16, img10, img12, img5, img6, img7, img8, img9, img14, img15, img16].map((imgSrc, index) => (
+          <div className="flex w-max animate-marquee gap-4 px-6 py-4">
+            {[img10, img2,  img17, img12, img5, img7,img4, img8,  img18, img9,img11, img14, img15, img13, img16 ].map((imgSrc, index) => (
               <div key={`marq-${index}`} className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
                 <Image
                   src={imgSrc}
                   alt={`marquee-${index}`}
                   width={320}
                   height={220}
-                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] rounded-[15px]"
+                  className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] border border-primary border-2 rounded-2xl"
                 />
               </div>
             ))}
           </div>
-          {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div> */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
         </div>
       </section>
 
 
       {/* Final Section */}
-      <section className="pb-12 text-[18px] md:w-[75%]">
+      <section className="pb-12 text-[18px] md:w-[80%]">
         <p>
          {aboutpageTexts.storyp6}
         </p>

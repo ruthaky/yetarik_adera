@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
 import "../globals.css";
-import { Navbar } from "@/components/ui/navbar";
+import { Navbar } from "@/app/shared/navbar/navbar";
+import { getDictionary } from "./dictionaries";
 import { Noto_Serif_Ethiopic } from "next/font/google";
 // import { Arapey } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
