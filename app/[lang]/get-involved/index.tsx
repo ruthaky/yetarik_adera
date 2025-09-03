@@ -97,7 +97,7 @@ export default function GetInvolvedPage({
             </p>
           </div>
            {/* Donate Button */}
-           <Button className="mt-10">
+           <Button className="mt-10 rounded-[4px]">
             <Link href={`/${pathname.split("/")[1]}/donate`}> {getInvolvedTexts.button}</Link>
           </Button>
         </section>

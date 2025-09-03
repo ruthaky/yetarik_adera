@@ -194,7 +194,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
 {/* Description Section */}
 <section className="w-full max-w-[95%] md:max-w-[80%] mx-auto px-4 sm:px-0  pb-10 text-left">
 <Button
-  className="mt-4 sm:mt-8"
+  className="mt-4 sm:mt-8 rounded-[4px]"
   onClick={() => setShowMartyrs(!showMartyrs)}
 >
   {showMartyrs ? martyrsTexts.button1 : martyrsTexts.button2}

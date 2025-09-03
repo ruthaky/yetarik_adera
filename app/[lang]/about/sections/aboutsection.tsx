@@ -111,7 +111,7 @@ const AboutPage = ({
           
         </section>
 <div className="w-[80%] flex items-start "> <Button
-      className="mt-4 sm:mt-10"
+      className="mt-4 sm:mt-10 rounded-[4px]" 
       onClick={() => setExpanded((prev) => !prev)}
       aria-expanded={expanded}
     >

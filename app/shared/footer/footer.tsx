@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import logo from "@/public/asset/SURGE CROPS.png";
+import logo from "@/public/asset/yalogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
@@ -59,11 +59,18 @@ export default function Footer() {
   return (
     <div>
       <footer
-        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#333333] text-white p-6 md:px-14 md:py-16 text-sm overflow-x-hidden`}
+        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg-[#333333] text-white p-6 md:px-14 md:py-12 text-sm overflow-x-hidden`}
       >
-        <div className="flex md:flex-row flex-col justify-between">
+        <div className="flex md:flex-row flex-col justify-between ">
           <div>
-            <h4 className="font-bold text-[25px] mb-1">{t.title}</h4>
+            <div className="flex items-center gap-2"><Image
+            src={logo}
+            alt="Emperor Haile Selassie"
+            width={50}
+            height={50}
+            className="object-fit h-[40px] w-[40px]"
+          /><h4 className="font-bold text-[25px] mb-1">{t.title}</h4></div>
+            
             <p className="py-2">{t.contact}</p>
             <div className="flex space-x-6 mt-2">
               <a href="#">{t.socials.instagram}</a>
@@ -74,9 +81,10 @@ export default function Footer() {
           </div>
           <div className="mt-4 md:mt-0">
             <div className="flex gap-2">
-              <button className="bg-primary text-white px-4 py-2 rounded-[4px]">
+              <Link href="/donate"><button  className="bg-primary text-white px-6 py-2 rounded-[4px]">
                 {t.donate}
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>
