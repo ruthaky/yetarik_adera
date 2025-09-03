@@ -39,7 +39,7 @@ const events: Event[] = [
     month: "JUNE",
     images: [img1, img2, img3], // three images
     title: "The 50th memorial anniversary of the Martyrs",
-    location: "1015 California Ave, Los Angeles CA",
+    location: "Addis Ababa, Ethiopia and DMV",
     time: "7:00 pm - 8:00 pm",
     description:
       "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
