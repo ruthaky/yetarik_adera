@@ -94,7 +94,7 @@ const AboutPage = ({
 </section>
 
         {/* Image and Text Section */}
-        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px] w-[80%]">
+        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px]  w-[80%]">
           <Image
             src={img1}
             alt="Emperor Haile Selassie"
@@ -102,7 +102,7 @@ const AboutPage = ({
             height={350}
             className="object-fit h-[300px] w-[400px] border border-primary border-2 rounded-2xl"
           />
-          <p className="text-[18px] md:w-[750px] px-6 md:px-0 leading-relaxed">
+          <p className="text-[18px] md:w-[750px] px-2 md:px-0 leading-relaxed">
            {aboutpageTexts.storyp1}
            <br></br>
            <br></br>
