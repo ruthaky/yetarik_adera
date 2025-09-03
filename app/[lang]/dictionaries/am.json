@@ -76,11 +76,16 @@
   "opt4": "ሌላ",
   "button": "መልእክት ላክ"
 },
-  "notFound": {
-    "title": "Page Not Found",
-    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
-  },
+"notFound": {
+  "title": "ገፅ አልተገኘም",
+  "description": "ይቅርታ፣ የሚፈልጉት ገፅ አልተገኘም ወይም ወደ ሌላ ቦታ ተዘዋዋሪ ነው።",
+  "backHome": "ወደ መነሻ ገፅ ተመለስ"
+},
+"eventPage": {
+  "heading": "ያለፈው ፕሮግራም",
+  "description": "ይቅርታ፣ የሚፈልጉት ገፅ አልተገኘም ወይም ወደ ሌላ ቦታ ተዘዋዋሪ ነው።",
+  "backHome": "ወደ መነሻ ገፅ ተመለስ"
+},
   "navbar": {
     "Home": "መነሻ ገጽ",
     "About": "ስለ",

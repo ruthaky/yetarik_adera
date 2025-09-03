@@ -81,6 +81,11 @@
     "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
   },
+  "eventPage": {
+  "heading": "Previous Events",
+  "description": "ይቅርታ፣ የሚፈልጉት ገፅ አልተገኘም ወይም ወደ ሌላ ቦታ ተዘዋዋሪ ነው።",
+  "backHome": "ወደ መነሻ ገፅ ተመለስ"
+},
   "navbar": {
     "Home": "Home",
     "About": "About",
