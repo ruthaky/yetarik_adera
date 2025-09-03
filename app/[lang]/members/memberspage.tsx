@@ -154,7 +154,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
             <div className="animate-infinite-scroll">
               {[...members.slice(0, 6), ...members.slice(0, 6)].map((member, index) => (
                 <div key={`col1-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
-                  <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-cover rounded-full border border-primary border-2" />
+                  <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2 " />
                   <div>
                     <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
                     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
@@ -170,7 +170,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
             <div className="animate-infinite-scroll">
               {[...members.slice(6), ...members.slice(6)].map((member, index) => (
                 <div key={`col2-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
-                  <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-cover rounded-full border border-primary border-2" />
+                  <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2" />
                   <div>
                     <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
                     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
@@ -185,7 +185,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
           <div className="md:hidden grid grid-cols-2 gap-6 w-full">
             {members.map((member, index) => (
               <div key={index} className="flex flex-col items-center gap-4" onClick={() => setSelectedMember(member)}>
-                <Image src={member.image} alt={member.name[lang]} className="w-[120px] h-[120px] object-cover rounded-full border border-primary border-2" />
+                <Image src={member.image} alt={member.name[lang]} className="w-[120px] h-[120px] object-fit rounded-full border border-primary border-2" />
                 <div>
                   <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
                   <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
@@ -240,7 +240,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
           <div className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-4" onClick={() => setSelectedMember(null)}>
             <div className="bg-[#4C3519]/0 rounded-lg w-full max-w-6xl p-6 relative flex flex-col md:flex-row items-center gap-6 overflow-y-auto max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
               <button className="absolute top-2 right-4 text-white text-3xl font-bold" onClick={() => setSelectedMember(null)}>&times;</button>
-              <Image src={selectedMember.image} alt={selectedMember.name[lang]} width={250} height={300} className="w-[150px] h-[150px] md:w-[270px] md:h-[270px] object-cover rounded-full " />
+              <Image src={selectedMember.image} alt={selectedMember.name[lang]} width={250} height={300} className="w-[150px] h-[150px] md:w-[270px] md:h-[270px] object-fit rounded-full " />
               <div className="text-white md:text-left text-center border-0 md:border-l-2 border-[#db9744] md:pl-4">
                 <h2 className="text-xl md:text-3xl font-bold mb-4 border-b-0 md:border-b-2 border-[#db9744] pb-2">{selectedMember.name[lang]}</h2>
                 <div className="text-sm md:text-lg space-y-3">
