@@ -67,10 +67,13 @@ interface Martyrs3 {
   };
 }
 
+const images = [img2, img3, img12, img5, img8, img14];
+
 export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
   const [showMartyrs, setShowMartyrs] = useState(false);
   const [selectedMartyr, setSelectedMartyr] = useState<Martyrs | null>(null);
   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'am'>('en');
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   // Get current language from URL
   useEffect(() => {
@@ -170,25 +173,57 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
 </section>
 
 {/* Image Section */}
-<div className="w-full flex items-center justify-center mt-6"><section className="w-full md:w-[80%] pb-6">
-        <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-4 px-6 py-4">
-            {[img2, img3, img12, img5,  img8, img14].map((imgSrc, index) => (
-              <div key={`marq-${index}`} className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
+<div className="w-full flex items-center justify-center mt-6">
+<section className="w-full md:w-[80%] pb-6">
+      <div className="relative w-full overflow-hidden">
+        <div className="flex w-max animate-marquee gap-4 px-6 py-4">
+          {/* duplicate images for seamless looping */}
+          {[...Array(2)].map((_, i) =>
+            images.map((imgSrc, index) => (
+              <div
+                key={`marq-${i}-${index}`}
+                className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm cursor-pointer"
+                onClick={() => setSelectedImg(imgSrc.src)}
+              >
                 <Image
                   src={imgSrc}
-                  alt={`marquee-${index}`}
+                  alt={`marquee-${i}-${index}`}
                   width={320}
                   height={220}
                   className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] border border-primary border-2 rounded-2xl"
                 />
               </div>
-            ))}
-          </div>
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+            ))
+          )}
         </div>
-      </section></div>
+
+        {/* Gradient fades */}
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+      </div>
+
+      {/* Fullscreen Modal */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+          onClick={() => setSelectedImg(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+            onClick={() => setSelectedImg(null)}
+          >
+            ✕
+          </button>
+          <Image
+            src={selectedImg}
+            alt="fullscreen"
+            width={1000}
+            height={800}
+            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg"
+          />
+        </div>
+      )}
+    </section></div>
 
 
 {/* Description Section */}

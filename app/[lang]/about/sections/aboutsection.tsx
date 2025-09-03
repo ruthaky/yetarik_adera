@@ -47,6 +47,11 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
   display: "swap",
   variable: "--font-noto-ethiopic",
 });
+const images = [
+  img10, img2, img17, img12, img5, img7,
+  img4, img8, img18, img9, img11,
+  img14, img15, img13, img16,
+];
 
 const AboutPage = ({
   aboutpageTexts,
@@ -54,6 +59,7 @@ const AboutPage = ({
   aboutpageTexts: any;
 }) => {
   const [expanded, setExpanded] = useState(false);
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
   return (
         <MantineProvider>
     <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-[#2b2a28] flex flex-col items-center `}>
@@ -197,24 +203,56 @@ const AboutPage = ({
 
       {/* Image Carousel */}
       <section className="w-full md:w-[80%] pb-12">
-        <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-4 px-6 py-4">
-            {[img10, img2,  img17, img12, img5, img7,img4, img8,  img18, img9,img11, img14, img15, img13, img16 ].map((imgSrc, index) => (
-              <div key={`marq-${index}`} className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm">
+      <div className="relative w-full overflow-hidden">
+        <div className="flex w-max animate-marquee gap-4 px-6 py-4">
+          {/* Duplicate the images for smooth infinite loop */}
+          {[...Array(2)].map((_, i) =>
+            images.map((imgSrc, index) => (
+              <div
+                key={`marq-${i}-${index}`}
+                className="flex-shrink-0 overflow-hidden rounded-lg shadow-sm cursor-pointer"
+                onClick={() => setSelectedImg(imgSrc.src)} // show modal on click
+              >
                 <Image
                   src={imgSrc}
-                  alt={`marquee-${index}`}
+                  alt={`marquee-${i}-${index}`}
                   width={320}
                   height={220}
                   className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] border border-primary border-2 rounded-2xl"
                 />
               </div>
-            ))}
-          </div>
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+            ))
+          )}
         </div>
-      </section>
+
+        {/* Gradient fades on sides */}
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+      </div>
+
+      {/* Fullscreen Modal */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+          onClick={() => setSelectedImg(null)} // close when clicking backdrop
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+            onClick={() => setSelectedImg(null)}
+          >
+            ✕
+          </button>
+          <Image
+            src={selectedImg}
+            alt="fullscreen"
+            width={1000}
+            height={800}
+            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg"
+          />
+        </div>
+      )}
+    </section>
+
 
 
       {/* Final Section */}

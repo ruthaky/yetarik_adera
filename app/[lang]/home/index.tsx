@@ -58,6 +58,7 @@ const images = [
 export default function HeroSection({ heroTexts }: { heroTexts: any }) {
   const pathname = usePathname();
   const [centerIndex, setCenterIndex] = useState(2);
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   return (
     <section
@@ -85,28 +86,54 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Scrolling Images */}
-      <div className="hidden md:flex relative sm:mt-6 w-full overflow-hidden pb-10 ">
-        <div className="flex w-max animate-marquee space-x-6 py-4 ">
-          {[...images, ...images].map((img, i) => (
-            <div
-              key={i}
-              className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
-                         w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[330px] lg:h-[250px]"
-            >
-              <Image
-                src={img.src}
-                alt={`scroll-img-${i}`}
-                fill
-                className="object-fit border border-primary border-2 rounded-2xl"
-                sizes="(max-width: 768px) 200px, (max-width: 1024px) 300px, 340px"
-              />
-            </div>
-          ))}
-        </div>
-        {/* left & right gradient fades */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+      <div className="hidden md:flex relative sm:mt-6 w-full overflow-hidden pb-10">
+      <div className="flex w-max animate-marquee space-x-6 py-4">
+        {[...images, ...images].map((img, i) => (
+          <div
+            key={i}
+            className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
+                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[330px] lg:h-[250px] 
+                       cursor-pointer"
+            onClick={() => setSelectedImg(img.src)}
+          >
+            <Image
+              src={img.src}
+              alt={`scroll-img-${i}`}
+              fill
+              className="object-fit border border-primary border-2 rounded-2xl"
+              sizes="(max-width: 768px) 200px, (max-width: 1024px) 300px, 340px"
+            />
+          </div>
+        ))}
       </div>
+
+      {/* left & right gradient fades */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+
+      {/* Fullscreen Modal */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+          onClick={() => setSelectedImg(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+            onClick={() => setSelectedImg(null)}
+          >
+            ✕
+          </button>
+          <Image
+            src={selectedImg}
+            alt="fullscreen"
+            width={1000}
+            height={800}
+            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg"
+          />
+        </div>
+      )}
+    </div>
+
 
       {/* Mobile static image */}
       <Image
