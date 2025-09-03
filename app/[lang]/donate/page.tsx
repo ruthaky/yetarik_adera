@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import donationImage from '@/public/asset/asset12.jpeg'
 import { Button } from '@/components/ui/button'
-import { Navbar } from '@/components/ui/navbar'
+import { Navbar } from '@/app/shared/navbar/navbar'
 import Footer from '@/app/shared/footer/footer'
 import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
 
