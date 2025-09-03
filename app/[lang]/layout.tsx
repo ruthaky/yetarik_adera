@@ -58,18 +58,18 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <meta property="og:image" content="https://i.postimg.cc/xjHtX95b/OG.png" />
+      <meta property="og:image" content="https://i.postimg.cc/tCstTr9p/OG.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Yetarik Adera - To honor the legacy and sacrifice of the Imperial Ethiopian government officials who perished at the hands of the Derg, and their colleagues who served in the administration of Emperor Haile Selassie I." />
-      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/OG.png" />
-      <meta property="og:image:secure_url" content="https://i.postimg.cc/xjHtX95b/OG.png" />
+      <meta property="og:image:url" content="https://i.postimg.cc/tCstTr9p/OG.png" />
+      <meta property="og:image:secure_url" content="https://i.postimg.cc/tCstTr9p/OG.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Yetarik Adera - To honor the legacy and sacrifice of the Imperial Ethiopian government officials who perished at the hands of the Derg, and their colleagues who served in the administration of Emperor Haile Selassie I." />
-      <meta property="og:image:url" content="https://i.postimg.cc/xjHtX95b/OG.png" />
+      <meta property="og:image:url" content="https://i.postimg.cc/tCstTr9p/OG.png" />
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
     (function(c,l,a,r,i,t,y){
