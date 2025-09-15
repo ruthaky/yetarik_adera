@@ -74,13 +74,10 @@ export default function Footer() {
             <p className="py-2">yetarikadera@gmail.com</p>
             <p className="py-2">0928291967</p>
             <div className="flex space-x-6 mt-2">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Martyrs</a>
-              <a href="#">Members</a>
-              <a href="#">Events</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Get Involved</a>
+              <a href="/">Home</a>
+              <a href="/about">About</a>
+              <a href="/martyrs">Martyrs</a>
+              <a href="members">Members</a>
             </div>
           </div>
           <div className="flex flex-col mt-4 gap-4 md:mt-0">
