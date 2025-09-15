@@ -65,7 +65,7 @@ export default function GetInvolvedPage({
     <>
       <main className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic pt-16 md:pt-0`}>
         {/* Header Section */}
-        <section className="py-16 px-6 text-center max-w-4xl h-[600px] mx-auto flex flex-col justify-center items-center">
+        <section className="py-16 text-center w-[80%] h-[600px] mx-auto flex flex-col justify-center items-center">
           <section className="px-6 md:text-start w-[400px] mb-12">
             <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
               <div className="inline-block pr-[70px] md:pr-0">
@@ -91,7 +91,7 @@ export default function GetInvolvedPage({
               </div>
             </h1>
           </section>
-          <div className="space-y-3 text-[18px] text-left text-gray-700">
+          <div className="space-y-3 text-[16px] text-left text-gray-700">
             <p>
             {getInvolvedTexts.description}
             </p>

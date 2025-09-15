@@ -1,6 +1,5 @@
 "use client";
 export const dynamic = "force-static";
-
 import Image from "next/image";
 import React, { useState } from "react";
 import img1 from "@/public/asset/asset1.jpeg";
@@ -62,10 +61,10 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
   return (
     <section
-      className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic bg text-center px-4 h-[calc(100vh-70px)] flex flex-col items-center justify-end mt-[50px] pt-16 sm:pt-[100px]`}
+      className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-center px-4 h-screen flex flex-col items-center justify-center `}  //mt-[50px] pt-16 sm:pt-[100px]
     >
       {/* Heading */}
-      <div className="inline-block">
+      <div className="inline-block mb-2 md:mt-20">
         <h1
           className={`${arapey.variable} font-arapey text-[40px] sm:text-5xl md:text-6xl font-medium md:mb-4 animate-slideIn`}
         >
@@ -80,24 +79,24 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* Subheading */}
-      <p className="sm:text-lg md:text-[16px] my-4 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
+      <p className="sm:text-lg md:text-[16px] md:my-0 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
      {heroTexts.subheading1}
       
       </p>
 
       {/* Scrolling Images */}
-      <div className="hidden md:flex relative sm:mt-6 w-full overflow-hidden pb-10">
-      <div className="flex w-max animate-marquee space-x-6 py-4">
-        {[...images, ...images].map((img, i) => (
+      <div className="hidden md:flex relative w-full overflow-hidden my-6">
+      <div className="flex w-max animate-marquee space-x-6 ">
+      {[...images, ...images].map((item, i) => (
           <div
             key={i}
             className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
-                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[330px] lg:h-[250px] 
+                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[300px] lg:h-[200px] 
                        cursor-pointer"
-            onClick={() => setSelectedImg(img.src)}
+            onClick={() => setSelectedImg(item)}
           >
             <Image
-              src={img.src}
+              src={item.src}
               alt={`scroll-img-${i}`}
               fill
               className="object-fit border border-primary border-2 rounded-2xl"
@@ -145,7 +144,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       />
 
       {/* Links */}
-       <div className="flex flex-wrap gap-4 sm:gap-8 items-center justify-center  pb-10  animate-slideIn delay-300">
+       <div className="flex flex-wrap gap-4 sm:gap-8 items-center justify-center animate-slideIn delay-300">
         <Link href={`/${pathname.split("/")[1]}/about`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link1}

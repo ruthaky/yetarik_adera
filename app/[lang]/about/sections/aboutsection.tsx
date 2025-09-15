@@ -67,7 +67,7 @@ const AboutPage = ({
 
       {/* Hero Section */}
     
-        <section className="w-full flex flex-col items-center justify-center mb-4 pt-[170px] md:pb-16">
+        <section className="w-full flex flex-col items-center justify-start mb-4 pt-[170px] md:pb-16">
    <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
   <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-10 md:mb-0 `}>
     {/* Line 1 */}
@@ -100,22 +100,27 @@ const AboutPage = ({
 </section>
 
         {/* Image and Text Section */}
-        <section className="flex flex-col md:flex-row items-center justify-center gap-[50px]  w-[80%]">
-          <Image
-            src={img1}
-            alt="Emperor Haile Selassie"
-            width={350}
-            height={350}
-            className="object-fit h-[300px] w-[400px] border border-primary border-2 rounded-2xl"
-          />
-          <p className="text-[18px] md:w-[750px] px-2 md:px-0 leading-relaxed">
-           {aboutpageTexts.storyp1}
-           <br></br>
-           <br></br>
-           {aboutpageTexts.storyp3}
-          </p>
-          
-        </section>
+        <section className="flex flex-col md:flex-row items-stretch justify-center gap-[50px] w-[80%]">
+  {/* Image wrapper */}
+  <div className="relative w-[400px] flex-shrink-0">
+    <Image
+      src={img1}
+      alt="Emperor Haile Selassie"
+      fill
+      className="object-cover border border-primary border-2 rounded-2xl"
+    />
+  </div>
+
+  {/* Text */}
+  <p className="text-[16px] md:w-[750px] px-2 md:px-0 leading-relaxed">
+    {aboutpageTexts.storyp1}
+    <br />
+    <br />
+    {aboutpageTexts.storyp3}
+  </p>
+</section>
+
+
 <div className="w-[80%] flex items-start "> <Button
       className="mt-4 sm:mt-10 rounded-[4px]" 
       onClick={() => setExpanded((prev) => !prev)}
@@ -143,7 +148,7 @@ const AboutPage = ({
                 className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
               />
             </div>
-            <p className="text-[18px] leading-relaxed">
+            <p className="text-[16px] leading-relaxed">
               {aboutpageTexts.missionStory}
             </p>
           </div>
@@ -196,7 +201,7 @@ const AboutPage = ({
       {/* Commitment Section */}
       <section className="py-[60px] md:w-[80%] flex flex-col gap-[20px] items-center">
         <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full border border-primary border-2 rounded-2xl" />
-        <p className="text-[18px]">
+        <p className="text-[16px]">
      {aboutpageTexts.storyp5}
         </p>
       </section>
@@ -256,7 +261,7 @@ const AboutPage = ({
 
 
       {/* Final Section */}
-      <section className="pb-12 text-[18px] md:w-[80%]">
+      <section className="pb-12 text-[16px] md:w-[80%]">
         <p>
          {aboutpageTexts.storyp6}
         </p>

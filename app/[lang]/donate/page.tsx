@@ -70,7 +70,7 @@ const DonationSection = () => {
                       onChange={() => setSelectedAmount(option.amount)}
                       className="form-radio h-5 w-5 border-black focus:ring-[#B27C3A] text-[#B27C3A]"
                     />
-                    <span className="text-base sm:text-lg">
+                    <span className="text-base text-[16px]">
                       ${option.amount} {option.label}
                     </span>
                   </label>
@@ -102,7 +102,7 @@ const DonationSection = () => {
                       className="form-radio h-5 w-5 border-black focus:ring-[#B27C3A] text-[#B27C3A]"
                     />
                     <span
-                      className={`text-base sm:text-lg ${
+                      className={`text-base text-[16px] ${
                         frequency === f ? 'text-[#B27C3A]' : 'text-black'
                       }`}
                     >

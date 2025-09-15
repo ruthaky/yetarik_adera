@@ -71,21 +71,30 @@ export default function Footer() {
             className="object-fit h-[40px] w-[40px]"
           /><h4 className="font-bold text-[25px] mb-1">{t.title}</h4></div>
             
-            <p className="py-2">{t.contact}</p>
+            <p className="py-2">yetarikadera@gmail.com</p>
+            <p className="py-2">0928291967</p>
             <div className="flex space-x-6 mt-2">
-              <a href="#">{t.socials.instagram}</a>
-              <a href="#">{t.socials.youtube}</a>
-              <a href="#">{t.socials.tiktok}</a>
-              <a href="#">{t.socials.facebook}</a>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Martyrs</a>
+              <a href="#">Members</a>
+              <a href="#">Events</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Get Involved</a>
             </div>
           </div>
-          <div className="mt-4 md:mt-0">
-            <div className="flex gap-2">
+          <div className="flex flex-col mt-4 gap-4 md:mt-0">
+            <div className="flex gap-2 w-full justify-end">
               <Link href="/donate"><button  className="bg-primary text-white px-6 py-2 rounded-[4px]">
                 {t.donate}
               </button></Link>
-              
             </div>
+             <div className="flex space-x-6 mt-2">
+             <a href="#">{t.socials.instagram}</a>
+              <a href="#">{t.socials.youtube}</a>
+              <a href="#">{t.socials.tiktok}</a>
+              <a href="#">{t.socials.facebook}</a>
+            </div> 
           </div>
         </div>
         <div className="h-[1px] w-full bg-primary my-8"></div>

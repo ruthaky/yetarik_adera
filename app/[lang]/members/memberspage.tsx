@@ -156,9 +156,9 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
                 <div key={`col1-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
                   <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2 " />
                   <div>
-                    <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
+                    <h3 className="text-[16px] text-[#4A2C13]">{member.name[lang]}</h3>
                     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
-                    <h3 className="text-lg text-[#4A2C13]">{member.title[lang]}</h3>
+                    <h3 className="text-[16px] text-[#4A2C13]">{member.title[lang]}</h3>
                   </div>
                 </div>
               ))}
@@ -172,9 +172,9 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
                 <div key={`col2-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
                   <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2" />
                   <div>
-                    <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
+                    <h3 className="text-[16px] text-[#4A2C13]">{member.name[lang]}</h3>
                     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
-                    <h3 className="text-lg text-[#4A2C13]">{member.title[lang]}</h3>
+                    <h3 className="text-[16px] text-[#4A2C13]">{member.title[lang]}</h3>
                   </div>
                 </div>
               ))}
@@ -211,7 +211,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
               </div>
             </h1>
           </section>
-          <p className="text-left">
+          <p className="text-left text-[16px]">
           {memberTexts.paragraph1}
         <br />
         <br />

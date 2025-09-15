@@ -32,7 +32,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState("");
-  const [isSuccess, setIsSuccess] = useState<boolean | null>(null); // null = no message, true = success, false = failure
+  const [isSuccess, setIsSuccess] = useState<boolean | null>(null); 
   const [showForm, setShowForm] = useState(false);
 
   const handleInputChange = (
@@ -106,7 +106,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           <div>
             <h3 className="text-3xl font-semibold mb-4">{contactText.contactdetail}</h3>
 
-            <ul className="space-y-5 text-sm">
+            <ul className="space-y-5 text-[16px]">
               <li className="flex items-center gap-2">
                 <span>📞</span> 0928291967
               </li>
@@ -143,7 +143,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
         <form onSubmit={handleSubmit} className="p-8 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="firstName" className="block text-sm mb-1">
+              <label htmlFor="firstName" className="block text-[16px] mb-1">
               {contactText.Fname}
               </label>
               <input
@@ -156,7 +156,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-sm mb-1">
+              <label htmlFor="lastName" className="block text-[16px] mb-1">
               {contactText.Lname}
               </label>
               <input
@@ -173,7 +173,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="email" className="block text-sm mb-1">
+              <label htmlFor="email" className="block text-[16px] mb-1">
               {contactText.email}
               </label>
               <input
@@ -187,7 +187,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
               />
             </div>
             <div>
-              <label htmlFor="phonenumber" className="block text-sm mb-1">
+              <label htmlFor="phonenumber" className="block text-[16px] mb-1">
               {contactText.phonenumber}
               </label>
               <input
@@ -202,7 +202,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           </div>
 
           <div>
-            <label htmlFor="subject" className="block text-sm mb-2">
+            <label htmlFor="subject" className="block text-[16px] mb-2">
             {contactText.subject}
             </label>
             <div className="flex flex-wrap gap-4 text-sm">
@@ -226,7 +226,7 @@ export default function ContactSection({ contactText }: { contactText: any }) {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm mb-1">
+            <label htmlFor="message" className="block text-[16px] mb-1">
             {contactText.message}
             </label>
             <textarea

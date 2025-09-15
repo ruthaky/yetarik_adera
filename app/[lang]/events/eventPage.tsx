@@ -120,7 +120,7 @@ export default function UpcomingEvents ({
                   {events[0].location}
                 </p>
                 <p className="text-sm text-gray-700 mb-3">{events[0].time}</p>
-                <p className="text-sm text-gray-700 mb-4 w-[600px]">
+                <p className="text-[16px] mb-4 w-[600px]">
                   {events[0].description}
                 </p>
               </div>

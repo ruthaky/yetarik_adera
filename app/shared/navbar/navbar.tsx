@@ -15,6 +15,7 @@ import {
 } from "./dropdown-menu";
 import { motion, AnimatePresence } from "framer-motion";
 import { Noto_Serif_Ethiopic } from "next/font/google";
+import { useEffect, useState } from "react";
 
 const notoSerifEthiopic = Noto_Serif_Ethiopic({
   weight: ["400"],
@@ -28,6 +29,17 @@ export default function Navbar() {
   const pathname = usePathname();
   const [opened, { toggle, close }] = useDisclosure(false);
   const currentLang = pathname.split("/")[1] || "en";
+
+  // ✅ State to track scroll
+  const [showLinks, setShowLinks] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowLinks(window.scrollY > 50); // Show when scrolled > 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const languageFlags: Record<string, string> = {
     en: "🇺🇸",
@@ -46,23 +58,19 @@ export default function Navbar() {
   };
 
   // ✅ Navbar translations
-  const navLinks: Record<
-    string,
-    { slug: string; en: string; am: string }[]
-  > = {
-    links: [
-      { slug: "", en: "Home", am: "መነሻ ገጽ" },
-      { slug: "about", en: "About", am: "ስለ" },
-      { slug: "martyrs", en: "Martyrs", am: "ሰማዕታት" },
-      { slug: "members", en: "Members", am: "አባላት" },
-      { slug: "events", en: "Events", am: "ክስተቶች" },
-      { slug: "contact-us", en: "Contact us", am: "ያግኙን" },
-      { slug: "get-involved", en: "Get involved", am: "ተሳተፍ" },
-    ],
-  };
+  const navLinks: { slug: string; en: string; am: string }[] = [
+    { slug: "", en: "Home", am: "መነሻ ገጽ" },
+    { slug: "about", en: "About", am: "ስለ" },
+    { slug: "martyrs", en: "Martyrs", am: "ሰማዕታት" },
+    { slug: "members", en: "Members", am: "አባላት" },
+    { slug: "events", en: "Events", am: "ክስተቶች" },
+    { slug: "contact-us", en: "Contact us", am: "ያግኙን" },
+    { slug: "get-involved", en: "Get involved", am: "ተሳተፍ" },
+  ];
 
   return (
     <>
+      {/* Top Navbar */}
       <div
         className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic flex items-center justify-between bg-[#333333] fixed top-0 left-0 w-full h-[70px] px-4 md:px-10 z-[9999] text-white shadow-lg`}
       >
@@ -111,7 +119,31 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Animated Collapse Menu */}
+      {/* ✅ Second Navbar (appears on scroll) */}
+      <AnimatePresence>
+        {showLinks && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-[70px] left-0 w-full bg-primary text-white shadow-md z-[9998] flex justify-center space-x-8 py-2"
+          >
+            {navLinks.map(({ slug, en, am }) => (
+              <Link
+                key={slug}
+                href={`/${currentLang}/${slug}`}
+                onClick={() => handleLinkClick(`/${slug}`)}
+                className="hover:text-yellow-400 transition"
+              >
+                {currentLang === "am" ? am : en}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Animated Collapse Menu (mobile) */}
       <AnimatePresence>
         {opened && (
           <motion.div
@@ -119,14 +151,14 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic fixed top-[70px] left-0 w-full h-screen bg-[#774E1D]/80 z-50 text-white z-[9998]`}
+            className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic fixed top-[70px] left-0 w-full h-screen bg-[#774E1D]/80 text-white z-[9998]`}
           >
             <Flex
               direction="column"
               align="center"
               className="py-20 space-y-10 text-2xl"
             >
-              {navLinks.links.map(({ slug, en, am }) => (
+              {navLinks.map(({ slug, en, am }) => (
                 <Link
                   key={slug}
                   href={`/${currentLang}/${slug}`}

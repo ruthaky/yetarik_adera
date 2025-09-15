@@ -157,7 +157,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
     </div>
 
     {/* Intro Text */}
-    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[18px] leading-relaxed w-full w-[95%] md:w-[80%] text-left`}>
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[16px] leading-relaxed w-full w-[95%] md:w-[80%] text-left`}>
       <p>
       {martyrsTexts.paragraph1}
 
@@ -173,7 +173,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
 </section>
 
 {/* Image Section */}
-<div className="w-full flex items-center justify-center mt-6">
+<div className="w-full flex items-center justify-center ">
 <section className="w-full md:w-[80%] pb-6">
       <div className="relative w-full overflow-hidden">
         <div className="flex w-max animate-marquee gap-4 px-6 py-4">
