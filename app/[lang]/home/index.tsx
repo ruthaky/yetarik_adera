@@ -85,22 +85,22 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Scrolling Images */}
-      <div className="hidden md:flex relative w-full overflow-hidden my-6">
+      <div className="hidden md:flex relative w-full overflow-hidden my-10">
       <div className="flex w-max animate-marquee space-x-6 ">
       {[...images, ...images].map((item, i) => (
           <div
             key={i}
             className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
-                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[300px] lg:h-[200px] 
+                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[350px] lg:h-[260px] 
                        cursor-pointer"
-            onClick={() => setSelectedImg(item)}
+                       onClick={() => setSelectedImg(typeof item.src === "string" ? item.src : item.src.src)}
           >
             <Image
               src={item.src}
               alt={`scroll-img-${i}`}
               fill
               className="object-fit border border-primary border-2 rounded-2xl"
-              sizes="(max-width: 768px) 200px, (max-width: 1024px) 300px, 340px"
+   
             />
           </div>
         ))}
