@@ -15,7 +15,7 @@ import img11 from "@/public/asset/newimg1.jpeg";
 import img12 from "@/public/asset/asset13.jpeg";
 import img13 from "@/public/asset/newimg16.jpeg";
 import img14 from "@/public/asset/newimg13.jpeg";
-
+import RollingGallery from './RollingGallery'
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -61,7 +61,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
   return (
     <section
-      className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-center px-4 h-screen flex flex-col items-center justify-center `}  //mt-[50px] pt-16 sm:pt-[100px]
+      className={`${notoSerifEthiopic.variable} pt-32 pb-12 md:pt-0 md:pb-0 font-notoSerifEthiopic text-center px-4 md:h-screen flex flex-col items-center justify-center `}  //mt-[50px] pt-16 sm:pt-[100px]
     >
       {/* Heading */}
       <div className="inline-block mb-2 md:mt-20">
@@ -79,7 +79,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* Subheading */}
-      <p className="sm:text-lg md:text-[16px] md:my-0 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
+      <p className="sm:text-lg md:text-[16px] md:my-0 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] mb-6 md:mb-0">
      {heroTexts.subheading1}
       
       </p>
@@ -140,11 +140,13 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
         alt="Emperor Haile Selassie"
         width={330}
         height={330}
-        className="object-cover w-[330px] h-[330px] md:hidden rounded-2xl my-6"
+        className="hidden object-cover w-[330px] h-[330px] md:hidden rounded-2xl my-6"
       />
 
+<RollingGallery autoplay={true} pauseOnHover={true} />
+
       {/* Links */}
-       <div className="flex flex-wrap gap-4 sm:gap-8 items-center justify-center animate-slideIn delay-300">
+       <div className="flex mt-6 md:mt-0 flex-wrap gap-4 sm:gap-8 items-center justify-center animate-slideIn delay-300">
         <Link href={`/${pathname.split("/")[1]}/about`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link1}

@@ -64,9 +64,9 @@ export default function UpcomingEvents ({
   return (
     <>
       <section
-        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}
+        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic py-12 py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}
       >
-        <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
+        <div className="text-center md:mb-[30px] mt-[30px] md:mt-[50px] px-4 sm:px-6 md:px-20">
           <h2 className={`${arapey.variable} font-arapey text-3xl md:text-5xl`}>
             <span className=" pb-2">{eventTexts.heading}</span> 
           </h2>
@@ -74,12 +74,12 @@ export default function UpcomingEvents ({
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1, delay: 0 }}
-            className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
+            className="h-[2px] w-[200px] sm:w-[300px] lg:w-[900px] bg-primary mt-1 mx-auto"
           />
         </div>
 
         {/* First event with image slideshow */}
-        <div className="md:space-y-16 px-6 md:px-20">
+        <div className="md:space-y-16 px-4 sm:px-6 md:px-20 w-full">
           <div className="border-b border-[#B1864F] py-12">
             <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
               {/* Date */}
@@ -91,7 +91,7 @@ export default function UpcomingEvents ({
               </div>
 
               {/* Image slideshow */}
-              <div className="relative w-[400px] h-[250px] rounded-md shadow-md overflow-hidden">
+              <div className="relative w-full  md:w-[400px] h-[200px] md:h-[250px]  rounded-md shadow-md overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -111,16 +111,17 @@ export default function UpcomingEvents ({
                 </AnimatePresence>
               </div>
 
+           
               {/* Content */}
-              <div>
-                <h3 className="text-xl font-semibold mb-1">
+              <div >
+                <h3 className="text-lg sm:text-xl font-semibold mb-4">
                   {events[0].title}
                 </h3>
                 <p className="text-sm text-gray-800 mb-1">
                   {events[0].location}
                 </p>
                 <p className="text-sm text-gray-700 mb-3">{events[0].time}</p>
-                <p className="text-[16px] mb-4 w-[600px]">
+                <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
                   {events[0].description}
                 </p>
               </div>

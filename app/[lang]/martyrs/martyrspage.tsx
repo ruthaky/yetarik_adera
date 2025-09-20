@@ -13,7 +13,10 @@ import img5 from "@/public/asset/asset2.jpeg";
 import img8 from "@/public/asset/asset14.jpeg";
 import img12 from "@/public/asset/asset17.jpeg";
 import img14 from "@/public/asset/asset6.jpeg";
-import img3 from "@/public/asset/asset13.jpeg";
+import img6 from "@/public/asset/martyrs101.jpeg";
+import img3 from "@/public/asset/martyrs102.jpeg";
+import img4 from "@/public/asset/martyrs103.jpeg";
+// import img3 from "@/public/asset/asset13.jpeg";
 
 // Arapey for headers
 const arapey = Arapey({
@@ -67,7 +70,7 @@ interface Martyrs3 {
   };
 }
 
-const images = [img2, img3, img12, img5, img8, img14];
+const images = [img2, img12, img5,img3,img6,img4, img8, img14];
 
 export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
   const [showMartyrs, setShowMartyrs] = useState(false);

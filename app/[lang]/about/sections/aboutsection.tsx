@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import img1 from "@/public/asset/lineofjudah.svg";
+// import img1 from "@/public/asset/lineofjudah.svg";
 import img2 from "@/public/asset/newimg10.jpeg";
 import img3 from "@/public/asset/imgabout3.png";
 import img4 from "@/public/asset/asset3.jpeg";
@@ -12,7 +12,7 @@ import img7 from "@/public/asset/bankbw.jpg";
 import img8 from "@/public/asset/school 2.jpg";
 import img9 from "@/public/asset/cinemabw.jpg";
 import img10 from "@/public/asset/asset11.jpeg";
-import img11 from "@/public/asset/newimg9.jpeg";
+// import img11 from "@/public/asset/newimg9.jpeg";
 import img12 from "@/public/asset/aviation.jpg";
 import img13 from "@/public/asset/newimg8.jpeg";
 import img14 from "@/public/asset/line.jpg";
@@ -20,7 +20,7 @@ import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
 import img17 from "@/public/asset/asset9.jpeg";
 import img18 from "@/public/asset/4kilo.jpeg";
-import img19 from "@/public/asset/asset12.jpeg";
+// import img19 from "@/public/asset/asset12.jpeg";
 
 import { motion } from "framer-motion";
 import { MantineProvider } from "@mantine/core";
@@ -48,8 +48,8 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
   variable: "--font-noto-ethiopic",
 });
 const images = [
-  img10, img2, img17, img12, img5, img7,
-  img4, img8, img18, img9, img11,
+  img10, img2, img12, img5, img7,
+  img4, img8, img18, img9,
   img14, img15, img13, img16,
 ];
 
@@ -69,7 +69,7 @@ const AboutPage = ({
     
         <section className="w-full flex flex-col items-center justify-start mb-4 pt-[170px] md:pb-16">
    <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
-  <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-10 md:mb-0 `}>
+  <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-4 md:mb-0 `}>
     {/* Line 1 */}
     <div className="inline-block">
       <span className="text-3xl md:text-5xl">{aboutpageTexts.introheading1}</span>
@@ -100,14 +100,14 @@ const AboutPage = ({
 </section>
 
         {/* Image and Text Section */}
-        <section className="flex flex-col md:flex-row items-stretch justify-center gap-[50px] w-[80%]">
+        <section className="flex flex-col md:flex-row items-stretch justify-center md:gap-[50px] w-[90%]">
   {/* Image wrapper */}
   <div className="relative w-[400px] flex-shrink-0">
     <Image
-      src={img1}
+      src={img17}
       alt="Emperor Haile Selassie"
       fill
-      className="object-cover border border-primary border-2 rounded-2xl"
+      className="hidden md:flex object-cover border border-primary border-2 rounded-2xl"
     />
   </div>
 
@@ -154,7 +154,7 @@ const AboutPage = ({
           </div>
         </section>
         <section className="flex flex-col justify-end items-end w-full md:w-1/2">
-          <Image src={img19} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" />
+          <Image src={img2} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" />
         </section>
       </div>
 
