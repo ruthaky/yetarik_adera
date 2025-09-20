@@ -79,7 +79,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* Subheading */}
-      <p className="sm:text-lg md:text-[16px] md:my-0 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] mb-6 md:mb-0">
+      <p className="sm:text-lg md:text-[16px] md:my-0 animate-slideIn delay-100 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]">
      {heroTexts.subheading1}
       
       </p>
@@ -140,13 +140,12 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
         alt="Emperor Haile Selassie"
         width={330}
         height={330}
-        className="hidden object-cover w-[330px] h-[330px] md:hidden rounded-2xl my-6"
+        className="object-cover w-[330px] h-[330px] md:hidden rounded-2xl my-6"
       />
 
-<RollingGallery autoplay={true} pauseOnHover={true} />
 
       {/* Links */}
-       <div className="flex mt-6 md:mt-0 flex-wrap gap-4 sm:gap-8 items-center justify-center animate-slideIn delay-300">
+       <div className="flex flex-wrap gap-4 sm:gap-8 items-center justify-center animate-slideIn delay-300">
         <Link href={`/${pathname.split("/")[1]}/about`}>
           <div className="transition-transform duration-300 hover:-translate-y-1 hover:underline">
             {heroTexts.link1}
