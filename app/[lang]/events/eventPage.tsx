@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import img1 from "@/public/asset/event1.jpeg";
 import img2 from "@/public/asset/event2.jpeg";
 import img3 from "@/public/asset/event3.jpeg";
+import img4 from "@/public/asset/event201.jpeg";
+import img5 from "@/public/asset/event202.jpeg";
+import img6 from "@/public/asset/event203.jpeg";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
@@ -44,6 +47,16 @@ const events: Event[] = [
     description:
       "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
   },
+  {
+    date: "15",
+    month: "JUNE",
+    images: [img4, img5,img6 ], // three images
+    title: "Event 2",
+    location: "Addis Ababa, Ethiopia and DMV",
+    time: "7:00 pm - 8:00 pm",
+    description:
+      "Yetarik Adera inaugurated its archive center located on the 9th floor of the Wemezeker compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents gathered from the families of former government officials, photographs, and artifacts.",
+  },
 ];
 
 export default function UpcomingEvents ({
@@ -51,15 +64,21 @@ export default function UpcomingEvents ({
   }: {
     eventTexts: any;
   })  {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-slide every 4s
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % events[0].images.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
+    // Store currentIndex for each event separately
+    const [currentIndexes, setCurrentIndexes] = useState(
+      Array(events.length).fill(0)
+    );
+  
+    // Auto-slide every 4s
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentIndexes((prev) =>
+          prev.map((val, i) => (val + 1) % events[i].images.length)
+        );
+      }, 4000);
+      return () => clearInterval(interval);
+    }, []);
+  
 
   return (
     <>
@@ -78,56 +97,61 @@ export default function UpcomingEvents ({
           />
         </div>
 
-        {/* First event with image slideshow */}
-        <div className="md:space-y-16 px-4 sm:px-6 md:px-20 w-full">
-          <div className="border-b border-[#B1864F] py-12">
-            <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
-              {/* Date */}
-              <div className="text-center text-xl font-bol w-16 md:w-auto">
-                <p className="text-sm border-b border-[#B1864F] pb-1">
-                  {events[0].month}
-                </p>
-                <p className="text-3xl text-black">{events[0].date}</p>
-              </div>
+            {/* Loop through events */}
+            <div className="md:space-y-16 px-4 sm:px-6 md:px-20 w-full">
+          {events.map((event, index) => (
+            <div
+              key={index}
+              className="border-b border-[#B1864F] py-12"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-[70px_auto_1fr] gap-6 items-start">
+                {/* Date */}
+                <div className="text-center text-xl font-bold w-16 md:w-auto">
+                  <p className="text-sm border-b border-[#B1864F] pb-1">
+                    {event.month}
+                  </p>
+                  <p className="text-3xl text-black">{event.date}</p>
+                </div>
 
-              {/* Image slideshow */}
-              <div className="relative w-full  md:w-[400px] h-[200px] md:h-[250px]  rounded-md shadow-md overflow-hidden">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={currentIndex}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
-                    className="absolute inset-0"
-                  >
-                    <Image
-                      src={events[0].images[currentIndex]}
-                      alt={events[0].title}
-                      fill
-                      className="object-cover rounded-2xl border border-primary border-2"
-                    />
-                  </motion.div>
-                </AnimatePresence>
-              </div>
+                {/* Image slideshow */}
+                <div className="relative w-full md:w-[400px] h-[200px] md:h-[250px] rounded-md shadow-md overflow-hidden">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={currentIndexes[index]}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 1 }}
+                      className="absolute inset-0"
+                    >
+                      <Image
+                        src={event.images[currentIndexes[index]]}
+                        alt={event.title}
+                        fill
+                        className="object-fit rounded-2xl border border-primary border-2"
+                      />
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
 
-           
-              {/* Content */}
-              <div >
-                <h3 className="text-lg sm:text-xl font-semibold mb-4">
-                  {events[0].title}
-                </h3>
-                <p className="text-sm text-gray-800 mb-1">
-                  {events[0].location}
-                </p>
-                <p className="text-sm text-gray-700 mb-3">{events[0].time}</p>
-                <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
-                  {events[0].description}
-                </p>
+                {/* Content */}
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                    {event.title}
+                  </h3>
+                  <p className="text-sm text-gray-800 mb-1">
+                    {event.location}
+                  </p>
+                  <p className="text-sm text-gray-700 mb-3">{event.time}</p>
+                  <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
+                    {event.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
+
 
         {/* Upcoming section title */}
         {/* <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">

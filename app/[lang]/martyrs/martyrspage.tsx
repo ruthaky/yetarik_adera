@@ -130,7 +130,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
       {/* Hero */}
     <section className="relative w-full">
   {/* Title Section */}
-  <div className="flex flex-col items-center justify-center text-center text-black px-4">
+  <div className="flex flex-col items-center justify-center text-center text-black md:px-4">
     <div className="mb-10 sm:mb-10 flex justify-center items-center">
       <section className="px-4 sm:px-6 text-start w-auto">
         <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] leading-snug inline-block`}>
@@ -160,7 +160,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
     </div>
 
     {/* Intro Text */}
-    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[16px] leading-relaxed w-full w-[95%] md:w-[80%] text-left`}>
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[16px] leading-relaxed w-[90%] md:w-[80%] text-left`}>
       <p>
       {martyrsTexts.paragraph1}
 

@@ -145,7 +145,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
 
   return (
     <>
-      <section className={`${notoSerifEthiopic.variable} flex flex-col md:flex-row font-notoSerifEthiopic text-gray-800 px-6 md:px-20 pt-[70px] md:h-[1160px] overflow-y-hidden`}>
+      <section className={`${notoSerifEthiopic.variable} flex flex-col md:flex-row justify-center items-center font-notoSerifEthiopic text-gray-800 md:px-20 pt-[70px] md:h-[1160px] overflow-y-hidden`}>
       
         {/* Members Columns */}
         <div className="flex w-full md:w-1/2 gap-20 flex-wrap">
@@ -185,7 +185,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
         </div>
 
   {/* Header */}
-  <div className="text-left mb-10 mt-16 flex flex-col justify-start items-center w-full md:w-2/3">
+  <div className="text-left mb-10 mt-16 flex flex-col justify-center md:justify-start items-center w-[90%] md:w-2/3">
           <section className="pl-0 pb-12 text-center md:text-left w-[300px] ">
             <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
               <div className="inline-block pr-14 md:pr-0">
@@ -223,7 +223,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
    </p></div>
         </div>
          {/* Mobile grid */}
-         <div className="md:hidden grid grid-cols-2 gap-6 w-full py-6">
+         <div className="md:hidden grid grid-cols-2 gap-6 w-full pb-10">
             {members.map((member, index) => (
               <div key={index} className="flex flex-col items-center gap-4" onClick={() => setSelectedMember(member)}>
                 <Image src={member.image} alt={member.name[lang]} className="w-[120px] h-[120px] object-fit rounded-full border border-primary border-2" />

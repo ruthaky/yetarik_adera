@@ -48,7 +48,7 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
   variable: "--font-noto-ethiopic",
 });
 const images = [
-  img10, img2, img12, img5, img7,
+  img10, img12, img5, img7,
   img4, img8, img18, img9,
   img14, img15, img13, img16,
 ];
@@ -67,8 +67,8 @@ const AboutPage = ({
 
       {/* Hero Section */}
     
-        <section className="w-full flex flex-col items-center justify-start mb-4 pt-[170px] md:pb-16">
-   <section className="px-6 text-center md:text-start w-full md:w-[600px] md:mb-12">
+        <section className="w-full flex flex-col items-center justify-start mb-6 pt-[120px] md:pt-[170px] md:pb-16">
+   <section className="px-6 text-center md:text-start w-full md:w-[600px] mb-4 md:mb-12">
   <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-4 md:mb-0 `}>
     {/* Line 1 */}
     <div className="inline-block">
@@ -100,7 +100,7 @@ const AboutPage = ({
 </section>
 
         {/* Image and Text Section */}
-        <section className="flex flex-col md:flex-row items-stretch justify-center md:gap-[50px] w-[90%]">
+        <section className="flex flex-col md:flex-row items-stretch justify-center md:gap-[50px] w-[90%] md:w-[80%]">
   {/* Image wrapper */}
   <div className="relative w-[400px] flex-shrink-0">
     <Image
@@ -112,7 +112,7 @@ const AboutPage = ({
   </div>
 
   {/* Text */}
-  <p className="text-[16px] md:w-[750px] px-2 md:px-0 leading-relaxed">
+  <p className="text-[16px] md:w-[750px] leading-relaxed">
     {aboutpageTexts.storyp1}
     <br />
     <br />
@@ -121,7 +121,7 @@ const AboutPage = ({
 </section>
 
 
-<div className="w-[80%] flex items-start "> <Button
+<div className="w-[90%] md:w-[80%] flex items-start "> <Button
       className="mt-4 sm:mt-10 rounded-[4px]" 
       onClick={() => setExpanded((prev) => !prev)}
       aria-expanded={expanded}
@@ -199,15 +199,15 @@ const AboutPage = ({
       </div>
 
       {/* Commitment Section */}
-      <section className="py-[60px] md:w-[80%] flex flex-col gap-[20px] items-center">
-        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full border border-primary border-2 rounded-2xl" />
+      <section className="py-4 md:py-6 w-[90%] md:w-[80%] flex flex-col md:gap-[20px] items-center">
+        <Image src={img3} alt="Building" width={700} height={350} className="mb-8 w-full border border-primary border-2 rounded-2xl h-[150px] md:h-[500px]" />
         <p className="text-[16px]">
      {aboutpageTexts.storyp5}
         </p>
       </section>
 
       {/* Image Carousel */}
-      <section className="w-full md:w-[80%] pb-12">
+      <section className="w-full md:w-[80%] pb-4 md:pb-6">
       <div className="relative w-full overflow-hidden">
         <div className="flex w-max animate-marquee gap-4 px-6 py-4">
           {/* Duplicate the images for smooth infinite loop */}
@@ -261,7 +261,7 @@ const AboutPage = ({
 
 
       {/* Final Section */}
-      <section className="pb-12 text-[16px] md:w-[80%]">
+      <section className="pb-12 text-[16px] w-[90%] md:w-[80%]">
         <p>
          {aboutpageTexts.storyp6}
         </p>
