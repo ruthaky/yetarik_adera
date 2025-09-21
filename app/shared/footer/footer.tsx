@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col mt-4 gap-4 md:mt-0">
-            <div className="flex gap-2 w-full justify-end">
+            <div className="flex gap-2 w-full md:justify-end">
               <Link href="/donate"><button  className="bg-primary text-white px-6 py-2 rounded-[4px]">
                 {t.donate}
               </button></Link>
