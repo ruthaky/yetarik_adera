@@ -10,6 +10,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
 import { Arapey, Noto_Serif_Ethiopic } from "next/font/google";
+import Link from "next/link";
 
 // Arapey for headers
 const arapey = Arapey({
@@ -34,6 +35,7 @@ interface Event {
   location: string;
   time: string;
   description: string;
+  link:string;
 }
 
 const events: Event[] = [
@@ -46,7 +48,8 @@ const events: Event[] = [
     time: "7:00 pm - 8:00 pm",
     description:
       "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
-  },
+ link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
+    },
   {
     date: "15",
     month: "JUNE",
@@ -56,7 +59,8 @@ const events: Event[] = [
     time: "7:00 pm - 8:00 pm",
     description:
       "Yetarik Adera inaugurated its archive center located on the 9th floor of the Wemezeker compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents gathered from the families of former government officials, photographs, and artifacts.",
-  },
+      link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
+    },
 ];
 
 export default function UpcomingEvents ({
@@ -136,9 +140,9 @@ export default function UpcomingEvents ({
 
                 {/* Content */}
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                <Link href={event.link} ><h3 className="text-lg sm:text-xl font-semibold mb-4 hover:underline">
                     {event.title}
-                  </h3>
+                  </h3></Link>  
                   <p className="text-sm text-gray-800 mb-1">
                     {event.location}
                   </p>
