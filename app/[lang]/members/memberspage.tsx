@@ -226,7 +226,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
          <div className="md:hidden grid grid-cols-2 gap-6 w-full pb-10">
             {members.map((member, index) => (
               <div key={index} className="flex flex-col items-center gap-4" onClick={() => setSelectedMember(member)}>
-                <Image src={member.image} alt={member.name[lang]} className="w-[120px] h-[120px] object-fit rounded-full border border-primary border-2" />
+                <Image src={member.image} alt={member.name[lang]} className="w-[140px] h-[140px] object-fit rounded-full border border-primary border-2" />
                 <div>
                   <h3 className="text-lg text-[#4A2C13]">{member.name[lang]}</h3>
                   <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 1 }} className="h-[1px] w-[300px] bg-primary mt-1" />
