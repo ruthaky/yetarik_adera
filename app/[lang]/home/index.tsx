@@ -91,7 +91,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
           <div
             key={i}
             className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
-                       w-[260px] h-[200px] sm:w-[250px] sm:h-[560px] lg:w-[350px] lg:h-[260px] 
+                       w-[260px] h-[200px] sm:w-[250px] md:h-[560px] lg:w-[350px] lg:h-[260px] 
                        cursor-pointer"
                        onClick={() => setSelectedImg(typeof item.src === "string" ? item.src : item.src.src)}
           >
@@ -107,8 +107,8 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </div>
 
       {/* left & right gradient fades */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-10 md:w-20 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-10 md:w-20 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
 
       {/* Fullscreen Modal */}
       {selectedImg && (

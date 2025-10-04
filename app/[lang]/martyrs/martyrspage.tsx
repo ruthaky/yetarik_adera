@@ -202,8 +202,8 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
         </div>
 
         {/* Gradient fades */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-10 md:w-20 bg-gradient-to-r from-[#F7F4E9] to-transparent"></div>
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-10 md:w-20 bg-gradient-to-l from-[#F7F4E9] to-transparent"></div>
       </div>
 
       {/* Fullscreen Modal */}
