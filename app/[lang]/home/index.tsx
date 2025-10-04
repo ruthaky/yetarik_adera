@@ -85,13 +85,13 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
       </p>
 
       {/* Scrolling Images */}
-      <div className="hidden md:flex relative w-full overflow-hidden my-10">
-      <div className="flex w-max animate-marquee space-x-6 ">
+      <div className="flex relative w-full overflow-hidden my-10">
+      <div className="flex w-max animate-marquee space-x-4 md:space-x-6 ">
       {[...images, ...images].map((item, i) => (
           <div
             key={i}
             className="relative flex-shrink-0 overflow-hidden rounded-2xl shadow-lg 
-                       w-[260px] h-[500px] sm:w-[300px] sm:h-[560px] lg:w-[350px] lg:h-[260px] 
+                       w-[260px] h-[200px] sm:w-[250px] sm:h-[560px] lg:w-[350px] lg:h-[260px] 
                        cursor-pointer"
                        onClick={() => setSelectedImg(typeof item.src === "string" ? item.src : item.src.src)}
           >
@@ -135,13 +135,13 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
 
       {/* Mobile static image */}
-      <Image
+      {/* <Image
         src={img4}
         alt="Emperor Haile Selassie"
         width={330}
         height={330}
         className="object-cover w-[330px] h-[330px] md:hidden rounded-2xl my-6"
-      />
+      /> */}
 
 
       {/* Links */}
