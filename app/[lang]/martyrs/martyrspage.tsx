@@ -194,6 +194,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
                   width={320}
                   height={220}
                   className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] border border-primary border-2 rounded-2xl"
+                priority
                 />
               </div>
             ))

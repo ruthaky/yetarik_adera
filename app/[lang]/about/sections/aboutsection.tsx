@@ -154,7 +154,7 @@ const AboutPage = ({
           </div>
         </section>
         <section className="flex flex-col justify-end items-end w-full md:w-1/2">
-          <Image src={img2} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" />
+          <Image src={img2} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" priority />
         </section>
       </div>
 
@@ -224,6 +224,7 @@ const AboutPage = ({
                   width={320}
                   height={220}
                   className="object-fit w-[240px] h-[160px] sm:w-[280px] sm:h-[200px] md:w-[320px] md:h-[220px] border border-primary border-2 rounded-2xl"
+                priority
                 />
               </div>
             ))
