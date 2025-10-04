@@ -100,7 +100,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
               alt={`scroll-img-${i}`}
               fill
               className="object-fit border border-primary border-2 rounded-2xl"
-   
+   priority
             />
           </div>
         ))}
