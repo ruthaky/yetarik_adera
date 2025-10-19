@@ -20,6 +20,7 @@ export async function GET(req: Request) {
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error: any) {
+    console.error("Verification Error:", error);
     return NextResponse.json(
       { error: error.message || "Verification failed" },
       { status: 500 }

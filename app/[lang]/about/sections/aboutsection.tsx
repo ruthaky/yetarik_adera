@@ -115,7 +115,8 @@ const AboutPage = ({
   <p className="text-[16px] md:w-[750px] leading-relaxed">
     {aboutpageTexts.storyp1}
     <br />
-    <br />
+<p className="text-[16px] leading-relaxed py-4" >Yetarik Adera is a historical institution devoted to the study and preservation of Ethiopia’s journey toward modernization from 1929 to 1966. Through our collection of artifacts, books, documents, and films, we honor the sacrifices and celebrate the accomplishments of the nation’s Imperial government officials, ensuring their legacy continues to inspire future generations.</p>
+
     {aboutpageTexts.storyp3}
   </p>
 </section>
@@ -137,7 +138,7 @@ const AboutPage = ({
       <>
       {/* Reflection Section */}
       <div className="flex flex-col md:flex-row justify-between px-6 md:px-0 md:w-[80%]">
-        <section className="flex pb-12 w-full md:w-1/2">
+        <section className="flex flex-col gap-6 pb-12 w-full md:w-1/2">
           <div className="text-sm">
             <div className="inline-block mb-4">
               <h3 className="text-[22px] font-semibold">{aboutpageTexts.missionheading}</h3>
@@ -152,44 +153,59 @@ const AboutPage = ({
               {aboutpageTexts.missionStory}
             </p>
           </div>
+          <div className="text-sm">
+            <div className="inline-block mb-4">
+              <h3 className="text-[22px] font-semibold">{aboutpageTexts.visionheading}</h3>
+            <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 1, delay: 0 }}
+                className="h-[1px] w-[300px] lg:w-[900px] bg-primary mt-1"
+              />
+            </div>
+            <p className="text-[16px] leading-relaxed">
+              {aboutpageTexts.visionStory}
+            </p>
+          </div>
         </section>
         <section className="flex flex-col justify-end items-end w-full md:w-1/2">
           <Image src={img2} alt="Building" width={400} height={300} className="object-cover mb-4 h-[250px] w-[470px] border border-primary border-2 rounded-2xl" priority />
         </section>
       </div>
 
+
       {/* Featured Section */}
       <div className="flex items-center justify-center  w-full">
         <div className="text-[#2b2a28] flex flex-col justify-center  md:w-[80%]  py-8">
-          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px]">{aboutpageTexts.Visionheading}</h2>
+          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px]">{aboutpageTexts.Purposeheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
             <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936]   px-10 h-full">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
-                <p className="font-bold">{aboutpageTexts.vision1}</p>
+                <p className="font-bold">{aboutpageTexts.purpose1}</p>
                 <p>
-                 {aboutpageTexts.vision1note}
+                 {aboutpageTexts.purpose1note}
                 </p>
               </div>
               <div className="h-full w-full p-2 md:p-4 border-l-2 border-[#b07936] md:border-none">
-                <p className="font-bold">{aboutpageTexts.vision2}</p>
+                <p className="font-bold">{aboutpageTexts.purpose2}</p>
                 <p>
-                 {aboutpageTexts.vision2note}
+                 {aboutpageTexts.purpose2note}
                 </p>
               </div>
             </div>
             {/* Second Row */}
             <div className="grid md:grid-cols-2  md-2 md:gap-8  border-b border-[#b07936] px-10 h-full flex items-center">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
-                <p className="font-bold">{aboutpageTexts.vision3}</p>
+                <p className="font-bold">{aboutpageTexts.purpose3}</p>
                 <p>
-                  {aboutpageTexts.vision3note}
+                  {aboutpageTexts.purpose3note}
                 </p>
               </div>
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] md:border-none">
-                <p className="font-bold">{aboutpageTexts.vision4}</p>
+                <p className="font-bold">{aboutpageTexts.purpose4}</p>
                 <p>
-            {aboutpageTexts.vision4note}
+            {aboutpageTexts.purpose4note}
                 </p>
               </div>
             </div>

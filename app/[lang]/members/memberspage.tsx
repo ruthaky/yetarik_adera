@@ -253,6 +253,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
             </div>
           </div>
         )}
+        
       </section>
       <Footer />
     </>

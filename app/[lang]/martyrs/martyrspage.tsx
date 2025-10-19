@@ -380,8 +380,8 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-[36px] text-left  text-[#4A2C13]">
               {currentLanguage === 'am' 
-                ? 'የተገደሉ የሃይማኖት ባለሥልጣናት፣ ቅዳመ ሰኞ፣ ህዳር 23፣ 1967 ዓ.ም.'
-                : 'Religious Officials Executed, Saturday, November 23, 1974'
+                ? 'በሐምሌ 12፣ 1966 ዓ.ም የተገደለ'
+                : 'Executed on July 19'
               }
             </h2>
           </div>
@@ -415,7 +415,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
  {/* Modal */}
 {selectedMartyr && (
   <div
-    className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-6"
+    className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-6 overflow-y-auto"
     onClick={() => setSelectedMartyr(null)} // close on outside click
   >
     <div
