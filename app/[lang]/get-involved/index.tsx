@@ -95,38 +95,38 @@ export default function GetInvolvedPage({
           </div>
 
           {/* Description */}
-          <div className="text-gray-700 leading-relaxed text-left space-y-6 md:text-[17px]">
+          <div className="text-black leading-relaxed text-left space-y-6 md:text-[17px]">
             <p className="text-xl font-bold text-gray-900">
-              A Four-Pillar Approach
+            {getInvolvedTexts.fourpillar}
             </p>
             <p>
-              We welcome your support in building a lasting legacy for the era
-              of Imperial Haile Selassie I (1929–1966). You can participate
-              through the following initiatives:
+            {getInvolvedTexts.pillartext}
             </p>
 
             {/* 1. Build the Archive Center */}
             <div>
               <h2 className="font-bold text-lg mb-2">
-                1. Build the Archive Center
+                1. {getInvolvedTexts.pillar1}
               </h2>
               <p>
-                Help us create a comprehensive digital and physical archive by
-                identifying and connecting with potential donors who may possess
-                unique materials from the era.
+              {getInvolvedTexts.pillar1desc}
               </p>
+              {getInvolvedTexts.seek}
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>
-                  <span className="font-bold">Documents</span>: Official papers,
-                  personal letters, books, diaries, and notebooks.
+                  {/* <span className="font-bold">Documents</span>: Official papers,
+                  personal letters, books, diaries, and notebooks. */}
+                  {getInvolvedTexts.seek1}
                 </li>
                 <li>
-                  <span className="font-bold">Multimedia</span>: Historical
-                  films, photographs, and audio recordings.
+                  {/* <span className="font-bold">Multimedia</span>: Historical
+                  films, photographs, and audio recordings. */}
+                         {getInvolvedTexts.seek2}
                 </li>
                 <li>
-                  <span className="font-bold">Artifacts</span>: Items that
-                  reflect the social and cultural life of the period.
+                  {/* <span className="font-bold">Artifacts</span>: Items that
+                  reflect the social and cultural life of the period. */}
+                         {getInvolvedTexts.seek3}
                 </li>
               </ul>
             </div>
@@ -134,25 +134,28 @@ export default function GetInvolvedPage({
             {/* 2. Develop the Research Library */}
             <div>
               <h2 className="font-bold text-lg mb-2">
-                2. Develop the Research Library
+                2.        {getInvolvedTexts.pillar2}
               </h2>
               <p>
-                Support the establishment of a world-class research library to
-                serve scholars, students, and the public.
+              {getInvolvedTexts.pillar2desc}
               </p>
+              {getInvolvedTexts.seek20}
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>
-                  <span className="font-bold">Historical Books</span>: Scholarly
-                  works and publications relevant to the era.
+                  {/* <span className="font-bold">Historical Books</span>: Scholarly
+                  works and publications relevant to the era. */}
+                        {getInvolvedTexts.seek21}
                 </li>
                 <li>
-                  <span className="font-bold">Photographic Records</span>:
+                  {/* <span className="font-bold">Photographic Records</span>:
                   Pictures that document key milestones in Ethiopia’s
-                  modernization.
+                  modernization. */}
+                        {getInvolvedTexts.seek22}
                 </li>
                 <li>
-                  <span className="font-bold">Film Archives</span>:
-                  Documentaries and newsreels from the period.
+                  {/* <span className="font-bold">Film Archives</span>:
+                  Documentaries and newsreels from the period. */}
+                        {getInvolvedTexts.seek23}
                 </li>
               </ul>
             </div>
@@ -160,29 +163,31 @@ export default function GetInvolvedPage({
             {/* 3. Promote Public Education and Outreach */}
             <div>
               <h2 className="font-bold text-lg mb-2">
-                3. Promote Public Education & Outreach
+              3. {getInvolvedTexts.pillar3}
               </h2>
               <p>
-                Participate in our mission to educate the public and ensure an
-                accurate historical record. This involves:
+              {getInvolvedTexts.pillar3desc}
               </p>
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>
-                  <span className="font-bold">
-                    Identifying Speakers and Influencers
+                  {/* <span className="font-bold"> */}
+                    {/* Identifying Speakers and Influencers
                   </span>
                   : Connecting scholars, authors, and influential figures for
-                  lectures, book signings, and panel discussions.
+                  lectures, book signings, and panel discussions. */}
+                  {getInvolvedTexts.pillar3list1}
                 </li>
                 <li>
-                  <span className="font-bold">Curriculum Development</span>:
+                  {/* <span className="font-bold">Curriculum Development</span>:
                   Advocating for the inclusion of this significant era in formal
-                  educational curricula.
+                  educational curricula. */}
+                     {getInvolvedTexts.pillar3list2}
                 </li>
                 <li>
-                  <span className="font-bold">Public Programs</span>: Hosting
+                  {/* <span className="font-bold">Public Programs</span>: Hosting
                   events that engage both the public and a new generation of
-                  Ethiopians.
+                  Ethiopians. */}
+                     {getInvolvedTexts.pillar3list3}
                 </li>
               </ul>
             </div>
@@ -190,43 +195,46 @@ export default function GetInvolvedPage({
             {/* 4. Preserve the Martyrs Cemetery */}
             <div>
               <h2 className="font-bold text-lg mb-2">
-                4. Preserve the Martyrs Cemetery
+                4. {getInvolvedTexts.pillar4}
               </h2>
               <p>
-                Join us in the ongoing maintenance and preservation of the
+                {/* Join us in the ongoing maintenance and preservation of the
                 Martyrs Cemetery as a sacred national monument and a place of
-                remembrance. Support is needed for:
+                remembrance. Support is needed for: */}
+{getInvolvedTexts.pillar4desc}
               </p>
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>
-                  <span className="font-bold">Physical Maintenance</span>:
-                  Ensuring the grounds and monuments are respectfully preserved.
+                  {/* <span className="font-bold">Physical Maintenance</span>:
+                  Ensuring the grounds and monuments are respectfully preserved. */}
+                  {getInvolvedTexts.pillar4list1}
                 </li>
                 <li>
-                  <span className="font-bold">Operational Expenses</span>:
+                  {/* <span className="font-bold">Operational Expenses</span>:
                   Helping cover costs required to keep this iconic site open and
-                  accessible to the public.
+                  accessible to the public. */}
+                  {getInvolvedTexts.pillar4list2}
                 </li>
               </ul>
             </div>   <div className='text-black'>
               <h2 className="font-bold text-2xl mb-2 mt-6">
-               How to get involved 
+              {getInvolvedTexts.how}
               </h2>
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>
-                  <span className=" ">In-kind donation</span>:
+                  <span className=" "> {getInvolvedTexts.how1}</span>
                 
                 </li>
                 <li>
-                  <span className=" ">Cash donation</span>:
+                  <span className=" "> {getInvolvedTexts.how2}</span>
                
                 </li>
                 <li>
-                  <span className=" ">Promote our purpose</span>:
+                  <span className=" "> {getInvolvedTexts.how3}</span>
                
                 </li>
                 <li>
-                  <span className=" ">Event sponsorship or promotion</span>:
+                  <span className=" "> {getInvolvedTexts.how4}</span>
                   
 
 

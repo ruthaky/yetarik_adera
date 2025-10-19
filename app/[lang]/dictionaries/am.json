@@ -44,43 +44,45 @@
   },
 
   "getInvolved": {
-  "heading": "A Four-Pillar Approach",
-  "intro": "We welcome your support in building a lasting legacy for the era of Imperial Haile Selassie I (1929-1966). You can participate through the following initiatives:",
+  "heading1": "ተካፋይ",
+  "heading2": "ይሁኑ",
+  "fourpillar": "አራት መሠረታዊ መዋቅሮች",
+  "pillartext": "የንጉሥ ኃይለ ሥላሴ ፩ኛ (1929–1966) ዘመን የቆየ ቅርስ እንዲቀር ለመገንባት ድጋፋችሁን እንከብዳለን። በታች የተጠቀሱትን እንቅስቃሴዎች በመሳተፍ ሊያደርጉት ይችላሉ፦",
   
-  "pillar1heading": "1. Build the Archive Center",
-  "pillar1desc": "Help us create a comprehensive digital and physical archive by identifying and connecting with potential donors who may possess unique materials from the era.",
-  "pillar1list": {
-    "documents": "Official papers, personal letters, books, diaries, and notebooks.",
-    "multimedia": "Historical films, photographs, and audio recordings.",
-    "artifacts": "Items that reflect the social and cultural life of the period."
-  },
+  "pillar1": "የአርካይቭ ማዕከልን ይገነቡ",
+  "pillar1desc": "በዚያን ዘመን በርቷቸው የሚገኙ ባለልዩ እቃዎችን የሚያኖሩ እና የሚያበሩ አቅራቢዎችን በመፈለግና በመገናኘት የዲጂታልና የእውነተኛ ሰነዶች ሙሉ አርካይቭ ለመፍጠር እንድንችል ይረዱን።",
+  "seek": "እንፈልጋለን፦",
+  "seek1": "ሰነዶች፡ ኦፊሴላዊ ወረቀቶች፣ የግል ደብዳቤዎች፣ መፅሀፍት፣ ዲያሪዎች እና እትም ደብተሮች።",
+  "seek2": "የብዙሀን መገናኛ ብዙኃን፡ የታሪክ ፊልሞች፣ ፎቶግራፎች እና የድምጽ ቅጂዎች።",
+  "seek3": "ቅርሶች፡ የዚያን ዘመን የማህበራዊና የባህላዊ ሕይወትን የሚያሳዩ እቃዎች።",
 
-  "pillar2heading": "2. Develop the Research Library",
-  "pillar2desc": "Support the establishment of a world-class research library to serve scholars, students, and the public.",
-  "pillar2list": {
-    "historicalBooks": "Scholarly works and publications relevant to the era.",
-    "photographicRecords": "Pictures that document key milestones in Ethiopia's modernization.",
-    "filmArchives": "Documentaries and newsreels from the period."
-  },
+  "pillar2": "የምርምር ቤተ መፃህፍትን ያድጉ",
+  "pillar2desc": "ለተመራማሪዎች፣ ለተማሪዎችና ለህዝብ የአለም ደረጃ የሆነ የምርምር ቤተ መፃህፍት ለመመሥረት ድጋፍ ያቅርቡ።",
+  "seek20": "ይህንን እንዲደግፉ ተግባራዊ መዋቅሮች እንፈልጋለን፦",
+  "seek21": "የታሪክ መፅሀፍት፡ በዚያን ዘመን ተዛማጅ የሆኑ ትምህርታዊ የጽሁፍ ስራዎች እና ህትመቶች።",
+  "seek22": "ፎቶ መዝገቦች፡ የኢትዮጵያ ዘመናዊነት ትልቅ ደረጃዎችን የሚያሳዩ ፎቶዎች።",
+  "seek23": "የፊልም አርካይቭ፡ የታሪክ ፊልሞች እና ዜና ቀን መዝገቦች።",
 
-  "pillar3heading": "3. Promote Public Education and Outreach",
-  "pillar3desc": "Participate in our mission to educate the public and ensure an accurate historical record. This involves:",
-  "pillar3list": {
-    "speakers": "Connecting scholars, authors, and influential figures for lectures, book signings, and panel discussions.",
-    "curriculum": "Advocating for the inclusion of this significant era in formal educational curricula to teach the true history and contributions of the Imperial government.",
-    "publicPrograms": "Hosting events that engage both the public and a new generation of Ethiopians."
-  },
+  "pillar3": "የህዝብ ትምህርትና እርምጃ እንቅስቃሴን ያበረታቱ",
+  "pillar3desc": "ህዝቡን ለመታወቅ እና የታሪክን ትክክለኛ መዝገብ ለማረጋገጥ በእኛ ተልዕኮ ይካፈሉ። ይህ ያካትታል፦",
+  "pillar3list1": "ንግግሮችንና ተፅዕኖ ያላቸውን ግለሰቦችን መለየት፡ ለንግግሮች፣ ለመፅሀፍት ፈላጊዎችና ለመዝገባዎች የተለያዩ ባለሙያዎችን መገናኘት።",
+  "pillar3list2": "የክለሳ ልማት፡ ይህንን ታላቅ ዘመን በየትምህርታችን መትረፍ እና የኢምፔሪያል መንግሥት እውነተኛ አስተዋጽኦን ማስተማር።",
+  "pillar3list3": "የህዝብ ፕሮግራሞች፡ ህዝቡንና አዲስ ትውልድ ኢትዮጵያውያንን በመሳተፍ የሚነሱ ዝግጅቶችን መዘጋጀት።",
 
-  "pillar4heading": "4. Preserve the Martyrs Cemetery",
-  "pillar4desc": "Join us in the ongoing maintenance and preservation of the Martyrs Cemetery as a sacred national monument and a place of public remembrance.",
-  "pillar4list": {
-    "maintenance": "Ensuring the grounds and monuments are respectfully preserved.",
-    "operational": "Helping to cover the ongoing costs required to keep this iconic site open and accessible to the public.",
-    "honor": "To honor the legacy and contributions of the Imperial Ethiopian government officials who perished at the hands of the Derg, and of their colleagues who served in the administration of Emperor Haile Selassie I."
-},
-"button": "ለገሱ"
-    
-  },
+  "pillar4": "የታሪክ ጀግኖች መቃብርን ያኑሩ",
+  "pillar4desc": "የጀግኖች መቃብርን እንደ ቅዱስ ቦታ እና እንደ ታሪክ መታሰቢያ በመጠበቅና በመጠናከር የሚካሄደው ስራ ያካፍሉ። ድጋፍ የሚያስፈልገው፦",
+  "pillar4list1": "የአካላዊ ጥገና፡ መሬቱንና ሐውሎችን በክብር እንዲጠበቁ ማረጋገጥ።",
+  "pillar4list2": "የአስተዳደር ወጪዎች፡ ይህንን ታላቅ ቦታ ለሕዝብ ክፍትና የሚያደርገውን የቀጣይ ወጪ ለመከፈል መርዳት። ይህ የደርግ ዘመን የገደሉትን የኢምፔሪያል መንግሥት ባለሥልጣኖች ስለ ትውልድ ያላቸውን ታላቅ አስተዋጽኦ ይከብራል።",
+
+  "how": "እንዴት ሊሳተፉ ይችላሉ?",
+  "how1": "በእቃ መልክ መስጠት",
+  "how2": "በገንዘብ መዋጮ",
+  "how3": "ዓላማችንን ማስተዋወቅ",
+  "how4": "ዝግጅቶችን ማስተናገድ ወይም ማጎልበት",
+  "button": "መዋጮ ያቅርቡ"
+}
+,
+ 
 "memberspage": {
   "introheading1": "የቦርድ",
   "introheading2": "አባላት",

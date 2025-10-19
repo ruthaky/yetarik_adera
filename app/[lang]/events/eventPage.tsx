@@ -49,7 +49,7 @@ const previous_events: Event[] = [
     location: "Addis Ababa, Ethiopia and DMV",
     time: "7:00 pm - 8:00 pm",
     description:
-      "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
+      "",
  link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
     },
   {
@@ -74,7 +74,7 @@ const upcoming_events: Event[] = [
     location: "Holiday Inn, 6401 Brandon Ave, Springfield, VA, 22150",
     time: "7:00 pm - 11:00 pm",
     description:
-      "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
+      " ",
  link:"https://luma.com/50dd08bs",
     },
 ];
