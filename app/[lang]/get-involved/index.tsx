@@ -208,8 +208,35 @@ export default function GetInvolvedPage({
                   accessible to the public.
                 </li>
               </ul>
+            </div>   <div className='text-black'>
+              <h2 className="font-bold text-2xl mb-2 mt-6">
+               How to get involved 
+              </h2>
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>
+                  <span className=" ">In-kind donation</span>:
+                
+                </li>
+                <li>
+                  <span className=" ">Cash donation</span>:
+               
+                </li>
+                <li>
+                  <span className=" ">Promote our purpose</span>:
+               
+                </li>
+                <li>
+                  <span className=" ">Event sponsorship or promotion</span>:
+                  
+
+
+
+                </li>
+              </ul>
             </div>
           </div>
+
+       
 
           {/* Donate Button */}
           <Button className="mt-12 rounded-[6px] px-6 py-3 text-[17px] shadow-md">

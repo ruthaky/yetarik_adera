@@ -69,7 +69,7 @@ const upcoming_events: Event[] = [
   {
     date: "22",
     month: "NOVEMBER",
-    images: [img7, img8, img7], // three images
+    images: [img7, img8, img7], 
     title: "Inaugural Gala",
     location: "Holiday Inn, 6401 Brandon Ave, Springfield, VA, 22150",
     time: "7:00 pm - 11:00 pm",
