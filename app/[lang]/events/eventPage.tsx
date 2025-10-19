@@ -75,7 +75,7 @@ const upcoming_events: Event[] = [
     time: "7:00 pm - 11:00 pm",
     description:
       "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
- link:"https://luma.com/ceqowixo",
+ link:"https://luma.com/50dd08bs",
     },
 ];
 
