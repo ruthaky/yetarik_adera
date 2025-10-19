@@ -12,20 +12,23 @@
     "introheading1": "ዓላማችን፣",
     "introheading2": "በታሪክ ሥር የተተከለ",
     "storyp1": "የታሪክ አደራ በአዲስ አበባ ኢትዮጵያ በ2014 ዓ.ም በከተማዊ ደረጃ የተመሰረተ የአገልግሎት እርዳታ አካውንት ነው። በ12 አስተዳደር አባላት የተመሰረተው አካውንት አሁን ሁለት ዓመት መሆኑን ከመጀመሩ በኋላ በትክክል ስራውን ቀጥሏል።",
+    "storynew": "የታሪክ አደራ የኢትዮጵያን ከ1929 እስከ 1966 ዓ.ም. ድረስ የተካሄደውን ወደ ዘመናዊነት ጉዞ ለመምረም እና ለመጠበቅ የተቋቋመ የታሪክ ተቋም ነው። በእኛ ያለው የቅርሶች፣ መፅሀፍት፣ ሰነዶች እና ፊልሞች ስብስብ በኩል፣ የኢምፔሪያል መንግስት ኃላፊዎች መስዋዕታቸውን እና ስኬታቸውን እናከብራለን፤ ታሪካቸውም ለወደፊት ትውልዶች እንዲነቃ እና እንዲያበረታታ እንረዳለን።",
     "storyp2": "የዚህ አካውንት ዋና ዓላማ በንድፍና ኃላፊነት በንደ ዘመኑ አብረው ለሀገራቸው በተለያዩ መስኮች የተገኙ ግለሰቦች ታሪክ በእውነት እንዲታመን ማረጋገጥ ነው። እነዚህን ግለሰቦች ታሪኩ እንዳይረሳ ለማድረግ ተቋቁመ ነው።",
     "storyp3": "የታሪክ አደራ የታሪክ ፎቶዎች፣ የህይወት ታሪኮችና ሰነዶችን እየሰበሰበና እያዘጋጀ በትምህርታዊነት እና የሙዚየም ጥራት በሚመሰሉ መንገዶች እየተሰጠ ነው። በተጨማሪም፣ ይህን ታሪክ ለማጽደቅ የሚፈልጉ ግለሰቦችና ድርጅቶችን በስተጀርባ ማድገፍና የግለሰቦችን አካባቢ ማስገናኘት እየተሰራ ነው።",
     "storyp4": "የንደ ንጉስ ኃይለ ሥላሴ ዘመን ዘመናዊ ኢትዮጵያን በመመርከት ያሳደገ ዘመን ነበር በማንኛውም እውነታ የተቀበለ ነው። በትምህርት አስፋፋት፣ በባንክና አየር መጓጓዣ፣ መንገዶችና ባቡር መስመሮች እየተበረታተነ ሀገሩን በእውቀትና በትልቅ ስራ ላይ እያቆረቆረ ነበር። ስለዚህ፣ ይህ ድርጅት ያ ዘመን ታሪክ እንዳይጠፋ ለወጣቶች ትውልድ እንዲደርስ ተቋቁመ ነው።",
     "missionheading": "ተልእኮ",
     "missionStory": "በንደ ዘመን ስር የገደሉትን የኢምፔሪያል መንግስት ኃላፊዎች መታሰቢያ በክብር ማከብር እና እነሱ ከንጉሥ ኃይለ ሥላሴ ጋር በመስራት የነበሩትን ባልደረቦቻቸውን ማከብር ነው።",
-    "Visionheading": "ራዕይ",
-    "vision1": "መመስረት",
-    "vision1note": "የታሪክ ውሂብ ቤት እና መዝገብ በመመስረት ለዚህ ዘመን አስፈላጊ የታሪክ መረጃዎች እንዲያገኙ ማድረግ።",
-    "vision2": "መጠበቅ",
-    "vision2note": "በቅድስት ሥላሴ ቤተክርስቲያን ውስጥ ያለውን መታሰቢያ መቀመጫና የመታሰቢያ ዝግጅቶችን መጠበቅና ማሻሻል።",
-    "vision3": "መምራት",
-    "vision3note": "የኢምፔሪያል ዘመን ታሪክና የአገልግሎት ሰራተኞች የተሳተፉበትን ታሪክ በትክክል እንዲታመን መምራት።",
-    "vision4": "መደገፍ",
-    "vision4note": "በዚህ ዘመን ላይ ተመስርተው የሚወጡ የምርምር፣ የፅኑ ጽሁፍ፣ የአርቲስትና ፊልም ስራዎችን በተወሰነ ፈሰስ ማግኘት በመስጠት መደገፍ።",
+    "visionheading": "ራዕይ",
+    "visionStory": "የእኛ ራዕይ የኢትዮጵያ ዘመናዊነት ዘመንን ለወደፊት ትውልዶች በመጠበቅ፣ ለዓለም አቀፍ ታዋቂነት በመድረስ እና ታሪኩ የሚገባውን ክብር እንዲያገኝ በመማር ነው።",    
+    "Purposeheading": "ዓላማ",
+    "purpose1": "መመስረት",
+    "purpose1note": "የታሪክ ውሂብ ቤት እና መዝገብ በመመስረት ለዚህ ዘመን አስፈላጊ የታሪክ መረጃዎች እንዲያገኙ ማድረግ።",
+    "purpose2": "መጠበቅ",
+    "purpose2note": "በቅድስት ሥላሴ ቤተክርስቲያን ውስጥ ያለውን መታሰቢያ መቀመጫና የመታሰቢያ ዝግጅቶችን መጠበቅና ማሻሻል።",
+    "purpose3": "መምራት",
+    "purpose3note": "የኢምፔሪያል ዘመን ታሪክና የአገልግሎት ሰራተኞች የተሳተፉበትን ታሪክ በትክክል እንዲታመን መምራት።",
+    "purpose4": "መደገፍ",
+    "purpose4note": "በዚህ ዘመን ላይ ተመስርተው የሚወጡ የምርምር፣ የፅኑ ጽሁፍ፣ የአርቲስትና ፊልም ስራዎችን በተወሰነ ፈሰስ ማግኘት በመስጠት መደገፍ።",
     "storyp5": "ይህን እውነተኛ ታሪክ ለማቅረብ፣ የታሪክ አደራ በአፍና በጽሁፍ ታሪኮቻቸውን በመረጋገጥ ወደ ትምህርት ቤቶች በመግባት የታሪክን ግንዛቤ በጥልቅ እንዲረዳ እና እንዲበልጥ ትምህርታዊ መሆኑን በመደገፍ ነው። በመንግስት ጋር በመስራት ታሪኩ በትምህርት ቤቶችና ዩኒቨርሲቲዎች እንዲገባ እና በአንድ ቀንና ሌሊት ያለ ፍርድ የተፈፀመውን የአባቶቻችን፣ ዘመዶቻችንና የአገር ነዋሪዎች አደጋ እንዲያውቁ እና እንደገና እንዳይደገም የታሪክ ትምህርት ነው።",
     "storyp6": "አሁንም ከ50 ዓመት በፊት የተገደሉትን አባቶቻችንን፣ ወንድሞቻችንንና ዘመዶቻችንን ስንያስብ ብቻ አይደለም፤ በሀገራቸው ላይ እንደ አገልግሎት እና በመቅረት ያደረጉትን ታላቅ መስራት በኩል በኩል በኩል ከፍ እንደ ሰጡ እንደ ታሪክ እንዲቀር እና እንዳይጠፋ ለማድረግ እንነሳለን። ይህንንም በታሪካዊ ኃላፊነታችን በመረዳት በየትውልዱ እንድናስተላለፍ በየታሪክ አደራ እናቀርባለን።",
      "button2": "ተጨማሪ ያንብቡ",
@@ -39,11 +42,44 @@
     "button2": "ሰማዕታት እዩ",
     "button1": "ሰማዕታትን ደብቅ"
   },
+
   "getInvolved": {
-    "heading1": "ተሳተፍ",
-    "heading2": "",
-    "description": "ወታደራዊው አምባገነን መንግስት የአፄ ኃይለ ሥላሴ መንግስት ለዘመናዊቷ ኢትዮጵያ ያበረከተውን አስተዋፅኦ ለማጥፋት የተቻለውን ሁሉ አድርጓል። ከቀደመው አገዛዝ ጋር ያለውን ማንኛውንም አዎንታዊ ግንኙነት ለማጥፋት መርሃ ግብር ጀመሩ. ከሃምሳ አመታት በኋላ ይህንን ታሪክ ወደ ትክክለኛው ቦታው ለመመለስ ቆርጠን ተነስተናል። መጪው ትውልድ ታሪኩን ተረድቶ ስኬቶቹንና ጉድለቶቹን እንዲከራከር እና በእውቀት የታጠቀውን የቀጣይ መንገድ እንዲቀርጽ እንፈልጋለን።",
-    "button": "ለገሱ"
+  "heading": "A Four-Pillar Approach",
+  "intro": "We welcome your support in building a lasting legacy for the era of Imperial Haile Selassie I (1929-1966). You can participate through the following initiatives:",
+  
+  "pillar1heading": "1. Build the Archive Center",
+  "pillar1desc": "Help us create a comprehensive digital and physical archive by identifying and connecting with potential donors who may possess unique materials from the era.",
+  "pillar1list": {
+    "documents": "Official papers, personal letters, books, diaries, and notebooks.",
+    "multimedia": "Historical films, photographs, and audio recordings.",
+    "artifacts": "Items that reflect the social and cultural life of the period."
+  },
+
+  "pillar2heading": "2. Develop the Research Library",
+  "pillar2desc": "Support the establishment of a world-class research library to serve scholars, students, and the public.",
+  "pillar2list": {
+    "historicalBooks": "Scholarly works and publications relevant to the era.",
+    "photographicRecords": "Pictures that document key milestones in Ethiopia's modernization.",
+    "filmArchives": "Documentaries and newsreels from the period."
+  },
+
+  "pillar3heading": "3. Promote Public Education and Outreach",
+  "pillar3desc": "Participate in our mission to educate the public and ensure an accurate historical record. This involves:",
+  "pillar3list": {
+    "speakers": "Connecting scholars, authors, and influential figures for lectures, book signings, and panel discussions.",
+    "curriculum": "Advocating for the inclusion of this significant era in formal educational curricula to teach the true history and contributions of the Imperial government.",
+    "publicPrograms": "Hosting events that engage both the public and a new generation of Ethiopians."
+  },
+
+  "pillar4heading": "4. Preserve the Martyrs Cemetery",
+  "pillar4desc": "Join us in the ongoing maintenance and preservation of the Martyrs Cemetery as a sacred national monument and a place of public remembrance.",
+  "pillar4list": {
+    "maintenance": "Ensuring the grounds and monuments are respectfully preserved.",
+    "operational": "Helping to cover the ongoing costs required to keep this iconic site open and accessible to the public.",
+    "honor": "To honor the legacy and contributions of the Imperial Ethiopian government officials who perished at the hands of the Derg, and of their colleagues who served in the administration of Emperor Haile Selassie I."
+},
+"button": "ለገሱ"
+    
   },
 "memberspage": {
   "introheading1": "የቦርድ",

@@ -7,6 +7,7 @@ import img4 from "@/public/asset/event201.jpeg";
 import img5 from "@/public/asset/event202.jpeg";
 import img6 from "@/public/asset/event203.jpeg";
 import img7 from "@/public/asset/Inauguralgala.jpeg";
+import img8 from "@/public/asset/inauguralGala2.jpeg";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
@@ -66,15 +67,15 @@ const previous_events: Event[] = [
 
 const upcoming_events: Event[] = [
   {
-    date: "23",
+    date: "22",
     month: "NOVEMBER",
-    images: [img7, img7, img7], // three images
+    images: [img7, img8, img7], // three images
     title: "Inaugural Gala",
     location: "Holiday Inn, 6401 Brandon Ave, Springfield, VA, 22150",
     time: "7:00 pm - 11:00 pm",
     description:
       "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
- link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
+ link:"https://luma.com/ceqowixo",
     },
 ];
 
@@ -157,9 +158,9 @@ export default function UpcomingEvents ({
 
                 {/* Content */}
                 <div>
-                <Link href={event.link} ><h3 className="text-lg sm:text-xl font-semibold mb-4 hover:underline">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 hover:underline">
                     {event.title}
-                  </h3></Link>  
+                  </h3> 
                   <p className="text-sm text-gray-800 mb-1">
                     {event.location}
                   </p>
@@ -167,6 +168,7 @@ export default function UpcomingEvents ({
                   <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
                     {event.description}
                   </p>
+                  <Link href={event.link} ><p className="font-bold underline">RSVP Here</p></Link> 
                 </div>
               </div>
             </div>

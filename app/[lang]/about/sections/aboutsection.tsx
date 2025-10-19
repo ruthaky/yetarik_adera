@@ -115,7 +115,7 @@ const AboutPage = ({
   <p className="text-[16px] md:w-[750px] leading-relaxed">
     {aboutpageTexts.storyp1}
     <br />
-<p className="text-[16px] leading-relaxed py-4" >Yetarik Adera is a historical institution devoted to the study and preservation of Ethiopia’s journey toward modernization from 1929 to 1966. Through our collection of artifacts, books, documents, and films, we honor the sacrifices and celebrate the accomplishments of the nation’s Imperial government officials, ensuring their legacy continues to inspire future generations.</p>
+<p className="text-[16px] leading-relaxed py-4" > {aboutpageTexts.storynew}</p>
 
     {aboutpageTexts.storyp3}
   </p>
