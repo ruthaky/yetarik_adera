@@ -1,11 +1,10 @@
-// app/api/chapa/initialize/route.ts
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-
   try {
     const body = await req.json();
-console.log("hit the api")
+    console.log("Hit Chapa API with:", body);
+
     const response = await fetch("https://api.chapa.co/v1/transaction/initialize", {
       method: "POST",
       headers: {
@@ -13,37 +12,19 @@ console.log("hit the api")
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "amount": "14",
-        "currency": "ETB",
-        // "email": "beco_@gmail.com",
-        // "first_name": "eni",
-        // "last_name": "chewi",
-        "phone_number": "0911111111",
-        "tx_ref": "chewatatest-7879",
-        "callback_url": "https://webhook.site/077164d6-29cb-40df-ba29-8a00e59a7e60",
-        "return_url": `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
-        "customization[title]": "Payment for my favourite merchant",
-        "customization[description]": "I love online payments",
-        "meta[hide_receipt]": "true"
-          })
-      // body: JSON.stringify({
-      //   amount: body.amount,
-      //   currency: "ETB",
-      //   email: body.email,
-      //   first_name: body.first_name,
-      //   last_name: body.last_name,
-      //   tx_ref: `tx-${Date.now()}`,
-      //   callback_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/chapa/verify`,
-      //   return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
-      // }),
+        amount: body.amount,
+        currency: "ETB",
+        phone_number: body.phone_number,
+        tx_ref: `tx-${Date.now()}`,
+        callback_url: "https://webhook.site/077164d6-29cb-40df-ba29-8a00e59a7e60",
+        return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
+        "customization[title]": "Donation Payment",
+        "customization[description]": "Thank you for supporting our cause",
+      }),
     });
 
     const data = await response.json();
-console.log(data,"the data we want")
-    // 🔴 Log raw response if status != success
-    if (data.status !== "success") {
-      console.error("Chapa Error:", data);
-    }
+    console.log("Chapa response:", data);
 
     return NextResponse.json(data);
   } catch (error: any) {

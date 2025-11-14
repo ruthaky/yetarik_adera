@@ -6,8 +6,10 @@ import img3 from "@/public/asset/event3.jpeg";
 import img4 from "@/public/asset/event201.jpeg";
 import img5 from "@/public/asset/event202.jpeg";
 import img6 from "@/public/asset/event203.jpeg";
-import img7 from "@/public/asset/Inauguralgala.jpeg";
-import img8 from "@/public/asset/inauguralGala2.jpeg";
+import img7 from "@/public/asset/New Inagural gala1.jpeg";
+import img8 from "@/public/asset/New Inagural gala2.jpeg";
+import img10 from "@/public/asset/New Inagural gala3.jpeg";
+import img9 from "@/public/asset/octoberevent3.jpeg";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
@@ -35,19 +37,47 @@ interface Event {
   images: any[]; // now holds multiple images
   title: string;
   location: string;
-  time: string;
+  
   description: string;
   link:string;
 }
 
+const upcoming_events: Event[] = [
+  {
+    date: "22",
+    month: "NOVEMBER",
+    // year: "2025",
+    images: [img7, img8, img10], 
+    title: "Inaugural Gala",
+    location: "The Waterford, 6715 Commerce Street, Springfield VA 22150",
+  //remove time
+    description:
+      " ",
+ link:"https://yetarikadera.rsvpify.com/",
+    },
+];
+
 const previous_events: Event[] = [
+  {
+    date: "4",
+    month: "october",
+    // year: "2025",
+    images: [img9, img9,img9 ], // three images
+    title: "Ato Tekalign Gedamu book signing",
+    location: "Addis Ababa, Ethiopia,  National Archives and Libraries (Wemezeker)",
+     //remove time
+    description:
+      " ",
+      link:"#",
+    },
   {
     date: "23",
     month: "NOVEMBER",
+    // year: "2025",
     images: [img1, img2, img3], // three images
     title: "The 50th memorial anniversary of the Martyrs",
     location: "Addis Ababa, Ethiopia and DMV",
-    time: "7:00 pm - 8:00 pm",
+   //remove time
     description:
       "",
  link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
@@ -55,29 +85,19 @@ const previous_events: Event[] = [
   {
     date: "23",
     month: "NOVEMBER",
-    images: [img4, img5,img6 ], // three images
+    images: [img4, img5,img6 ],
+    // year: "2025", // three images
     title: "Event 2",
     location: "Addis Ababa, Ethiopia and DMV",
-    time: "7:00 pm - 8:00 pm",
+ 
     description:
-      "Yetarik Adera inaugurated its archive center located on the 9th floor of the Wemezeker compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents gathered from the families of former government officials, photographs, and artifacts.",
+      "Yetarik Adera inaugurated its archive center located on the 9th floor of the Wemezeker compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.",
       link:"#",
     },
+   
 ];
 
-const upcoming_events: Event[] = [
-  {
-    date: "22",
-    month: "NOVEMBER",
-    images: [img7, img8, img7], 
-    title: "Inaugural Gala",
-    location: "Holiday Inn, 6401 Brandon Ave, Springfield, VA, 22150",
-    time: "7:00 pm - 11:00 pm",
-    description:
-      " ",
- link:"https://luma.com/50dd08bs",
-    },
-];
+
 
 export default function UpcomingEvents ({
     eventTexts,
@@ -136,7 +156,7 @@ export default function UpcomingEvents ({
                 </div>
 
                 {/* Image slideshow */}
-                <div className="relative w-full md:w-[400px] h-[300px] md:h-[250px] rounded-md shadow-md overflow-hidden">
+                <div className="relative w-full md:w-[400px] h-[300px] md:h-[400px] rounded-md shadow-md overflow-hidden">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={currentIndexes[index]}
@@ -164,7 +184,7 @@ export default function UpcomingEvents ({
                   <p className="text-sm text-gray-800 mb-1">
                     {event.location}
                   </p>
-                  <p className="text-sm text-gray-700 mb-3">{event.time}</p>
+                 
                   <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
                     {event.description}
                   </p>
@@ -174,6 +194,7 @@ export default function UpcomingEvents ({
             </div>
           ))}
         </div>
+
 
         <div className="text-center md:mb-[30px] mt-[30px] md:mt-[50px] px-4 sm:px-6 md:px-20">
           <h2 className={`${arapey.variable} font-arapey text-3xl md:text-5xl`}>
@@ -232,7 +253,7 @@ export default function UpcomingEvents ({
                   <p className="text-sm text-gray-800 mb-1">
                     {event.location}
                   </p>
-                  <p className="text-sm text-gray-700 mb-3">{event.time}</p>
+                 
                   <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
                     {event.description}
                   </p>

@@ -18,7 +18,7 @@ import img13 from "@/public/asset/newimg8.jpeg";
 import img14 from "@/public/asset/line.jpg";
 import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
-import img17 from "@/public/asset/asset9.jpeg";
+import img17 from "@/public/asset/newaboutus.jpeg";
 import img18 from "@/public/asset/4kilo.jpeg";
 // import img19 from "@/public/asset/asset12.jpeg";
 
@@ -102,7 +102,7 @@ const AboutPage = ({
         {/* Image and Text Section */}
         <section className="flex flex-col md:flex-row items-stretch justify-center md:gap-[50px] w-[90%] md:w-[80%]">
   {/* Image wrapper */}
-  <div className="relative w-[400px] flex-shrink-0">
+  <div className="relative w-[500px] flex-shrink-0">
     <Image
       src={img17}
       alt="Emperor Haile Selassie"

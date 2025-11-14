@@ -145,14 +145,14 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
 
   return (
     <>
-      <section className={`${notoSerifEthiopic.variable} flex flex-col md:flex-row justify-center items-center font-notoSerifEthiopic text-gray-800 md:px-20 pt-[70px] md:h-[1160px] overflow-y-hidden`}>
+      <section className={`${notoSerifEthiopic.variable} flex flex-col md:flex-row justify-center items-start font-notoSerifEthiopic text-gray-800 md:px-20 pt-[60px] overflow-y-hidden`}>
       
         {/* Members Columns */}
-        <div className="flex w-full md:w-1/2 gap-20 flex-wrap">
+        <div className="flex w-full md:w-1/2 gap-20 flex-wrap mt-10">
           {/* Column 1 */}
           <div className="hidden md:flex flex-col gap-8 w-auto overflow-hidden h-full">
-            <div className="animate-infinite-scroll">
-              {[...members.slice(0, 6), ...members.slice(0, 6)].map((member, index) => (
+            <div className="">
+              {[...members.slice(0, 6)].map((member, index) => (
                 <div key={`col1-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
                   <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2 " />
                   <div>
@@ -167,8 +167,8 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
 
           {/* Column 2 */}
           <div className="hidden md:flex flex-col gap-8 w-auto pt-[50px] overflow-hidden h-full">
-            <div className="animate-infinite-scroll">
-              {[...members.slice(6), ...members.slice(6)].map((member, index) => (
+            <div className="">
+              {[...members.slice(6)].map((member, index) => (
                 <div key={`col2-${index}`} className="flex flex-col items-start gap-4 py-4" onClick={() => setSelectedMember(member)}>
                   <Image src={member.image} alt={member.name[lang]} className="w-[170px] h-[170px] object-fit rounded-full border border-primary border-2" />
                   <div>
