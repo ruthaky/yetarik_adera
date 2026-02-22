@@ -68,7 +68,7 @@ const AboutPage = ({
       {/* Hero Section */}
     
         <section className="w-full flex flex-col items-center justify-start mb-6 pt-[120px] md:pt-[170px] md:pb-16">
-   <section className="px-6 text-center md:text-start w-full md:w-[600px] mb-4 md:mb-12">
+   <section className="px-6 text-center md:text-start w-full md:w-[700px] mb-4 md:mb-12">
   <h1 className={`${arapey.variable} font-arapey font-medium leading-snug inline-block mb-4 md:mb-0 `}>
     {/* Line 1 */}
     <div className="inline-block">
@@ -118,7 +118,11 @@ const AboutPage = ({
 <p className="text-[16px] leading-relaxed py-4" > {aboutpageTexts.storynew}</p>
 
     {aboutpageTexts.storyp3}
+    <br />
+    <br />
+    {aboutpageTexts.storyp4}
   </p>
+  
 </section>
 
 

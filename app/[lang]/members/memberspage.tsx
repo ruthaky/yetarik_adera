@@ -35,12 +35,12 @@ interface BoardMember {
 
 const members: BoardMember[] = [
   {
-    name: { en: "Seble Nebiyeloul", am: "ሰብለ ነቢየሉል" },
+    name: { en: "Seble Nebiyeloul", am: "ሰብለ ነቢየልዑል" },
     title: { en: "Chair", am: "የቦርድ ሊቀመንበር" },
     image: img1,
     description: {
       en: [ "As a board member of Yetarik Adera, it is my privilege to highlight the immense value that our organization brings to preserving our history and educating future generations.", "Through our dedicated efforts in collecting oral histories, compiling photo archives, curating educational materials, creating documentary films, and publishing books, we aim to ensure that the stories of our past are not forgotten.", "Our commitment to the motto 'Never Again' stands as a testament to our resolve against persecution and unjust detention, as we strive to promote justice and remembrance in all our endeavors.", "Looking forward, the upcoming year holds great promise for us to continue making a meaningful impact and effecting positive change within our community. Together, let us march forward in unity, learning from the past to protect our future." ],
-      am: ["የየታሪክ አደራ የቦርድ አባል እንደመሆኔ፣ ድርጅታችን ታሪካችንን በመጠበቅ እና መጪውን ትውልድ ለማስተማር የሚያበረክተውን የላቀ ጠቀሜታ ለማጉላት ትልቅ እድል ነው። ስደትን እና ኢፍትሃዊ እስራትን በመቃወም ቁርጠኝነታችንን ለማሳየት በምናደርገው ጥረት ሁሉ ፍትህን እና መታሰቢያን ለማጎልበት ስንጥር።»፣ `በጉጉት ስንጠባበቅ መጪው አመት በማህበረሰባችን ውስጥ ትርጉም ያለው ተጽእኖ እና አወንታዊ ለውጥ ለማምጣት ትልቅ ተስፋ ይሰጠናል። መጪውን ህይወታችንን ለመጠበቅ ካለፈው ተምረን በአንድነት ወደ ፊት እንገስግስ።"]
+      am: ["እንደ የ«የታሪክ ኣደራ» የቦርድ ኣባል፣ ድርጅታችን ታሪካችንን በመጠበቅና ቀጣይ ትውልዶችን በማስተማር የሚያበረክተውን ትልቅ ኣስተዋጽዖ ማብራራት ለእኔ ክብር ነው። ከትውልድ ትውልድ በኣፍ ሲተላለፉ የነበሩ ታሪኰችን በመሰብሰብ፣ የፎቶ ማኅደሮችን በማጠናከር፣ የትምህርት ቁሳቁሶችን በማዘጋጀት፣ ዘጋቢ ፊልሞችን በመሥራት እና መጻሕፍትን በማሳተም ያለፈው ታሪካችን እንዳይረሳ ለማረጋገጥ እንሰራለን። {'ኣይደገምም' ለሚለው 'መሪ ቃል' ያለን ቁርጠኝነት፤ ግፍን፣ እስርን፣ ስደትንና በኣጠቃላይ ኢፍትሃዊነትን እንደማንቀበል ማሳያ ሲሆን፤ በሁሉም ተግባራችን ፍትህን ለማበረታት እንተጋለን ኣያይዘንም ሰማዕታቱን እናስታውሳለን። ወደፊት ስንመለከት፤ መጪው ዓመት ትርጉም ያለው ተጽእኖ እንድናሳድር እና በማህበረሰባችን ውስጥ አዎንታዊ ለውጥ ለማምጣት እንድንበረታታ ትልቅ ተስፋ ይሰጠናል። አብረን በአንድነት ወደፊት እንራመድ፣ የወደፊት ሕይወታችንን ለመጠበቅ ካለፈው እንማር።"]
     }
   },
   {
@@ -49,7 +49,7 @@ const members: BoardMember[] = [
     image: img2,
     description: {
       en: ["My name is Atsede Mariam Assefa, and I am the eldest daughter of Lt. Gen. Assefa Ayene. I was educated at the Lycée Guebre Mariam and left Ethiopia in 1971 for higher education first in France, and later in the US. From 1982 until I retired in 2019, I was the Executive Director of World Education Services, a not-for-profit organization in New York. In addition to Yetarik Adera, I am currently on the boards of organizations in the US and in Europe."," I joined Yetarik Adera because I believe in the organization’s purpose and goals of recording and preserving the foundational work of our fathers who rebuilt and modernized Ethiopia after the Italian war. Their history has been forgotten over the past 50 years and through Yetarik Adera we will strive to gain recognition for the rich legacy of our fathers and restore it to its rightful place in the history of Ethiopia." ],
-      am: ["አፀደ ማርያም አሰፋ እባላለሁ የሌ/ጄኔራል አሰፋ አየኔ የበኩር ልጅ ነኝ። በሊሴ ገብረ ማርያም የተማርኩ ሲሆን በ1971 ከኢትዮጵያ ለከፍተኛ ትምህርት በመጀመሪያ ፈረንሳይ፣ በኋላም አሜሪካ ሄድኩ። ከ1982 ጀምሮ በ2019 ጡረታ እስክወጣ ድረስ፣ በኒውዮርክ ውስጥ ለትርፍ ያልተቋቋመ ድርጅት የዓለም ትምህርት አገልግሎት ዋና ዳይሬክተር ነበርኩ። ከየታሪክ አደራ በተጨማሪ በአሁኑ ጊዜ በአሜሪካ እና በአውሮፓ በድርጅቶች ቦርድ አባል ነኝ። ከኢጣሊያ ጦርነት በኋላ ኢትዮጵያን መልሰው የገነቡት እና ያዘምኑት አባቶቻችን የሠሩትን የመሠረት ሥራ የመዝግቦ እና የማቆየት የድርጅቱን ዓላማና ዓላማ ስለማምን ነው ከየታሪክ አደራ ጋር የተቀላቀልኩት። ታሪካቸው ባለፉት 50 አመታት ተረስቷል እና በዬታሪክ አደራ በኩል የአባቶቻችንን ትልቅ ትሩፋት እውቅና ለማግኘት እና በኢትዮጵያ ታሪክ ውስጥ ወደነበረበት ትክክለኛ ቦታ ለመመለስ እንጥራለን።"]
+      am: ["አፀደማርያም ኣሰፋ እባላለሁ። የሌተናንት ጀነራል ኣሰፋ ኣየነ የመጀመሪያ ልጅ ነኝ። ትምህርቴን በሊሴ ገብረ ማርያም ትምህርት ቤት ተከታትዬ  ስጨርስ ለከፍተኛ ትምህርት በ1971  በመጀመሪያ ወደ ፈረንሳይ፣ ከዚያም ወደ ኣሜሪካ ሄድሁ። ከ1982 እስከ 2019 ድረስ በኒውዮርክ ከተማ የሚገኘው “World Education Services” የሚባል ለትርፍ ያልተቋቋም ድርጅት ዋና ዳይሬክተር ሆኜ  ኣገልግያለሁ። ከ«የታሪክ ኣደራ» በተጨማሪ፣ በኣሁኑ ጊዜ በኣሜሪካና በኣውሮፓ የሚገኙ ድርጅቶች የቦርድ ኣባል ነኝ። «የታሪክ ኣደራ»ን የተቀላቀልሁት የድርጅቱን ዓላማና ግቦች ስለማምንባቸው ነው። ከጣሊያን ወረራ በኋላ ኢትዮጵያን ዳግመኛ በመገንባትና በማዘመን ሲተጉ የነበሩት ኣባቶቻችንን ታሪክ መመዝገብ እና ለትውልድ ማስተላለፍ  ስለሚያስፈልግ ነው። ባለፉት 50 ዓመታት ውስጥ ታሪካቸው ተረስቶ ነበር፤ በ«የታሪክ ኣደራ» ኣማካኝነት ግን የኣባቶቻችንን ጉልህ ኣሻራ ዕውቅና እንዲያገኝ እና በኢትዮጵያ ታሪክ ውስጥ ተገቢውን ቦታ እንዲያገኝ እንጥራለን።"]
     }
   },
   {
@@ -58,7 +58,7 @@ const members: BoardMember[] = [
     image: img3,
     description: {
       en: ["My name is Monique Tamrat, and I am the youngest of Colonel Tamrat Yigezu’s children. I have lived in Ethiopia all my life. I’ve attended Nazareth School, American Mission, and Addis Ababa University. With over 25 years of experience as a Marketing and Procurement Specialist for various NGOs, I am currently the Marketing Head at a private company specializing in spices."," I am honored to join the board of Yetarik Adera, primarily because its mission is to ensure that future generations understand the efforts of the officials of Atse Haile Selassie’s regime to modernize and effectively govern our country. I believe that so much of their contribution remains unacknowledged and I am confident that Yetarik Adera can help reverse many misconceptions.." ],
-      am: ["ስሜ ሞኒክ ታምራት እባላለሁ ከኮሎኔል ታምራት ይገዙ ልጆች የመጨረሻ ልጅ ነኝ። ሕይወቴን ሙሉ ኢትዮጵያ ውስጥ ነው የኖርኩት። በናዝሬት ትምህርት ቤት፣ በአሜሪካ ሚሲዮን እና በአዲስ አበባ ዩኒቨርሲቲ ተምሬያለሁ። ከ25 ዓመታት በላይ በተለያዩ መንግሥታዊ ያልሆኑ ድርጅቶች የግብይትና ግዥ ባለሙያ ሆኜ ባገለገልኩበት ወቅት፣ በቅመማ ቅመም የግል ኩባንያ ውስጥ የማርኬቲንግ ኃላፊ ሆኛለሁ።›› በማለት የየታሪክ አደራ ቦርድ አባል በመሆኔ ትልቅ ክብር ይሰማኛል፣ በዋናነት ተልዕኮው የአጼ ኃይለሥላሴ መንግሥት ባለሥልጣናት አገራችንን ለማዘመንና በብቃት ለማስተዳደር የሚያደርጉትን ጥረት መጪው ትውልድ እንዲገነዘብ ለማድረግ ነው። ያበረከቱት አስተዋጽኦ ብዙም እውቅና ያልተሰጠው እንደሆነ አምናለሁ እናም ዬታሪክ አደራ ብዙ የተሳሳቱ አመለካከቶችን ለመቀልበስ እንደሚረዳ እርግጠኛ ነኝ።"]
+      am: ["ስሜ ሞኒክ ታምራት ሲሆን፣ ከኰሎኔል ታምራት ይገዙ ልጆች መካከል የመጨረሻዋ ነኝ። ሕይወቴን ሙሉ በኢትዮጵያ ነው የኖርኩት። ትምህርቴን በናዝሬት ትምህርት ቤት፣ በኣሜሪካን ሚሽን እና በኣዲስ ኣበባ ዩኒቨርሲቲ ተከታትያለሁ። ከ25 ዓመታት በላይ የግዢና የማርኬቲንግ ባለሙያ ሆኜ  በተለያዩ መንግሥታዊ ያልሆኑ ድርጅቶች ውስጥ ሰርቻለሁ። ኣሁን በቅመማ ቅመም ላይ በተሰማራ ኩባንያ ውስጥ የማርኬቲንግ ዘርፍ ኃላፊ ሆኜ በመሥራት ላይ እገኛለሁ። 'የታሪክ ኣደራ' ቦርድ ኣባል በመሆኔ ክብር ይሰማኛል። የታሪክ ኣደራ ተልዕኮ የቀዳማዊ ኃይለ ሥላሴ መንግሥትን ሲያገለግሉ የነበሩ ባለ ሥልጣናት ኣገራችንን ለማዘመን እና ውጤታማ በሆነ መንገድ ለማስተዳደር ሲያደርጉ የነበረውን ጥረት መዝግቦ ለታሪክ ለማስቀመጥና ቀጣይ የሚመጡ ትውልዶች እንዲያውቁት ለማድረግ ነው። ኣባቶቻችን የነበራቸው ሚና እስካሁን በደምብ ያልተዘከረና ምንም እውቅና ያልተሰጠው እንደሆነ እረዳለሁ፤ እናም 'የታሪክ ኣደራ' ይህንን የተሳሳት ግንዛቤ ለመቀየር እንደሚችል በሙሉ ልቤ ኣምናለሁ።"]
     }
   },
   {
@@ -67,7 +67,7 @@ const members: BoardMember[] = [
     image: img4,
     description: {
       en: ["Yetarik Adera is a continuation of Ye Michael Mehaber, whose committee was formed by a group of family member of the 68 martyrs slaughtered by the Derg and buried at Kidist Selassie. This mehaber took charge of running the monument constructed by the families of the 68. I was a member from the beginning. Unfortunately, as our members started to age, I took the initiative of forming a committee of the younger generation to prepare them to take over our work, as the history of these families is the history of Ethiopia. The challenges were many, but we've managed to create an NGO with a dynamic board that I am proud to be part of as a founding member." ],
-      am: ["..."]
+      am: ["«የታሪክ ኣደራ» የሚካኤል ማኅበር ቀጣይ ነው። የዚያ ማኅበር ኰሚቴ የተቋቋመው በወታደራዊው ኣስተዳድር ደርግ ተገድለው በቅድሥት ሥላሴ የተቀበሩት 68 ሰማዕታት ቤተሰብ ኣባላት ተውጣጥቶ ነበር። ያ ማኅበር በእነዚያ 68 ቤተሰቦች የተገነባውን መታሰቢያ ሐውልት የማስተዳደር ኃላፊነት ወስዶ ይሰራ ነበር። እኔም ከመጀመሪያው ጀምሮ ኣባል ነበርሁ። ነገር ግን የኰሚቴው ኣባላት በእድሜ እየገፉ በመሄዳቸው ምክንያት፤ ኰሚቴውን በኣዳዲስ ኣባላት የማወቀሩን ኃላፊነት በግሌ ውስጄ ተነሳሁ። ይህንን ለማሳካት ብዙ ውጣ ውረዶች ቢገጥሙንም፤ የእነዚህ ቤተሰቦች ታሪክ የኢትዮጵያ ታሪክ መሆኑን በመገንዘብ፤ ለየትኛውም ተግዳሮት ባለመበገር መጨረሻ ላይ በጣም ጠንካራ ቦርድ ለማቁቋም በቅተናል። እኔም የዚህ ድርጅት መሥራች ኣባል በመሆኔ ኩራት ይሰማኛል።"]
     }
   },
   {
@@ -76,7 +76,7 @@ const members: BoardMember[] = [
     image: img7,
     description: {
       en: ["My Name is Askadech Debebe Hailemariam. I am the second daughter of Lt. General Debebe Hailemariam and W/o Sossena Abebe. I attended German School in Addis Ababa, then in 1962 I went to Vienna - Austria completed my high school and graduated in Law from the University of Vienna."," In 1999 I moved back to Addis Ababa and joined St.Michael Mehaber which was established for the memorial of the 60 dignitaries executed by the Derg without trial and then became a member of Yetarik Adera Organization."," The aim of Yetarik Adera is to create awareness to existing and future generation on the contributions of Emperor Haile Selassie and his cabinet for Ethiopia." ],
-      am: ["የታሪክ አደራ የየሚካኤል መሀበር ቀጣይነት ያለው ኮሚቴው በደርግ የታረደ 68ቱ ሰማዕታት ቤተሰብ አባላት በመሆን በቅድስት ሥላሴ የተቀበሩ ናቸው። ይህ መሀበር በ68ቱ ቤተሰቦች የተሰራውን ሀውልት የማስኬድ ሃላፊነት ወስዷል።ከመጀመሪያው አባል ነበርኩ። እንደ አለመታደል ሆኖ አባሎቻችን እያረጀ ሲሄዱ የነዚህ ቤተሰቦች ታሪክ የኢትዮጵያ ታሪክ በመሆኑ ወጣቱን ትውልድ ኮሚቴ አቋቁሜ ስራችንን እንዲረከቡ ወስኛለሁ። ተግዳሮቶቹ ብዙ ነበሩ፣ ነገር ግን እንደ መስራች አባል በመሆኔ የሚያኮራኝ ተለዋዋጭ ቦርድ ያለው መንግስታዊ ያልሆነ ድርጅት መፍጠር ችለናል።"]
+      am: ["ኣስካደች ደበበ ኃይለማርያም እባላለሁ። የሌተናንት ጀነራል ደበበ ኃይለማርያምና የወ/ሮ ሶሰና ኣበበ ሁለተኛ ልጅ ነኝ። የመጀመሪያ ደረጃ ትምህርቴን ኣዲስ ኣበባ በሚገኘው  ጀርመን ት/ቤት ተመሬያለሁ። በ1962 ዓ.ም. ወደ ኦስትሪያ ቪየና ሄጄ የሁለተኛ ደረጃ ትምህርቴን እዛው ኣጠናቀቅሁ። ከዛ ቪየና ዩኒቨርሲቲ ገብቼ በሕግ ትምህርት በዲግሪ ተመረቅሁ። በ1999 ወደ ኣዲስ ኣበባ ተመልሼ በደርግ ዘመን ያለ ፍርድ የተገደሉትን 60 ባለሥልጣናት ለማስታወስ የተመሰረተውን «የቅዱስ ሚካኤል ማኅበር» ተቀላቀልሁ፤ በኋላም የ«የታሪክ ኣደራ» ድርጅት ኣባል ሆንሁ። የ'ታሪክ ኣደራ' ዓላማ ቀዳማዊ ኃይለ ሥላሴ እና መንግሥታቸው ለኣገር እድገት ያበረከቱትን ኣስተዋጽዖ ኣሁን ላለውና ለሚመጣው ትውልድ ማስገንዘብ ነው።"]
     }
   },
   {
@@ -85,7 +85,7 @@ const members: BoardMember[] = [
     image: img6,
     description: {
       en: ["I joined the board of Yetarik Adera because I wanted to be part of an institution that reminds current and future Ethiopians of the service and sacrifices made by my father, uncles, and other government officials whose lives were tragically cut short."," Under the leadership of His Majesty, Emperor Haile Selassie I, this generation of public servants and their colleagues, many of whom also suffered years of imprisonment under the Derg, conceived and founded most of the institutions which are the foundations of the ones we have in Ethiopia today."," I believe their collective contributions have not been adequately recognized and that we have a responsibility to correct the historical record by giving them their rightful place in Ethiopian history." ],
-      am: ["የየታሪክ አደራን ቦርድ የተቀላቀልኩት አባቴ፣ አጎቶቼ እና ሌሎች የመንግስት ባለስልጣናት ህይወታቸው በአሳዛኝ ሁኔታ የከፈሉትን አገልግሎት እና መስዋዕትነት የሚያስታውስ ተቋም አባል መሆን ስለፈለኩ ነው” ሲሉ በግርማዊ ቀዳማዊ አፄ ኃይለ ሥላሴ መሪነት ይህ የመንግስት ሰራተኛ ትውልድ እና የስራ ባልደረቦቻቸው፣ ከእነዚህም መካከል ብዙዎቹ በድርጅቱ ስር በተመሰረተባቸው ተቋማት ለብዙ አመታት ለእስር ተዳርገዋል። ዛሬ ኢትዮጵያ ውስጥ ካሉን መካከል።» የሚል እምነት አለኝ፤ የጋራ አስተዋጽዖዎቻቸው በቂ ዕውቅና ያልተሰጣቸው በመሆኑ በኢትዮጵያ ታሪክ ውስጥ ተገቢውን ቦታ በመስጠት የታሪክ መዛግብትን የማረም ኃላፊነት አለብን ብዬ አምናለሁ።"]
+      am: ["የአባቴ፣ የአጎቶቼና እንዲሁም ሕይወታቸው በአሳዛኝ ሁኔታ ያለፉ የመንግሥት ባለሥልጣናት ለኣገር እድገት የነበራቸውን ሚና እና የከፈሉትን መሥዋዕትነት ለዛሬና ለሚመጡ ኢትዮጵያውያን የሚያስታውስ ድርጅት አካል መሆን ስለፈለግሁ የ«የታሪክ አደራ» የቦርድ አባል ሆኜ ተቀላቀልሁ። በቀዳማዊ ኃይለ ሥላሴ መሪነት፤ ኣሁን የምንኰራባቸውን ትልልቅ ተቋማት ያስፈልጋል ብለው ኣስበው ያቋቋሙ ግን ለዛ ውለታቸው ደርግ ከፊሎቹን ገድሎ፣ ከፊሎቹን ኣሥሮ የቀሩትን ደግሞ ኣገር ጥለው እንዲሰደዱ ኣድርጐ ነበር። በዚህም ምክንያት  የነበራቸው ሚና በቂ እውቅና ኣግኝቷል ብዬ ኣላምንም። ታሪካቸው በትክክል እንዲታወቅ እና በኢትዮጵያ ታሪክ ውስጥ ተገቢውን ቦታ እንዲይዝ ኃላፊነት ኣለብን ብዬ ኣምናለሁ።"]
     }
   },
   {
@@ -94,7 +94,7 @@ const members: BoardMember[] = [
     image: img8,
     description: {
       en: ["I am the daughter of Major General Tafesse Lemma. I left Ethiopia shortly after the onset of the Red Terror. I pursued my education in the United States and have been employed in corporate America for a considerable period. In 2022, I returned to Addis and am currently working as a volunteer at a school near Ayat. My goal is to contribute in shaping future generations."," It has been an honor to participate in Ye Tarik Adera, which aims to highlight the sacrifices made by my father and his fellow officers."," It’s been my privilege to join an organization dedicated to preserving their/our history and ensuring that their narrative is included in educational curriculum, thereby preventing the recurrence of such atrocities in the future." ],
-      am: ["የሜጀር ጀነራል ታፈሰ ለማ ልጅ ነኝ። ቀይ ሽብር እንደጀመረ ከኢትዮጵያ ወጣሁ። ትምህርቴን የተከታተልኩት በዩናይትድ ስቴትስ ሲሆን በኮርፖሬት አሜሪካ ውስጥ ለተወሰነ ጊዜ ተቀጥሬያለሁ። እ.ኤ.አ. በ 2022 ወደ አዲስ አበባ ተመለስኩ እና በአሁኑ ጊዜ አያት አቅራቢያ በሚገኝ ትምህርት ቤት በበጎ ፈቃደኝነት እየሰራሁ ነው። አላማዬ መጪውን ትውልድ በመቅረጽ የበኩሌን ማበርከት ነው:: አባቴ እና ባልደረቦቹ የከፈሉትን መስዋዕትነት ለማጉላት አላማ ባለው የየታሪክ አደራ ላይ መሳተፌ ትልቅ ክብር ነው:: ታሪካቸውን ለመጠበቅ እና ትረካቸዉ በትምህርት ስርአተ ትምህርት ውስጥ እንዲካተት በማድረግ የወደፊት እድገቶች እንዳይደጋገሙ ለማድረግ ወደተዘጋጀ ድርጅት መቀላቀል ትልቅ እድል ሆኖልኛል።"]
+      am: ["የሜጀር ጄኔራል ታፈሰ ለማ ልጅ ነኝ። የቀይ ሽብር ግድያ እንደተፋፋመ ብዙም ሳይቆይ ከኢትዮጵያ ወጣሁ። ትምህርቴን በአሜሪካ ተከታትዬ ካጠናቀቅሁ በኋላ በኣሜሪካ የንግድ ድርጅቶች ውስጥ ለረዥም ጊዜ ሠርቻለሁ። በ2022 ዓ.ም. ወደ አዲስ አበባ ከተመለስሁ በኋላ በፈቃዴ ከአያት አካባቢ የሚገኝ ትምህርት ቤት ውስጥ በነፃ እያገለገልኩ እገኛለሁ። ዓላማዬ ቀጣዩን ትውልድ ኣእምሮውን ለማነፅና በበጐ ምግባር ለመቅረጽ የድርሻዬን መወጣት ነው።  ኣባቴና የሥራ ባልደረቦቹ የከፈሉትን መስዋዕትነት ለመዘከር የተቋቋመው 'የታሪክ ኣደራ' ድርጅት ውስጥ መሳተፍ በመቻሌ ደስታ ይሰማኛል። ታሪካችንን/ታሪካቸውን ለመጠበቅ እና የሰሩት ታሪክ ትምህርት ካሪኩለም ውስጥ እንዲካተት የሚሠራ ድርጅት ኣባል በመሆኔ ለእኔ ታላቅ ክብር ነው፤ በተጨማሪም እንዲህ ዓይነት ግፍ በድጋሚ ወደፊት እንዳይፈፀም ለመከላከል ይረዳል።"]
     }
   },
   {
@@ -103,7 +103,9 @@ const members: BoardMember[] = [
     image: img9,
     description: {
       en:["I am deeply honored to serve as a board member of Yetarik Adera, where I am committed to honoring the profound legacy and sacrifice of the Ethiopian government officials who served the administration of Emperor Haile Selassie I."," With a resolute dedication to Yetarik Adera's mission, I am focused on inspiring future generations by bridging the gap between them and the monumental work and legacy of their ancestors, cultivating in them a strong sense of pride, purpose, and continuity.","Professionally, I bring over three decades of rich experience with Ethiopian Airlines, starting as a Cabin Crew member and advancing to a leadership position as a Cabin Crew Supervisor for In-Flight Services. Driven by a passion for mentoring and nurturing the next generation of aviation professionals, I transitioned to EAL's Aviation Academy as a Senior Instructor, where I had the privilege of training new cabin crew members, imparting essential skills and industry knowledge.","I am excited and look forward to continuing to support Yetarik Adera’s mission." ],
-      am: ["የቀዳማዊ አፄ ኃይለ ሥላሴ አስተዳደርን ሲያገለግሉ የቆዩትን የኢትዮጵያ መንግሥት ባለሥልጣናትን ጥልቅ ትሩፋትና መስዋዕትነት ለማክበር ቁርጠኛ በሆነበት የየታሪክ አደራ የቦርድ አባል በመሆኔ ትልቅ ክብር ይሰማኛል:: ኩራት፣ ዓላማ እና ቀጣይነት። በሙያተኛነቴ በኢትዮጵያ አየር መንገድ ከካቢን ቡድን አባልነት ጀምሬ እና በበረራ አገልግሎት ውስጥ የካቢን ሰራተኛ ተቆጣጣሪ ሆኜ ወደ አመራርነት ቦታ በመውጣት ከሶስት አስርት አመታት በላይ የዳበረ ልምድ አመጣለሁ። ቀጣዩን የአቪዬሽን ባለሙያዎችን ለመምከር እና ለመንከባከብ ባለው ፍቅር ተገፋፍቼ ወደ ኢኤል አቪዬሽን አካዳሚ እንደ ከፍተኛ አስተማሪ ተዛወርኩ፣ አዲስ የካቢን ቡድን አባላትን የማሰልጠን፣ አስፈላጊ ክህሎቶችን እና የኢንዱስትሪ እውቀትን ለመስጠት እድል አግኝቻለሁ።"]
+      am: ["የታሪክ ኣደራ የቦርድ ኣባል ሆኜ ለማገልገል በመቻሌ ትልቅ ክብር ይሰማኛል። የቀዳማዊ ኃይለ ሥላሴ መንግሥትን ሲያገለግሉ የነበሩ ባለሥልጣናት ለኣገር እድገት ያበረከቱትን ኣስተዋጽዖ ለመዘከር የተቋቋመ ድርጅት ውስጥ ስሳተፍ የእነሱን ክብር በጠበቀ መልኩ እና በቁርጠኝነት ነው። በ'የታሪክ ኣደራ' ተልእኮ ላይ ከልብ በሆነ  ቁርጠኝነት ቆሜ፤  የወደፊት ትውልዶችን ለማነሳሳት፣ ከአባቶቻቸው ታላቅ ሥራና ቅርስ ጋር የሚያገናኛቸውን ድልድይ በመገንባት፣ በእነርሱ ውስጥ ጠንካራ የኩራትና  የዓላማና ቀጣይነት ስሜት ለመፍጠር እተጋለሁ።",
+      "በሙያዬ ከሦስት አሥርት ዓመታት በላይ በትዮጵያ አየር መንገድ ውስጥ በመሥራት ልምድ ኣካብቻለሁ። የበረራ ኣስተናጋጅ በመሆን ሥራዬን ጀምሬ በሂደት የበረራ ኣስተናጋጅ ኣገልግሎት ኣስተዳደር ክፍል ኃላፊ እስከመሆን ደርሻለሁ።",
+      "የቀጣዩን ትውልድ የአቪዬሽን ባለሙያዎች ለማስተማርና ለማብቃት ባለኝ ቅን ፍላጐት ተነሳስቼ፤ ወደ ኢትዮጵያ አየር መንገድ አቪዬሽን አካዳሚ (EAL Aviation Academy) በሲኒየር መምህርነት የተዛወርኩ ሲሆን ፤ በዚያም አዳዲስ የበረራ ኣስተናጋጅ አባላትን በማሰልጠን ለሥራው የሚያስፈልጉ ክህሎቶችን እንዲያዳብሩ እና ያሉበትን ኢንዱስትሪ በደምብ እንዲረዱ ማድረግ እንድችል ዕድሉን በማግኘቴ እጅግ ደስ ይለኛል። የ\"ታሪክ ኣደራ\" ተልዕኮን ማስቀጠል እና ባለኝ ኣቅም ሁሉ መደገፍ እጅግ ደስ የሚያሰኘኝ ነገር ነው።"]
     }
   },
   {
@@ -112,7 +114,10 @@ const members: BoardMember[] = [
     image: img11,
     description: {
       en: ["I am the eldest daughter of Major General Tafesse Lemma. I moved to the US in the late ‘70s, finished my higher education in Arlington, Texas where I now reside with my husband and 3 daughters.","It is my privilege to be part of Yetarik Adera, charged with the responsibility of preserving and conveying the remarkable legacy and history of our fathers, brothers, and uncles who dedicated their lives to safeguard our country. They exemplified the core values of patriotism, loyalty, and leadership.","It is our duty to educate, inform, inspire, and safeguard the legacy of our forefathers, ensuring that we pass this knowledge on to our children and grandchildren."," “The legacy of heroes is the memory of a great name and the inheritance of a great example.” Benjamin Disraeli ","“Our nation owes a debt to its fallen heroes that we can never fully repay” Barack Obama" ],
-      am: ["እኔ የሜጄር ጀነራል ታፈሰ ለማ የበኩር ልጅ ነኝ። በ70ዎቹ መገባደጃ ላይ ወደ አሜሪካ ተዛውሬ የከፍተኛ ትምህርቴን በአርሊንግተን ቴክሳስ አጠናቅቄ አሁን ከባለቤቴ እና ከ3 ሴት ልጆቼ ጋር የምኖረው። አገራችንን ለመጠበቅ ሕይወታቸውን የሰጡ የአባቶቻችንን፣ ወንድሞቻችንን እና አጎቶቻችንን አስደናቂ ውርስ እና ታሪክ በመጠበቅ እና በማስተላለፍ ኃላፊነት የተሸከመው የየታሪክ አደራ አካል መሆን ለእኔ ልዩ መብት ነው። የሀገር ፍቅር፣ ታማኝነት እና የአመራርን አንኳር እሴቶች በምሳሌነት አሳይተዋል። ይህን እውቀት ለልጆቻችን እና ለልጅ ልጆቻችን እንድናስተላልፍ በማድረግ የአባቶቻችንን ትሩፋት ማስተማር፣ማሳወቅ፣ማነሳሳት እና መጠበቅ የኛ ግዴታ ነው። ቤንጃሚን ዲስራኤሊ ሀገራችን ለወደቁት ጀግኖቿ ባለው እዳ ነው ፈጽሞ ልንከፍለው የማንችለው ባራክ ኦባማ"]
+      am: [" እኔ የሜጀር ጄኔራል ታፈሰ ለማ የመጀመሪያ ልጅ ነኝ። በ1970ኛዎቹ መጨረሻ ወደ አሜሪካ ሄድኩ፣ ከፍተኛ ትምህርቴንም በቴክሳስ ግዛት አርሊንግተን ከተማ አጠናቀቅሁ። አሁን ከባለቤቴና ከሶስት ሴት ልጆቼ ጋር በዚያው እኖራለሁ። አባቶቻችን፣ ኣጐቶቻችን፣ ወንድሞቻችን የውጪ ወራሪ ሲመጣ  ኣገራቸውን ለመጠበቅ ውድ ሕይወታቸውን ከፍለዋል፤ ወረራው ሲቀለበስ ደግሞ  ኣገራቸውን ለማሳደግ የተቻላቸውን ሁሉ ኣድርገዋል። ጉልበታቸውን፣ ጊዘያቸውን፣ ዕውቀታቸውን ሳይሰስቱ  ኣገራቸውን ለማሳደግ ኣውለዋል። ይህንን የሚያኰራ ታሪክ መዝግቦ ለማስቀመጥና ለቀጣይ ትውልዶች ለማስተላለፍ የታሪክ ኣደራ ኃላፊነቱን በመውሰዱ እና እኔም የዛ ኣካል በመሆኔ ክብር ይሰማኛል። እነርሱ የአገር ፍቅርን፣ የታማኝነትንና የኣርኣያነትን መሠረታዊ እሴቶችን በሕይወታቸው አሳይተዋል።",
+      "የአባቶቻችንን ታሪክ ማስተማር፣ ማሳወቅ እና መጠበቅ ግዴታችን ነው፤ ይህን እውቀትም ለልጆቻችንና ለልጅ ልጆቻችን እንዲተላለፍ ተገቢውን ሥራ መሥራት አለብን።",
+      "\" የጀግኖች ኣሻራ፤ የትልቅ ስም መታሰቢያና የታላቅ ምሳሌ ርስት ነው።\" ቤንጀሚን ዲዝሬሊ",
+      "\"ሀገራችን ለወደቁ ጀግኖቻችን ከፍላ የማትጨርሰው ዕዳ አለባት።\""]
     }
   },
   {
@@ -121,7 +126,7 @@ const members: BoardMember[] = [
     image: img5,
     description: {
       en: ["Like many members of their generation, my father and my uncles loved their country more than anything else. My father spent his life serving his country, often leaving his young family behind for postings throughout Ethiopia.","I believe it is our responsibility now, to educate current and future generations of Ethiopia to honor the legacy of those who paid the ultimate sacrifice without justice and due process.","I wanted to be part of Yetarik Adera, whose goal is to recognize, not just my father and those who died with him, but the entire generation of public servants during the reign of Emperor Haile Selassie I, and their historic contributions to Ethiopia's progress. I want the accomplishments of these public servants, which have largely gone unrecognized, to be easily accessible to the public so that the record is set straight and available to all Ethiopians." ],
-      am: ["አባቴና አጎቶቼም እንደሌሎች ትውልዳቸው ከምንም ነገር በላይ አገራቸውን ይወዳሉ። አባቴ ህይወቱን ያሳለፈው አገሩን በማገልገል ነው፣ ብዙ ጊዜ ወጣት ቤተሰቡን ትቶ በመላ ኢትዮጵያ ለሹመት ይሰጠዋል። ያለ ፍትህ እና ፍትህ ያለፍርድ መስዋዕትነት የከፈሉትን ትውልዶች እና ትውልዶች በቀዳማዊ አጼ ኃ/ማርያም የስልጣን ዘመናቸው የሞቱትን ብቻ ሳይሆን ትውልዱን በቀዳማዊ አጼ ኃ/ማርያም ዘመነ መንግስት ያበረከቱትን አስተዋፅዖ እውቅና የመስጠት አላማ የታሪክ አደራ አካል መሆን የፈለግኩት ለአሁኑም ሆነ ለወደፊት ትውልዶች ማስተማር ነው። እድገት ። የእነዚህ የመንግስት ሰራተኞች ስኬቶች በአብዛኛው እውቅና ሳይሰጡ ለህዝቡ በቀላሉ ተደራሽ እንዲሆኑ ሪከርዱ እንዲስተካከል እና ለሁሉም ኢትዮጵያውያን እንዲደርስ እፈልጋለሁ።"]
+      am: ["እንደ ብዙ የዚያ ትውልድ አባላት ሁሉ፣ አባቴና አጎቶቼ ከሁሉ በላይ አገራቸውን ይወዱ ነበር። አባቴ ሕይወቱን በሙሉ ኣገሩን በማገልገል ነበር ያሳለፈው። ሹመትም እየተሰጠው ለሥራም እየተፈለገ በኢትዮጵያ ዙሪያ ሁሉ ሲሄድ ቤተሰቡን፣ ሚስቱንና ልጆቹን እየተወ ነበር ኣገሩን ለማገልገል የሚሄደው። በመጨረሻ ግን እሱና የሥራ ባልደረቦቹ ያለ ፍርድ ምንም ህጋዊ የፍትህ ሥርዓትን ባልተከተለ መንገድ መስዋዕት ሆነዋል። እነሱ ለኣገራቸው የከፈሉትን ዋጋ ዛሬ ያሉና ነገ የሚመጡ ትውልዶች ያውቁት ዘንድ ታሪካቸውን ማሳወቅ፣ ማስተማር የኛ ኃላፊነት እንደሆነ ኣምናለሁ። \"የታሪክ ኣደራ\" ኣባል መሆን የፈለግኩት ኣባቴና ከኣባቴ ጋር ኣብረው ሕይወታቸው በኣሰቃቂ መንገድ ስላለፉት ብቻ ብዬ ሳይሆነ፤ የቀዳማዊ ኃይለ ሥላሴን መንግሥት ሲያገለግሉ የነበሩ ባለሥልጣናት በሙሉ ኣገራቸውን ለማሳደግ ያበረከቱትን ኣስተዋጽዖ ለመዘከር ነው። ኣብዛኛው ሰው የማያውቃቸው እነዚህ የሕዝብ ኣገልጋዮች፤ የሠሩት ሥራና ታሪካቸው እንዲታወቅ እንዲሁም ለሕዝቡ በቀላሉ ተደራሽ እንዲሆን እፈልጋለሁ።"]
     }
   },
   {
@@ -130,7 +135,7 @@ const members: BoardMember[] = [
     image: img10,
     description: {
       en: ["YeTarik Adera’s mission aligns with my sense of responsibility to preserve the past and bridge our history with the present to inform our future. Every generation has an obligation to share our stories of the past so that history serves a purpose and celebrates our identities.","Through the work of YeTarik Adera, my hope and prayer is to build today’s Ethiopia through the voices of the past and the vision of the youth.","In my own endeavors, I hope to continue serving as a global change agent and use my years of expertise in social work to elevate this mission.","Thank you for giving me the opportunity to serve." ],
-      am: ["የታሪክ አደራ ተልእኮ ካለፈኝ ሃላፊነት ጋር ይጣጣማል እናም ታሪካችንን ከአሁኑ ጋር በማገናኘት የወደፊት ህይወታችንን ለማሳወቅ። ታሪክ አላማን እንዲያከብር እና ማንነታችንን እንዲያከብር እያንዳንዱ ትውልድ የኛን ታሪክ የማካፈል ግዴታ አለበት። በየታሪክ አደራ ስራ ተስፋዬ እና ጸሎቴ የዛሬይቱን ኢትዮጵያን በባለፉት ድምፆች እና በወጣቶች ራዕይ መገንባት ነው።"]
+      am: ["ያለፈው ታሪካችንን ለመጪው ትውልድ በማሳወቅ ያለፈውንና ከሚመጣው ጋር ማስተሳሰር የሚለው የታሪክ ኣደራ ዓላማ እኔ በግሌ ላደርገው ይገባል ብዬ ከምመኘው ሃሳብ ጋር የሚገጥም ነው። ሁሉም ትውልድ ያለፈውን ታሪክ ለቀጣዩ የማካፈል ግዴታ ኣለበት፤ ያ ሲሆን ነው ታሪክ ትርጉም የሚኖረው መጪው ትውልድም ከታሪክ መማር የሚችለው፤ ከሁሉም በላይ ደሞ በታሪካችን ልንኰራ የምንችለው። የታሪክ ኣደራ የኣባቶቻችንን ጥበብ ኣሁን ካሉት ወጣቶች ራዕይ ጋር ኣስተሳስሮ የዛሬዪቱን ኢትዮጵያ ያንጻል ብዬ ተስፋ ኣደርጋለሁ፤ ያ እንዲሆን የዘወትር ፀሎቴም ነው። በራሴ የግል ጥረት እንደ ዓለም ኣቀፍ የለውጥ ወኪል ሆኜ ማገልገሌን እንደምቀጥል ተስፋ ኣደርጋለሁ። በማኅበራዊ ኣገልግልግሎት ሥራ ላይ ያለኝን የረዥም ጊዜ ተሞክሮ በመጠቀምም ዓላማው እንዲጐለብትና እንዲሳካ የበኩሌን ጥረት ኣደርጋለሁ። እንዳገለግል ዕድሉን ስለሰጣችሁኝ ኣመሠግናለሁ።"]
     }
   },
 ];
@@ -259,5 +264,3 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
     </>
   );
 };
-
-
