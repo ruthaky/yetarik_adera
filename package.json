@@ -1,5 +1,5 @@
 {
-  "name": "surge-landing-page",
+  "name": "yetarik-adera",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,7 +30,7 @@
     "lucide-react": "^0.464.0",
     "motion": "^12.23.16",
     "negotiator": "^1.0.0",
-    "next": "15.0.3",
+    "next": "^16.1.6",
     "react": "^18.3.1",
     "react-css-spinners": "^4.0.2",
     "react-dom": "^18.3.1",
