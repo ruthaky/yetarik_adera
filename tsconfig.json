@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "middleware.ts"
+    "proxy.ts"
 , "app/[lang]/404.js"  ],
   "exclude": ["node_modules"]
 }
