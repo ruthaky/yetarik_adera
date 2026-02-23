@@ -35,7 +35,7 @@
     "button1": "Read Less"
   },
   "martyrspage": {
-    "introheading1": "70",
+    "introheading1": "The 70",
     "introheading2": "Martyrs",
     "paragraph1": " In 1974, during the transitional period following the end of Emperor Haile Selassie's administration, 68 senior government officials and public servants were executed by the Derg regime without trial. These individuals, who held high office and played key roles in Ethiopia's development, were taken from prison and summarily killed in one of the most tragic and unjust acts in the country's modern history.",
     "paragraph2": "The 70 martyrs represented a generation of leaders who contributed significantly to national progress through their service, professionalism, and dedication. Their loss marked a turning point in Ethiopian history and serves as a powerful reminder of the dangers of political violence and the erosion of rule of law.",
@@ -112,7 +112,8 @@
     "backHome": "Back to Home"
   },
   "eventPage": {
-  "heading": "Previous Events",
+    "heading1": "Upcoming Events",
+  "heading2": "Previous Events",
   "description": "ይቅርታ፣ የሚፈልጉት ገፅ አልተገኘም ወይም ወደ ሌላ ቦታ ተዘዋዋሪ ነው።",
   "backHome": "ወደ መነሻ ገፅ ተመለስ"
 },
@@ -122,6 +123,6 @@
     "Martyrs": "Martyrs",
        "Events": "Events",
           "Contact us": "Contact us", 
-          "Get involved": "BGet involved"
+          "Get involved": "Get involved"
   }
 }

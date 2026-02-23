@@ -82,7 +82,7 @@ export default function GetInvolvedPage({
                 />
               </div>
               <br />
-              <div className="inline-block mt-2">
+              <div className="inline-block mt-2 pl-[80px]">
                 <span>{getInvolvedTexts.heading2}</span>
                 <motion.div
                   initial={{ width: 0 }}

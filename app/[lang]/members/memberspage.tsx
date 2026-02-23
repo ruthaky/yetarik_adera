@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
@@ -146,6 +146,17 @@ const members: BoardMember[] = [
 export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
   const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
 
+  useEffect(() => {
+    if (!selectedMember) return;
+
+    const previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+    };
+  }, [selectedMember]);
+
   // Detect language from pathname (/am or /en)
   const pathname = usePathname();
   const lang = pathname.startsWith("/am") ? "am" : "en";
@@ -245,8 +256,8 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
 
         {/* Modal */}
         {selectedMember && (
-          <div className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-4" onClick={() => setSelectedMember(null)}>
-            <div className="bg-[#4C3519]/0 rounded-lg w-full max-w-6xl p-6 relative flex flex-col md:flex-row items-center gap-6 overflow-y-auto max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-[#57432d]/95 z-50 flex items-center justify-center p-4" onClick={() => setSelectedMember(null)}>
+            <div className="bg-[#4C3519]/0 rounded-lg w-full max-w-6xl p-6 relative flex flex-col md:flex-row items-center gap-6 overflow-y-auto overscroll-contain max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
               <button className="absolute top-2 right-4 text-white text-3xl font-bold" onClick={() => setSelectedMember(null)}>&times;</button>
               <Image src={selectedMember.image} alt={selectedMember.name[lang]} width={250} height={300} className="w-[150px] h-[150px] md:w-[270px] md:h-[270px] object-fit rounded-full " />
               <div className="text-white md:text-left text-center border-0 md:border-l-2 border-[#db9744] md:pl-4">

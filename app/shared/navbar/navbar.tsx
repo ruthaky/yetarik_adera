@@ -60,10 +60,10 @@ export default function Navbar() {
   // ✅ Navbar translations
   const navLinks: { slug: string; en: string; am: string }[] = [
     { slug: "", en: "Home", am: "መነሻ ገጽ" },
-    { slug: "about", en: "About", am: "ስለ" },
+    { slug: "about", en: "About", am: "ስለ እኛ" },
     { slug: "martyrs", en: "Martyrs", am: "ሰማዕታት" },
     { slug: "members", en: "Members", am: "አባላት" },
-    { slug: "events", en: "Events", am: "ክስተቶች" },
+    { slug: "events", en: "Events", am: "ዝግጅቶች" },
     { slug: "contact-us", en: "Contact us", am: "ያግኙን" },
     { slug: "get-involved", en: "Get involved", am: "ተሳተፍ" },
   ];

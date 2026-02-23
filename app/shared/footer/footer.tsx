@@ -29,6 +29,10 @@ export default function Footer() {
       accessibility: "Accessibility",
       legal: "Legal",
       copyright: "Design with love © yetarikadera 2024. All rights reserved",
+      Home: "Home",
+      About: "About",
+      Martyrs: "Martysrs",
+      Memebers: "Members",
       socials: {
         instagram: "Instagram",
         youtube: "YouTube",
@@ -45,6 +49,10 @@ export default function Footer() {
       accessibility: "አካል ጉዳተኝነት",
       legal: "ሕጋዊ",
       copyright: "በፍቅር የተዘጋጀ © የታሪክ አደራ 2024። ሁሉም መብቶች ተጠብቀዋል።",
+      Home: "ዋና ገፅ",
+      About: "ስለ እኛ",
+      Martyrs: "ሰማዕታት",
+      Memebers: "አባላት",
       socials: {
         instagram: "ኢንስታግራም",
         youtube: "ዩቲዩብ",
@@ -74,10 +82,10 @@ export default function Footer() {
             <p className="py-2">yetarikadera@gmail.com</p>
             <p className="py-2">0928291967</p>
             <div className="flex space-x-6 mt-2">
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/martyrs">Martyrs</a>
-              <a href="members">Members</a>
+              <a href="/">{t.Home}</a>
+              <a href="/about">{t.About}</a>
+              <a href="/martyrs">{t.Martyrs}</a>
+              <a href="members">{t.Memebers}</a>
             </div>
           </div>
           <div className="flex flex-col mt-4 gap-4 md:mt-0">

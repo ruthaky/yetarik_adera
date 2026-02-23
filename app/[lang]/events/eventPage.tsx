@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import img1 from "@/public/asset/event1.jpeg";
 import img2 from "@/public/asset/event2.jpeg";
 import img3 from "@/public/asset/event3.jpeg";
@@ -104,21 +104,35 @@ export default function UpcomingEvents ({
   }: {
     eventTexts: any;
   })  {
-    // Store currentIndex for each event separately
-    const [currentIndexes, setCurrentIndexes] = useState(
+    const [upcomingIndexes, setUpcomingIndexes] = useState(
+      Array(upcoming_events.length).fill(0)
+    );
+    const [previousIndexes, setPreviousIndexes] = useState(
       Array(previous_events.length).fill(0)
     );
-  
-    // Auto-slide every 4s
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndexes((prev) =>
-          prev.map((val, i) => (val + 1) % previous_events[i].images.length)
-        );
-      }, 4000);
-      return () => clearInterval(interval);
-    }, []);
-  
+
+    const goToPreviousImage = (
+      eventIndex: number,
+      setIndexes: React.Dispatch<React.SetStateAction<number[]>>,
+      imagesLength: number
+    ) => {
+      setIndexes((prev) =>
+        prev.map((value, i) =>
+          i === eventIndex ? (value - 1 + imagesLength) % imagesLength : value
+        )
+      );
+    };
+
+    const goToNextImage = (
+      eventIndex: number,
+      setIndexes: React.Dispatch<React.SetStateAction<number[]>>,
+      imagesLength: number
+    ) => {
+      setIndexes((prev) =>
+        prev.map((value, i) => (i === eventIndex ? (value + 1) % imagesLength : value))
+      );
+    };
+
 
   return (
     <>
@@ -130,7 +144,7 @@ export default function UpcomingEvents ({
           <h2
             className={`${arapey.variable} font-arapey text-3xl md:text-5xl `}
           >
-            <span className=" pb-2">Upcoming</span> Events
+<span className=" pb-2">{eventTexts.heading1}</span> 
           </h2>
           <motion.div
             initial={{ width: 0 }}
@@ -157,23 +171,47 @@ export default function UpcomingEvents ({
 
                 {/* Image slideshow */}
                 <div className="relative w-full md:w-[400px] h-[300px] md:h-[400px] rounded-md shadow-md overflow-hidden">
-                  <AnimatePresence mode="wait">
+                  <AnimatePresence>
                     <motion.div
-                      key={currentIndexes[index]}
-                      initial={{ opacity: 0 }}
+                      key={upcomingIndexes[index]}
+                      initial={{ opacity: 0.8 }}
                       animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 1 }}
+                      exit={{ opacity: 0.8 }}
+                      transition={{ duration: 0.2 }}
                       className="absolute inset-0"
                     >
                       <Image
-                        src={event.images[currentIndexes[index]]}
+                        src={event.images[upcomingIndexes[index]]}
                         alt={event.title}
                         fill
                         className="object-fill rounded-2xl border border-primary border-2"
                       />
                     </motion.div>
                   </AnimatePresence>
+                  {event.images.length > 1 && (
+                    <>
+                      <button
+                        type="button"
+                        aria-label={`Previous image for ${event.title}`}
+                        onClick={() =>
+                          goToPreviousImage(index, setUpcomingIndexes, event.images.length)
+                        }
+                        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-black/45 text-white text-xl leading-none flex items-center justify-center hover:bg-black/65"
+                      >
+                        ‹
+                      </button>
+                      <button
+                        type="button"
+                        aria-label={`Next image for ${event.title}`}
+                        onClick={() =>
+                          goToNextImage(index, setUpcomingIndexes, event.images.length)
+                        }
+                        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-black/45 text-white text-xl leading-none flex items-center justify-center hover:bg-black/65"
+                      >
+                        ›
+                      </button>
+                    </>
+                  )}
                 </div>
 
                 {/* Content */}
@@ -198,7 +236,7 @@ export default function UpcomingEvents ({
 
         <div className="text-center md:mb-[30px] mt-[30px] md:mt-[50px] px-4 sm:px-6 md:px-20">
           <h2 className={`${arapey.variable} font-arapey text-3xl md:text-5xl`}>
-            <span className=" pb-2">{eventTexts.heading}</span> 
+            <span className=" pb-2">{eventTexts.heading2}</span> 
           </h2>
           <motion.div
             initial={{ width: 0 }}
@@ -226,23 +264,47 @@ export default function UpcomingEvents ({
 
                 {/* Image slideshow */}
                 <div className="relative w-full md:w-[400px] h-[200px] md:h-[250px] rounded-md shadow-md overflow-hidden">
-                  <AnimatePresence mode="wait">
+                  <AnimatePresence>
                     <motion.div
-                      key={currentIndexes[index]}
-                      initial={{ opacity: 0 }}
+                      key={previousIndexes[index]}
+                      initial={{ opacity: 0.8 }}
                       animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 1 }}
+                      exit={{ opacity: 0.8 }}
+                      transition={{ duration: 0.2 }}
                       className="absolute inset-0"
                     >
                       <Image
-                        src={event.images[currentIndexes[index]]}
+                        src={event.images[previousIndexes[index]]}
                         alt={event.title}
                         fill
                         className="object-fit rounded-2xl border border-primary border-2"
                       />
                     </motion.div>
                   </AnimatePresence>
+                  {event.images.length > 1 && (
+                    <>
+                      <button
+                        type="button"
+                        aria-label={`Previous image for ${event.title}`}
+                        onClick={() =>
+                          goToPreviousImage(index, setPreviousIndexes, event.images.length)
+                        }
+                        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-black/45 text-white text-xl leading-none flex items-center justify-center hover:bg-black/65"
+                      >
+                        ‹
+                      </button>
+                      <button
+                        type="button"
+                        aria-label={`Next image for ${event.title}`}
+                        onClick={() =>
+                          goToNextImage(index, setPreviousIndexes, event.images.length)
+                        }
+                        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 h-9 w-9 rounded-full bg-black/45 text-white text-xl leading-none flex items-center justify-center hover:bg-black/65"
+                      >
+                        ›
+                      </button>
+                    </>
+                  )}
                 </div>
 
                 {/* Content */}

@@ -88,6 +88,17 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (!selectedMartyr) return;
+
+    const previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+    };
+  }, [selectedMartyr]);
+
   const [searchTerm, setSearchTerm] = useState("");
 
   // Create a unified array with proper language support
@@ -415,7 +426,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
  {/* Modal */}
 {selectedMartyr && (
   <div
-    className="fixed inset-0 bg-[#774E1D]/80 z-50 flex items-center justify-center p-6 overflow-y-auto"
+    className="fixed inset-0 bg-[#57432d]/95 z-50 flex items-center justify-center p-6 overflow-y-auto"
     onClick={() => setSelectedMartyr(null)} // close on outside click
   >
     <div
