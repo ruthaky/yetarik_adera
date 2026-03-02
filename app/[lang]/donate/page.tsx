@@ -8,6 +8,7 @@ import Navbar from '@/app/shared/navbar/navbar'
 import Footer from '@/app/shared/footer/footer'
 import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
 
 // Fonts
 const arapey = Arapey({
@@ -25,6 +26,8 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
 })
 
 const DonationSection = () => {
+  const params = useParams<{ lang: string }>()
+  const lang = params?.lang || "en"
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null)
   const [customAmount, setCustomAmount] = useState<string>("")
   const [phoneNumber, setPhoneNumber] = useState<string>("")
@@ -56,6 +59,7 @@ const DonationSection = () => {
           body: JSON.stringify({
             amount: amount.toString(),
             phone_number: phoneNumber,
+            lang,
           }),
         }
       )

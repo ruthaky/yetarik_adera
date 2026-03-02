@@ -4,6 +4,9 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     console.log("Hit Chapa API with:", body);
+    const lang = typeof body.lang === "string" && body.lang.trim() ? body.lang.trim() : "en";
+    const origin = new URL(req.url).origin;
+    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || origin).replace(/\/$/, "");
 
     const response = await fetch("https://api.chapa.co/v1/transaction/initialize", {
       method: "POST",
@@ -17,7 +20,7 @@ export async function POST(req: Request) {
         phone_number: body.phone_number,
         tx_ref: `tx-${Date.now()}`,
         callback_url: "https://webhook.site/077164d6-29cb-40df-ba29-8a00e59a7e60",
-        return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
+        return_url: `${baseUrl}/${lang}/donate/receipt`,
         "customization[title]": "Donation Payment",
         "customization[description]": "Thank you for supporting our cause",
       }),
