@@ -32,7 +32,7 @@ export default function Footer() {
       Home: "Home",
       About: "About",
       Martyrs: "Martysrs",
-      Memebers: "Members",
+      Memebers: "Board Members",
       socials: {
         instagram: "Instagram",
         youtube: "YouTube",
@@ -52,7 +52,7 @@ export default function Footer() {
       Home: "ዋና ገፅ",
       About: "ስለ እኛ",
       Martyrs: "ሰማዕታት",
-      Memebers: "አባላት",
+      Memebers: "የቦርድ አባላት",
       socials: {
         instagram: "ኢንስታግራም",
         youtube: "ዩቲዩብ",

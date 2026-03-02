@@ -91,7 +91,7 @@ const previous_events: Event[] = [
     location: "Addis Ababa, Ethiopia and DMV",
  
     description:
-      "Yetarik Adera inaugurated its archive center located on the 9th floor of the Wemezeker compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.",
+      "Yetarik Adera inaugurated its archive center located on the 9th floor of the National Archives and Libraries (Wemezeker) compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.",
       link:"#",
     },
    

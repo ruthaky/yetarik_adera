@@ -327,7 +327,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
           <div className="text-center mb-16 w-full max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-[36px]  text-left text-[#4A2C13]">
               {currentLanguage === 'am' 
-                ? 'የተገደሉ ሲቪል ባለሥልጣናት፣ ቅዳመ ሰኞ፣ ህዳር 23፣ 1967 ዓ.ም.'
+                ? 'የተገደሉ ሲቪል ባለሥልጣናት፣ ቅዳሜ፣ ህዳር 14፣ 1967 ዓ.ም.'
                 : 'Civilian Officials Executed, Saturday, November 23, 1974'
               }
             </h2>
@@ -359,7 +359,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-[36px] text-left  text-[#4A2C13]">
               {currentLanguage === 'am' 
-                ? 'የተገደሉ የጦር ሰው ባለሥልጣናት፣ ቅዳመ ሰኞ፣ ህዳር 23፣ 1967 ዓ.ም.'
+                ? 'የተገደሉ የጦር ሰው ባለሥልጣናት፣ ቅዳሜ፣ ህዳር 14፣ 1967 ዓ.ም.'
                 : 'Military Officials Executed, Saturday, November 23, 1974'
               }
             </h2>
@@ -391,8 +391,8 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
            <div className="text-center my-16 w-full max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-[36px] text-left  text-[#4A2C13]">
               {currentLanguage === 'am' 
-                ? 'በሐምሌ 12፣ 1966 ዓ.ም የተገደለ'
-                : 'Executed on July 19'
+                ? 'በሐምሌ 3,5,6,10 በ1971 ዓ.ም የተገደሉ'
+                : 'Executed on July 10,12,13,17 in 1979, 5 years after the first execution'
               }
             </h2>
           </div>

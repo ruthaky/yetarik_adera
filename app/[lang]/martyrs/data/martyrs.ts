@@ -282,7 +282,7 @@ export const Martyrs = [
     }, 
     image: m29, 
     description: { 
-      en: "He was born on Hamle 19, 1925 E.C. (July 27, 1933 G.C.) in Addis Ababa, in the neighborhood of Entoto Geneta Yesu. He completed his education abroad, and after returning in 1946 E.C., he served in the Ministry of Defense until 1952 E.C. From 1952 E.C. onward, he worked in the private sector for fourteen years.", 
+      en: "He was born on Hamle 19, 1925 E.C. (July 27, 1933 G.C.) in Addis Ababa, in the neighborhood of Entoto genete Yesus. He completed his education at Sandhurst Military Academy in England, and after returning in 1946 E.C., he served in the Ministry of Defense until 1952 E.C. From 1952 E.C. onward, he worked in the private sector for fourteen years.", 
       am: "ክቡር ፊታውራሪ አምዴ አበራ በሐምሌ 19 ቀን 1925 ዓ.ም. (እ.አ.አ. 1933) በአዲስ አበባ እንጦጦ ገነተ ኢየሱስ ተብሎ በሚጠራው ሰፈር ተወለዱ። ትምህርታቸውን በውጭ አገር አጠናቀው ከተመለሱ በኋላ ከ1946 ዓ.ም. (እ.አ.አ. 1954) እስከ 1952 ዓ.ም. (እ.አ.አ. 1960) ድረስ በመከላከያ ሚኒስቴር ውስጥ አገልግለዋል። ከ1952 ዓ.ም. (እ.አ.አ. 1960) ጀምሮ ደግሞ ለኣሥራ አራት ዓመታት ያህል በግል የሥራ ዘርፍ ተሰማርተው ሠርተዋል።" 
     } 
   },
