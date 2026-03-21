@@ -218,10 +218,10 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
             </h1>
           </section>
           <p className="text-left text-[16px]">
-          {memberTexts.paragraph1}
+          {memberTexts.paragraph2}
         <br />
         <br />
-        {memberTexts.paragraph2}
+        {memberTexts.paragraph1}
         <br />
         <br />
         {memberTexts.paragraph3}
@@ -229,15 +229,112 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
         <br />
         {memberTexts.paragraph4}
         <br />
+         {/* 1. Build the Archive Center */}
+         <div>
+              <h2 className="font-bold text-lg mt-6 mb-2">
+                1. {memberTexts.pillar1}
+              </h2>
+              <p>
+              {memberTexts.pillar1desc}
+              <br />
+              {memberTexts.pillar1desc2}
+              </p>
+              {memberTexts.seek}
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>
+                  {memberTexts.seek1}
+                </li>
+                <li>
+                         {memberTexts.seek2}
+                </li>
+                <li>
+                         {memberTexts.seek3}
+                </li>
+              </ul>
+              <br />
+              {memberTexts.pillar1closing}
+            </div>
+        {/* 2. Develop a research library */}
+        <div>
+              <h2 className="font-bold text-lg mt-6 mb-2">
+                2. {memberTexts.pillar2}
+              </h2>
+              <p>
+              {memberTexts.pillar2desc}
+              </p>
+              <br />
+              {memberTexts.seek20}
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>
+                  {memberTexts.seek21}
+                </li>
+                <li>
+                         {memberTexts.seek22}
+                </li>
+                <li>
+                         {memberTexts.seek23}
+                </li>
+              </ul>
+              <br />
+              {memberTexts.pillar2closing}
+            </div>
+              {/* 3. Promoting Public Education and Historical Awareness */}
+        <div>
+              <h2 className="font-bold text-lg mt-6 mb-2">
+                3. {memberTexts.pillar3}
+              </h2>
+              <p>
+              {memberTexts.pillar3desc}
+              </p>
+              <br />
+              {memberTexts.pillar3desc2}
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>
+                  {memberTexts.pillar3list1}
+                </li>
+                <li>
+                         {memberTexts.pillar3list2}
+                </li>
+                <li>
+                         {memberTexts.pillar3list3}
+                </li>
+              </ul>
+              <br />
+              {memberTexts.pillar3closing}
+            </div>
+              {/* 4. Preserving the Martyrs Cemetery */}
+        <div>
+              <h2 className="font-bold text-lg mt-6 mb-2">
+                4. {memberTexts.pillar4}
+              </h2>
+              <p>
+              {memberTexts.pillar4desc}
+              </p>
+              <br />
+              {memberTexts.pillar4desc2}
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>
+                  {memberTexts.pillar4list1}
+                </li>
+                <li>
+                         {memberTexts.pillar4list2}
+                </li>
+              </ul>
+              <br />
+              {memberTexts.pillar4closing}
+            </div>
         <br />
         {memberTexts.paragraph5}
     <br></br>
     <br></br>
     {memberTexts.paragraph6}
-
+    <br></br>
+    <br></br>
+    {memberTexts.paragraph7}
     </p>
-    <div className="flex flex-col gap-2 w-full items-end py-8"><p className="">  {memberTexts.thankyou}</p>
-   <p className="">  {memberTexts.seble}
+    <div className="flex flex-col gap-2 w-full items-start py-8"><p className="">  {memberTexts.thankyou}</p>
+   <p className="font-bold">  {memberTexts.seble}</p>
+   <p className="">  {memberTexts.role}
    </p></div>
         </div>
          {/* Mobile grid */}

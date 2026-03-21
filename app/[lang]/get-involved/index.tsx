@@ -111,24 +111,7 @@ export default function GetInvolvedPage({
               <p>
               {getInvolvedTexts.pillar1desc}
               </p>
-              {getInvolvedTexts.seek}
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>
-                  {/* <span className="font-bold">Documents</span>: Official papers,
-                  personal letters, books, diaries, and notebooks. */}
-                  {getInvolvedTexts.seek1}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Multimedia</span>: Historical
-                  films, photographs, and audio recordings. */}
-                         {getInvolvedTexts.seek2}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Artifacts</span>: Items that
-                  reflect the social and cultural life of the period. */}
-                         {getInvolvedTexts.seek3}
-                </li>
-              </ul>
+             
             </div>
 
             {/* 2. Develop the Research Library */}
@@ -139,25 +122,7 @@ export default function GetInvolvedPage({
               <p>
               {getInvolvedTexts.pillar2desc}
               </p>
-              {getInvolvedTexts.seek20}
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>
-                  {/* <span className="font-bold">Historical Books</span>: Scholarly
-                  works and publications relevant to the era. */}
-                        {getInvolvedTexts.seek21}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Photographic Records</span>:
-                  Pictures that document key milestones in Ethiopia’s
-                  modernization. */}
-                        {getInvolvedTexts.seek22}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Film Archives</span>:
-                  Documentaries and newsreels from the period. */}
-                        {getInvolvedTexts.seek23}
-                </li>
-              </ul>
+            
             </div>
 
             {/* 3. Promote Public Education and Outreach */}
@@ -168,28 +133,7 @@ export default function GetInvolvedPage({
               <p>
               {getInvolvedTexts.pillar3desc}
               </p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>
-                  {/* <span className="font-bold"> */}
-                    {/* Identifying Speakers and Influencers
-                  </span>
-                  : Connecting scholars, authors, and influential figures for
-                  lectures, book signings, and panel discussions. */}
-                  {getInvolvedTexts.pillar3list1}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Curriculum Development</span>:
-                  Advocating for the inclusion of this significant era in formal
-                  educational curricula. */}
-                     {getInvolvedTexts.pillar3list2}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Public Programs</span>: Hosting
-                  events that engage both the public and a new generation of
-                  Ethiopians. */}
-                     {getInvolvedTexts.pillar3list3}
-                </li>
-              </ul>
+        
             </div>
 
             {/* 4. Preserve the Martyrs Cemetery */}
@@ -203,55 +147,45 @@ export default function GetInvolvedPage({
                 remembrance. Support is needed for: */}
 {getInvolvedTexts.pillar4desc}
               </p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>
-                  {/* <span className="font-bold">Physical Maintenance</span>:
-                  Ensuring the grounds and monuments are respectfully preserved. */}
-                  {getInvolvedTexts.pillar4list1}
-                </li>
-                <li>
-                  {/* <span className="font-bold">Operational Expenses</span>:
-                  Helping cover costs required to keep this iconic site open and
-                  accessible to the public. */}
-                  {getInvolvedTexts.pillar4list2}
-                </li>
-              </ul>
-            </div>   <div className='text-black'>
-              <h2 className="font-bold text-2xl mb-2 mt-6">
-              {getInvolvedTexts.how}
-              </h2>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>
-                  <span className=" "> {getInvolvedTexts.how1}</span>
-                
-                </li>
-                <li>
-                  <span className=" "> {getInvolvedTexts.how2}</span>
-               
-                </li>
-                <li>
-                  <span className=" "> {getInvolvedTexts.how3}</span>
-               
-                </li>
-                <li>
-                  <span className=" "> {getInvolvedTexts.how4}</span>
-                  
+            
+            </div>   <div className="text-black">
+  <h2 className="font-bold text-2xl mb-4 mt-6">
+    {getInvolvedTexts.how}
+  </h2>
 
+  <ul className="space-y-4 mt-2">
+    <li className="flex items-center gap-3">
+      <span>{getInvolvedTexts.how1}</span>
+      <Button className="rounded-md px-4 py-2 text-sm shadow-sm">
+        <Link href={`/${pathname.split("/")[1]}/donate`}>
+          {getInvolvedTexts.button1}
+        </Link>
+      </Button>
+    </li>
 
+    <li className="flex items-center gap-3">
+      <span>{getInvolvedTexts.how2}</span>
+      <Button className="rounded-md px-4 py-2 text-sm shadow-sm">
+        <Link href={`/${pathname.split("/")[1]}/donate`}>
+          {getInvolvedTexts.button2}
+        </Link>
+      </Button>
+    </li>
 
-                </li>
-              </ul>
-            </div>
+    <li>
+      <span>{getInvolvedTexts.how3}</span>
+    </li>
+
+    <li>
+      <span>{getInvolvedTexts.how4}</span>
+    </li>
+  </ul>
+</div>
           </div>
 
        
 
-          {/* Donate Button */}
-          <Button className="mt-12 rounded-[6px] px-6 py-3 text-[17px] shadow-md">
-            <Link href={`/${pathname.split("/")[1]}/donate`}>
-              {getInvolvedTexts.button}
-            </Link>
-          </Button>
+         
         </section>
 
         {/* Testimonial Slider */}

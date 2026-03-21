@@ -416,12 +416,12 @@ export const Martyrs2 = [
   {
     name: { en: "H.E. Colonel Yalemzewd Tessema", am: "ክቡር ኮሎኔል ያለምዘውድ ተሰማ" },
     image: m50,
-    description: { en: "Born on May 18, 1918, in Sekela Woreda, Kola and Dega Damot District, Gojjam Province. Colonel Yalem Zewde served for 28 years in various distinguished military positions both domestically and internationally. From 1964 to 1966, he held the position of Commander of the Air Force.", am: "ክቡር ኮሎኔል ያለምዘውድ ተሰማ ግንቦት 10 ቀን 1918 ዓ.ም. (እ.አ.አ. 1926) በጎጃም ክፍለ ሀገር በቆላና ደጋ ዳሞት አውራጃ በሰከላ ወረዳ ተወለዱ። ኮሎኔል ያለምዘውድ በአገር ውስጥና በዓለም አቀፍ ደረጃ በተለያዩ ከፍተኛ ወታደራዊ የኃላፊነት ቦታዎች ለ28 ዓመታት አገልግለዋል። ከ1964 እስከ 1966 ዓ.ም. (እ.አ.አ. 1972–1974) የአየር ኃይል አዛዥ በመሆን አገልግለዋል።" }
+    description: { en: "Born on May 18, 1918, in Sekela Woreda, Kola and Dega Damot District, Gojjam Province. Colonel Yalem Zewde served for 28 years in various distinguished military positions both domestically and internationally. From 1964 to 1966, he held the position of Commander of the Air Force.", am: "ክቡር ኮሎኔል ያለምዘውድ ተሰማ ግንቦት 10 ቀን 1918 ዓ.ም. (እ.አ.አ. 1926) በጎጃም ጠቅላይ ግዛት በቆላና ደጋ ዳሞት አውራጃ በሰከላ ወረዳ ተወለዱ። ኮሎኔል ያለምዘውድ በአገር ውስጥና በዓለም አቀፍ ደረጃ በተለያዩ ከፍተኛ ወታደራዊ የኃላፊነት ቦታዎች ለ28 ዓመታት አገልግለዋል። ከ1964 እስከ 1966 ዓ.ም. (እ.አ.አ. 1972–1974) የአየር ኃይል አዛዥ በመሆን አገልግለዋል።" }
   },
   {
     name: { en: "H.E. Colonel Tasew Mojo", am: "ክቡር ኮሎኔል ጣሰው ሞጆ" },
     image: m51,
-    description: { en: "Born in 1912 in Mijar District, Shewa Province. Colonel Tasew Mojo was a brave and honorable freedom fighter, who served his country with distinction. From 1935 onward, he faithfully served in the imperial palace, and later held positions in the civil administration.", am: "ክቡር ኮሎኔል ጣሰው ሞጆ በ1912 ዓ.ም. (እ.አ.አ. 1920) በሸዋ ክፍለ ሀገር በምንጃር ወረዳ ተወለዱ። ኮሎኔል ጣሰው ሞጆ አገራቸውን በታላቅ ብቃት ያገለገሉ ጀግናና የተከበሩ አርበኛ ነበሩ። ከ1935 ዓ.ም. (እ.አ.አ. 1943) ጀምሮ በቤተ መንግሥት ውስጥ በታማኝነት ያገለገሉ ሲሆን፣ ቆየት ብሎም በሲቪል አስተዳደር ውስጥ በተለያዩ የኃላፊነት ቦታዎችን ሠርተዋል።" }
+    description: { en: "Born in 1912 in Mijar District, Shewa Province. Colonel Tasew Mojo was a brave and honorable freedom fighter, who served his country with distinction. From 1935 onward, he faithfully served in the imperial palace, and later held positions in the civil administration.", am: "ክቡር ኮሎኔል ጣሰው ሞጆ በ1912 ዓ.ም. (እ.አ.አ. 1920) በሸዋ ጠቅላይ ግዛት በምንጃር ወረዳ ተወለዱ። ኮሎኔል ጣሰው ሞጆ አገራቸውን በታላቅ ብቃት ያገለገሉ ጀግናና የተከበሩ አርበኛ ነበሩ። ከ1935 ዓ.ም. (እ.አ.አ. 1943) ጀምሮ በቤተ መንግሥት ውስጥ በታማኝነት ያገለገሉ ሲሆን፣ ቆየት ብሎም በሲቪል አስተዳደር ውስጥ በተለያዩ የኃላፊነት ቦታዎችን ሠርተዋል።" }
   },
   {
     name: { en: "Major Berhanu Metcha", am: "ሻለቃ ብርሃኑ ሜጫ" },

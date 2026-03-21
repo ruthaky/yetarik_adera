@@ -10,6 +10,25 @@ import img7 from "@/public/asset/New Inagural gala1.jpeg";
 import img8 from "@/public/asset/New Inagural gala2.jpeg";
 import img10 from "@/public/asset/New Inagural gala3.jpeg";
 import img9 from "@/public/asset/octoberevent3.jpeg";
+import bs1 from "@/public/asset/booksigning1.jpeg";
+import bs2 from "@/public/asset/booksigning11.jpeg";
+import bs3 from "@/public/asset/booksigning111.jpeg";
+import bs4 from "@/public/asset/booksigning2.jpeg";
+import bs5 from "@/public/asset/booksigning3.jpeg";
+import ar1 from "@/public/asset/armenia1.jpeg";
+import ar2 from "@/public/asset/armenia12.jpeg";
+import ar3 from "@/public/asset/armenia2.jpeg";
+import ar4 from "@/public/asset/armenia3.jpeg";
+import fif1 from "@/public/asset/50th1.jpeg";
+import fif2 from "@/public/asset/50th2.jpeg";
+import fif3 from "@/public/asset/50th3.jpeg";
+import fif4 from "@/public/asset/50th4.jpeg";
+import fif5 from "@/public/asset/50th5.jpeg";
+import fif6 from "@/public/asset/50th6.jpeg";
+import hab1 from "@/public/asset/habte11.jpeg";
+import hab2 from "@/public/asset/hab1.jpeg";
+import hab3 from "@/public/asset/habte2.jpeg";
+import hab4 from "@/public/asset/habte3.jpeg";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
@@ -43,6 +62,34 @@ interface Event {
 }
 
 const upcoming_events: Event[] = [
+ 
+];
+
+const previous_events: Event[] = [
+  {
+    date: "14",
+    month: "MARCH",
+    // year: "2025",
+    images: [hab1, hab2, hab3, hab4], 
+    title: "Launching of Prime Minister Aklilu Habtewold book Written by Dr. Selamawit Tadesse",
+    location: " - ",
+  //remove time
+    description:
+      " - ",
+ link:"https://yetarikadera.rsvpify.com/",
+    },
+  {
+    date: "8",
+    month: "MARCH",
+    // year: "2025",
+    images: [ar1, ar2, ar3, ar4], 
+    title: "The centuries old relationship and contributions of the Armenian community in Ethiopia ",
+    location: " - ",
+  //remove time
+    description:
+      "On March 8,2026, the Embassy of the Republic of Armenia, together with Yetarik Adera, organized a commemorative event honoring the longstanding friendship between Armenia and Ethiopia and celebrating the significant contributions of Armenians to Ethiopia’s modernization over many centuries. During the event, Mr Vartkes  Nalbandian delivered a remarkable and educational presentation on his shared history and held a book signing for his book, I want to Die with a flag.",
+ link:"https://yetarikadera.rsvpify.com/",
+    },
   {
     date: "22",
     month: "NOVEMBER",
@@ -55,26 +102,23 @@ const upcoming_events: Event[] = [
       " ",
  link:"https://yetarikadera.rsvpify.com/",
     },
-];
-
-const previous_events: Event[] = [
   {
     date: "4",
-    month: "october",
+    month: "OCTOBER",
     // year: "2025",
-    images: [img9, img9,img9 ], // three images
+    images: [bs3, bs5,img9,bs4,bs2,bs1 ], // three images
     title: "Ato Tekalign Gedamu book signing",
     location: "Addis Ababa, Ethiopia,  National Archives and Libraries (Wemezeker)",
      //remove time
     description:
-      " ",
+      "On October 4, 2025, Yetarik Adera organized a book signing event for Ato Tekalign  Gedamu to mark the launch of the Amharic version of his memoir, Republican on the Throne. Ato Tekalign is a highly experienced economist, who served HIM, Derg and EPRDF.",
       link:"#",
     },
   {
     date: "23",
     month: "NOVEMBER",
     // year: "2025",
-    images: [img1, img2, img3], // three images
+    images: [img1, img2, img3, fif1, fif2, fif3, fif6], // three images
     title: "The 50th memorial anniversary of the Martyrs",
     location: "Addis Ababa, Ethiopia and DMV",
    //remove time
@@ -87,7 +131,7 @@ const previous_events: Event[] = [
     month: "NOVEMBER",
     images: [img4, img5,img6 ],
     // year: "2025", // three images
-    title: "Event 2",
+    title: "Yetarik Adera Inaugural",
     location: "Addis Ababa, Ethiopia and DMV",
  
     description:
@@ -140,7 +184,7 @@ export default function UpcomingEvents ({
         className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic py-12 py-16 pt-[70px] text-[#4A2C13] flex flex-col items-start`}
       >
                 {/* Upcoming section title */}
-         <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
+         {/* <div className="text-center md:mb-[30px] mt-[50px] px-6 md:px-20">
           <h2
             className={`${arapey.variable} font-arapey text-3xl md:text-5xl `}
           >
@@ -152,7 +196,7 @@ export default function UpcomingEvents ({
             transition={{ duration: 1, delay: 0 }}
             className="h-[2px] w-[300px] lg:w-[900px] bg-primary mt-1"
           />
-        </div> 
+        </div>  */}
             {/* Loop through events */}
             <div className="md:space-y-16 px-4 sm:px-6 md:px-20 w-full">
           {upcoming_events.map((event, index) => (
