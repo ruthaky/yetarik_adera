@@ -29,6 +29,10 @@ import hab1 from "@/public/asset/habte11.jpeg";
 import hab2 from "@/public/asset/hab1.jpeg";
 import hab3 from "@/public/asset/habte2.jpeg";
 import hab4 from "@/public/asset/habte3.jpeg";
+import inaug1 from "@/public/asset/inag22.jpeg";
+import inaug2 from "@/public/asset/inaug3.jpeg";
+import inaug3 from "@/public/asset/inaug11.jpeg";
+
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
@@ -87,14 +91,14 @@ const previous_events: Event[] = [
     location: " - ",
   //remove time
     description:
-      "On March 8,2026, the Embassy of the Republic of Armenia, together with Yetarik Adera, organized a commemorative event honoring the longstanding friendship between Armenia and Ethiopia and celebrating the significant contributions of Armenians to Ethiopia’s modernization over many centuries. During the event, Mr Vartkes  Nalbandian delivered a remarkable and educational presentation on his shared history and held a book signing for his book, I want to Die with a flag.",
+      "On March 8, 2026, the Embassy of the Republic of Armenia, together with Yetarik Adera, organized a commemorative event honoring the longstanding friendship between Armenia and Ethiopia and celebrating the significant contributions of Armenians to Ethiopia’s modernization over many centuries. During the event, the Ambassador of the Republic of Armenia and other distinguished guests delivered remarks highlighting the strong relationship between the two countries. Mr. Vartkes Nalbandian presented an insightful and educational account of this shared history and held a book signing for his book, I Want to Die with a Flag. The event was attended by ambassadors from ten different countries, demonstrating broad diplomatic support for Yetarik Adera’s efforts to recognize and promote international camaraderie and historical ties with Ethiopia.",
  link:"https://yetarikadera.rsvpify.com/",
     },
   {
     date: "22",
     month: "NOVEMBER",
     // year: "2025",
-    images: [img7, img8, img10], 
+    images: [inaug1, inaug2, inaug3], 
     title: "Inaugural Gala",
     location: "The Waterford, 6715 Commerce Street, Springfield VA 22150",
   //remove time
