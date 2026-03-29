@@ -391,7 +391,7 @@ export const Martyrs2 = [
   {
     name: { en: "H.E. M/General Tafesse Lemma", am: "ክቡር ሜጀር ጄነራል ታፈሰ ለማ" },
     image: m45,
-    description: { en: "Born on Hamle 29, 1921. During his military and service career, he served abroad in military missions and under Emperor Haile Selassie’s command, fulfilling his duties with distinction. From Yekatit 66 to Nehase 66 (1966), he held the position of Chief Commander of the Imperial Guard, executing his high responsibilities with integrity and dedication.", am: "ክቡር ሜጀር ጄነራል ታፈሰ ለማ በሐምሌ 29 ቀን 1921 ዓ.ም. (እ.አ.አ. 1929) ተወለዱ። በውትድርና አገልግሎት ዘመናቸው ወደ ውጭ አገር በመሄድ በሚደረጉ ወታደራዊ ተልእኮዎች በቀዳማዊ ኃይለ ሥላሴ ትእዛዝ ሥር በመሆን ተግባራቸውን በላቀ ሁኔታ ተወጥተዋል። ከየካቲት 1966 ዓ.ም. እስከ ነሐሴ 1966 ዓ.ም. ድረስ የክብር ዘበኛ ጠቅላይ አዛዥ በመሆን የተጣለባቸውን ከፍተኛ ኃላፊነት በታማኝነትና በትጋት ተወጥተዋል።" }
+    description: { en: "Born on August 05, 1929. During his military and service career, he served abroad in military missions and under Emperor Haile Selassie’s command, fulfilling his duties with distinction. From Yekatit 66 to August 1974, he held the position of Chief Commander of the Imperial Guard, executing his high responsibilities with integrity and dedication.", am: "ክቡር ሜጀር ጄነራል ታፈሰ ለማ በሐምሌ 29 ቀን 1921 ዓ.ም. (እ.አ.አ. 1929) ተወለዱ። በውትድርና አገልግሎት ዘመናቸው ወደ ውጭ አገር በመሄድ በሚደረጉ ወታደራዊ ተልእኮዎች በቀዳማዊ ኃይለ ሥላሴ ትእዛዝ ሥር በመሆን ተግባራቸውን በላቀ ሁኔታ ተወጥተዋል። ከየካቲት 1966 ዓ.ም. እስከ ነሐሴ 1966 ዓ.ም. ድረስ የክብር ዘበኛ ጠቅላይ አዛዥ በመሆን የተጣለባቸውን ከፍተኛ ኃላፊነት በታማኝነትና በትጋት ተወጥተዋል።" }
   },
   {
     name: { en: "H.E. B/General Wendemu Abebe", am: "ክቡር ብርጋዴር ጄነራል ወንድሙ አበበ" },
