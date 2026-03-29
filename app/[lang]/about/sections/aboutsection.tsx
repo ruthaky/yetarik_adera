@@ -189,7 +189,7 @@ const AboutPage = ({
           <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px] text-[#4A2C13]">{aboutpageTexts.Purposeheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
-            <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936] text-[#4A2C13]  px-10 h-full">
+            <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936] text-[#4A2C13] px-10 h-full">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
                 <p className="font-bold">{aboutpageTexts.purpose1}</p>
                 <p>
@@ -205,14 +205,14 @@ const AboutPage = ({
             </div>
             {/* Second Row */}
             <div className="grid md:grid-cols-2  md-2 md:gap-8  border-b border-[#b07936] px-10 h-full flex items-center">
-              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
+              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] text-[#4A2C13] ">
                 <p className="font-bold">{aboutpageTexts.purpose3}</p>
                 <p>
                   {aboutpageTexts.purpose3note}
                 </p>
               </div>
-              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] md:border-none">
-                <p className="font-bold">{aboutpageTexts.purpose4}</p>
+              <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] md:border-none text-[#4A2C13]">
+                <p className="font-bold text-[#4A2C13]">{aboutpageTexts.purpose4}</p>
                 <p>
             {aboutpageTexts.purpose4note}
                 </p>
