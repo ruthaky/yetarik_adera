@@ -63,16 +63,16 @@ export default function GetInvolvedPage({
   return (
     <>
       <main
-        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic pt-24 md:pt-28`}
+        className={`${notoSerifEthiopic.variable} text-[#4A2C13] font-notoSerifEthiopic pt-24 md:pt-28`}
       >
         {/* Header Section */}
         <section className="text-center w-[90%] md:w-[80%] mx-auto flex flex-col justify-center items-center pb-20">
           {/* Headings */}
           <div className="px-6 md:text-start mb-8 md:mb-14">
             <h1
-              className={`${arapey.variable} font-arapey text-3xl md:text-[48px] font-light leading-snug`}
+              className={`${arapey.variable} text-[#4A2C13] font-arapey text-3xl md:text-[48px] font-light leading-snug`}
             >
-              <div className="inline-block">
+              <div className="inline-block text-[#4A2C13]">
                 <span>{getInvolvedTexts.heading1}</span>
                 <motion.div
                   initial={{ width: 0 }}
@@ -95,8 +95,8 @@ export default function GetInvolvedPage({
           </div>
 
           {/* Description */}
-          <div className="text-black leading-relaxed text-left space-y-6 md:text-[17px]">
-            <p className="text-xl font-bold text-gray-900">
+          <div className=" leading-relaxed text-left space-y-6 md:text-[17px]">
+            <p className="text-xl font-bold ">
             {getInvolvedTexts.fourpillar}
             </p>
             <p>
@@ -148,7 +148,7 @@ export default function GetInvolvedPage({
 {getInvolvedTexts.pillar4desc}
               </p>
             
-            </div>   <div className="text-black">
+            </div>   <div className="">
   <h2 className="font-bold text-2xl mb-4 mt-6">
     {getInvolvedTexts.how}
   </h2>
@@ -157,7 +157,7 @@ export default function GetInvolvedPage({
     <li className="flex items-center gap-3">
       <span>{getInvolvedTexts.how1}</span>
       <Button className="rounded-md px-4 py-2 text-sm shadow-sm">
-        <Link href={`/${pathname.split("/")[1]}/donate`}>
+        <Link href={`/${pathname.split("/")[1]}/contact-us`}>
           {getInvolvedTexts.button1}
         </Link>
       </Button>

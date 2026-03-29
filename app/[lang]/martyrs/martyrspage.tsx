@@ -11,7 +11,7 @@ import { IconSearch } from "@tabler/icons-react"
 import { Arapey, Noto_Serif_Ethiopic } from 'next/font/google'
 import img5 from "@/public/asset/asset2.jpeg";
 import img8 from "@/public/asset/asset14.jpeg";
-import img12 from "@/public/asset/asset17.jpeg";
+import img12 from "@/public/asset/martyrsbw.jpg";
 import img14 from "@/public/asset/asset6.jpeg";
 import img6 from "@/public/asset/martyrs101.jpeg";
 import img3 from "@/public/asset/martyrs102.jpeg";
@@ -70,7 +70,7 @@ interface Martyrs3 {
   };
 }
 
-const images = [img2, img12, img5,img3,img6,img4, img8, img14];
+const images = [img12, img5,img6,img4, img8, img14];
 
 export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
   const [showMartyrs, setShowMartyrs] = useState(false);
@@ -147,7 +147,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
         <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] leading-snug inline-block`}>
           {/* Line 1 */}
           <div className="inline-block">
-            <span className="">{martyrsTexts.introheading1}</span>
+            <span className="text-[#4A2C13]">{martyrsTexts.introheading1}</span>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
@@ -158,7 +158,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
           <br />
           {/* Line 2 */}
           <div className="inline-block pl-12 sm:pl-10 lg:pl-[80px]">
-            <span className="">{martyrsTexts.introheading2}</span>
+            <span className="text-[#4A2C13]">{martyrsTexts.introheading2}</span>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
@@ -171,7 +171,7 @@ export default function MartyrsPage({ martyrsTexts }: { martyrsTexts: any }) {
     </div>
 
     {/* Intro Text */}
-    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[16px] leading-relaxed w-[90%] md:w-[80%] text-left`}>
+    <div className={`${notoSerifEthiopic.variable} text-[#4A2C13] font-notoSerifEthiopic space-y-4 sm:space-y-6 text-[16px] leading-relaxed w-[90%] md:w-[80%] text-left`}>
       <p>
       {martyrsTexts.paragraph1}
 

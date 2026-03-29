@@ -203,7 +203,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
         </div>
 
   {/* Header */}
-  <div className="text-left mb-10 mt-16 flex flex-col justify-center md:justify-start items-center w-[90%] md:w-2/3">
+  <div className="text-left mb-10 mt-16 flex flex-col justify-center md:justify-start items-center w-[90%] md:w-2/3 text-[#4A2C13]">
           <section className="pl-0 pb-12 text-center md:text-left w-[300px] ">
             <h1 className={`${arapey.variable} font-arapey text-3xl md:text-[45px] font-light leading-snug inline-block`}>
               <div className="inline-block pr-14 md:pr-0">

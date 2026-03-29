@@ -61,7 +61,7 @@ export default function HeroSection({ heroTexts }: { heroTexts: any }) {
 
   return (
     <section
-      className={`${notoSerifEthiopic.variable} pt-32 pb-12 md:pt-0 md:pb-0 font-notoSerifEthiopic text-center px-4 md:h-screen flex flex-col items-center justify-center `}  //mt-[50px] pt-16 sm:pt-[100px]
+      className={`${notoSerifEthiopic.variable} pt-32 pb-12 md:pt-0 md:pb-0 font-notoSerifEthiopic text-center px-4 md:h-screen flex flex-col items-center justify-center text-[#4A2C13]`}  //mt-[50px] pt-16 sm:pt-[100px]
     >
       {/* Heading */}
       <div className="inline-block mb-2 md:mt-20">

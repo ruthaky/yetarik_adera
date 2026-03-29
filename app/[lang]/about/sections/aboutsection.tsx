@@ -5,9 +5,11 @@ import Image from "next/image";
 
 // import img1 from "@/public/asset/lineofjudah.svg";
 import img2 from "@/public/asset/newimg10.jpeg";
-import img3 from "@/public/asset/imgabout3.png";
+
+//bw
+import img3 from "@/public/asset/legeharbw.jpg";
 import img4 from "@/public/asset/asset3.jpeg";
-import img5 from "@/public/asset/asset10.jpeg";
+import img5 from "@/public/asset/saxophpne.jpg";
 import img7 from "@/public/asset/bankbw.jpg";
 import img8 from "@/public/asset/school 2.jpg";
 import img9 from "@/public/asset/cinemabw.jpg";
@@ -15,10 +17,13 @@ import img10 from "@/public/asset/asset11.jpeg";
 // import img11 from "@/public/asset/newimg9.jpeg";
 import img12 from "@/public/asset/aviation.jpg";
 import img13 from "@/public/asset/newimg8.jpeg";
-import img14 from "@/public/asset/line.jpg";
+import img14 from "@/public/asset/lionbw.jpg";
 import img15 from "@/public/asset/unradio.jpg";
 import img16 from "@/public/asset/motor.jpg";
-import img17 from "@/public/asset/newaboutus.jpeg";
+
+//about us first image
+import img17 from "@/public/asset/newaboutbw.jpg";
+
 import img18 from "@/public/asset/4kilo.jpeg";
 // import img19 from "@/public/asset/asset12.jpeg";
 
@@ -62,7 +67,7 @@ const AboutPage = ({
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   return (
         <MantineProvider>
-    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-[#2b2a28] flex flex-col items-center `}>
+    <div className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-[#4A2C13] flex flex-col items-center `}>
       
 
       {/* Hero Section */}
@@ -181,10 +186,10 @@ const AboutPage = ({
       {/* Featured Section */}
       <div className="flex items-center justify-center  w-full">
         <div className="text-[#2b2a28] flex flex-col justify-center  md:w-[80%]  py-8">
-          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px]">{aboutpageTexts.Purposeheading}</h2>
+          <h2 className="text-xl flex items-end font-semibold border-l-2 border-[#b07936] pl-2 md:pl-4 mx-10 pb-4 h-[50px] text-[#4A2C13]">{aboutpageTexts.Purposeheading}</h2>
           <div className="border-t border-[#b07936]">
             {/* First Row */}
-            <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936]   px-10 h-full">
+            <div className="grid md:grid-cols-2 md-2 md:gap-8 md:border-b border-[#b07936] text-[#4A2C13]  px-10 h-full">
               <div className="h-full w-full p-2 md:p-4  border-l-2 border-[#b07936] ">
                 <p className="font-bold">{aboutpageTexts.purpose1}</p>
                 <p>

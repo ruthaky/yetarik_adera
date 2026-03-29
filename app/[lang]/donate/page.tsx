@@ -84,7 +84,7 @@ const DonationSection = () => {
     <>
       <Navbar />
       <section
-        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-black px-4 sm:px-6 py-12 pt-24 md:pt-32 flex items-center`}
+        className={`${notoSerifEthiopic.variable} font-notoSerifEthiopic text-black px-4 sm:px-6 py-12 pt-24 md:pt-32 flex items-center text-[#4A2C13]`}
       >
         <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Image Section */}
@@ -101,7 +101,7 @@ const DonationSection = () => {
           <div className="bg-white p-6 sm:p-8 rounded-md w-full md:w-1/2 space-y-6 border border-[#B27C3A]">
             {/* Amount Section */}
             <div>
-              <h2 className="text-lg sm:text-xl mb-4 border-b-2 border-[#B27C3A] pb-1">
+              <h2 className="text-lg sm:text-xl mb-4 border-b-2 border-[#B27C3A] pb-1 text-[#4A2C13]">
                Donate in Birr
               </h2>
               <div className="space-y-4">

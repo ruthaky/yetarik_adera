@@ -3,7 +3,7 @@ import React from "react";
 import logo from "@/public/asset/yalogo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Noto_Serif_Ethiopic } from "next/font/google";
 
 const notoSerifEthiopic = Noto_Serif_Ethiopic({
@@ -14,7 +14,6 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
 });
 
 export default function Footer() {
-  const router = useRouter();
   const pathname = usePathname();
   const currentLang = pathname.split("/")[1] || "en"; // detect language
 
@@ -28,7 +27,7 @@ export default function Footer() {
       privacy: "Privacy Policy",
       accessibility: "Accessibility",
       legal: "Legal",
-      copyright: "Design with love © yetarikadera 2024. All rights reserved",
+      copyright: "Designed with love © yetarikadera 2026. All rights reserved",
       Home: "Home",
       About: "About",
       Martyrs: "Martysrs",
@@ -82,15 +81,15 @@ export default function Footer() {
             <p className="py-2">yetarikadera@gmail.com</p>
             <p className="py-2">0928291967</p>
             <div className="flex space-x-6 mt-2">
-              <a href="/">{t.Home}</a>
-              <a href="/about">{t.About}</a>
-              <a href="/martyrs">{t.Martyrs}</a>
-              <a href="members">{t.Memebers}</a>
+              <Link href={`/${currentLang}`}>{t.Home}</Link>
+              <Link href={`/${currentLang}/about`}>{t.About}</Link>
+              <Link href={`/${currentLang}/martyrs`}>{t.Martyrs}</Link>
+              <Link href={`/${currentLang}/members`}>{t.Memebers}</Link>
             </div>
           </div>
           <div className="flex flex-col mt-4 gap-4 md:mt-0">
             <div className="flex gap-2 w-full md:justify-end">
-              <Link href="/donate"><button  className="bg-primary text-white px-6 py-2 rounded-[4px]">
+              <Link href="donate"><button  className="bg-primary text-white px-6 py-2 rounded-[4px]">
                 {t.donate}
               </button></Link>
             </div>
