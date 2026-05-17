@@ -121,7 +121,7 @@ const members: BoardMember[] = [
     }
   },
   {
-    name: { en: "Tegist Worku", am: "ትግስት ወርቁ" },
+    name: { en: "Tegist Worku", am: "ትዕግስት ወርቁ" },
     title: { en: "Board Member", am: "የቦርድ አባል" },
     image: img5,
     description: {
