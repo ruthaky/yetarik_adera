@@ -332,7 +332,7 @@ export default function BoardMembers({ memberTexts }: { memberTexts: any }) {
     <br></br>
     {memberTexts.paragraph7}
     </p>
-    <div className="flex flex-col gap-2 w-full items-start py-8"><p className="">  {memberTexts.thankyou}</p>
+    <div className="flex flex-col gap-2 w-full items-start pb-8"><p className="">  {memberTexts.thankyou}</p>
    <p className="font-bold">  {memberTexts.seble}</p>
    <p className="">  {memberTexts.role}
    </p></div>

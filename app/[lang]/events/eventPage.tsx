@@ -44,6 +44,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/shared/footer/footer";
 import { Arapey, Noto_Serif_Ethiopic } from "next/font/google";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // Arapey for headers
 const arapey = Arapey({
@@ -60,15 +61,19 @@ const notoSerifEthiopic = Noto_Serif_Ethiopic({
   variable: "--font-noto-ethiopic",
 });
 
+type LocalizedText = {
+  en: string;
+  am: string;
+};
+
 interface Event {
-  date: string;
-  month: string;
+  date: LocalizedText;
+  month: LocalizedText;
   images: any[]; // now holds multiple images
-  title: string;
-  location: string;
-  
-  description: string;
-  link:string;
+  title: LocalizedText;
+  location: LocalizedText;
+  description: LocalizedText;
+  link: string;
 }
 
 const upcoming_events: Event[] = [
@@ -77,78 +82,117 @@ const upcoming_events: Event[] = [
 
 const previous_events: Event[] = [
   {
-    date: "14",
-    month: "MARCH",
-    // year: "2025",
-    images: [hab1, hab2, hab3, hab4,hab5, hab6], 
-    title: "Launching of Prime Minister Aklilu Habtewold book Written by Dr. Selamawit Tadesse",
-    location: "",
-  //remove time
-    description:
-      "On March 14,2026, Yetarik Adera hosted the launch of a compelling historical fiction work on the life of Prime Minister Aklilu, authored by Dr. Selamawit Tadesse, highlighting an important chapter in Ethiopia’s history.",
- link:"https://yetarikadera.rsvpify.com/",
+    date: { en: "14", am: "5" },
+    month: { en: "MARCH", am: "መጋቢት" },
+    images: [hab1, hab2, hab3, hab4, hab5, hab6],
+    title: {
+      en: "Launching of Prime Minister Aklilu Habtewold book Written by Dr. Selamawit Tadesse",
+      am: "በዶክተር ሰላማዊት ታደሰ የተጻፈው የጠቅላይ ሚኒስትር አክሊሉ ሃብተወልድ መጽሐፍ ምርቃት",
     },
+    location: { en: "", am: "" },
+    description: {
+      en: "On March 14,2026, Yetarik Adera hosted the launch of a compelling historical fiction work on the life of Prime Minister Aklilu, authored by Dr. Selamawit Tadesse, highlighting an important chapter in Ethiopia’s history.",
+      am: "መጋቢት 5 ቀን 2018 ዓ.ም. የታሪክ አደራ በዶክተር ሰላማዊት ታደሰ የተጻፈውንና የጠቅላይ ሚኒስትር አክሊሉን ሃብተወልድን የሕይወት ታሪክ እና ሥራዎች የሚተርከውን ድንቅ ታሪካዊ-ልቦለድ መጽሐፍ ምርቃት አካሂዷል። ይህ መጽሐፍ በኢትዮጵያ ታሪክ ውስጥ ተዘንግቶ የቆየን አንድን ወሳኝ ምዕራፍ በልዩ ሁኔታ የሚያጎላ ነው።",
+    },
+    link: "https://yetarikadera.rsvpify.com/",
+  },
   {
-    date: "8",
-    month: "MARCH",
-    // year: "2025",
-    images: [ar1, ar2, ar3, ar4, ar5], 
-    title: "The centuries old relationship and contributions of the Armenian community in Ethiopia ",
-    location: "",
-  //remove time
-    description:
-      "On March 8, 2026, the Embassy of the Republic of Armenia, together with Yetarik Adera, organized a commemorative event honoring the longstanding friendship between Armenia and Ethiopia and celebrating the significant contributions of Armenians to Ethiopia’s modernization over many centuries. During the event, the Ambassador of the Republic of Armenia and other distinguished guests delivered remarks highlighting the strong relationship between the two countries. Mr. Vartkes Nalbandian presented an insightful and educational account of this shared history and held a book signing for his book, I Want to Die with a Flag. The event was attended by ambassadors from ten different countries, demonstrating broad diplomatic support for Yetarik Adera’s efforts to recognize and promote international camaraderie and historical ties with Ethiopia.",
- link:"https://yetarikadera.rsvpify.com/",
+    date: { en: "8", am: "29" },
+    month: { en: "MARCH", am: "የካቲት" },
+    images: [ar1, ar2, ar3, ar4, ar5],
+    title: {
+      en: "The centuries old relationship and contributions of the Armenian community in Ethiopia ",
+      am: "የዘመናት ታሪክ ያለው የኢትዮጵያና የአርሜኒያ ግንኙነት እና በኢትዮጵያ ይኖሩ የነበሩ አርሜኒያውያን ለኢትዮጵያ ያበረከቱት አስተዋጽኦ",
     },
+    location: { en: "", am: "" },
+  description: {
+    en: `On March 8, 2026, the Embassy of the Republic of Armenia, together with Yetarik Adera, organized a commemorative event honoring the longstanding friendship between Armenia and Ethiopia and celebrating the significant contributions of Armenians to Ethiopia’s modernization over many centuries.
+  
+  During the event, the Ambassador of the Republic of Armenia and other distinguished guests delivered remarks highlighting the strong relationship between the two countries. Mr. Vartkes Nalbandian presented an insightful and educational account of this shared history and held a book signing for his book, I Want to Die with a Flag.
+  
+  The event was attended by ambassadors from ten different countries, demonstrating broad diplomatic support for Yetarik Adera’s efforts to recognize and promote international camaraderie and historical ties with Ethiopia.`,
+    
+    am: `የካቲት 29 ቀን 2018 ዓ.ም. የአርሜኒያ ሪፐብሊክ ኤምባሲ ከታሪክ አደራ ጋር በመተባበር በአርሜኒያ እና በኢትዮጵያ መካከል ያለውን የቆየ ወዳጅነት የሚዘክር እና አርሜኒያውያን በኢትዮጵያ የዘመናዊነት ሂደት ውስጥ ለዘመናት ያበረከቱትን ጉልህ አስተዋጽኦ የሚያወሳ የመታሰቢያ መርሃ ግብር አዘጋጅተው ነበር።\n\nበዝግጅቱ ወቅት የአርሜኒያ ሪፐብሊክ መንግሥት የኢትዮጵያ አምባሳደር እና ሌሎች ጥሪ የተደረገላቸው ታዋቂ እንግዶች በሁለቱ አገራት መካከል ያለውን ጠንካራ ግንኙነት የሚያጎላ ንግግር አድርገዋል።ሚስተር ቫርትኬዝ ናልባንዲያን ይህንን የጋራ ታሪክ የተመለከተ ጥልቅ እና ትምህርታዊ ገለጻ ያቀረቡ ሲሆን "ባንዲራ ሳይኖረኝ እንዳልሞት" የሚል ርዕስ ተሰጥቶት የተተረጐመው መጽሓፋቸው ላይ ፊርማ የማስፈረም እና ከደራሲው ጋር ፎቶ የመነሳት ሥነ ሥርዓት ተካሂዷል። (የመጽሓፉ የእንግሊዘኛ ርዕስ “Armenians of Ethiopia: A Compendium - Gondar, Adua, Ankober, Harar, Dire Dawa, and Addis Ababa (1515–2020)” ሲሰኝ የታተመውም እ.ኣ.ኣ. በ2023 ነው።)
+  
+  በዝግጅቱ ላይ ከአስር የተለያዩ አገራት የመጡ አምባሳደሮች የተገኙ ሲሆን፣ ይህም የታሪክ አደራ ዓለም አቀፍ እውቅና እንዲኖረውና እንዲሁም ከዓለም አቀፉ ማኅበረሰብ ጋር ወዳጅነት እንዲመሠረት እድል ይፈጥርለታል። በተጨማሪም የተለያዩ አገራት ከኢትዮጵያ ጋር ያላቸውን ታሪካዊ ትስስር ለማስታወስ ብሎም እንዲጐለብት ለማድረግ፣ የታሪክ አደራ ላደረገው ጥረት፣ የተሰጠ ዲፕሎማሲያዊ ድጋፍ ነው።`,
+  },
+  
+  link: "https://yetarikadera.rsvpify.com/",
+},
   {
-    date: "22",
-    month: "NOVEMBER",
-    // year: "2025",
-    images: [img7, img8, inaug1, inaug2, inaug3], 
-    title: "Inaugural Gala",
-    location: "The Waterford, 6715 Commerce Street, Springfield VA 22150",
-  //remove time
-    description:
-      "On November 22,2025, Yetarik Adera hosted its fundraising gala in Virginia, USA to advance the development of the Archive Center. The event brought together a distinguished group of supporters and partners, where the Board presented a compelling vision of the Archive Center’s mission, current progress, and future priorities guided by its four strategic pillars.",
- link:"https://yetarikadera.rsvpify.com/",
+    date: { en: "22", am: "13" },
+    month: { en: "NOVEMBER", am: "ህዳር" },
+    images: [img7, img8, inaug1, inaug2, inaug3],
+    title: { en: "Inaugural Gala", am: "የመጀመሪያው የገቢ ማሰባሰቢያ ፕሮግራም" },
+    location: {
+      en: "The Waterford, 6715 Commerce Street, Springfield VA 22150",
+      am: "ዘ ዋተርፎርድ፣ 6715 ኮሜርስ ስትሪት፣ ስፕሪንግፊልድ ቨርጂኒያ 22150",
     },
+    description: {
+      en: "On November 22,2025, Yetarik Adera hosted its fundraising gala in Virginia, USA to advance the development of the Archive Center. The event brought together a distinguished group of supporters and partners, where the Board presented a compelling vision of the Archive Center’s mission, current progress, and future priorities guided by its four strategic pillars.",
+      am: "ህዳር 13 ቀን 2018 ዓ.ም.፣ የታሪክ አደራ፤ የታሪካዊ ሰነዶች ማከማቻ ማዕከሉን ለማቋቋም እንዲያግዝ በአሜሪካ ቨርጂኒያ ግዛት ታላቅ የገቢ ማሰባሰቢያ ፕሮግራም አዘጋጅቶ ነበር። በዝግጅቱ ላይ የታሪክ ኣደራ ደጋፊዎች እንዲሁም አጋሮች የተገኙ ሲሆን፣ የድርጅቱ የቦርድ አባላትም የማዕከሉን ተልዕኮ፣ ራዕይ፣  እስካሁን የተመዘገቡ ስኬቶችን እና ቀጣይ የትኩረት ኣቅጣጫዎችን በተመለከተ ኣሳማኝ የሆነ ገለፃ ያቀረቡ ሲሆን ይህንን ዓላማ ለማሳካት እንደሚተጉ ቃል ገብተዋል። ",
+    },
+    link: "https://yetarikadera.rsvpify.com/",
+  },
   {
-    date: "4",
-    month: "OCTOBER",
-    // year: "2025",
-    images: [bs2, bs3, bs5,img9,bs4,bs1 ], // three images
-    title: "Ato Tekalign Gedamu book signing",
-    location: "Addis Ababa, Ethiopia,  National Archives and Libraries (Wemezeker)",
-     //remove time
-    description:
-      "On October 4, 2025, Yetarik Adera organized a book signing event for Ato Tekalign  Gedamu to mark the launch of the Amharic version of his memoir, Republican on the Throne. Ato Tekalign is a highly experienced economist, who served HIM, Derg and EPRDF.",
-      link:"#",
+    date: { en: "4", am: "24" },
+    month: { en: "OCTOBER", am: "መስከረም" },
+    images: [bs2, bs3, bs5, img9, bs4, bs1],
+    title: {
+      en: "Ato Tekalign Gedamu book signing",
+      am: "የአቶ ተካልኝ ገዳሙ የመጽሐፍ ምርቃት እና የፊርማ ሥነ-ሥርዓት",
     },
+    location: {
+      en: "Addis Ababa, Ethiopia,  National Archives and Libraries (Wemezeker)",
+      am: "አአዲስ አበባ፤ የኢትዮጵያ ብሔራዊ ቤተ-መጻሕፍት እና ቤተ-መዛግብት ኤጀንሲ (ወመዘክር)",
+    },
+    description: {
+      en: `On October 4, 2025, Yetarik Adera organized a book signing event for Ato Tekalign Gedamu to mark the launch of the Amharic version of his memoir, Republican on the Throne. Ato Tekalign is a highly experienced economist who served during the reigns of HIM, the Derg, and the EPRDF.`,
+    
+      am: `መስከረም 24 ቀን 2018 ዓ.ም.፣ የታሪክ አደራ የአቶ ተካልኝ ገዳሙ "ሪፐብሊካኑ በነገሥታት ዙፋን ላይ" በሚል ርዕስ ከእንግሊዘኛ ወደ ኣማርኛ የተረጐሙት ግለ-ታሪካቸው ለንባብ መብቃቱን ምክንያት በማድረግ ከደራሲው ጋር ኣብሮ ፎቶ የመነሳት እና የመጽሓፍ ፊርማ ሥነ-ሥርዓት ኣዘጋጅቶ ነበር።
+    
+    ኣቶ ተካልኝ ይህንን መጽሓፍ “Republicans on the Throne: A Personal Account of Ethiopia's Modernization and Painful Quest for Democracy” በሚል ርዕስ በእንግሊዘኛ ቋንቋ ለመጀመሪያ ጊዜ ያሳተሙት እ.ኣ.ኣ. በ2011 ነበር። ኣቶ ተካልኝ በግርማዊ ቀዳማዊ ኃይለ ሥላሴ፣ በደርግ እና በኢህአዴግ ዘመነ መንግሥታት ውስጥ ያገለገሉ ከፍተኛ ልምድ ያላቸው የምጣኔ ሀብት ባለሙያ ናቸው።`,
+    },
+    link: "#",
+  },
   {
-    date: "23",
-    month: "NOVEMBER",
-    // year: "2025",
-    images: [img1, img2, img3, fif1, fif2, fif3, fif6], // three images
-    title: "The 50th memorial anniversary of the Martyrs",
-    location: "Addis Ababa, Ethiopia and DMV",
-   //remove time
-    description:
-      "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
- link:"https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
+    date: { en: "23", am: "14" },
+    month: { en: "NOVEMBER", am: "ህዳር" },
+    images: [img1, img2, img3, fif1, fif2, fif3, fif6],
+    title: {
+      en: "The 50th memorial anniversary of the Martyrs",
+      am: "የሰማዕታቱ 50ኛ ዓመት መታሰቢያ አዲስ አበባ፣ ኢትዮጵያ እና ዲ.ኤም.ቪ (DMV)",
     },
+    location: {
+      en: "Addis Ababa, Ethiopia and DMV",
+      am: "አዲስ አበባ፣ ኢትዮጵያ እና ዲኤምቪ",
+    },
+    description: {
+      en: "The 50th memorial anniversary of the Martyrs was commemorated worldwide. Family members, friends, and government representatives attended this significant event and expressed their respect in various ways.",
+      am: "50ኛው የሰማዕታት መታሰቢያ በዓለም ዙሪያ በድምቀት ታስቦ ውሏል። የቤተሰብ አባላት፣ ወዳጅ ዘመዶች እና የመንግሥት ተወካዮች በዚህ ታላቅ መርሃ ግብር ላይ በመገኘት አክብሮታቸውን በተለያዩ መንገዶች ገልጸዋል።",
+    },
+    link: "https://youtube.com/playlist?list=PL6QTP2ShnjE4T9QtTx481VrqgM5Nbf7-I&si=qWjIm7idXWuiHFeN",
+  },
   {
-    date: "23",
-    month: "NOVEMBER",
-    images: [img4, img5,img6,img44, img55,img66 ],
-    // year: "2025", // three images
-    title: "Yetarik Adera Inaugural",
-    location: "Addis Ababa, Ethiopia and DMV",
- 
-    description:
-      "Yetarik Adera inaugurated its archive center located on the 9th floor of the National Archives and Libraries (Wemezeker) compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation.The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.",
-      link:"#",
+    date: { en: "23", am: "23" },
+    month: { en: "NOVEMBER", am: "ህዳር" },
+    images: [img4, img5, img6, img44, img55, img66],
+    title: { en: "Yetarik Adera Inaugural", am: "የታሪክ አደራ ምረቃ " },
+    location: {
+      en: "Addis Ababa, Ethiopia and DMV",
+      am: "አዲስ አበባ፣ ኢትዮጵያ እና ዲ.ኤም.ቪ (DMV)",
     },
-   
+    description: {
+      en: `Yetarik Adera inaugurated its archive center located on the 9th floor of the National Archives and Libraries (Wemezeker) compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation. The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.`,
+    
+      am: `የታሪክ አደራ በብሔራዊ ቤተ-መጻሕፍት እና ቤተ-መዛግብት ኤጀንሲ (ወመዘክር) ግቢ ውስጥ በ9ኛው ፎቅ ላይ የሚገኘውን የሰነዶች እና መዛግብት ማዕከሉን መርቋል። የማዕከሉ ተልዕኮ ከጣሊያን ወረራ በኋላ በኢትዮጵያ የዘመናዊነት ጉዞ ውስጥ ትልቅ ለውጥ የታየበትን እና ከ1930 እስከ 1974 (እ.ኤ.አ.) ያለውን የታሪክ ወቅት ለመመርመር እና ለማጥናት ለሚፈልጉ አካላት እንደ መረጃ ማዕከል ማገልገል ነው።
+    
+    ማዕከሉ፤ በዚያ ዘመን መሠረታቸው የተጣለውንና ዛሬም ድረስ ለኢትዮጵያ ስኬቶች መሠረት የሆኑትን ምሰሶዎች ጎልተው እንዲታዩ ለማድረግ ይጥራል።
+    
+    በማዕከሉ ውስጥ የሚገኙት ክምችቶች ከቀ.ኃ.ሥ. መንግሥት ባለሥልጣናት ቤተሰቦች የተሰበሰቡ መጻሕፍትን፣ የባለሥልጣናቱ የግል ማስታወሻዎችን፣ ታሪካዊ እና ብርቅዬ ሰነዶችን፣ ፎቶግራፎችን እና የተለያዩ ታሪካዊ ቁሳቁሶችን ያካትታል።`,
+    },
+    link: "#",
+  },
 ];
 
 
@@ -158,6 +202,8 @@ export default function UpcomingEvents ({
   }: {
     eventTexts: any;
   })  {
+    const pathname = usePathname();
+    const lang = pathname.startsWith("/am") ? "am" : "en";
     const [upcomingIndexes, setUpcomingIndexes] = useState(
       Array(upcoming_events.length).fill(0)
     );
@@ -218,9 +264,9 @@ export default function UpcomingEvents ({
                 {/* Date */}
                 <div className="text-center text-xl font-bold w-16 md:w-auto">
                   <p className="text-sm border-b border-[#B1864F] pb-1">
-                    {event.month}
+                    {event.month[lang]}
                   </p>
-                  <p className="text-3xl text-black">{event.date}</p>
+                  <p className="text-3xl text-black">{event.date[lang]}</p>
                 </div>
 
                 {/* Image slideshow */}
@@ -236,7 +282,7 @@ export default function UpcomingEvents ({
                     >
                       <Image
                         src={event.images[upcomingIndexes[index]]}
-                        alt={event.title}
+                        alt={event.title[lang]}
                         fill
                         className="object-fill rounded-2xl border border-primary border-2"
                       />
@@ -246,7 +292,7 @@ export default function UpcomingEvents ({
                     <>
                       <button
                         type="button"
-                        aria-label={`Previous image for ${event.title}`}
+                        aria-label={`Previous image for ${event.title[lang]}`}
                         onClick={() =>
                           goToPreviousImage(index, setUpcomingIndexes, event.images.length)
                         }
@@ -256,7 +302,7 @@ export default function UpcomingEvents ({
                       </button>
                       <button
                         type="button"
-                        aria-label={`Next image for ${event.title}`}
+                        aria-label={`Next image for ${event.title[lang]}`}
                         onClick={() =>
                           goToNextImage(index, setUpcomingIndexes, event.images.length)
                         }
@@ -271,16 +317,16 @@ export default function UpcomingEvents ({
                 {/* Content */}
                 <div>
               <h3 className="text-lg sm:text-xl font-semibold mb-4 hover:underline">
-                    {event.title}
+                    {event.title[lang]}
                   </h3> 
                   <p className="text-sm text-gray-800 mb-1">
-                    {event.location}
+                    {event.location[lang]}
                   </p>
                  
-                  <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
-                    {event.description}
+                  <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px] whitespace-pre-line">
+                    {event.description[lang]}
                   </p>
-                  <Link href={event.link} ><p className="font-bold underline">RSVP Here</p></Link> 
+                  <Link href={event.link} ><p className="font-bold underline">{lang === "am" ? "እዚህ ይመዝገቡ" : "RSVP Here"}</p></Link> 
                 </div>
               </div>
             </div>
@@ -311,9 +357,9 @@ export default function UpcomingEvents ({
                 {/* Date */}
                 <div className="text-center text-xl font-bold w-16 md:w-auto">
                   <p className="text-sm border-b border-[#B1864F] pb-1">
-                    {event.month}
+                    {event.month[lang]}
                   </p>
-                  <p className="text-3xl text-black">{event.date}</p>
+                  <p className="text-3xl text-black">{event.date[lang]}</p>
                 </div>
 
                 {/* Image slideshow */}
@@ -329,7 +375,7 @@ export default function UpcomingEvents ({
                     >
                       <Image
                         src={event.images[previousIndexes[index]]}
-                        alt={event.title}
+                        alt={event.title[lang]}
                         fill
                         className="object-cover rounded-2xl border border-primary border-2"
                       />
@@ -339,7 +385,7 @@ export default function UpcomingEvents ({
                     <>
                       <button
                         type="button"
-                        aria-label={`Previous image for ${event.title}`}
+                        aria-label={`Previous image for ${event.title[lang]}`}
                         onClick={() =>
                           goToPreviousImage(index, setPreviousIndexes, event.images.length)
                         }
@@ -349,7 +395,7 @@ export default function UpcomingEvents ({
                       </button>
                       <button
                         type="button"
-                        aria-label={`Next image for ${event.title}`}
+                        aria-label={`Next image for ${event.title[lang]}`}
                         onClick={() =>
                           goToNextImage(index, setPreviousIndexes, event.images.length)
                         }
@@ -364,14 +410,14 @@ export default function UpcomingEvents ({
                 {/* Content */}
                 <div>
                 <Link href={event.link} ><h3 className="text-lg sm:text-xl font-semibold mb-4 hover:underline">
-                    {event.title}
+                    {event.title[lang]}
                   </h3></Link>  
                   <p className="text-sm text-gray-800 mb-1">
-                    {event.location}
+                    {event.location[lang]}
                   </p>
                  
-                  <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px]">
-                    {event.description}
+                  <p className="text-[15px] sm:text-[16px] mb-4 w-full md:w-[600px] whitespace-pre-line">
+                    {event.description[lang]}
                   </p>
                 </div>
               </div>
