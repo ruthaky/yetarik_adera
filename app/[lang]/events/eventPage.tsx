@@ -177,7 +177,7 @@ const previous_events: Event[] = [
     date: { en: "23", am: "23" },
     month: { en: "NOVEMBER", am: "ህዳር" },
     images: [img4, img5, img6, img44, img55, img66],
-    title: { en: "Yetarik Adera Inaugural", am: "የታሪክ አደራ ምረቃ " },
+    title: { en: "Yetarik Adera Inaugural", am: "የታሪክ ኣደራ የምርቃት ሥነ-ሥርዓት" },
     location: {
       en: "Addis Ababa, Ethiopia and DMV",
       am: "አዲስ አበባ፣ ኢትዮጵያ እና ዲ.ኤም.ቪ (DMV)",
@@ -185,7 +185,7 @@ const previous_events: Event[] = [
     description: {
       en: `Yetarik Adera inaugurated its archive center located on the 9th floor of the National Archives and Libraries (Wemezeker) compound. Its mission is to serve as a space for those interested in exploring and researching Ethiopia’s history between 1930 and 1974, which was a transformative era in the country’s journey toward modernization following the end of the Italian occupation. The center seeks to highlight the foundations and pillars laid during this period, which continue to shape Ethiopia’s accomplishments. Its collections include books, manuscripts, rare documents, photographs, and artifacts gathered from the families of former government officials.`,
     
-      am: `የታሪክ አደራ በብሔራዊ ቤተ-መጻሕፍት እና ቤተ-መዛግብት ኤጀንሲ (ወመዘክር) ግቢ ውስጥ በ9ኛው ፎቅ ላይ የሚገኘውን የሰነዶች እና መዛግብት ማዕከሉን መርቋል። የማዕከሉ ተልዕኮ ከጣሊያን ወረራ በኋላ በኢትዮጵያ የዘመናዊነት ጉዞ ውስጥ ትልቅ ለውጥ የታየበትን እና ከ1930 እስከ 1974 (እ.ኤ.አ.) ያለውን የታሪክ ወቅት ለመመርመር እና ለማጥናት ለሚፈልጉ አካላት እንደ መረጃ ማዕከል ማገልገል ነው።
+      am: `የታሪክ አደራ በብሔራዊ ቤተ-መጻሕፍት እና ቤተ-መዛግብት ኤጀንሲ (ወመዘክር) ግቢ ውስጥ በ9ኛው ፎቅ ላይ የሚገኘውን የሰነዶች እና መዛግብት ማዕከሉ ተመርቆ ሥራ ጀምሯል። የማዕከሉ ተልዕኮ ከጣሊያን ወረራ በኋላ በኢትዮጵያ የዘመናዊነት ጉዞ ውስጥ ትልቅ ለውጥ የታየበትን እና ከ1930 እስከ 1974 (እ.ኤ.አ.) ያለውን የታሪክ ወቅት ለመመርመር እና ለማጥናት ለሚፈልጉ አካላት እንደ መረጃ ማዕከል ማገልገል ነው።
     
     ማዕከሉ፤ በዚያ ዘመን መሠረታቸው የተጣለውንና ዛሬም ድረስ ለኢትዮጵያ ስኬቶች መሠረት የሆኑትን ምሰሶዎች ጎልተው እንዲታዩ ለማድረግ ይጥራል።
     
