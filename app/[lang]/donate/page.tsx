@@ -38,7 +38,7 @@ const DonationSection = () => {
   const handleDonate = async () => {
     const amount = selectedAmount || Number(customAmount)
 
-    if (!amount || amount <= 0) {
+    if (!Number.isFinite(amount) || amount <= 0) {
       alert("Please enter a valid donation amount.")
       return
     }
@@ -52,7 +52,7 @@ const DonationSection = () => {
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/chapa/initialize`,
+        "/api/chapa/initialize",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -64,17 +64,16 @@ const DonationSection = () => {
         }
       )
 
-      const data = await response.json()
+      const data = await response.json().catch(() => null)
 
-      if (data?.status === "success" && data?.data?.checkout_url) {
+      if (response.ok && data?.status === "success" && data?.data?.checkout_url) {
         window.location.href = data.data.checkout_url
       } else {
-        console.error("Unexpected Chapa response:", data)
-        alert("Payment initialization failed. Please try again.")
+        alert(typeof data?.error === "string" ? data.error : "Payment initialization failed. Please try again.")
       }
     } catch (error) {
       console.error("Error initializing donation:", error)
-      alert("Something went wrong. Please try again.")
+      alert("Could not connect to the payment service. Please try again.")
     } finally {
       setLoading(false)
     }

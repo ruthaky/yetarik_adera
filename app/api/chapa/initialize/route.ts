@@ -1,9 +1,17 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
+  const secretKey = process.env.CHAPA_SECRET_KEY;
+  if (!secretKey) {
+    console.error("Payment initialization unavailable: CHAPA_SECRET_KEY is not configured.");
+    return NextResponse.json(
+      { error: "Donations are temporarily unavailable. Please try again later." },
+      { status: 503 }
+    );
+  }
+
   try {
     const body = await req.json();
-    console.log("Hit Chapa API with:", body);
     const lang = typeof body.lang === "string" && body.lang.trim() ? body.lang.trim() : "en";
     const origin = new URL(req.url).origin;
     const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || origin).replace(/\/$/, "");
@@ -11,7 +19,7 @@ export async function POST(req: Request) {
     const response = await fetch("https://api.chapa.co/v1/transaction/initialize", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.CHAPA_SECRET_KEY}`,
+        Authorization: `Bearer ${secretKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -27,13 +35,19 @@ export async function POST(req: Request) {
     });
 
     const data = await response.json();
-    console.log("Chapa response:", data);
+    if (!response.ok || data?.status !== "success") {
+      console.error("Chapa initialization failed with HTTP status:", response.status);
+      return NextResponse.json(
+        { error: "Payment initialization failed. Please check your donation details and try again." },
+        { status: 502 }
+      );
+    }
 
     return NextResponse.json(data);
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Server Error:", error);
     return NextResponse.json(
-      { error: error.message || "Payment initialization failed" },
+      { error: "Payment initialization failed. Please try again." },
       { status: 500 }
     );
   }

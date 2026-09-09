@@ -116,7 +116,7 @@ const DonationSection = () => {
   onClick={async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/chapa/initialize`,
+        "/api/chapa/initialize",
         {
           method: "POST",
           headers: {
