@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yetarik Adera",
     description: "To honor the legacy and sacrifice of the Imperial Ethiopian government officials who perished at the hands of the Derg, and their colleagues who served in the administration of Emperor Haile Selassie I.",
-    url: "https://surgecrops.com",
+    url: "https://yetarikadera.org",
     siteName: "Yetarik Adera",
     images: [
       {
