@@ -143,7 +143,7 @@ const DonationSection = () => {
             </Button>
          
           </div>
-   <Link href="https://buy.stripe.com/test_7sY14n2Cf6mFbiggtc9k400">
+   <Link href="https://buy.stripe.com/dRmfZh21ndJs3g92TI87K00">
             <Button
              
               disabled={loading}
