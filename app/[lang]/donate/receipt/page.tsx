@@ -72,17 +72,7 @@ export default function DonateReceiptPage() {
       <Navbar />
       <main className="min-h-screen px-4 py-24 sm:px-6">
         <div className="mx-auto w-full max-w-2xl rounded-md border border-[#B27C3A] bg-white p-6 sm:p-8">
-          <h1 className="mb-2 text-2xl font-semibold text-black">Donation Receipt</h1>
-          <p className="mb-6 text-sm text-gray-600">Your donation result is saved on this page.</p>
-
-          {loading && <p className="text-black">Loading receipt...</p>}
-
-          {!loading && error && (
-            <div className="space-y-3">
-              <p className="text-red-600">{error}</p>
-              {txRef && <p className="text-sm text-gray-700">tx_ref: {txRef}</p>}
-            </div>
-          )}
+          <h1 className="mb-2 text-2xl font-semibold text-black">Donation Complete</h1>
 
           {!loading && !error && (
             <div className="space-y-2 text-black">
